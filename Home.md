@@ -17,4 +17,7 @@ And is moving to support:
 Also see:
 * [Project documentation](http://plaso.kiddaland.net/)
 * [Downloads](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/)
+* Blog: [All things time related....](http://blog.kiddaland.net/)
+* Mail group: [log2timeline-discuss](https://groups.google.com/forum/#!forum/log2timeline-discuss)
+* Mail group: [log2timeline-dev](https://groups.google.com/forum/#!forum/log2timeline-dev)
 * [log2timeline](http://plaso.kiddaland.net/usage/log2timeline/)
