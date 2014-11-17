@@ -14,6 +14,9 @@ And is moving to support:
 * adding more analysis context;
 * allowing more targeted approach to the collection/parsing.
 
+Code coverage:
+[![Coverage Status](https://img.shields.io/coveralls/log2timeline/plaso.svg)](https://coveralls.io/r/log2timeline/plaso?branch=master)
+
 Also see:
 * [Project documentation](http://plaso.kiddaland.net/)
 * [Downloads](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/)
