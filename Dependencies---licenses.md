@@ -14,15 +14,15 @@ Dependency | License
 [IPython](http://ipython.org/) | BSD 3-clause license <br> PyReadline is considered part of IPython.
 [Libprotobuf and Python-bindings](https://github.com/google/protobuf) | BSD 3-clause license
 [LibYAML and Python-bindings](http://pyyaml.org/wiki/LibYAML) | MIT license
-[Libesedb and Python-bindings](https://github.com/libyal/libesedb/) | GNU Lesser General Public License 3
-[Libevt and Python-bindings](https://github.com/libyal/libevt/) | GNU Lesser General Public License 3
-[Libevtx and Python-bindings](https://github.com/libyal/libevtx/) | GNU Lesser General Public License 3
-[Libfwsi and Python-bindings](https://github.com/libyal/libfwsi/) | GNU Lesser General Public License 3
-[Liblnk and Python-bindings](https://github.com/libyal/liblnk/) | GNU Lesser General Public License 3
-[Libmsiecf and Python-bindings](https://github.com/libyal/libmsiecf/) | GNU Lesser General Public License 3
-[Libolecf and Python-bindings](https://github.com/libyal/libolecf/) | GNU Lesser General Public License 3
-[Libregf and Python-bindings](https://github.com/libyal/libregf/) | GNU Lesser General Public License 3
-[Libvshadow and Python-bindings](https://github.com/libyal/libvshadow/) | GNU Lesser General Public License 3
+[Libesedb and Python-bindings](https://github.com/libyal/libesedb/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
+[Libevt and Python-bindings](https://github.com/libyal/libevt/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
+[Libevtx and Python-bindings](https://github.com/libyal/libevtx/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
+[Libfwsi and Python-bindings](https://github.com/libyal/libfwsi/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
+[Liblnk and Python-bindings](https://github.com/libyal/liblnk/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
+[Libmsiecf and Python-bindings](https://github.com/libyal/libmsiecf/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
+[Libolecf and Python-bindings](https://github.com/libyal/libolecf/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
+[Libregf and Python-bindings](https://github.com/libyal/libregf/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
+[Libvshadow and Python-bindings](https://github.com/libyal/libvshadow/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
 [Six](https://pypi.python.org/pypi/six/) | MIT license
 [Sqlite](http://www.sqlite.org/index.html) | Public Domain
 [Psutil](https://code.google.com/p/psutil/) | BSD 3-clause license
@@ -37,17 +37,17 @@ Dependency | License
 Dependency | License
 --- | --- 
 [dfVFS](https://github.com/log2timeline/dfvfs/) | Apache License 2.0
-[Libbde and Python-bindings](https://github.com/libyal/libbde/) | GNU Lesser General Public License 3
-[Libewf and Python-bindings](https://github.com/libyal/libewf/) | GNU Lesser General Public License 3
-[Libqcow and Python-bindings](https://github.com/libyal/libqcow/) | GNU Lesser General Public License 3
-[Libsigscan and Python-bindings](https://github.com/libyal/libsigscan/) | GNU Lesser General Public License 3
-[Libsmdev and Python-bindings](https://github.com/libyal/libsmdev/) | GNU Lesser General Public License 3
-[Libsmraw and Python-bindings](https://github.com/libyal/libsmraw/) | GNU Lesser General Public License 3
-[Libvhdi and Python-bindings](https://github.com/libyal/libvhdi/) | GNU Lesser General Public License 3
-[Libvmdk and Python-bindings](https://github.com/libyal/libvmdk/) | GNU Lesser General Public License 3
+[Libbde and Python-bindings](https://github.com/libyal/libbde/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
+[Libewf and Python-bindings](https://github.com/libyal/libewf/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
+[Libqcow and Python-bindings](https://github.com/libyal/libqcow/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
+[Libsigscan and Python-bindings](https://github.com/libyal/libsigscan/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
+[Libsmdev and Python-bindings](https://github.com/libyal/libsmdev/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
+[Libsmraw and Python-bindings](https://github.com/libyal/libsmraw/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
+[Libvhdi and Python-bindings](https://github.com/libyal/libvhdi/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
+[Libvmdk and Python-bindings](https://github.com/libyal/libvmdk/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
 [Pytsk](https://code.google.com/p/pytsk/) | Apache License 2.0
 [SleuthKit](http://www.sleuthkit.org/) | The SleuthKit is multi licensed <br> Common Public License 1.0; applies to most of the code <br> IBM Public License 1.0; applies to the file system code (tsk/fs, tools/fstools) <br> GNU General Public License 2; applies to srch_strings which **should not be included in a binary build of plaso**.
-[talloc](http://talloc.samba.org/talloc/doc/html/index.html) | GNU Lesser General Public License 3
+[talloc](http://talloc.samba.org/talloc/doc/html/index.html) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
 
 Dependency | License
 --- | --- 
