@@ -2,12 +2,12 @@
 
 Original information: https://sites.google.com/a/kiddaland.net/plaso/developer/building-the-tool/licenses
 
-Although plaso is licensed under the Apache License 2.0, binary builds of plaso include third party code that have been made available under various licenses.
+Although plaso is licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0), binary builds of plaso include third party code that have been made available under various licenses.
 
 Dependency | License
 --- | --- 
 [bencode](https://pypi.python.org/pypi/bencode) | BitTorrent Open Source License
-[binplist](https://code.google.com/p/binplist/) | Apache License 2.0
+[binplist](https://code.google.com/p/binplist/) | [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 [construct](http://construct.readthedocs.org/en/latest/) | MIT license
 [DPKT](https://code.google.com/p/dpkt/) | [BSD 3-clause](https://code.google.com/p/dpkt/source/browse/trunk/LICENSE)
 [Hachoir](https://bitbucket.org/haypo/hachoir) | GNU General Public License 2 <br> **Not integrated in the binary build.**
@@ -36,7 +36,7 @@ Dependency | License
 
 Dependency | License
 --- | --- 
-[dfVFS](https://github.com/log2timeline/dfvfs/) | Apache License 2.0
+[dfVFS](https://github.com/log2timeline/dfvfs/) | [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 [Libbde and Python-bindings](https://github.com/libyal/libbde/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
 [Libewf and Python-bindings](https://github.com/libyal/libewf/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
 [Libqcow and Python-bindings](https://github.com/libyal/libqcow/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
@@ -45,7 +45,7 @@ Dependency | License
 [Libsmraw and Python-bindings](https://github.com/libyal/libsmraw/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
 [Libvhdi and Python-bindings](https://github.com/libyal/libvhdi/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
 [Libvmdk and Python-bindings](https://github.com/libyal/libvmdk/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
-[Pytsk](https://code.google.com/p/pytsk/) | Apache License 2.0
+[Pytsk](https://code.google.com/p/pytsk/) | [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 [SleuthKit](http://www.sleuthkit.org/) | The SleuthKit is multi licensed <br> Common Public License 1.0; applies to most of the code <br> IBM Public License 1.0; applies to the file system code (tsk/fs, tools/fstools) <br> GNU General Public License 2; applies to srch_strings which **should not be included in a binary build of plaso**.
 [talloc](http://talloc.samba.org/talloc/doc/html/index.html) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
 
