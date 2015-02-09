@@ -27,8 +27,8 @@ A rough outline of the larger items on the roadmap:
 * Event Log event messages support
 * Artifact support
 * Migration to Python 3
-** requires other dependencies being Python 3 compatible first
-** Migration to construct 3
+  * requires other dependencies being Python 3 compatible
+  * Migration to construct 3
 * Improved handling recovered (deleted) data
 * Plaso as a service
 * Sandboxing the workers
