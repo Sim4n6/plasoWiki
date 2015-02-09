@@ -24,15 +24,15 @@ Dependency | License
 [Libregf and Python-bindings](https://github.com/libyal/libregf/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
 [Libvshadow and Python-bindings](https://github.com/libyal/libvshadow/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
 [Six](https://pypi.python.org/pypi/six/) | [MIT license](http://opensource.org/licenses/MIT)
-[Sqlite](http://www.sqlite.org/index.html) | Public Domain
+[Sqlite](http://www.sqlite.org/index.html) | [Public domain](http://www.sqlite.org/copyright.html)
 [Psutil](https://code.google.com/p/psutil/) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
 [Python](http://www.python.org/) | See: http://docs.python.org/2/license.html
 [Python dateutil](http://labix.org/python-dateutil) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
 [Pyparsing](http://pyparsing.wikispaces.com/) | [MIT license](http://opensource.org/licenses/MIT)
 [Pyelasticsearch](https://github.com/rhec/pyelasticsearch/) | 
-[Pysqlite](https://pypi.python.org/pypi/pysqlite) | zlib/libpng license
+[Pysqlite](https://pypi.python.org/pypi/pysqlite) | [zlib/libpng license](https://github.com/ghaering/pysqlite/blob/master/LICENSE)
 [pytz](http://pytz.sourceforge.net/) | [MIT license](http://opensource.org/licenses/MIT)
-[pywin32](http://pywin32.sourceforge.net/) | Python Software Foundation License <br> **Windows build only**
+[pywin32](http://pywin32.sourceforge.net/) | [Python Software Foundation License](http://opensource.org/licenses/Python-2.0) <br> **Windows build only**
 
 Dependency | License
 --- | --- 
