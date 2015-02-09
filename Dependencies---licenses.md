@@ -11,7 +11,7 @@ Dependency | License
 [construct](http://construct.readthedocs.org/en/latest/) | [MIT license](http://opensource.org/licenses/MIT)
 [DPKT](https://code.google.com/p/dpkt/) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
 [Hachoir](https://bitbucket.org/haypo/hachoir) | [GNU General Public License 2](http://www.gnu.org/licenses/gpl-2.0.html) <br> **Not integrated in the binary build.**
-[IPython](http://ipython.org/) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause) <br> PyReadline is considered part of IPython.
+[IPython](http://ipython.org/) <br> PyReadline is considered part of IPython | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
 [Libprotobuf and Python-bindings](https://github.com/google/protobuf) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
 [LibYAML and Python-bindings](http://pyyaml.org/wiki/LibYAML) | [MIT license](http://opensource.org/licenses/MIT)
 [Libesedb and Python-bindings](https://github.com/libyal/libesedb/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
