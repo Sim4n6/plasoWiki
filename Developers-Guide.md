@@ -10,3 +10,6 @@ For the current version of the documentation see: https://sites.google.com/a/kid
 
 ## Design
 * [Architecture](https://sites.google.com/a/kiddaland.net/plaso/developer/architecture)
+
+## Notes
+There can be a code freeze announced before a release, in which we try to focus on testing and bug fixes. In such a freeze, new features will added to the codebase after the release.
