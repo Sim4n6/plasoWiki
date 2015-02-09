@@ -4,6 +4,7 @@ Original information: https://sites.google.com/a/kiddaland.net/plaso/developer/b
 
 Although plaso is licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0), binary builds of plaso include third party code that have been made available under various licenses.
 
+## Plaso dependencies
 Dependency | License
 --- | --- 
 [bencode](https://pypi.python.org/pypi/bencode) | [BitTorrent Open Source License](http://web.archive.org/web/20080213154112/http://www.bittorrent.com/bittorrent-open-source-license)
@@ -32,8 +33,9 @@ Dependency | License
 [Pyelasticsearch](https://github.com/rhec/pyelasticsearch/) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
 [Pysqlite](https://pypi.python.org/pypi/pysqlite) | [zlib/libpng license](https://github.com/ghaering/pysqlite/blob/master/LICENSE)
 [pytz](http://pytz.sourceforge.net/) | [MIT license](http://opensource.org/licenses/MIT)
-[pywin32](http://pywin32.sourceforge.net/) | [Python Software Foundation License](http://opensource.org/licenses/Python-2.0) <br> **Windows build only**
+[pywin32](http://pywin32.sourceforge.net/) | [Python Software Foundation License](http://opensource.org/licenses/Python-2.0) <br> **Windows only**
 
+## dfVFS dependencies
 Dependency | License
 --- | --- 
 [dfVFS](https://github.com/log2timeline/dfvfs/) | [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
@@ -49,11 +51,12 @@ Dependency | License
 [SleuthKit](http://www.sleuthkit.org/) | The SleuthKit is multi licensed <br> Common Public License 1.0; applies to most of the code <br> IBM Public License 1.0; applies to the file system code (tsk/fs, tools/fstools) <br> [GNU General Public License 2](http://www.gnu.org/licenses/gpl-2.0.html); applies to srch_strings which **should not be included in a binary build of plaso**.
 [talloc](http://talloc.samba.org/talloc/doc/html/index.html) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
 
+## Windows packaged version dependencies
 Dependency | License
 --- | --- 
 [PyInstaller](http://www.pyinstaller.org/) | [GNU General Public License 2](http://www.gnu.org/licenses/gpl-2.0.html) with an exception for the bootloader, which is the part that is used in plaso binaries.
 
-# To do
+## To do
 Dependencies not mentioned explicitly yet:
 
 * zlib (used in libqcow and libewf)
