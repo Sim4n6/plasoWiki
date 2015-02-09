@@ -85,6 +85,11 @@ To install the deb files run:
 sudo dpkg -i binplist_0.1.4-1_all.deb
 ```
 
+### Construct
+Note that Unbuntu 14.04 ships with construct 2.5.1 which contains known issues hence we recommend upgrading to version 2.5.2.
+
+**TODO**
+
 ### libyal
 Install the following dependencies for building libyal:
 ```
