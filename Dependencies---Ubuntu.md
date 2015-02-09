@@ -237,4 +237,22 @@ To install the required deb files run:
 sudo dpkg -i python-pyparsing-2.0.2-1_all.deb
 ```
 
-**TODO migrate the rest of the documentation**
+### PySQLite
+Install the following dependencies for building PySQLite:
+```
+sudo apt-get install libsqlite3-dev
+```
+
+**TODO describe**
+
+### pytz
+To install pytz run:
+```
+sudo apt-get install python-tz
+```
+
+### IPython
+To install IPython run:
+```
+sudo apt-get install ipython
+```
