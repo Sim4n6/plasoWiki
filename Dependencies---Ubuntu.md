@@ -27,4 +27,4 @@ For troubleshooting crashes it is recommended to install the following debug sym
 sudo apt-get install libbde-dbg libbde-python-dbg
 ```
 
-**TODO complete list of dependencies.***
+**TODO complete list of dependencies.**
