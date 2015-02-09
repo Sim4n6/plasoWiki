@@ -9,10 +9,10 @@ Dependency | License
 [bencode](https://pypi.python.org/pypi/bencode) | [BitTorrent Open Source License](http://web.archive.org/web/20080213154112/http://www.bittorrent.com/bittorrent-open-source-license)
 [binplist](https://code.google.com/p/binplist/) | [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 [construct](http://construct.readthedocs.org/en/latest/) | [MIT license](http://opensource.org/licenses/MIT)
-[DPKT](https://code.google.com/p/dpkt/) | [BSD 3-clause](https://code.google.com/p/dpkt/source/browse/trunk/LICENSE)
-[Hachoir](https://bitbucket.org/haypo/hachoir) | GNU General Public License 2 <br> **Not integrated in the binary build.**
-[IPython](http://ipython.org/) | BSD 3-clause license <br> PyReadline is considered part of IPython.
-[Libprotobuf and Python-bindings](https://github.com/google/protobuf) | BSD 3-clause license
+[DPKT](https://code.google.com/p/dpkt/) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
+[Hachoir](https://bitbucket.org/haypo/hachoir) | [GNU General Public License 2](http://www.gnu.org/licenses/gpl-2.0.html) <br> **Not integrated in the binary build.**
+[IPython](http://ipython.org/) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause) <br> PyReadline is considered part of IPython.
+[Libprotobuf and Python-bindings](https://github.com/google/protobuf) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
 [LibYAML and Python-bindings](http://pyyaml.org/wiki/LibYAML) | [MIT license](http://opensource.org/licenses/MIT)
 [Libesedb and Python-bindings](https://github.com/libyal/libesedb/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
 [Libevt and Python-bindings](https://github.com/libyal/libevt/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
@@ -25,9 +25,9 @@ Dependency | License
 [Libvshadow and Python-bindings](https://github.com/libyal/libvshadow/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
 [Six](https://pypi.python.org/pypi/six/) | [MIT license](http://opensource.org/licenses/MIT)
 [Sqlite](http://www.sqlite.org/index.html) | Public Domain
-[Psutil](https://code.google.com/p/psutil/) | BSD 3-clause license
+[Psutil](https://code.google.com/p/psutil/) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
 [Python](http://www.python.org/) | See: http://docs.python.org/2/license.html
-[Python dateutil](http://labix.org/python-dateutil) | BSD 3-clause license
+[Python dateutil](http://labix.org/python-dateutil) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
 [Pyparsing](http://pyparsing.wikispaces.com/) | [MIT license](http://opensource.org/licenses/MIT)
 [Pyelasticsearch](https://github.com/rhec/pyelasticsearch/) | 
 [Pysqlite](https://pypi.python.org/pypi/pysqlite) | zlib/libpng license
