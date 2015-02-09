@@ -199,6 +199,9 @@ sudo apt-get install libyaml-0-2 python-yaml
 ```
 
 ### Sleuthkit and Pytsk
-See: https://github.com/py4n6/pytsk/wiki/Building-SleuthKit and https://github.com/py4n6/pytsk/wiki/Building
+The build and install Sleuthkit and Pytsk see:
+
+* https://github.com/py4n6/pytsk/wiki/Building-SleuthKit
+* https://github.com/py4n6/pytsk/wiki/Building
 
 **TODO migrate the rest of the documentation**
