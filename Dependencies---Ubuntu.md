@@ -36,7 +36,7 @@ sudo apt-get install libbde-dbg libbde-python-dbg
 **TODO complete list of dependencies.**
 
 ## Batch build
-**TODO**
+**TODO describe**
 
 ## Manual build
 It is impossible for us to support all flavors of Ubuntu out there, so if you want smooth sailing, we recommend sticking with the supported version or live with the fact that a manual build of the dependencies can be a tedious task.
@@ -61,7 +61,7 @@ sudo apt-get install build-essential autotools-dev libsqlite3-dev python-dev deb
 ```
 
 ### Bencode
-**TODO**
+**TODO describe**
 
 ### binplist
 Download the source package from: https://code.google.com/p/binplist/downloads/list
@@ -88,7 +88,9 @@ sudo dpkg -i binplist_0.1.4-1_all.deb
 ### Construct
 Note that Unbuntu 14.04 ships with construct 2.5.1 which contains known issues hence we recommend upgrading to version 2.5.2.
 
-**TODO**
+**TODO describe**
+
+**TODO migrate the rest of the documentation**
 
 ### libyal
 Install the following dependencies for building libyal:
