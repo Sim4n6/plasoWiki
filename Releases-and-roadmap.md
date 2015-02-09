@@ -6,3 +6,31 @@ Plaso comes in 2 different forms of releases:
 **Note that the development release is for development, expect frequent updates and potential breakage.**
 
 We try to provide two packaged releases per year, a "summer" and "winter" release, but occasionally we will also do preview and release candidate packaged releases.
+
+## Roadmap
+A rough outline of the larger items on the roadmap:
+
+### Version 1.2.1
+
+* Plaso as a module; Clean up and rewrite of the engine code (the parts that were not touched in version 1.1.0); Stabilize an API
+* dfVFS
+** Migration to SleuthKit 4.2 (assumed the new version is released)
+* Storage
+** Add support for relocatable path specs
+** Add support to keep a protected copy of the decryption information for e.g. BitLocker
+* Overhaul of winreg and plugins
+** remove Registry type
+** merge key and value plugins
+
+### Mid/Long term
+
+* Event Log event messages support
+* Artifact support
+* Migration to Python 3
+** requires other dependencies being Python 3 compatible first
+** Migration to construct 3
+* Improved handling recovered (deleted) data
+* Plaso as a service
+* Sandboxing the workers
+
+Also see: [Plaso - Roadmap and Assignment](ttp://goo.gl/cRjA7y)
