@@ -1,8 +1,14 @@
-This page contains detailed instructions on how to build and install dependencies on Ubuntu.
+This page contains detailed instructions on how to build and install dependencies on Ubuntu. Some of these instructions should also work on Ubuntu like systems like Debian or Linux Mint.
 
-**Note that the instructions in this page assume you are running on Ubuntu 14.04.**
+There are multiple ways to install the dependencies on Ubuntu:
+
+* Using the GIFT PPA to install prepackaged versions of the dependencies;
+* Using the [log2timeline devtools](https://github.com/log2timeline/devtools) to batch build most of the dependencies;
+* Manual build of the dependencies.
 
 ## Prepackaged dependencies
+**Note that the instructions in this page assume you are running on Ubuntu 12.04 or 14.04. Installing packages from the PPA on other versions and/or distributions is not recommended.**
+
 The [GIFT PPA](https://launchpad.net/~gift), pun intended, contains the necessary packages for running plaso. The GIFT PPA provides the following tracks:
 
 * Stable; track intended for the "packaged release" of plaso and dependencies;
@@ -28,3 +34,9 @@ sudo apt-get install libbde-dbg libbde-python-dbg
 ```
 
 **TODO complete list of dependencies.**
+
+## Batch build
+**TODO**
+
+## Manual build
+**TODO**
