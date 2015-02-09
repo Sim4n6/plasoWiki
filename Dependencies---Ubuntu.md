@@ -39,7 +39,9 @@ sudo apt-get install libbde-dbg libbde-python-dbg
 **TODO**
 
 ## Manual build
-It is impossible for us to support all flavors of Ubuntu out there, so if you want smooth sailing, we recommend sticking with the supported version or live with the fact that a manual build of the dependencies can be a tedious task. For ease of maintenance the following instructions use as much deb package files as possible.
+It is impossible for us to support all flavors of Ubuntu out there, so if you want smooth sailing, we recommend sticking with the supported version or live with the fact that a manual build of the dependencies can be a tedious task.
+
+For ease of maintenance the following instructions use as much deb package files as possible. Note that the resulting deb files are not intended for public redistribution.
 
 First create a build root directory:
 ```
@@ -60,6 +62,28 @@ sudo apt-get install build-essential autotools-dev libsqlite3-dev python-dev deb
 
 ### Bencode
 **TODO**
+
+### binplist
+Download the source package from: https://code.google.com/p/binplist/downloads/list
+
+To build deb files run the following command from the build root directory:
+```
+tar xvf binplist-0.1.4.tar.gz 
+cd binplist-0.1.4/
+cp -rf config/dpkg debian
+dpkg-buildpackage -rfakeroot
+cd ..
+```
+
+This will create the following files in the build root directory:
+```
+binplist_0.1.4-1_all.deb
+```
+
+To install the deb files run:
+```
+sudo dpkg -i binplist_0.1.4-1_all.deb
+```
 
 ### libyal
 Install the following dependencies for building libyal:
