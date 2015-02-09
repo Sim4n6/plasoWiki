@@ -205,7 +205,10 @@ The build and install Sleuthkit and Pytsk see:
 * https://github.com/py4n6/pytsk/wiki/Building
 
 ### psutil
-**TODO describe**
+To install psutil run:
+```
+sudo apt-get install python-psutil
+```
 
 ### PyParsing
 **Note that Unbuntu 14.04 provides python-pyparsing 2.0.1 which contains known issues hence we recommend upgrading to version 2.0.2.**
