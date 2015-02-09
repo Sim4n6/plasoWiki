@@ -59,11 +59,6 @@ sudo apt-get install build-essential autotools-dev libsqlite3-dev python-dev deb
 ```
 
 ### Bencode
-To install bencode run:
-```
-sudo apt-get install python-bencode
-```
-
 **TODO**
 
 ### libyal
