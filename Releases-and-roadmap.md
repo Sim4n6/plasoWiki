@@ -35,7 +35,7 @@ A rough outline of the larger items on the roadmap:
 * Plaso as a service
 * Sandboxing the workers
 
-Also see: [Plaso - Roadmap and Assignment](ttp://goo.gl/cRjA7y)
+Also see: [Plaso - Roadmap and Assignment](http://goo.gl/cRjA7y)
 
 ## Packaged release history
 Version | Name | Release date | Comments
