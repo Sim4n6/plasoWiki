@@ -14,13 +14,13 @@ A rough outline of the larger items on the roadmap:
 
 * Plaso as a module; Clean up and rewrite of the engine code (the parts that were not touched in version 1.1.0); Stabilize an API
 * dfVFS
-** Migration to SleuthKit 4.2 (assumed the new version is released)
+  * Migration to SleuthKit 4.2 (assumed the new version is released)
 * Storage
-** Add support for relocatable path specs
-** Add support to keep a protected copy of the decryption information for e.g. BitLocker
+  * Add support for relocatable path specs
+  * Add support to keep a protected copy of the decryption information for e.g. BitLocker
 * Overhaul of winreg and plugins
-** remove Registry type
-** merge key and value plugins
+  * remove Registry type
+  * merge key and value plugins
 
 ### Mid/Long term
 
