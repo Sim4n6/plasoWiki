@@ -1,43 +1,17 @@
-**TODO this page is work in progress**
-
-Original information: https://sites.google.com/a/kiddaland.net/plaso/developer/building-the-tool/licenses
-
 Although plaso is licensed under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0), binary builds of plaso include third party code that have been made available under various licenses.
 
-## Plaso dependencies
+## Plaso core - dependencies
 Dependency | License
---- | --- 
-[bencode](https://pypi.python.org/pypi/bencode) | [BitTorrent Open Source License](http://web.archive.org/web/20080213154112/http://www.bittorrent.com/bittorrent-open-source-license)
-[binplist](https://code.google.com/p/binplist/) | [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
-[construct](http://construct.readthedocs.org/en/latest/) | [MIT license](http://opensource.org/licenses/MIT)
-[DPKT](https://code.google.com/p/dpkt/) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
-[Hachoir](https://bitbucket.org/haypo/hachoir) | [GNU General Public License 2](http://www.gnu.org/licenses/gpl-2.0.html) <br> **Not integrated in the binary build.**
-[IPython](http://ipython.org/) <br> PyReadline is considered part of IPython | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
+--- | ---
 [Libprotobuf and Python-bindings](https://github.com/google/protobuf) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
 [LibYAML and Python-bindings](http://pyyaml.org/wiki/LibYAML) | [MIT license](http://opensource.org/licenses/MIT)
-[Libesedb and Python-bindings](https://github.com/libyal/libesedb/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
-[Libevt and Python-bindings](https://github.com/libyal/libevt/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
-[Libevtx and Python-bindings](https://github.com/libyal/libevtx/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
-[Libfwsi and Python-bindings](https://github.com/libyal/libfwsi/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
-[Liblnk and Python-bindings](https://github.com/libyal/liblnk/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
-[Libmsiecf and Python-bindings](https://github.com/libyal/libmsiecf/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
-[Libolecf and Python-bindings](https://github.com/libyal/libolecf/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
-[Libregf and Python-bindings](https://github.com/libyal/libregf/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
-[Libvshadow and Python-bindings](https://github.com/libyal/libvshadow/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
-[Six](https://pypi.python.org/pypi/six/) | [MIT license](http://opensource.org/licenses/MIT)
-[Sqlite](http://www.sqlite.org/index.html) | [Public domain](http://www.sqlite.org/copyright.html)
-[Psutil](https://code.google.com/p/psutil/) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
 [Python](http://www.python.org/) | [Python Software Foundation License](http://opensource.org/licenses/Python-2.0) <br> Also see: http://docs.python.org/2/license.html
-[Python dateutil](http://labix.org/python-dateutil) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
-[Pyparsing](http://pyparsing.wikispaces.com/) | [MIT license](http://opensource.org/licenses/MIT)
-[Pyelasticsearch](https://github.com/rhec/pyelasticsearch/) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
-[Pysqlite](https://pypi.python.org/pypi/pysqlite) | [zlib/libpng license](https://github.com/ghaering/pysqlite/blob/master/LICENSE)
 [pytz](http://pytz.sourceforge.net/) | [MIT license](http://opensource.org/licenses/MIT)
 [pywin32](http://pywin32.sourceforge.net/) | [Python Software Foundation License](http://opensource.org/licenses/Python-2.0) <br> **Windows only**
 
-## dfVFS dependencies
+## Plaso - dfVFS dependencies
 Dependency | License
---- | --- 
+--- | ---
 [dfVFS](https://github.com/log2timeline/dfvfs/) | [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 [Libbde and Python-bindings](https://github.com/libyal/libbde/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
 [Libewf and Python-bindings](https://github.com/libyal/libewf/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
@@ -47,9 +21,39 @@ Dependency | License
 [Libsmraw and Python-bindings](https://github.com/libyal/libsmraw/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
 [Libvhdi and Python-bindings](https://github.com/libyal/libvhdi/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
 [Libvmdk and Python-bindings](https://github.com/libyal/libvmdk/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
+[Libvshadow and Python-bindings](https://github.com/libyal/libvshadow/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
 [Pytsk](https://code.google.com/p/pytsk/) | [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 [SleuthKit](http://www.sleuthkit.org/) | The SleuthKit is multi licensed <br> Common Public License 1.0; applies to most of the code <br> IBM Public License 1.0; applies to the file system code (tsk/fs, tools/fstools) <br> [GNU General Public License 2](http://www.gnu.org/licenses/gpl-2.0.html); applies to srch_strings which **should not be included in a binary build of plaso**.
 [talloc](http://talloc.samba.org/talloc/doc/html/index.html) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
+
+## Plaso parsers - dependencies
+Dependency | License
+--- | ---
+[bencode](https://pypi.python.org/pypi/bencode) | [BitTorrent Open Source License](http://web.archive.org/web/20080213154112/http://www.bittorrent.com/bittorrent-open-source-license)
+[binplist](https://code.google.com/p/binplist/) | [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+[construct](http://construct.readthedocs.org/en/latest/) | [MIT license](http://opensource.org/licenses/MIT)
+[DPKT](https://code.google.com/p/dpkt/) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
+[Hachoir](https://bitbucket.org/haypo/hachoir) | [GNU General Public License 2](http://www.gnu.org/licenses/gpl-2.0.html) <br> **Not integrated in the binary build.**
+[Libesedb and Python-bindings](https://github.com/libyal/libesedb/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
+[Libevt and Python-bindings](https://github.com/libyal/libevt/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
+[Libevtx and Python-bindings](https://github.com/libyal/libevtx/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
+[Libfwsi and Python-bindings](https://github.com/libyal/libfwsi/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
+[Liblnk and Python-bindings](https://github.com/libyal/liblnk/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
+[Libmsiecf and Python-bindings](https://github.com/libyal/libmsiecf/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
+[Libolecf and Python-bindings](https://github.com/libyal/libolecf/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
+[Libregf and Python-bindings](https://github.com/libyal/libregf/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
+[Six](https://pypi.python.org/pypi/six/) | [MIT license](http://opensource.org/licenses/MIT)
+[Sqlite](http://www.sqlite.org/index.html) | [Public domain](http://www.sqlite.org/copyright.html)
+[Python dateutil](http://labix.org/python-dateutil) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
+[Pyparsing](http://pyparsing.wikispaces.com/) | [MIT license](http://opensource.org/licenses/MIT)
+[Pysqlite](https://pypi.python.org/pypi/pysqlite) | [zlib/libpng license](https://github.com/ghaering/pysqlite/blob/master/LICENSE)
+
+## Plaso tools (frontends) - dependencies
+Dependency | License
+--- | ---
+[Pyelasticsearch](https://github.com/rhec/pyelasticsearch/) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
+[Psutil](https://code.google.com/p/psutil/) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
+[IPython](http://ipython.org/) <br> PyReadline is considered part of IPython | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
 
 ## Windows packaged version dependencies
 Dependency | License
