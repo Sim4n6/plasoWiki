@@ -39,4 +39,37 @@ sudo apt-get install libbde-dbg libbde-python-dbg
 **TODO**
 
 ## Manual build
+It is impossible for us to support all flavors of Ubuntu out there, so if you want smooth sailing, we recommend sticking with the supported version or live with the fact that a manual build of the dependencies can be a tedious task. For ease of maintenance the following instructions use as much deb package files as possible.
+
+First create a build root directory:
+```
+mkdir plaso-build/
+```
+
+Next make sure your installation is up to date:
+```
+sudo apt-get update
+sudo apt-get upgrade
+```
+
+### Build essentials
+Make sure the necessary building tools and development packages are installed on the system:
+```
+sudo apt-get install build-essential autotools-dev libsqlite3-dev python-dev debhelper devscripts fakeroot quilt git mercurial python-dateutil python-setuptools libtool automake
+```
+
+### Bencode
+To install bencode run:
+```
+sudo apt-get install python-bencode
+```
+
+**TODO**
+
+### libyal
+Install the following dependencies for building libyal:
+```
+sudo apt-get install libfuse-dev
+```
+
 **TODO**
