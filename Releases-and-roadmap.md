@@ -21,6 +21,8 @@ A rough outline of the larger items on the roadmap:
 * Overhaul of winreg and plugins
   * remove Registry type
   * merge key and value plugins
+* Parsers
+  * job file parser - add format improvements
 
 ### Mid/Long term
 
