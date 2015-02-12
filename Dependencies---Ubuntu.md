@@ -116,7 +116,26 @@ sudo dpkg -i python-construct_2.5.2-1_all.deb
 ```
 
 ### dfVFS
-**TODO describe**
+The dfVFS build instructions can be found [here](https://github.com/log2timeline/dfvfs/wiki/Building). Note that for dfVFS to function correctly several dependencies, like pytsk, mentioned later in a section of this page, are required.
+
+To install dfVFS download the source package from the downloads page.
+```
+tar xvf dfvfs-20140219.tar.gz 
+cd dfvfs-20140219/
+cp -rf dpkg debian
+dpkg-buildpackage -rfakeroot
+cd ...
+```
+
+This will create the following files in the build root directory:
+```
+python-dfvfs_20140219-1_all.deb
+```
+
+To install the required deb files run:
+```
+sudo dpkg -i python-dfvfs_20140219-1_all.deb
+```
 
 ### DPKT
 **Note that Unbuntu 14.04 provides DPKT 1.6 which contains known issues hence we recommend upgrading to version 1.8.**
