@@ -30,5 +30,52 @@ origin	https://github.com/log2timeline/plaso (push)
 **TODO: add note and link to devtools about maintaining dependencies.**
 
 ## Development tools
-### pylint
-**TODO: describe**
+If you intend to do development on plaso you'll also need to install some development tools:
+
+* PyLint
+
+### PyLint
+We recommend PyLint 1.0.0 or later. 
+
+Remove any older version of PyLint.
+```
+sudo apt-get remove pylint
+```
+
+Install the necessary dependencies for building PyLint:
+```
+sudo aptitude install python-epydoc graphviz python-unittest2
+```
+
+Download and build the python-logilab-common Debian package:
+```
+hg clone http://hg.logilab.org/logilab/common
+cd common
+dpkg-buildpackage -rfakeroot
+cd ..
+```
+
+Since you're building from development branch it can be possible that you need to disable any failing tests.
+Either report these as bugs to the PyLint project or fix them yourself.
+
+Download and build the python-astroid Debian package:
+```
+hg clone https://bitbucket.org/logilab/astroid
+cd astroid
+dpkg-buildpackage -rfakeroot
+cd ..
+```
+
+Download and build the pylint Debian package:
+```
+hg clone https://bitbucket.org/logilab/pylint
+cd pylint
+dpkg-buildpackage -rfakeroot
+cd ..
+```
+
+Install the python-logilab-common, python-astroid and pylint Debian packages:
+```
+sudo dpkg -i python-logilab-common_0.60.0-1_all.deb python-astroid_1.0.1-1_all.deb pylint_1.0.0-1_all.deb
+```
+
