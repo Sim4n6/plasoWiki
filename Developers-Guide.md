@@ -1,3 +1,5 @@
+**Note that plaso and some dependencies are actively under development keeping up with the development release is not for "the faint of heart".**
+
 **This page is work in progress.**
 
 For the current version of the documentation see: https://sites.google.com/a/kiddaland.net/plaso/developer
