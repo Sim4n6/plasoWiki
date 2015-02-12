@@ -14,3 +14,6 @@ python utils/check_dependencies.py
 
 **TODO: add note and link to devtools about maintaining dependencies.**
 
+## Development tools
+### pylint
+**TODO: describe**
