@@ -3,7 +3,7 @@
 For the current version of the documentation see: https://sites.google.com/a/kiddaland.net/plaso/developer
 
 ## Development environment and dependencies
-* [How to build plaso from scratch](https://sites.google.com/a/kiddaland.net/plaso/developer/building-the-tool)
+* [How to build plaso from scratch](https://sites.google.com/a/kiddaland.net/plaso/developer/building-the-tool) (old)
 * [Running the development release on Ubuntu Linux](https://github.com/log2timeline/plaso/wiki/Development-release-Ubuntu)
 * Running the development release on Fedora Linux
 * Running the development release on Mac OS X
