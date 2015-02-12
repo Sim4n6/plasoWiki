@@ -56,3 +56,5 @@ dist\binplist-0.1.4.win32.msi
 ```
 
 Install the MSI.
+
+**TODO: migrate the remainder of the documentation from: https://sites.google.com/a/kiddaland.net/plaso/developer/building-the-tool/windows**
