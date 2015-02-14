@@ -3,7 +3,7 @@ This page contains detailed instructions on how to build and install dependencie
 ## Manual build
 For ease of maintenance the following instructions use as much MSI package files as possible via "Programs and Features". Note that the resulting MSI files are not intended for public redistribution.
 
-Alternative installation methods like installing directly from source, using easy_install or pip are not recommended due to various reasons.
+Alternative installation methods like installing directly from source, using easy_install or pip are not recommended because when not maintained correctly they can mess up your setup more easily than using MSIs.
 
 ### Build essentials
 Make sure the necessary building tools and development packages are installed on the system:
