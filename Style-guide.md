@@ -1,4 +1,4 @@
-We primarily follow [the Google Python Style Guide](http://google-styleguide.googlecode.com/svn/trunk/pyguide.html). Various plaso specific additions/variations are:
+We primarily follow the [Google Python Style Guide](http://google-styleguide.googlecode.com/svn/trunk/pyguide.html). Various plaso specific additions/variations are:
 
 * Indent your code blocks with 2 spaces (not 4 as in the style guide). In the case of a hanging indent, use four spaces (according to the style guide).
 * Method and function names follow the following logic: <public> CapWords(), <internal> _CapWords() (protected) or __CapWords() (private)
