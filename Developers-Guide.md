@@ -22,7 +22,7 @@ The first challenge you will encounter is setting up and maintaining your develo
 * [Architecture](https://sites.google.com/a/kiddaland.net/plaso/developer/architecture)
 
 ## Contributing
-## Roadmap
+### Roadmap
 A read-only version of the roadmap document can be found here: [Plaso - Roadmap and Assignment](http://goo.gl/cRjA7y). The roadmap document displays the current status, who's working on the parser, etc.
 
 **Note that this is a general wish list, that may not be completely up-to-date.**
