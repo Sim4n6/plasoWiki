@@ -22,6 +22,9 @@ The first challenge you will encounter is setting up and maintaining your develo
 * [Architecture](https://sites.google.com/a/kiddaland.net/plaso/developer/architecture)
 
 ## Contributing
+* [Style guide](https://github.com/log2timeline/plaso/wiki/Style-guide)
+* Code review
+
 ### Rational style guide and code review
 To keep the code base maintainable and readable all code is developed using a similar coding style. It ensures:
 
