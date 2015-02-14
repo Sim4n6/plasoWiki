@@ -23,6 +23,7 @@ Also see:
   * [Developers Guide](https://github.com/log2timeline/plaso/wiki/Developers-Guide)
 * [Downloads](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/)
 * Blog: [All things time related....](http://blog.kiddaland.net/)
-* Mail group: [log2timeline-discuss](https://groups.google.com/forum/#!forum/log2timeline-discuss)
-* Mail group: [log2timeline-dev](https://groups.google.com/forum/#!forum/log2timeline-dev)
+* Mailing lists:
+  * For general discussions: [log2timeline-discuss](https://groups.google.com/forum/#!forum/log2timeline-discuss)
+  * For development: [log2timeline-dev](https://groups.google.com/forum/#!forum/log2timeline-dev)
 * [log2timeline](http://plaso.kiddaland.net/usage/log2timeline/)
