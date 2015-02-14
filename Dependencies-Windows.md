@@ -44,7 +44,7 @@ Download the latest source package from: https://code.google.com/p/binplist
 
 To build the MSI file run the following command from the build root directory:
 ```
-tar xvf binplist-0.1.4.tra.gz
+tar xvf binplist-0.1.4.tar.gz
 cd binplist-0.1.4\
 C:\Python27\python.exe setup.py bdist_msi
 cd ..
@@ -53,6 +53,46 @@ cd ..
 This will create a MSI in the dist sub directory e.g.:
 ```
 dist\binplist-0.1.4.win32.msi
+```
+
+Install the MSI.
+
+### Construct
+Construct is dependent on six see the instructions below how to build and install six.
+
+Download the latest 2.x source package from: https://pypi.python.org/pypi/construct#downloads
+
+To build the MSI file run the following command from the build root directory:
+```
+tar xfv construct-2.5.2.tar.gz
+cd construct-2.5.2\
+C:\Python27\python.exe setup.py bdist_msi
+cd ..
+```
+
+This will create a MSI in the dist sub directory e.g.:
+```
+dist\construct-2.5.2.win32.msi
+```
+
+Install the MSI.
+
+### Six
+**TODO: describe**
+
+Download the latest 1.x source package from: https://pypi.python.org/pypi/six#downloads
+
+To build the MSI file run the following command from the build root directory:
+```
+tar xfv six-1.9.0.tar.gz
+cd C:\plaso-build\six-1.9.0\
+C:\Python27\python.exe setup.py bdist_msi
+cd ..
+```
+
+This will create a MSI in the dist sub directory e.g.:
+```
+dist\six-1.9.0.win32.msi
 ```
 
 Install the MSI.
