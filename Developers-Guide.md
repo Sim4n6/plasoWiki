@@ -43,7 +43,9 @@ To keep the code base maintainable and readable all code is developed using a si
 
 We've noticed that some people find the process of having a style guide and a code review process intimidating.
 
-**The short version:** don't be intimidated.
+**The short version:**
+
+don't be intimidated.
 
 **The longer version:**
 
