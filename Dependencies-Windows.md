@@ -7,6 +7,10 @@ For ease of maintenance the following instructions use as much MSI package files
 
 Alternative installation methods like installing directly from source, using easy_install or pip are not recommended because when not maintained correctly they can mess up your setup more easily than using MSIs.
 
+**Note that when making MSI packages, make sure the remove the previous versions before installing the newer version. It appears the Python distutil generated MSI packages don't detect and remove previous versions.**
+
+Note that easy installer does not always remove older versions, e.g. when upgrading IPython 0.13 to 1.1.
+
 ### Build essentials
 Make sure the necessary building tools and development packages are installed on the system:
 
