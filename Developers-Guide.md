@@ -15,11 +15,11 @@ The first challenge you will encounter is setting up and maintaining your develo
 * [Running the development release on Windows](https://github.com/log2timeline/plaso/wiki/Development-release-Windows)
   * [Building and installing dependencies on Windows](https://github.com/log2timeline/plaso/wiki/Dependencies---Ubuntu)
 
-## Writing code
-* [How to write a parser](https://sites.google.com/a/kiddaland.net/plaso/developer/parsers)
-
 ## Design
 * [Architecture](https://sites.google.com/a/kiddaland.net/plaso/developer/architecture)
+
+## Getting started writing code
+* [How to write a parser](https://sites.google.com/a/kiddaland.net/plaso/developer/parsers)
 
 ## Contributing
 * [Style guide](https://github.com/log2timeline/plaso/wiki/Style-guide)
