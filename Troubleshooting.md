@@ -65,7 +65,7 @@ An alternative approach is to attach a debugger to it once the program is runnin
 gdb -p PID
 ```
 
-Continue running
+Where PID is the process identifier of the program. Once the debugger is attached continue running:
 ```
 c
 ```
