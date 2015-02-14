@@ -14,6 +14,16 @@ If everything fails create a new issue on the [issue tracker](https://github.com
 * we cannot look into your thoughts or on your systems;
 * we cannot easily isolate errors if you keep changing your test environment.
 
+
+Hence please provide us with the following details:
+
+* What steps will reproduce the problem? What output did you expect? What do you see instead?
+* What version of plaso/log2timeline are you using? (use log2timeline.py -v to see)
+* On what operating system and architecture? (be specific, as in Mac OS X Mountain Lion, 10.8.2 for instance or 64-bit Windows 7)
+* Are you processing a storage media image, if so which format, a directory or on an individual file?
+* Were you able to isolate the error to a specific file? Is it possible to share the file with the developer?
+* Any additional information that could be of use e.g. build logs, error logs, debug logs, etc.
+
 **Note that the github issue tracker uses [markdown](https://help.github.com/articles/markdown-basics/)**
 
 Also see the sections below on how to troubleshoot issues of a specific nature.
