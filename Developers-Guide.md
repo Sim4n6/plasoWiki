@@ -5,11 +5,13 @@
 For the current version of the documentation see: https://sites.google.com/a/kiddaland.net/plaso/developer
 
 ## Development environment and dependencies
-* [How to build plaso from scratch](https://sites.google.com/a/kiddaland.net/plaso/developer/building-the-tool) (old)
 * [Running the development release on Ubuntu Linux](https://github.com/log2timeline/plaso/wiki/Development-release-Ubuntu)
+  * [Building and installing dependencies on Ubuntu Linux](https://github.com/log2timeline/plaso/wiki/Dependencies---Ubuntu)
 * Running the development release on Fedora Linux
 * Running the development release on Mac OS X
+  * [Building and installing dependencies on Mac OS X](https://github.com/log2timeline/plaso/wiki/Dependencies-Mac-OS-X)
 * [Running the development release on Windows](https://github.com/log2timeline/plaso/wiki/Development-release-Windows)
+  * [Building and installing dependencies on Windows](https://github.com/log2timeline/plaso/wiki/Dependencies---Ubuntu)
 
 ## Writing code
 * [How to write a parser](https://sites.google.com/a/kiddaland.net/plaso/developer/parsers)
