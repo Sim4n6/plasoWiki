@@ -115,6 +115,23 @@ dist\dpkt-1.8.win32.msi
 
 Install the MSI.
 
+### PyParsing
+Download the latest source package from: http://sourceforge.net/projects/pyparsing/files/
+
+```
+tar xfv pyparsing-2.0.3.tar.gz
+cd pyparsing-2.0.3\
+C:\Python27\python.exe setup.py bdist_msi
+cd ..
+```
+
+This will create a MSI in the dist sub directory e.g.:
+```
+dist\pyparsing-2.0.3.win32.msi
+```
+
+Install the MSI.
+
 ### Six
 Download the latest 1.x source package from: https://pypi.python.org/pypi/six#downloads
 
