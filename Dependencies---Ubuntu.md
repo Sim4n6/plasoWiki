@@ -43,6 +43,8 @@ It is impossible for us to support all flavors of Ubuntu out there, so if you wa
 
 For ease of maintenance the following instructions use as much deb package files as possible. Note that the resulting deb files are not intended for public redistribution.
 
+Alternative installation methods like installing directly from source, using easy_install or pip are not recommended because when not maintained correctly they can mess up your setup more easily than using deb packages.
+
 First create a build root directory:
 ```
 mkdir plaso-build/
