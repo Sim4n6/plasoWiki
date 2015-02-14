@@ -1,3 +1,5 @@
+**TODO: work in progress migrating from: https://sites.google.com/a/kiddaland.net/plaso/developer/building-the-tool/windows**
+
 This page contains detailed instructions on how to build and install dependencies on Windows.
 
 ## Manual build
@@ -151,5 +153,3 @@ dist\six-1.9.0.win32.msi
 ```
 
 Install the MSI.
-
-**TODO: migrate the remainder of the documentation from: https://sites.google.com/a/kiddaland.net/plaso/developer/building-the-tool/windows**
