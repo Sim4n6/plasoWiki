@@ -119,6 +119,33 @@ dist\dpkt-1.8.win32.msi
 
 Install the MSI.
 
+### Psutils
+Download the latest source package from: https://pypi.python.org/pypi/psutil
+
+To build the MSI file run the following command from the build root directory:
+```
+tar xfv psutil-2.2.1.tar.gz
+C:\Python27\python.exe setup.py bdist_msi
+cd ..
+```
+
+This will create a MSI in the dist sub directory e.g.:
+```
+dist\psutil-2.2.1.win32-py2.7.msi
+```
+
+Install the MSI.
+
+To build psutil with Visual Studio 2010 we need to run the previous commands from either the "Visual Studio Command Prompt (2010)" or "Windows SDK 7.1 Command Prompt" (or equivalent). Check if the VS100COMNTOOLS environment variable is set:
+```
+echo %VS100COMNTOOLS%
+```
+
+Then set the VS90COMNTOOLS to match VS100COMNTOOLS for setup.py to detect Visual Studio 2010 correctly:
+```
+set VS90COMNTOOLS=%VS100COMNTOOLS%
+```
+
 ### PyParsing
 Download the latest source package from: http://sourceforge.net/projects/pyparsing/files/
 
