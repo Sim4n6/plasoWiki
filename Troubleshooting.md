@@ -10,7 +10,7 @@ This page contains instructions that can be used to assist you in debugging pote
 
 If everything fails create a new issue on the [issue tracker](https://github.com/log2timeline/plaso/issues). Please provide as much detailed information as possible, keep in mind that:
 
-* we cannot fix error based on vague descriptions;
+* we cannot fix errors based on vague descriptions;
 * we cannot look into your thoughts or on your systems;
 * we cannot easily isolate errors if you keep changing your test environment.
 
