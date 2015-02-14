@@ -77,6 +77,44 @@ dist\construct-2.5.2.win32.msi
 
 Install the MSI.
 
+### dfVFS
+The dfVFS build instructions can be found [here](https://github.com/log2timeline/dfvfs/wiki/Building). Note that for dfVFS to function correctly several dependencies, like pytsk, mentioned later in a section of this page, are required.
+
+Download the latest source package from: https://github.com/log2timeline/dfvfs/releases
+
+To build the MSI file run the following command from the build root directory:
+```
+tar xfv dfvfs-20150129.tar.gz
+cd dfvfs\
+C:\Python27\python.exe setup.py bdist_msi
+cd ..
+```
+
+This will create a MSI in the dist sub directory e.g.:
+```
+dist\dfvfs-20150129.win32.msi
+```
+
+Install the MSI.
+
+### DPKT
+Download the latest source package from: https://code.google.com/p/dpkt/downloads/list
+
+To build the MSI file run the following command from the build root directory:
+```
+tar xfv dpkt-1.8.tar.gz
+cd dpkt\
+C:\Python27\python.exe setup.py bdist_msi
+cd ..
+```
+
+This will create a MSI in the dist sub directory e.g.:
+```
+dist\dpkt-1.8.win32.msi
+```
+
+Install the MSI.
+
 ### Six
 Download the latest 1.x source package from: https://pypi.python.org/pypi/six#downloads
 
