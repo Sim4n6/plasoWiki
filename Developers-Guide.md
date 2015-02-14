@@ -1,10 +1,12 @@
-**Note that plaso and some dependencies are actively under development keeping up with the development release is not for "the faint of heart".**
-
 **This page is work in progress.**
 
 For the current version of the documentation see: https://sites.google.com/a/kiddaland.net/plaso/developer
 
-## Development environment and dependencies
+## Setting up and maintaining your development environment
+The first challenge you will encounter is setting up and maintaining your development environment.
+
+**Note that plaso and some dependencies are currently actively under development keeping up with the development release is not for "the faint of heart".**
+
 * [Running the development release on Ubuntu Linux](https://github.com/log2timeline/plaso/wiki/Development-release-Ubuntu)
   * [Building and installing dependencies on Ubuntu Linux](https://github.com/log2timeline/plaso/wiki/Dependencies---Ubuntu)
 * Running the development release on Fedora Linux
