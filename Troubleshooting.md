@@ -41,7 +41,7 @@ Also try running in single process mode this will bypass any issues with multi p
 In the context of plaso crashes and tracebacks have different meanings:
 
 * crash; an error that causes an abrupt termination of the program you were running
-* traceback; the "stack trace" (in the broadest sense of the term) of an error that was caught by an exception handler that can cause a termination of the program you were running
+* traceback; the back trace of an error that was caught by an exception handler that can cause a termination of the program you were running
 
 ### Analyzing crashes with gdb
 Once you've isolated the file that causes the crash and you cannot share the file you can generate a back trace that can help us fix the error.
