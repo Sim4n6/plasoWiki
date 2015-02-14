@@ -78,8 +78,6 @@ dist\construct-2.5.2.win32.msi
 Install the MSI.
 
 ### Six
-**TODO: describe**
-
 Download the latest 1.x source package from: https://pypi.python.org/pypi/six#downloads
 
 To build the MSI file run the following command from the build root directory:
