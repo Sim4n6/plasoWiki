@@ -60,6 +60,18 @@ bt
 
 Note that often the first 10 lines of the back trace are sufficient information.
 
+An alternative approach is to attach a debugger to it once the program is running:
+```
+gdb -p PID
+```
+
+Continue running
+```
+c
+```
+
+Wait until the crash occurs and generate a back trace.
+
 ## High memory usage
 Plaso consists of various components. It can happen that one of these components uses a lot of memory or even leaks memory. In these cases it is important to isolate the error, see before, to track down what the possible culprit is.
 
