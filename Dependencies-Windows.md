@@ -119,6 +119,23 @@ dist\dpkt-1.8.win32.msi
 
 Install the MSI.
 
+### Libyaml and Python-bindings
+Download the latest source package from: http://pyyaml.org/wiki/PyYAML
+
+```
+tar xfv PyYAML-3.11.tar.gz
+cd PyYAML-3.10\
+C:\Python27\python.exe setup.py bdist_msi
+cd ..
+```
+
+This will create a MSI in the dist sub directory e.g.:
+```
+dist\PyYAML-3.10.win32.msi
+```
+
+Install the MSI.
+
 ### Psutils
 Download the latest source package from: https://pypi.python.org/pypi/psutil
 
