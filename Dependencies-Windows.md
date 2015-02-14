@@ -2,6 +2,14 @@
 
 This page contains detailed instructions on how to build and install dependencies on Windows.
 
+There are multiple ways to install the dependencies on Windows:
+
+* Using the [log2timeline devtools](https://github.com/log2timeline/devtools) to batch build most of the dependencies;
+* Manual build of the dependencies.
+
+## Batch build
+**TODO describe**
+
 ## Manual build
 For ease of maintenance the following instructions use as much MSI package files as possible via "Programs and Features". Note that the resulting MSI files are not intended for public redistribution.
 
