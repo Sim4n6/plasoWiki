@@ -5,7 +5,12 @@ Checkout the plaso source from the git repo:
 git clone https://github.com/log2timeline/plaso.git
 ```
 
-**If you intend to submit code make sure to configure git to use convert to the Unix-style end-of-line characters (linefeed) on submission and not have the Windows-style end-of-line characters (carriage return + linefeed).**
+**If you intend to submit code make sure to configure git to use convert to the Unix-style end-of-line characters (linefeed) on submission and not have the Windows-style end-of-line characters (carriage return + linefeed).** 
+
+We recommend turning off git's autocrlf and configure your editor of choice to use linefeed only:
+```
+git config --global core.autocrlf false
+```
 
 To be able to run the plaso [development release](https://github.com/log2timeline/plaso/wiki/Releases-and-roadmap) on Windows you'll have to have installed the [dependencies](https://github.com/log2timeline/plaso/wiki/Dependencies-Windows).
 
