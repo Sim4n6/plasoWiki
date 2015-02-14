@@ -2,6 +2,14 @@
 
 For the current version of the documentation see: https://sites.google.com/a/kiddaland.net/plaso/developer
 
+## Design
+* [Architecture](https://sites.google.com/a/kiddaland.net/plaso/developer/architecture)
+
+### Roadmap
+A read-only version of the roadmap document can be found here: [Plaso - Roadmap and Assignment](http://goo.gl/cRjA7y). The roadmap document displays the current status, who's working on the parser, etc.
+
+**Note that this is a general wish list, that may not be completely up-to-date.**
+
 ## Setting up and maintaining your development environment
 The first challenge you will encounter is setting up and maintaining your development environment.
 
@@ -15,13 +23,14 @@ The first challenge you will encounter is setting up and maintaining your develo
 * [Running the development release on Windows](https://github.com/log2timeline/plaso/wiki/Development-release-Windows)
   * [Building and installing dependencies on Windows](https://github.com/log2timeline/plaso/wiki/Dependencies---Ubuntu)
 
-## Design
-* [Architecture](https://sites.google.com/a/kiddaland.net/plaso/developer/architecture)
-
 ## Getting started writing code
 * [How to write a parser](https://sites.google.com/a/kiddaland.net/plaso/developer/parsers)
 
 ## Contributing
+Want to add a parser to plaso and you are ready to go you can just go ahead and edit: [Plaso - Roadmap and Assignment](http://goo.gl/IIs4HM) and assign the task of writing a new parser to yourself. Please add a date so we can reassign if it turns out you don't have time.
+
+If you cannot program and still have a great idea for a feature please go ahead and edit, note that the priority will be who ever wants to work on it. Or consider this the idea opportunity to learn yourself Python programming.
+
 * [Style guide](https://github.com/log2timeline/plaso/wiki/Style-guide)
 * Code review
 
@@ -49,15 +58,6 @@ First time contributors may come across the fact that the code review process ac
 Therefore we would like to ask people to hang on, to get through the code review process and try to learn something while going through it. Rest assured, it will get easier next time and even easier the time after that, and before you know it you can contribute code to the project with little to no comments.
 
 And if things are unclear, don't hesitate to ask. The developer mailing list is: log2timeline-dev@googlegroups.com
-
-### Roadmap
-A read-only version of the roadmap document can be found here: [Plaso - Roadmap and Assignment](http://goo.gl/cRjA7y). The roadmap document displays the current status, who's working on the parser, etc.
-
-**Note that this is a general wish list, that may not be completely up-to-date.**
-
-If you are in the developers group and want to add a parser you can just go ahead and edit: [Plaso - Roadmap and Assignment](http://goo.gl/IIs4HM) and assign it to yourself, please add a date so we can reassign if you don't have time. If you cannot program and still have a great idea for a feature please go ahead and edit, note that the priority will be who ever wants to work on it.
-
-**TODO: add more text**
 
 ### Submitting code
 There can be a code freeze announced before a release, in which we try to focus on testing and bug fixes. In such a freeze, new features will added to the codebase after the release.
