@@ -21,7 +21,7 @@ First create a build root directory:
 C:\plaso-build\
 ```
 
-If you are not familiar with extracting a tar on Windows see: [How to unpack a tar file in Windows](https://wiki.haskell.org/How_to_unpack_a_tar_file_in_Windows)
+If you are not familiar with extracting tar files on Windows see: [How to unpack a tar file in Windows](https://wiki.haskell.org/How_to_unpack_a_tar_file_in_Windows)
 
 ### Bencode
 Download the latest source package from: https://pypi.python.org/pypi/bencode
