@@ -20,11 +20,17 @@ To update plaso:
 git pull origin master
 ```
 
-If you are using a "github fork" make sure your remote settings are correct:
+If you are using a "github fork" your origin is pointing your fork not the main plaso git repo:
 ```
 git remote -v
 origin	https://github.com/log2timeline/plaso (fetch)
 origin	https://github.com/log2timeline/plaso (push)
+```
+
+Add an upstream remote that you can use to sync your fork:
+```
+git remote add upstream https://github.com/log2timeline/plaso.git
+git pull upstream master
 ```
 
 **TODO: add note and link to devtools about maintaining dependencies.**
