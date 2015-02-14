@@ -1,3 +1,8 @@
+To download the latest version of Plaso you'll need to install the git tools:
+```
+sudo apt-get install git
+```
+
 Checkout the plaso source from the git repo:
 ```
 git clone https://github.com/log2timeline/plaso.git
