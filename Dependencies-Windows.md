@@ -430,6 +430,30 @@ The build and install Sleuthkit and Pytsk see:
 * https://github.com/py4n6/pytsk/wiki/Building-SleuthKit
 * https://github.com/py4n6/pytsk/wiki/Building
 
+### SQLite
+Plaso requires at least sqlite3 version 3.7.8. By default Python 2.7 comes with a far older version that cannot handle newer FireFox sqlite3 database files.
+
+Download the latest source package from: http://www.sqlite.org/download.html
+E.g. sqlite-amalgamation-3080100.zip
+
+Extract the source package in the build root directory.
+
+Download the [sqlite3 Visual Studio 2008 solution files](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/3rd%20party/build-files/sqlite3-vs2008.zip).
+
+Extract the sqlite3 Visual Studio 2008 solution files in the sqlite-amalgamation source directory.
+
+Open the Microsoft Visual Studio 2008 solution file:
+```
+C:\plaso-build\sqlite-amalgamation-3080100\msvscpp\sqlite3.sln
+```
+
+Build the solution.
+
+If the build is successful copy the SQLite DLL to your Python installation:
+```
+copy C:\plaso-build\sqlite-amalgamation-3080100\msvscpp\Release\sqlite3.dll C:\Python27\DLLs\
+```
+
 ### Microsoft Visual Studio 2010 express and 64-bit compilation
 
 Enabling 64-bit compilation support on the express version of Microsoft Visual Studio 2010 can be a tedious process. Below are some related links:
