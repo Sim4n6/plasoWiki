@@ -40,7 +40,7 @@ If you are not familiar with extracting tar files on Windows see: [How to unpack
 ### Bencode
 Download the latest source package from: https://pypi.python.org/pypi/bencode
 
-To build the MSI file run the following command from the build root directory:
+To build the MSI file run the following commands from the build root directory:
 ```
 tar xvf bencode-1.0.tar.gz
 cd bencode-1.0\
@@ -58,7 +58,7 @@ Install the MSI.
 ### Binplist
 Download the latest source package from: https://code.google.com/p/binplist/downloads/list
 
-To build the MSI file run the following command from the build root directory:
+To build the MSI file run the following commands from the build root directory:
 ```
 tar xvf binplist-0.1.4.tar.gz
 cd binplist-0.1.4\
@@ -78,7 +78,7 @@ Construct is dependent on six see the instructions below how to build and instal
 
 Download the latest 2.x source package from: https://pypi.python.org/pypi/construct#downloads
 
-To build the MSI file run the following command from the build root directory:
+To build the MSI file run the following commands from the build root directory:
 ```
 tar xfv construct-2.5.2.tar.gz
 cd construct-2.5.2\
@@ -98,7 +98,7 @@ The dfVFS build instructions can be found [here](https://github.com/log2timeline
 
 Download the latest source package from: https://github.com/log2timeline/dfvfs/releases
 
-To build the MSI file run the following command from the build root directory:
+To build the MSI file run the following commands from the build root directory:
 ```
 tar xfv dfvfs-20150129.tar.gz
 cd dfvfs\
@@ -116,7 +116,7 @@ Install the MSI.
 ### DPKT
 Download the latest source package from: https://code.google.com/p/dpkt/downloads/list
 
-To build the MSI file run the following command from the build root directory:
+To build the MSI file run the following commands from the build root directory:
 ```
 tar xfv dpkt-1.8.tar.gz
 cd dpkt\
@@ -131,6 +131,35 @@ dist\dpkt-1.8.win32.msi
 
 Install the MSI.
 
+### Hachoir
+Download the latest source package from: https://bitbucket.org/haypo/hachoir/wiki/Install/source
+
+You'll need:
+
+* hachoir-core-1.3.3.tar.gz
+* hachoir-parser-1.3.4.tar.gz
+* hachoir-metadata-1.3.3.tar.gz
+
+To build the MSI files run the following commands from the build root directory:
+
+```
+tar xfv hachoir-core-1.3.3.tar.gz
+cd hachoir-core-1.3.3\
+C:\Python27\python.exe setup.py bdist_msi
+cd ..
+```
+
+```
+tar xfv hachoir-parser-1.3.4.tar.gz
+cd hachoir-parser-1.3.4\
+C:\Python27\python.exe setup.py bdist_msi
+cd ..
+```
+
+```
+cd C:\plaso-build\hachoir-metadata-1.3.3\
+C:\Python27\python.exe setup.py build
+C:\Python27\python.exe setup.py install
 ### Libyaml and Python-bindings
 Download the latest source package from: http://pyyaml.org/wiki/PyYAML
 
@@ -151,7 +180,7 @@ Install the MSI.
 ### Psutils
 Download the latest source package from: https://pypi.python.org/pypi/psutil
 
-To build the MSI file run the following command from the build root directory:
+To build the MSI file run the following commands from the build root directory:
 ```
 tar xfv psutil-2.2.1.tar.gz
 C:\Python27\python.exe setup.py bdist_msi
@@ -195,7 +224,7 @@ Install the MSI.
 ### Six
 Download the latest 1.x source package from: https://pypi.python.org/pypi/six#downloads
 
-To build the MSI file run the following command from the build root directory:
+To build the MSI file run the following commands from the build root directory:
 ```
 tar xfv six-1.9.0.tar.gz
 cd C:\plaso-build\six-1.9.0\
