@@ -5,9 +5,17 @@ There are multiple ways to install the dependencies on Fedora Core:
 * Using the [log2timeline devtools](https://github.com/log2timeline/devtools) to batch build most of the dependencies;
 * Manual build of the dependencies.
 
-
 ## Batch build
-**TODO describe**
+**TODO migrate this to log2timeline devtools**
+
+First set up a working build environment.
+
+**TODO: describe.**
+
+To have the build_dependencies script build the rpm package files run:
+```
+C:\Python27\python.exe utils\build_dependencies.py rpm
+```
 
 ## Manual build
 It is impossible for us to support all flavors of Fedora Core out there, so if you want smooth sailing, we recommend sticking with the supported version or live with the fact that a manual build of the dependencies can be a tedious task.
