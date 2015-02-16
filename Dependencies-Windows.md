@@ -297,3 +297,22 @@ dist\six-1.9.0.win32.msi
 ```
 
 Install the MSI.
+
+### Microsoft Visual Studio 2010 express and 64-bit compilation
+
+Enabling 64-bit compilation support on the express version of Microsoft Visual Studio 2010 can be a tedious process. Below are some related links:
+
+* http://msdn.microsoft.com/en-us/library/vstudio/9yb4317s(v=vs.100).aspx
+* http://support.microsoft.com/kb/2519277
+
+If you have set it up correctly the following should work:
+```
+Go to: "Configuration manager -> Active solution platform"
+Select "<New>"
+
+Type or select the new platform: "x64"
+Copy settings from: "Win32"
+Create new project platforms: enabled
+
+For every project "Configuration Properties -> General -> Platform Toolset" = "Windows7.1SDK"
+```
