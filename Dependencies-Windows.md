@@ -200,7 +200,7 @@ Change the solution configuration to "Release".
 
 Build the entire solution or at minimum the protoc project.
 
-For a Visual Studio 2010 64-bit build see the section about [Microsoft Visual Studio 2010 express and 64-bit compilation](https://github.com/log2timeline/plaso/wiki/Dependencies-Windows#microsoft-visual-studio-2010-express-and-64-bit-compilation).
+For information on how to create a 64-bit build on Visual Studio 2010 express also see the section about [Microsoft Visual Studio 2010 express and 64-bit compilation](https://github.com/log2timeline/plaso/wiki/Dependencies-Windows#microsoft-visual-studio-2010-express-and-64-bit-compilation).
 
 To build the MSI file run the following commands from the build root directory:
 ```
@@ -215,6 +215,70 @@ dist\protobuf-2.5.0.win32.msi
 ```
 
 **TODO: check MSI name.**
+
+Install the MSI.
+
+### libyal
+The following instructions apply to the following dependencies:
+
+* [libbde](https://github.com/libyal/libbde)
+* [libesedb](https://github.com/libyal/libesedb)
+* [libevt](https://github.com/libyal/libevt)
+* [libevtx](https://github.com/libyal/libevtx)
+* [libewf](https://github.com/libyal/libewf)
+* [libfwsi](https://github.com/libyal/libfwsi)
+* [liblnk](https://github.com/libyal/liblnk)
+* [libmsiecf](https://github.com/libyal/libmsiecf)
+* [libolecf](https://github.com/libyal/libolecf)
+* [libqcow](https://github.com/libyal/libqcow)
+* [libregf](https://github.com/libyal/libregf)
+* [libsigscan](https://github.com/libyal/libsigscan)
+* [libsmdev](https://github.com/libyal/libsmdev)
+* [libsmraw](https://github.com/libyal/libsmraw)
+* [libvhdi](https://github.com/libyal/libvhdi)
+* [libvmdk](https://github.com/libyal/libvmdk)
+* [libvshadow](https://github.com/libyal/libvshadow)
+
+Install the following dependencies for building libyal:
+
+* zlib
+* bzip2
+* dokan
+
+**TODO: describe building dependencies.**
+
+Since the build process for the libyal libraries is very similar, the following paragraph provides building libevt as an example. For more details see the build instructions of the individual projects e.g. https://github.com/libyal/libevt/wiki/Building.
+
+Note that there is also a script to batch build the libyal dependencies more information here: https://code.google.com/p/libyal/wiki/LibyalBuild
+
+#### Example: libevt and Python-bindings
+Download the latest source package from: https://github.com/libyal/libevt/releases
+
+Extract the source package:
+```
+tar xfv libevt-alpha-20131013.tar.gz
+```
+
+Open the Microsoft Visual Studio 2008 solution file:
+```
+C:\plaso-build\libevt-20131013\msvcspp\libevt.sln
+```
+
+Build the solution.
+
+For information on how to create a 64-bit build on Visual Studio 2010 express also see the section about [Microsoft Visual Studio 2010 express and 64-bit compilation](https://github.com/log2timeline/plaso/wiki/Dependencies-Windows#microsoft-visual-studio-2010-express-and-64-bit-compilation).
+
+To build the MSI file run the following commands from the build root directory:
+```
+cd libevt-20131013\pyevt\
+C:\Python27\python.exe setup.py bdist_msi
+cd ..\..
+```
+
+This will create a MSI in the dist sub directory e.g.:
+```
+dist\pyevt-20131013.1.win32-py2.7.msi
+```
 
 Install the MSI.
 
