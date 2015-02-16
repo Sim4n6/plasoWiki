@@ -508,6 +508,7 @@ If the build is successful copy the SQLite DLL to your Python installation:
 copy C:\plaso-build\sqlite-amalgamation-3080100\msvscpp\Release\sqlite3.dll C:\Python27\DLLs\
 ```
 
+## Additional information
 ### Microsoft Visual Studio 2010 express and 64-bit compilation
 
 Enabling 64-bit compilation support on the express version of Microsoft Visual Studio 2010 can be a tedious process. Below are some related links:
