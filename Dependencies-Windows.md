@@ -201,7 +201,7 @@ Change the solution configuration to "Release".
 
 Build the entire solution or at minimum the protoc project.
 
-For a Visual Studio 2010 64-bit build see the section about [Microsoft Visual Studio 2010 express and 64-bit compilation](https://sites.google.com/a/kiddaland.net/plaso/developer/building-the-tool/windows).
+For a Visual Studio 2010 64-bit build see the section about [Microsoft Visual Studio 2010 express and 64-bit compilation](https://github.com/log2timeline/plaso/wiki/Dependencies-Windows#microsoft-visual-studio-2010-express-and-64-bit-compilation).
 
 To build the MSI file run the following commands from the build root directory:
 ```
