@@ -156,6 +156,8 @@ To install IPython run:
 sudo apt-get install ipython
 ```
 
+For information on how to build IPython from source see: http://ipython.org/ipython-doc/stable/install/install.html
+
 ### Libprotobuf and Python-bindings
 To install libprotobuf and Python-bindings run:
 ```
