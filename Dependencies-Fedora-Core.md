@@ -17,6 +17,8 @@ To have the build_dependencies script build the rpm package files run:
 C:\Python27\python.exe utils\build_dependencies.py rpm
 ```
 
+**Note that the build dependencies script is currently still work in progress, but it will build most of the dependencies.**
+
 ## Manual build
 It is impossible for us to support all flavors of Fedora Core out there, so if you want smooth sailing, we recommend sticking with the supported version or live with the fact that a manual build of the dependencies can be a tedious task.
 
