@@ -35,3 +35,26 @@ Next make sure your installation is up to date:
 ```
 sudo yum update
 ```
+### Build essentials
+Make sure the necessary building tools and development packages are installed on the system:
+```
+sudo yum groupinstall "Development Tools"
+sudo yum install gcc-c++ python-devel python-setuptools rpm-build git mercurial
+```
+
+**TODO: move to separate section.***
+```
+sudo yum install python-dateutil
+```
+
+**TODO: move to libyal section.***
+
+For some of the dependent packages you also require:
+```
+sudo yum install flex byacc zlib-devel bzip2-devel openssl-devel fuse-devel
+```
+
+For ease of maintenance we create/use as much package files as possible.
+
+First create a build root directory:
+mkdir plaso-build/
