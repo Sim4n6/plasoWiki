@@ -1,5 +1,3 @@
-**TODO: work in progress migrating from: https://sites.google.com/a/kiddaland.net/plaso/developer/building-the-tool/windows**
-
 This page contains detailed instructions on how to build and install dependencies on Windows.
 
 There are multiple ways to install the dependencies on Windows:
