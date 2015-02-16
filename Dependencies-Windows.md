@@ -399,6 +399,12 @@ dist\six-1.9.0.win32.msi
 
 Install the MSI.
 
+### Sleuthkit and Pytsk
+The build and install Sleuthkit and Pytsk see:
+
+* https://github.com/py4n6/pytsk/wiki/Building-SleuthKit
+* https://github.com/py4n6/pytsk/wiki/Building
+
 ### Microsoft Visual Studio 2010 express and 64-bit compilation
 
 Enabling 64-bit compilation support on the express version of Microsoft Visual Studio 2010 can be a tedious process. Below are some related links:
