@@ -35,6 +35,7 @@ Next make sure your installation is up to date:
 ```
 sudo yum update
 ```
+
 ### Build essentials
 Make sure the necessary building tools and development packages are installed on the system:
 ```
@@ -55,7 +56,34 @@ For some of the dependent packages you also require:
 sudo yum install flex byacc zlib-devel bzip2-devel openssl-devel fuse-devel
 ```
 
-For ease of maintenance we create/use as much package files as possible.
+### Bencode
+Download the latest source package from: https://pypi.python.org/pypi/bencode
 
-First create a build root directory:
-mkdir plaso-build/
+To build rpm files run the following command from the build root directory:
+```
+tar xvf bencode-1.0.tar.gz 
+cd bencode-1.0/
+python setup.py bdist_rpm
+cd ..
+```
+
+To install the required rpm files run:
+```
+sudo yum install bencode-1.0/dist/bencode-1.0-1.noarch.rpm
+```
+
+### Binplist
+Download the latest source package from: https://code.google.com/p/binplist/downloads/list
+
+To build rpm files run the following command from the build root directory:
+```
+tar xvf binplist-0.1.4.tar.gz 
+cd binplist-0.1.4/
+python setup.py bdist_rpm
+cd ..
+```
+
+To install the required rpm files run:
+```
+sudo yum install binplist-0.1.4/dist/binplist-0.1.4-1.noarch.rpm
+```
