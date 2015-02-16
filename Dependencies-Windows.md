@@ -367,6 +367,30 @@ dist\pyparsing-2.0.3.win32.msi
 
 Install the MSI.
 
+### pysqlite
+By default Python 2.7 comes with pysqlite 2.6.0 which works fine in combination with sqlite3 version 3.7.8.
+
+Follow the instructions below if you wish to update pysqlite to a newer version.
+
+Download the latest source package from: https://pypi.python.org/pypi/pysqlite
+
+**TODO: describe what changes are necessary to get this working, DLL import and find the sqlite3.h include header.**
+
+To build the MSI file run the following commands from the build root directory:
+```
+tar xfv pysqlite-2.6.3.tar.gz
+cd pysqlite-2.6.3\
+C:\Python27\python.exe setup.py bdist_msi
+cd ..
+```
+
+This will create a MSI in the dist sub directory e.g.:
+```
+dist\pysqlite-2.6.3.win32.msi
+```
+
+Install the MSI.
+
 ### Python-dateutil
 Download the latest source package from: https://pypi.python.org/pypi/python-dateutil/
 
