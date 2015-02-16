@@ -349,6 +349,26 @@ Then set the VS90COMNTOOLS to match VS100COMNTOOLS for setup.py to detect Visual
 set VS90COMNTOOLS=%VS100COMNTOOLS%
 ```
 
+### PyElasticsearch
+**Note that this dependency is optional.**
+
+To have plaso support elastic search output it needs pyelasticsearch. 
+
+To build the MSI file run the following commands from the build root directory:
+```
+tar xfv pyelasticsearch-1.0.tar.gz
+cd pyelasticsearch-1.0\
+C:\Python27\python.exe setup.py bdist_msi
+cd ..
+```
+
+This will create a MSI in the dist sub directory e.g.:
+```
+dist\pyelasticsearch-1.0.win32.msi
+```
+
+Install the MSI.
+
 ### PyParsing
 Download the latest source package from: http://sourceforge.net/projects/pyparsing/files/
 
