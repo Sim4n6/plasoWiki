@@ -63,7 +63,27 @@ sudo apt-get install build-essential autotools-dev libsqlite3-dev python-dev deb
 ```
 
 ### Bencode
-**TODO describe**
+Download the 1.0 version from Download the latest source package from: https://pypi.python.org/pypi/bencode and the [Debian packaging files](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/3rd%20party/build-files/deprecated/bencode-1.0-dpkg.tar.gz).
+
+To build deb files run the following command from the build root directory:
+```
+tar zxfv bencode-1.0.tar.gz
+cd bencode-1.0/
+tar zxfv ../bencode-1.0-dpkg.tar.gz
+cp -rf dpkg debian
+dpkg-buildpackage -rfakeroot
+cd ..
+```
+
+This will create the following files in the build root directory:
+```
+python-bencode_1.0-1_all.deb
+```
+
+To install the required deb files run:
+```
+sudo dpkg -i python-bencode_1.0-1_all.deb
+```
 
 ### binplist
 Download the latest source package from: https://code.google.com/p/binplist/downloads/list
@@ -95,13 +115,13 @@ Install the following dependencies for building construct:
 sudo apt-get install python-six
 ```
 
-Download the 2.5.2 version from http://construct.readthedocs.org/en/latest/ and the [Debian packaging files](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/3rd%20party/build-files/deprecated/python-construct-2.5.2-dpkg.tar.gz).
+Download the 2.5.2 version from http://construct.readthedocs.org/en/latest/ and the [Debian packaging files](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/3rd%20party/build-files/deprecated/construct-2.5.2-dpkg.tar.gz).
 
 To build deb files run the following command from the build root directory:
 ```
 tar zxfv construct-2.5.2.tar.gz
 cd construct-2.5.2/
-tar zxfv ../python-construct-2.5.2-dpkg.tar.gz
+tar zxfv ../construct-2.5.2-dpkg.tar.gz
 cp -rf dpkg debian
 dpkg-buildpackage -rfakeroot
 cd ..
