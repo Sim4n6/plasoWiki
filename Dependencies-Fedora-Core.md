@@ -87,3 +87,26 @@ To install the required rpm files run:
 ```
 sudo yum install binplist-0.1.4/dist/binplist-0.1.4-1.noarch.rpm
 ```
+
+### Construct
+Install the following dependencies for building construct:
+```
+sudo yum install python-six
+```
+
+Download the latest 2.x source package from: http://construct.readthedocs.org/en/latest
+
+To build rpm files run the following command from the build root directory:
+```
+tar xvf construct-2.5.2.tar.gz 
+cd construct-2.5.2/
+python setup.py bdist_rpm
+cd ..
+```
+
+To install the required rpm files run:
+```
+sudo yum install construct-2.5.2/dist/construct-2.5.2-1.noarch.rpm
+```
+
+**Note if this package could conflict with Fedora distribute version of construct.**
