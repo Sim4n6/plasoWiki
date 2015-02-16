@@ -149,6 +149,13 @@ C:\Python27\python.exe setup.py bdist_msi
 cd ..
 ```
 
+This will create a MSI in the dist sub directory e.g.:
+```
+dist\hachoir-core-1.3.3.win32.msi
+```
+
+Install the MSI.
+
 ```
 tar xfv hachoir-parser-1.3.4.tar.gz
 cd hachoir-parser-1.3.4\
@@ -156,10 +163,26 @@ C:\Python27\python.exe setup.py bdist_msi
 cd ..
 ```
 
+This will create a MSI in the dist sub directory e.g.:
 ```
-cd C:\plaso-build\hachoir-metadata-1.3.3\
-C:\Python27\python.exe setup.py build
-C:\Python27\python.exe setup.py install
+dist\hachoir-parser-1.3.4.win32.msi
+```
+
+Install the MSI.
+
+```
+tar xfv hachoir-metadata-1.3.3.tar.gz
+cd hachoir-metadata-1.3.3\
+C:\Python27\python.exe setup.py bdist_msi
+cd ...
+```
+
+This will create a MSI in the dist sub directory e.g.:
+```
+dist\hachoir-metadata-1.3.3.win32.msi
+```
+
+Install the MSI.
 ### Libyaml and Python-bindings
 Download the latest source package from: http://pyyaml.org/wiki/PyYAML
 
