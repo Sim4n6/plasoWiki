@@ -141,7 +141,6 @@ You'll need:
 * hachoir-metadata-1.3.3.tar.gz
 
 To build the MSI files run the following commands from the build root directory:
-
 ```
 tar xfv hachoir-core-1.3.3.tar.gz
 cd hachoir-core-1.3.3\
@@ -222,6 +221,7 @@ Install the MSI.
 ### Libyaml and Python-bindings
 Download the latest source package from: http://pyyaml.org/wiki/PyYAML
 
+To build the MSI file run the following commands from the build root directory:
 ```
 tar xfv PyYAML-3.11.tar.gz
 cd PyYAML-3.10\
@@ -266,6 +266,7 @@ set VS90COMNTOOLS=%VS100COMNTOOLS%
 ### PyParsing
 Download the latest source package from: http://sourceforge.net/projects/pyparsing/files/
 
+To build the MSI file run the following commands from the build root directory:
 ```
 tar xfv pyparsing-2.0.3.tar.gz
 cd pyparsing-2.0.3\
@@ -276,6 +277,24 @@ cd ..
 This will create a MSI in the dist sub directory e.g.:
 ```
 dist\pyparsing-2.0.3.win32.msi
+```
+
+Install the MSI.
+
+### Python-dateutil
+Download the latest source package from: https://pypi.python.org/pypi/python-dateutil/
+
+To build the MSI file run the following commands from the build root directory:
+```
+tar xfv python-dateutil-2.4.0.tar.gz
+cd C:\plaso-build\python-dateutil-2.4.0\
+C:\Python27\python.exe setup.py bdist_msi
+cd ..
+```
+
+This will create a MSI in the dist sub directory e.g.:
+```
+dist\python-dateutil-2.4.0.win32.msi
 ```
 
 Install the MSI.
