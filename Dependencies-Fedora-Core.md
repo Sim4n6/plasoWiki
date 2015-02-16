@@ -110,3 +110,21 @@ sudo yum install construct-2.5.2/dist/construct-2.5.2-1.noarch.rpm
 ```
 
 **Note if this package could conflict with Fedora distribute version of construct.**
+
+### dfVFS
+The dfVFS build instructions can be found [here](https://github.com/log2timeline/dfvfs/wiki/Building). Note that for dfVFS to function correctly several dependencies, like pytsk, mentioned later in a section of this page, are required.
+
+Download the latest source package from: https://github.com/log2timeline/dfvfs/releases
+
+To build rpm files run the following command from the build root directory:
+```
+tar xvf dfvfs-20140219.tar.gz 
+cd dfvfs-20140219/
+python setup.py bdist_rpm
+cd ..
+```
+
+To install the required rpm files run:
+```
+sudo rpm -ivh dfvfs-20140219/dist/dfvfs-20140219-1.noarch.rpm
+```
