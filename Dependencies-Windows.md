@@ -131,6 +131,28 @@ dist\dpkt-1.8.win32.msi
 
 Install the MSI.
 
+### IPython
+**Note the MSI packaging for IPython seems to be broken! E.g. the files in scripts/ directory are missing .py extensions.**
+
+Download the latest 1.x source package from: https://github.com/ipython/ipython/releases
+
+To build the MSI file run the following commands from the build root directory:
+```
+tar xfv ipython-1.2.1.tra.gz
+cd ipython-1.2.1\
+C:\Python27\python.exe setup.py bdist_msi
+cd ..
+```
+
+This will create a MSI in the dist sub directory e.g.:
+```
+dist\ipython-1.2.1.win32.msi
+```
+
+Install the MSI.
+
+For information on how to build IPython from source see: http://ipython.org/ipython-doc/stable/install/install.html
+
 ### Hachoir
 Download the latest source package from: https://bitbucket.org/haypo/hachoir/wiki/Install/source
 
@@ -380,6 +402,9 @@ dist\pytz-2014.10.win32.msi
 ```
 
 Install the MSI.
+
+### pywin32
+Download the latest installer from: http://sourceforge.net/projects/pywin32/files/pywin32/
 
 ### Six
 Download the latest 1.x source package from: https://pypi.python.org/pypi/six#downloads
