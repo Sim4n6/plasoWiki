@@ -150,6 +150,12 @@ To install hachoir run:
 sudo apt-get install python-hachoir-core python-hachoir-metadata python-hachoir-parser
 ```
 
+### IPython
+To install IPython run:
+```
+sudo apt-get install ipython
+```
+
 ### Libprotobuf and Python-bindings
 To install libprotobuf and Python-bindings run:
 ```
@@ -219,12 +225,6 @@ To install libyaml and Python-bindings run:
 sudo apt-get install libyaml-0-2 python-yaml
 ```
 
-### Sleuthkit and Pytsk
-The build and install Sleuthkit and Pytsk see:
-
-* https://github.com/py4n6/pytsk/wiki/Building-SleuthKit
-* https://github.com/py4n6/pytsk/wiki/Building
-
 ### psutil
 To install psutil run:
 ```
@@ -272,8 +272,8 @@ To install pytz run:
 sudo apt-get install python-tz
 ```
 
-### IPython
-To install IPython run:
-```
-sudo apt-get install ipython
-```
+### Sleuthkit and Pytsk
+The build and install Sleuthkit and Pytsk see:
+
+* https://github.com/py4n6/pytsk/wiki/Building-SleuthKit
+* https://github.com/py4n6/pytsk/wiki/Building
