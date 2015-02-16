@@ -151,7 +151,9 @@ sudo dpkg -i python-construct_2.5.2-1_all.deb
 ### dfVFS
 The dfVFS build instructions can be found [here](https://github.com/log2timeline/dfvfs/wiki/Building). Note that for dfVFS to function correctly several dependencies, like pytsk, mentioned later in a section of this page, are required.
 
-To install dfVFS download the source package from the downloads page.
+Download the latest source package from: https://github.com/log2timeline/dfvfs/releases
+
+To build deb files run the following command from the build root directory:
 ```
 tar xvf dfvfs-20140219.tar.gz 
 cd dfvfs-20140219/
