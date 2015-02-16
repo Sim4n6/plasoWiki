@@ -434,6 +434,7 @@ The build and install Sleuthkit and Pytsk see:
 Plaso requires at least sqlite3 version 3.7.8. By default Python 2.7 comes with a far older version that cannot handle newer FireFox sqlite3 database files.
 
 Download the latest source package from: http://www.sqlite.org/download.html
+
 E.g. sqlite-amalgamation-3080100.zip
 
 Extract the source package in the build root directory.
