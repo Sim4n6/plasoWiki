@@ -287,7 +287,7 @@ Download the latest source package from: https://pypi.python.org/pypi/python-dat
 To build the MSI file run the following commands from the build root directory:
 ```
 tar xfv python-dateutil-2.4.0.tar.gz
-cd C:\plaso-build\python-dateutil-2.4.0\
+cd python-dateutil-2.4.0\
 C:\Python27\python.exe setup.py bdist_msi
 cd ..
 ```
@@ -299,13 +299,31 @@ dist\python-dateutil-2.4.0.win32.msi
 
 Install the MSI.
 
+### pytz
+Download the latest source package from: https://pypi.python.org/pypi/pytz
+
+To build the MSI file run the following commands from the build root directory:
+```
+tar xfv pytz-2014.10.tar.gz
+cd pytz-2014.10.tar.gz\
+C:\Python27\python.exe setup.py bdist_msi
+cd ..
+```
+
+This will create a MSI in the dist sub directory e.g.:
+```
+dist\pytz-2014.10.win32.msi
+```
+
+Install the MSI.
+
 ### Six
 Download the latest 1.x source package from: https://pypi.python.org/pypi/six#downloads
 
 To build the MSI file run the following commands from the build root directory:
 ```
 tar xfv six-1.9.0.tar.gz
-cd C:\plaso-build\six-1.9.0\
+cd six-1.9.0\
 C:\Python27\python.exe setup.py bdist_msi
 cd ..
 ```
