@@ -21,6 +21,17 @@ C:\Python27\python.exe utils\check_dependencies.py
 
 **Note that some dependencies are actively under development and can be frequently updated, therefore we recommend checking the status of the dependencies regularly.**
 
+## Running the development release
+To run the development release directly from source make sure Python can find the plaso source files by setting PYTHONPATH correspondingly.
+```
+set PYTHONPATH=C:\plaso-build\plaso
+```
+
+To run e.g. pinfo:
+```
+C:\Python27\python.exe C:\plaso-build\plaso\plaso\frontend\pinfo.py plaso.db
+```
+
 ## Creating a packaged release
 To create a Windows packaged release from the development release you also need:
 
@@ -65,6 +76,8 @@ config\licenses\*
 ```
 
 ### Packaging
+First check if the PyInstaller build script: config\windows\make.bat is configured correctly for your build environment.
+
 From the plaso source directory run the following commands:
 
 To build plaso with PyInstaller run:
