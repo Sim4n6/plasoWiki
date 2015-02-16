@@ -42,12 +42,13 @@ sudo yum groupinstall "Development Tools"
 sudo yum install gcc-c++ python-devel python-setuptools rpm-build git mercurial
 ```
 
-**TODO: move to separate section.***
+**TODO: move to separate section.**
+
 ```
 sudo yum install python-dateutil
 ```
 
-**TODO: move to libyal section.***
+**TODO: move to libyal section.**
 
 For some of the dependent packages you also require:
 ```
