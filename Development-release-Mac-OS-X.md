@@ -13,3 +13,11 @@ C:\Python27\python.exe utils\check_dependencies.py
 ```
 
 **Note that some dependencies are actively under development and can be frequently updated, therefore we recommend checking the status of the dependencies regularly.**
+
+## Development tools
+If you intend to do development on plaso you'll also need to install some development tools:
+
+* PyLint
+
+### PyLint
+**TODO: add description.**
