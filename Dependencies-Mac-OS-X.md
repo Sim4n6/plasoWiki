@@ -97,6 +97,23 @@ To install the required pkg files run:
 sudo installer -target / -pkg python-dfvfs.20140219.pkg
 ```
 
+### Psutil
+Download the latest source package from: https://pypi.python.org/pypi/psutil/#downloads
+
+To build pkg files run the following command from the build root directory:
+```
+tar xvfz psutil-1.2.1.tar.gz
+cd psutil-1.2.1
+python setup.py bdist
+mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
+mkdir -p dist/tmp/usr/share/doc/psutil
+cp LICENSE dist/tmp/usr/share/doc/psutil
+pkgbuild --root dist/tmp --identifier org.python.pypi.psutil --version 1.0 --ownership recommended ../python-psutil-1.2.1.pkg
+cd ..
+```
+sudo installer -target / -pkg python-psutil-1.2.1.pkg
+```
+
 ### six
 Download the latest 1.x source package from: https://pypi.python.org/pypi/six#downloads
 
