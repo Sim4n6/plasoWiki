@@ -90,3 +90,5 @@ Install the python-logilab-common, python-astroid and pylint Debian packages:
 sudo dpkg -i python-logilab-common_0.60.0-1_all.deb python-astroid_1.0.1-1_all.deb pylint_1.0.0-1_all.deb
 ```
 
+## Creating a packaged release
+**TODO: add description.**
