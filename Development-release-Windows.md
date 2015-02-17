@@ -32,6 +32,14 @@ To run e.g. pinfo:
 C:\Python27\python.exe C:\plaso-build\plaso\plaso\frontend\pinfo.py plaso.db
 ```
 
+## Development tools
+If you intend to do development on plaso you'll also need to install some development tools:
+
+* PyLint
+
+### PyLint
+**TODO: add description.**
+
 ## Creating a packaged release
 To create a Windows packaged release from the development release you also need:
 
