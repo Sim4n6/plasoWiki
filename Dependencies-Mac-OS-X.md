@@ -122,7 +122,7 @@ Download the latest source package from: http://sourceforge.net/projects/pyparsi
 
 To build pkg files run the following command from the build root directory:
 ```
-tar xfv pyparsing-2.0.3.tar.gz 
+tar xfvz pyparsing-2.0.3.tar.gz 
 cd pyparsing-2.0.3/
 python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
