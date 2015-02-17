@@ -25,7 +25,7 @@ Download the latest source package from: https://pypi.python.org/pypi/bencode/1.
 To build pkg files run the following command from the build root directory:
 ```
 tar xvfz bencode-1.0.tar.gz 
-cd bencode-1.0
+cd bencode-1.0/
 python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
 pkgbuild --root dist/tmp --identifier org.python.pypi.bencode --version 1.0 --ownership recommended ../python-bencode.1.0.pkg
@@ -63,7 +63,7 @@ Download the latest 2.x source package from: https://pypi.python.org/pypi/constr
 To build pkg files run the following command from the build root directory:
 ```
 tar xfvz construct-2.5.2.tar.gz
-cd construct-2.5.2
+cd construct-2.5.2/
 python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
 pkgbuild --root dist/tmp --identifier org.python.pypi.construct --version 2.5.2 --ownership recommended ../python-construct.2.5.2.pkg
@@ -83,7 +83,7 @@ Download the latest source package from: https://github.com/log2timeline/dfvfs/r
 To build pkg files run the following command from the build root directory:
 ```
 tar xfvz dfvfs-20140219.tar.gz
-cd dfvfs-20140219
+cd dfvfs-20140219/
 python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
 mkdir -p dist/tmp/usr/share/doc/dfvfs
@@ -103,7 +103,7 @@ Download the latest source package from: https://pypi.python.org/pypi/psutil/#do
 To build pkg files run the following command from the build root directory:
 ```
 tar xvfz psutil-1.2.1.tar.gz
-cd psutil-1.2.1
+cd psutil-1.2.1/
 python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
 mkdir -p dist/tmp/usr/share/doc/psutil
@@ -111,7 +111,28 @@ cp LICENSE dist/tmp/usr/share/doc/psutil
 pkgbuild --root dist/tmp --identifier org.python.pypi.psutil --version 1.0 --ownership recommended ../python-psutil-1.2.1.pkg
 cd ..
 ```
+
+To install the required pkg files run:
+```
 sudo installer -target / -pkg python-psutil-1.2.1.pkg
+```
+
+### Pyparsing
+Download the latest source package from: http://sourceforge.net/projects/pyparsing/files/
+
+To build pkg files run the following command from the build root directory:
+```
+tar xfv pyparsing-2.0.3.tar.gz 
+cd pyparsing-2.0.3/
+python setup.py bdist
+mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
+pkgbuild --root dist/tmp --identifier net.sourceforge.pyparsing --version 2.0.3 --ownership recommended ../python-pyparsing.2.0.3.pkg
+cd ..
+```
+
+To install the required pkg files run:
+```
+sudo installer -target / -pkg python-pyparsing.2.0.3.pkg
 ```
 
 ### six
@@ -120,7 +141,7 @@ Download the latest 1.x source package from: https://pypi.python.org/pypi/six#do
 To build pkg files run the following command from the build root directory:
 ```
 tar xfvz six-1.6.1.tar.gz
-cd six-1.6.1
+cd six-1.6.1/
 python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
 pkgbuild --root dist/tmp --identifier org.python.pypi.six --version 1.6.1 --ownership recommended ../python-six.1.6.1.pkg
