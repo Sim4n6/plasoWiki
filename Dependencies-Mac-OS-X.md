@@ -28,12 +28,13 @@ tar xvfz bencode-1.0.tar.gz
 cd bencode-1.0
 python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier org.python.pypi.bencode --version 1.0 --ownership recommended bencode.1.0.pkg
+pkgbuild --root dist/tmp --identifier org.python.pypi.bencode --version 1.0 --ownership recommended ../python-bencode.1.0.pkg
+cd ..
 ```
 
 To install the required pkg files run:
 ```
-sudo installer -target / -pkg bencode.1.0.pkg
+sudo installer -target / -pkg python-bencode.1.0.pkg
 ```
 
 ### Binplist
@@ -45,12 +46,13 @@ tar -zxvf binplist-0.1.4.tar.gz
 cd binplist-0.1.4/
 python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier com.google.code.p.binplist --version 0.1.4 --ownership recommended binplist.1.0.4.pkg
+pkgbuild --root dist/tmp --identifier com.google.code.p.binplist --version 0.1.4 --ownership recommended ../python-binplist.1.0.4.pkg
+cd ..
 ```
 
 To install the required pkg files run:
 ```
-sudo installer -target / -pkg binplist.1.0.4.pkg
+sudo installer -target / -pkg python-binplist.1.0.4.pkg
 ```
 
 ### Construct
@@ -64,12 +66,35 @@ tar xfvz construct-2.5.2.tar.gz
 cd construct-2.5.2
 python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier org.python.pypi.construct --version 2.5.2 --ownership recommended construct.2.5.2.pkg
+pkgbuild --root dist/tmp --identifier org.python.pypi.construct --version 2.5.2 --ownership recommended ../python-construct.2.5.2.pkg
+cd ..
 ```
 
 To install the required pkg files run:
 ```
-sudo installer -target / -pkg construct.2.5.2.pkg
+sudo installer -target / -pkg python-construct.2.5.2.pkg
+```
+
+### dfVFS
+The dfVFS build instructions can be found [here](https://github.com/log2timeline/dfvfs/wiki/Building). Note that for dfVFS to function correctly several dependencies, like pytsk, mentioned later in a section of this page, are required.
+
+Download the latest source package from: https://github.com/log2timeline/dfvfs/releases
+
+To build pkg files run the following command from the build root directory:
+```
+tar xfvz dfvfs-20140219.tar.gz
+cd dfvfs-20140219
+python setup.py bdist
+mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
+mkdir -p dist/tmp/usr/share/doc/dfvfs
+cp AUTHORS ACKNOWLEDGEMENTS LICENSE dist/tmp/usr/share/doc/dfvfs
+pkgbuild --root dist/tmp --identifier com.github.log2timeline.dfvfs --version 20140219 --ownership recommended python-dfvfs.20140219.pkg
+cd ..
+```
+
+To install the required pkg files run:
+```
+sudo installer -target / -pkg python-dfvfs.20140219.pkg
 ```
 
 ### six
@@ -81,10 +106,11 @@ tar xfvz six-1.6.1.tar.gz
 cd six-1.6.1
 python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier org.python.pypi.six --version 1.6.1 --ownership recommended six.1.6.1.pkg
+pkgbuild --root dist/tmp --identifier org.python.pypi.six --version 1.6.1 --ownership recommended ../python-six.1.6.1.pkg
+cd ..
 ```
 
 To install the required pkg files run:
 ```
-sudo installer -target / -pkg six.1.6.1.pkg
+sudo installer -target / -pkg python-six.1.6.1.pkg
 ```
