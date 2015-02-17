@@ -20,7 +20,7 @@ Make sure the necessary building tools and development packages are installed on
   * Command Line Tools
 
 ### Bencode
-Download the latest source package from: https://pypi.python.org/pypi/bencode/1.0.
+Download the latest source package from: https://pypi.python.org/pypi/bencode/1.0
 
 To build pkg files run the following command from the build root directory:
 ```
