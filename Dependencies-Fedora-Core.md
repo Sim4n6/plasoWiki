@@ -197,3 +197,19 @@ To install libyaml and Python-bindings run:
 ```
 sudo yum install libyaml PyYAML
 ```
+
+### PyParsing
+To install the necessary Python-modules run:
+```
+sudo yum install pyparsing
+```
+
+**TODO: describe manual installation**
+
+### pytz
+To install the necessary Python-modules run:
+```
+sudo yum install pytz
+```
+
+**TODO: describe manual installation**
