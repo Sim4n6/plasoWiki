@@ -156,8 +156,10 @@ To build pkg files run the following command from the build root directory:
 ```
 tar xfvz libevt-alpha-20130415.tar.gz
 cd libevt-alpha-20130415
-sh /build/compile_libyal.sh
-make install DESTDIR=$PWD/osx-pkg
+./configure --disable-dependency-tracking --prefix=/usr/ --enable-python --with-pyprefix
+make && make install DESTDIR=$PWD/osx-pkg
+mkdir -p $PWD/osx-pkg/usr/share/doc/libevt
+cp LICENSE $PWD/osx-pkg/usr/share/doc/libevt
 pkgbuild --root osx-pkg --identifier com.github.libyal.libevt --version 20130415 --ownership recommended ../libevt.20130415.pkg
 ```
 
