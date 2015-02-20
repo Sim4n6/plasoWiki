@@ -115,6 +115,57 @@ To install the required pkg files run:
 sudo installer -target / -pkg python-dpkt.1.8.pkg
 ```
 
+
+### libyal
+The following instructions apply to the following dependencies:
+
+* [libbde](https://github.com/libyal/libbde)
+* [libesedb](https://github.com/libyal/libesedb)
+* [libevt](https://github.com/libyal/libevt)
+* [libevtx](https://github.com/libyal/libevtx)
+* [libewf](https://github.com/libyal/libewf)
+* [libfwsi](https://github.com/libyal/libfwsi)
+* [liblnk](https://github.com/libyal/liblnk)
+* [libmsiecf](https://github.com/libyal/libmsiecf)
+* [libolecf](https://github.com/libyal/libolecf)
+* [libqcow](https://github.com/libyal/libqcow)
+* [libregf](https://github.com/libyal/libregf)
+* [libsigscan](https://github.com/libyal/libsigscan)
+* [libsmdev](https://github.com/libyal/libsmdev)
+* [libsmraw](https://github.com/libyal/libsmraw)
+* [libvhdi](https://github.com/libyal/libvhdi)
+* [libvmdk](https://github.com/libyal/libvmdk)
+* [libvshadow](https://github.com/libyal/libvshadow)
+
+Install the following dependencies for building libyal:
+
+* zlib
+* bzip2
+* dokan
+
+**TODO: describe building dependencies.**
+
+Since the build process for the libyal libraries is very similar, the following paragraph provides building libevt as an example. For more details see the build instructions of the individual projects e.g. https://github.com/libyal/libevt/wiki/Building.
+
+Note that there is also a script to batch build the libyal dependencies more information here: https://code.google.com/p/libyal/wiki/LibyalBuild
+
+#### Example: libevt and Python-bindings
+Download the latest source package from: https://github.com/libyal/libevt/releases
+
+To build pkg files run the following command from the build root directory:
+```
+tar xfvz libevt-alpha-20130415.tar.gz
+cd libevt-alpha-20130415
+sh /build/compile_libyal.sh
+make install DESTDIR=$PWD/osx-pkg
+pkgbuild --root osx-pkg --identifier com.github.libyal.libevt --version 20130415 --ownership recommended ../libevt.20130415.pkg
+```
+
+To install the required pkg files run:
+```
+sudo installer -target / -pkg libevt.20130415.pkg
+```
+
 ### Libyaml and Python-bindings
 Download the latest source package from: http://pyyaml.org/download/libyaml/ (or http://pyyaml.org/wiki/LibYAML)
 
