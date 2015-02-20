@@ -213,3 +213,9 @@ sudo yum install pytz
 ```
 
 **TODO: describe manual installation**
+
+### Sleuthkit and Pytsk
+The build and install Sleuthkit and Pytsk see:
+
+* https://github.com/py4n6/pytsk/wiki/Building-SleuthKit
+* https://github.com/py4n6/pytsk/wiki/Building
