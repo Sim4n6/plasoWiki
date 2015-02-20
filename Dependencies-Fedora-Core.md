@@ -129,6 +129,16 @@ To install the required rpm files run:
 sudo rpm -ivh dfvfs-20140219/dist/dfvfs-20140219-1.noarch.rpm
 ```
 
+### Libprotobuf and Python-bindings
+To install libprotobuf and Python-bindings run:
+```
+sudo yum install protobuf-python
+```
+
+If you intend to do development on plaso and change the protobuf definitions, you'll also need to install the protobuf compiler (protoc).
+```
+sudo yum install protobuf-compiler
+```
 
 ### libyal
 The following instructions apply to the following dependencies:
