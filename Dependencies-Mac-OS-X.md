@@ -97,6 +97,59 @@ To install the required pkg files run:
 sudo installer -target / -pkg python-dfvfs.20140219.pkg
 ```
 
+### DPKT
+Download the latest source package from: https://code.google.com/p/dpkt/downloads/list
+
+To build pkg files run the following command from the build root directory:
+```
+tar xfvz dpkt-1.8.tar.gz
+cd dpkt-1.8
+python setup.py bdist
+mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
+pkgbuild --root dist/tmp --identifier com.google.code.p.dpkt --version 1.8 --ownership recommended ../python-dpkt.1.8.pkg
+cd ..
+```
+
+To install the required pkg files run:
+```
+sudo installer -target / -pkg python-dpkt.1.8.pkg
+```
+
+### Libyaml and Python-bindings
+Download the latest source package from: http://pyyaml.org/download/libyaml/ (or http://pyyaml.org/wiki/LibYAML)
+
+To build pkg files run the following command from the build root directory:
+```
+tar xfvz yaml-0.1.6.tar.gz
+cd yaml-0.1.6
+./configure --prefix=/usr
+make
+make install DESTDIR=$PWD/osx-pkg
+pkgbuild --root osx-pkg --identifier org.pyyaml.yaml --version 0.1.6 --ownership recommended ../libyaml.0.1.6.pkg
+cd ..
+```
+
+To install the required pkg files run:
+```
+sudo installer -target / -pkg libyaml.0.1.6.pkg
+```
+
+Download the latest source package from: http://pyyaml.org/wiki/PyYAML
+
+To build pkg files run the following command from the build root directory:
+```
+tar xfvz PyYAML-3.11.tar.gz
+cd PyYAML-3.11/
+python setup.py bdist
+mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
+pkgbuild --root dist/tmp --identifier org.pyyaml.yaml.python --version 3.11 --ownership recommended ../python-yaml.3.11.pkg
+```
+
+To install the required pkg files run:
+```
+sudo installer -target / -pkg python-yaml.3.11.pkg
+```
+
 ### Psutil
 Download the latest source package from: https://pypi.python.org/pypi/psutil/#downloads
 
