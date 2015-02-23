@@ -30,7 +30,7 @@ sudo apt-get install binplist ipython libbde-python libesedb-python libevt-pytho
 
 For troubleshooting crashes it is recommended to install the following debug symbol packages as well:
 ```
-sudo apt-get install libbde-dbg libbde-python-dbg
+sudo apt-get install libbde-dbg libbde-python-dbg libesedb-dbg libesedb-python-dbg libevt-dbg libevt-python-dbg libevtx-dbg libevtx-python-dbg libewf-dbg libewf-python-dbg libfwsi-dbg libfwsi-python-dbg liblnk-dbg liblnk-python-dbg libmsiecf-dbg libmsiecf-python-dbg libolecf-dbg libolecf-python-dbg libqcow-dbg libqcow-python-dbg libregf-dbg libregf-python-dbg libsigscan-dbg libsigscan-python-dbg libsmdev-dbg libsmdev-python-dbg libsmraw-dbg libsmraw-python-dbg libvhdi-dbg libvhdi-python-dbg libvmdk-dbg libvmdk-python-dbg libvshadow-dbg libvshadow-python-dbg
 ```
 
 **TODO complete list of dependencies.**
@@ -48,6 +48,8 @@ C:\Python27\python.exe utils\build_dependencies.py dpkg
 ```
 
 **Note that the build dependencies script is currently still work in progress, but it will build most of the dependencies.**
+
+Also see: https://github.com/log2timeline/l2tdevtools/wiki/Build-script
 
 ## Manual build
 It is impossible for us to support all flavors of Ubuntu out there, so if you want smooth sailing, we recommend sticking with the supported version or live with the fact that a manual build of the dependencies can be a tedious task.
