@@ -129,6 +129,53 @@ To install the required rpm files run:
 sudo rpm -ivh dfvfs-20140219/dist/dfvfs-20140219-1.noarch.rpm
 ```
 
+### Hachoir
+Download the latest source package from: https://bitbucket.org/haypo/hachoir/wiki/Install/source
+
+You'll need:
+
+* hachoir-core-1.3.3.tar.gz
+* hachoir-parser-1.3.4.tar.gz
+* hachoir-metadata-1.3.3.tar.gz
+
+To build rpm files run the following command from the build root directory:
+```
+tar xfv hachoir-core-1.3.3.tar.gz
+cd hachoir-core-1.3.3
+python setup.py build bdist_rpm
+cd ..
+```
+
+To install the required rpm files run:
+```
+sudo rpm -ivh hachoir-core-1.3.3/dist/hachoir-core-1.3.3-1.noarch.rpm
+```
+
+To build rpm files run the following command from the build root directory:
+```
+tar xfv hachoir-parser-1.3.4.tar.gz
+cd hachoir-parser-1.3.4
+python setup.py build bdist_rpm
+cd ..
+```
+
+To install the required rpm files run:
+```
+sudo rpm -ivh hachoir-parser-1.3.4/dist/hachoir-parser-1.3.4-1.noarch.rpm
+```
+To build rpm files run the following command from the build root directory:
+```
+tar xfv hachoir-metadata-1.3.3.tar.gz
+cd hachoir-metadata-1.3.3
+python setup.py build bdist_rpm
+cd ..
+```
+
+To install the required rpm files run:
+```
+sudo rpm -ivh hachoir-metadata-1.3.3/dist/hachoir-metadata-1.3.3-1.noarch.rpm
+```
+
 ### Libprotobuf and Python-bindings
 To install libprotobuf and Python-bindings run:
 ```
