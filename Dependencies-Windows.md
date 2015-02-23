@@ -363,6 +363,8 @@ set VS90COMNTOOLS=%VS100COMNTOOLS%
 
 To have plaso support elastic search output it needs pyelasticsearch. 
 
+Download the latest source package from: https://github.com/rhec/pyelasticsearch/releases
+
 To build the MSI file run the following commands from the build root directory:
 ```
 tar xfv pyelasticsearch-1.0.tar.gz
