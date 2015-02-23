@@ -223,6 +223,26 @@ To install the required pkg files run:
 sudo installer -target / -pkg python-psutil-1.2.1.pkg
 ```
 
+### PyElasticsearch
+**Note that this dependency is optional.**
+
+Download the latest source package from: https://github.com/rhec/pyelasticsearch/releases
+
+To build pkg files run the following command from the build root directory:
+```
+tar zxfv pyelasticsearch-1.0.tar,gz
+cd pyelasticsearch-1.0/
+python setup.py bdist
+mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
+pkgbuild --root dist/tmp --identifier com.github.pyelasticsearch --version 1.0 --ownership recommended ../python-pyelasticsearch-1.0.pkg
+cd ..
+```
+
+To install the required pkg files run:
+```
+sudo installer -target / -pkg python-pyelasticsearch-1.0.pkg
+```
+
 ### Pyparsing
 Download the latest source package from: http://sourceforge.net/projects/pyparsing/files/
 
