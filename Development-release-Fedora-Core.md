@@ -30,3 +30,6 @@ sudo yum install pylint
 ```
 
 **TODO check distributed version**
+
+## Creating a packaged release
+**TODO: add description.**
