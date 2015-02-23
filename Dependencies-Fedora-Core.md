@@ -129,6 +129,11 @@ To install the required rpm files run:
 sudo rpm -ivh dfvfs-20140219/dist/dfvfs-20140219-1.noarch.rpm
 ```
 
+### IPython
+By default Fedora 20 comes with IPython 0.13.2. Plaso requires version 1.2.1 or later.
+
+**TODO: describe**
+
 ### Hachoir
 Download the latest source package from: https://bitbucket.org/haypo/hachoir/wiki/Install/source
 
@@ -244,6 +249,29 @@ To install libyaml and Python-bindings run:
 ```
 sudo yum install libyaml PyYAML
 ```
+
+### Psutil
+Download the latest source package from: https://pypi.python.org/pypi/psutil
+
+To build rpm files run the following command from the build root directory:
+```
+tar xvf psutil-1.2.1.tar.gz 
+cd psutil-1.2.1/
+python setup.py bdist_rpm
+cd ..
+```
+
+To install the required rpm files run:
+```
+sudo yum install psutil-1.2.1/dist/psutil-1.2.1.x86_64.rpm
+```
+
+### PyElasticsearch
+**Note that this dependency is optional.**
+
+Download the latest source package from: https://github.com/rhec/pyelasticsearch/releases
+
+**TODO: describe**
 
 ### PyParsing
 To install the necessary Python-modules run:
