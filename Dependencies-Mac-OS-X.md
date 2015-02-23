@@ -11,6 +11,17 @@ There are multiple ways to install the dependencies on Ubuntu:
 **TODO describe**
 
 ## Manual build
+It is impossible for us to support all flavors of Mac OS X out there, so if you want smooth sailing, we recommend sticking with the supported version or live with the fact that a manual build of the dependencies can be a tedious task.
+
+For ease of maintenance the following instructions use as much pkg packages as possible. Note that the resulting pkg packages are not intended for public redistribution.
+
+Alternative installation methods like installing directly from source, using easy_install or pip are not recommended because when not maintained correctly they can mess up your setup more easily than using rpm packages.
+
+First create a build root directory:
+```
+mkdir plaso-build/
+```
+
 ### Build essentials
 Make sure the necessary building tools and development packages are installed on the system:
 
