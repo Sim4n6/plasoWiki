@@ -115,6 +115,28 @@ To install the required pkg files run:
 sudo installer -target / -pkg python-dpkt.1.8.pkg
 ```
 
+### IPython
+Download the latest source package from: https://github.com/ipython/ipython/releases
+
+To build pkg files run the following command from the build root directory:
+```
+tar xfvz ipython-1.2.1.tar.gz
+cd ipython-1.2.1
+python setup.py bdist
+mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
+mkdir -p dist/tmp/usr/share/doc/ipython
+cp COPYING.txt dist/tmp/usr/share/doc/ipython
+pkgbuild --root dist/tmp --identifier org.github.ipython.ipython --version 1.2.1 --ownership recommended ../ipython-1.2.1.pkg
+cd ..
+```
+
+To install the required pkg files run:
+```
+sudo installer -target / -pkg ipython-1.2.1.pkg
+```
+
+### Hachoir
+**TODO: describe**
 
 ### libyal
 The following instructions apply to the following dependencies:
@@ -234,7 +256,7 @@ tar zxfv pyelasticsearch-1.0.tar,gz
 cd pyelasticsearch-1.0/
 python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier com.github.pyelasticsearch --version 1.0 --ownership recommended ../python-pyelasticsearch-1.0.pkg
+pkgbuild --root dist/tmp --identifier com.github.pyelasticsearch.pyelasticsearch --version 1.0 --ownership recommended ../python-pyelasticsearch-1.0.pkg
 cd ..
 ```
 
