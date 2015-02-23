@@ -318,13 +318,13 @@ tar xfvz pyparsing-2.0.3.tar.gz
 cd pyparsing-2.0.3/
 python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier net.sourceforge.pyparsing --version 2.0.3 --ownership recommended ../python-pyparsing.2.0.3.pkg
+pkgbuild --root dist/tmp --identifier net.sourceforge.pyparsing --version 2.0.3 --ownership recommended ../python-pyparsing-2.0.3.pkg
 cd ..
 ```
 
 To install the required pkg files run:
 ```
-sudo installer -target / -pkg python-pyparsing.2.0.3.pkg
+sudo installer -target / -pkg python-pyparsing-2.0.3.pkg
 ```
 
 ### six
