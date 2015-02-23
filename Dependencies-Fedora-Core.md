@@ -6,7 +6,7 @@ There are multiple ways to install the dependencies on Fedora Core:
 * Manual build of the dependencies.
 
 ## Batch build
-**TODO migrate this to log2timeline devtools**
+**TODO: migrate this to log2timeline devtools**
 
 First set up a working build environment.
 
@@ -128,6 +128,9 @@ To install the required rpm files run:
 ```
 sudo rpm -ivh dfvfs-20140219/dist/dfvfs-20140219-1.noarch.rpm
 ```
+
+### DPKT
+**TODO: describe.**
 
 ### IPython
 By default Fedora 20 comes with IPython 0.13.2. Plaso requires version 1.2.1 or later.
