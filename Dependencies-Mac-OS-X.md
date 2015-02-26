@@ -8,7 +8,12 @@ There are multiple ways to install the dependencies on Ubuntu:
 * Manual build of the dependencies.
 
 ## Batch build
-**TODO describe**
+Set up the [l2tdevtools build script](https://github.com/log2timeline/l2tdevtools/wiki/Build-script) and run:
+```
+PYTHONPATH=. python scripts/build.py pkg
+```
+
+**Note that the build script is currently still work in progress, but it will build most of the dependencies.**
 
 ## Manual build
 It is impossible for us to support all flavors of Mac OS X out there, so if you want smooth sailing, we recommend sticking with the supported version or live with the fact that a manual build of the dependencies can be a tedious task.
