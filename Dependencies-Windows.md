@@ -6,18 +6,13 @@ There are multiple ways to install the dependencies on Windows:
 * Manual build of the dependencies.
 
 ## Batch build
-**TODO migrate this to log2timeline devtools**
-
-First set up a working build environment.
-
-**TODO: describe.**
-
-To have the build_dependencies script build the MSI files run:
+Set up the [l2tdevtools build script](https://github.com/log2timeline/l2tdevtools/wiki/Build-script) and run:
 ```
-C:\Python27\python.exe utils\build_dependencies.py msi
+set PYTHONPATH=.
+C:\Python27\python.exe scripts/build.py msi
 ```
 
-**Note that the build dependencies script is currently still work in progress, but it will build most of the dependencies.**
+**Note that the build script is currently still work in progress, but it will build most of the dependencies.**
 
 ## Manual build
 For ease of maintenance the following instructions use as much MSI package files as possible via "Programs and Features". Note that the resulting MSI files are not intended for public redistribution.
