@@ -36,20 +36,12 @@ sudo apt-get install libbde-dbg libbde-python-dbg libesedb-dbg libesedb-python-d
 **TODO complete list of dependencies.**
 
 ## Batch build
-**TODO migrate this to log2timeline devtools**
-
-First set up a working build environment.
-
-**TODO: describe.**
-
-To have the build_dependencies script build the deb package files run:
+Set up the [l2tdevtools build script](https://github.com/log2timeline/l2tdevtools/wiki/Build-script) and run:
 ```
-C:\Python27\python.exe utils\build_dependencies.py dpkg
+PYTHONPATH=. python scrips/build.py dpkg
 ```
 
-**Note that the build dependencies script is currently still work in progress, but it will build most of the dependencies.**
-
-Also see: https://github.com/log2timeline/l2tdevtools/wiki/Build-script
+**Note that the build script is currently still work in progress, but it will build most of the dependencies.**
 
 ## Manual build
 It is impossible for us to support all flavors of Ubuntu out there, so if you want smooth sailing, we recommend sticking with the supported version or live with the fact that a manual build of the dependencies can be a tedious task.
