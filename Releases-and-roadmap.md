@@ -10,12 +10,25 @@ If you do not plan to develop or live on the edge, regarding plaso, we highly re
 ## Roadmap
 The following sections contain a rough outline of the larger items on the roadmap. For more detailed information see: [Plaso - Roadmap and Assignment](http://goo.gl/cRjA7y)
 
+**TODO describe larger ideas below.**
+
 ### Version 1.2.1
 
+* Event Log event messages support
+* initial hasher support
+* improved image export
+* Parsers
+  * Chrome preferences parser
+  * improved MSIECF parser
+* changes due to dfVFS using more strict caching strategy
+* changes to handling of compressed files and archives
+* added parser pre-screen signature scanner
+* split off l2tdevtools
+
+### Version 1.3.0
+
 * Plaso as a module; Clean up and rewrite of the engine code (the parts that were not touched in version 1.1.0); Stabilize an API
-* dfVFS
-  * Migration to SleuthKit 4.2 (assumed the new version is released)
-* Storage
+* Storage refactor
   * Add support for relocatable path specs
   * Add support to keep a protected copy of the decryption information for e.g. BitLocker
 * Overhaul of winreg and plugins
@@ -23,7 +36,6 @@ The following sections contain a rough outline of the larger items on the roadma
   * merge key and value plugins
 * Parsers
   * job file parser - add format improvements
-* Event Log event messages support
 
 ### Mid/Long term
 
@@ -34,8 +46,6 @@ The following sections contain a rough outline of the larger items on the roadma
 * Improved handling recovered (deleted) data
 * Plaso as a service
 * Sandboxing the workers
-
-**TODO describe larger ideas**
 
 ## Packaged release history
 Version | Name | Release date | Comments
