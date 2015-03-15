@@ -23,10 +23,10 @@ The following sections contain a rough outline of the larger items on the roadma
   * merge key and value plugins
 * Parsers
   * job file parser - add format improvements
+* Event Log event messages support
 
 ### Mid/Long term
 
-* Event Log event messages support
 * Artifact support
 * Migration to Python 3
   * requires other dependencies being Python 3 compatible
@@ -34,6 +34,8 @@ The following sections contain a rough outline of the larger items on the roadma
 * Improved handling recovered (deleted) data
 * Plaso as a service
 * Sandboxing the workers
+
+**TODO describe larger ideas**
 
 ## Packaged release history
 Version | Name | Release date | Comments
