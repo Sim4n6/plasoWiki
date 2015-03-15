@@ -20,10 +20,15 @@ The following sections contain a rough outline of the larger items on the roadma
 * Parsers
   * Chrome preferences parser
   * improved MSIECF parser
+* Windows Registry plugins
+  * WinReg Timezone Plugin
 * changes due to dfVFS using more strict caching strategy
 * changes to handling of compressed files and archives
-* added parser pre-screen signature scanner
+* added signature-based parser pre-filtering
 * split off l2tdevtools
+* clean-up and fixes
+  * parser chain
+  * parser mediator
 
 ### Version 1.3.0
 
