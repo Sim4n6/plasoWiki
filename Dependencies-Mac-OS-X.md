@@ -10,14 +10,14 @@ There are multiple ways to install the dependencies on Ubuntu:
 ## Prepackaged dependencies
 **Note that the instructions in this page assume you are running on Mac OS X 10.10.**
 
-The latest prepackaged Mac OS X version can be found: [here](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/)
+The latest bundled and prepackaged Mac OS X plaso version can be found: [here](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/)
 
 E.g. the final release of plaso 1.2.0:
 https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/1.2.0/final/plaso-1.2.0_macosx-10.10.dmg
 
 Mount the DMG file and run the install.sh script. This installs plaso and its dependencies as separate pkg files.
 
-Prebuilt Mac OS X packages of the dependencies can be downloaded: [here](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/3rd%20party/macosx%2010.10/)
+Individual prebuilt Mac OS X packages of the dependencies can be downloaded: [here](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/3rd%20party/macosx%2010.10/)
 
 ## Batch build
 Set up the [l2tdevtools build script](https://github.com/log2timeline/l2tdevtools/wiki/Build-script) and run:
