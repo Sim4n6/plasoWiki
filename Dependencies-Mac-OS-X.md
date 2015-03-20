@@ -407,5 +407,5 @@ sudo installer -target / -pkg python-six.1.6.1.pkg
 ### Sleuthkit and Pytsk
 The build and install Sleuthkit and Pytsk see:
 
-* https://github.com/py4n6/pytsk/wiki/Building-SleuthKit#mac-os-x
+* https://github.com/py4n6/pytsk/wiki/Building-SleuthKit#using-mac-os-x-pkgbuild
 * https://github.com/py4n6/pytsk/wiki/Building#mac-os-x
