@@ -48,10 +48,15 @@ Dependency | License
 [Pyparsing](http://pyparsing.wikispaces.com/) | [MIT license](http://opensource.org/licenses/MIT)
 [Pysqlite](https://pypi.python.org/pypi/pysqlite) | [zlib/libpng license](https://github.com/ghaering/pysqlite/blob/master/LICENSE)
 
-## Frontend (tool) dependencies
+
+## Output/Storage dependencies
 Dependency | License
 --- | ---
 [Pyelasticsearch](https://github.com/rhec/pyelasticsearch/) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
+
+## Tool dependencies
+Dependency | License
+--- | ---
 [Psutil](https://code.google.com/p/psutil/) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
 [IPython](http://ipython.org/) <br> PyReadline is considered part of IPython | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
 
