@@ -7,6 +7,9 @@ There are multiple ways to install the dependencies on Ubuntu:
 * Using the [log2timeline devtools](https://github.com/log2timeline/devtools) to batch build most of the dependencies;
 * Manual build of the dependencies.
 
+## Prepackaged dependencies
+**TODO**
+
 ## Batch build
 Set up the [l2tdevtools build script](https://github.com/log2timeline/l2tdevtools/wiki/Build-script) and run:
 ```
@@ -400,3 +403,9 @@ To install the required pkg files run:
 ```
 sudo installer -target / -pkg python-six.1.6.1.pkg
 ```
+
+### Sleuthkit and Pytsk
+The build and install Sleuthkit and Pytsk see:
+
+* https://github.com/py4n6/pytsk/wiki/Building-SleuthKit#mac-os-x
+* https://github.com/py4n6/pytsk/wiki/Building#mac-os-x
