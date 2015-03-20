@@ -32,7 +32,7 @@ The following sections contain a rough outline of the larger items on the roadma
 
 ### Version 1.3.0
 
-* Plaso as a module; Clean up and rewrite of the engine code (the parts that were not touched in version 1.1.0); Stabilize an API
+* Plaso as a module; Clean up and rewrite of the engine code (the parts that were not touched previously); Stabilize an API
 * Storage refactor
   * Add support for relocatable path specs
   * Add support to keep a protected copy of the decryption information for e.g. BitLocker
