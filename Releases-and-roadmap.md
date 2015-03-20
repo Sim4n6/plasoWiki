@@ -33,12 +33,8 @@ The following sections contain a rough outline of the larger items on the roadma
 ### Version 1.3.0
 
 * Plaso as a module; Clean up and rewrite of the engine code (the parts that were not touched previously); Stabilize an API
-* Storage refactor
-  * Add support for relocatable path specs
-  * Add support to keep a protected copy of the decryption information for e.g. BitLocker
-* Overhaul of winreg and plugins
-  * remove Registry type
-  * merge key and value plugins
+* [storage redesign](https://github.com/log2timeline/plaso/issues/102)
+* [winreg: clean up and improve](https://github.com/log2timeline/plaso/issues/145)
 * Parsers
   * job file parser - add format improvements
 
