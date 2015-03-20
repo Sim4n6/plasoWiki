@@ -14,6 +14,11 @@ Check if you have all the dependencies installed and have the right minimum vers
 
 **Note that some dependencies are actively under development and can be frequently updated, therefore we recommend checking the status of the dependencies regularly.**
 
+If check_dependencies.py keeps indicating it detected an out of date version check if the following directory might still contain an older version:
+```
+/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/
+```
+
 ## Development tools
 If you intend to do development on plaso you'll also need to install some development tools:
 
