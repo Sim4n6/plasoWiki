@@ -34,7 +34,7 @@ If you cannot program and still have a great idea for a feature please go ahead 
 
 * [Style guide](https://github.com/log2timeline/plaso/wiki/Style-guide)
 * Code review
-* Adding a new dependency
+* [Adding a new dependency](https://github.com/log2timeline/plaso/wiki/Adding-a-new-dependency)
 
 ### Rational behind style guide and code review
 To keep the code base maintainable and readable all code is developed using a similar coding style. It ensures:
