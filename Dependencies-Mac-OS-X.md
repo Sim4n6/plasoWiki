@@ -1,5 +1,3 @@
-**TODO: work in progress migrating from: https://sites.google.com/a/kiddaland.net/plaso/developer/building-the-tool/mac-os-x**
-
 This page contains detailed instructions on how to build and install dependencies on Mac OS X.
 
 There are multiple ways to install the dependencies on Ubuntu:
