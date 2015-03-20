@@ -8,7 +8,14 @@ There are multiple ways to install the dependencies on Ubuntu:
 * Manual build of the dependencies.
 
 ## Prepackaged dependencies
-**TODO**
+**Note that the instructions in this page assume you are running on Mac OS X 10.10.**
+
+The latest prepackaged Mac OS X version can be found: [here](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/)
+
+E.g. the final release of plaso 1.2.0:
+https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/1.2.0/final/plaso-1.2.0_macosx-10.10.dmg
+
+Mount the DMG file and run the install.sh script. This installs plaso and its dependencies as separate pkg files.
 
 ## Batch build
 Set up the [l2tdevtools build script](https://github.com/log2timeline/l2tdevtools/wiki/Build-script) and run:
@@ -93,6 +100,11 @@ To install the required pkg files run:
 ```
 sudo installer -target / -pkg python-construct.2.5.2.pkg
 ```
+
+### dateutil.parser
+**TODO describe**
+
+http://labix.org/python-dateutil#head-2f49784d6b27bae60cde1cff6a535663cf87497b
 
 ### dfVFS
 The dfVFS build instructions can be found [here](https://github.com/log2timeline/dfvfs/wiki/Building). Note that for dfVFS to function correctly several dependencies, like pytsk, mentioned later in a section of this page, are required.
@@ -386,6 +398,29 @@ To install the required pkg files run:
 sudo installer -target / -pkg python-pyparsing-2.0.3.pkg
 ```
 
+### pyreadline
+Download the latest 1.x source package from: https://pypi.python.org/pypi/pyreadline/#downloads
+
+**TODO describe**
+
+### pytz
+Download the latest source package from: http://pypi.python.org/pypi/pytz/#downloads
+
+To build pkg files run the following command from the build root directory:
+```
+tar xfvz pytz-2014.10.tar.gz
+cd pytz-2014.10/
+python setup.py bdist
+mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
+pkgbuild --root dist/tmp --identifier org.python.pypi.pytz --version 2014.10 --ownership recommended ../python-pytz.2014.10.pkg
+cd ..
+```
+
+To install the required pkg files run:
+```
+sudo installer -target / -pkg python-pytz.2014.10.pkg
+```
+
 ### six
 Download the latest 1.x source package from: https://pypi.python.org/pypi/six#downloads
 
@@ -409,3 +444,6 @@ The build and install Sleuthkit and Pytsk see:
 
 * https://github.com/py4n6/pytsk/wiki/Building-SleuthKit#using-mac-os-x-pkgbuild
 * https://github.com/py4n6/pytsk/wiki/Building#mac-os-x
+
+### SQLite
+**TODO describe**
