@@ -17,7 +17,7 @@ https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/1.2.0/final/plaso-1.2.
 
 Mount the DMG file and run the install.sh script. This installs plaso and its dependencies as separate pkg files.
 
-Individual prebuilt Mac OS X packages of the dependencies can be downloaded: [here](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/3rd%20party/macosx%2010.10/)
+Individual prepackaged Mac OS X dependencies can be downloaded: [here](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/3rd%20party/macosx%2010.10/)
 
 ## Batch build
 Set up the [l2tdevtools build script](https://github.com/log2timeline/l2tdevtools/wiki/Build-script) and run:
