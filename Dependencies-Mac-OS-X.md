@@ -7,6 +7,8 @@ There are multiple ways to install the dependencies on Ubuntu:
 * Using the [log2timeline devtools](https://github.com/log2timeline/devtools) to batch build most of the dependencies;
 * Manual build of the dependencies.
 
+**Note that if you have a non-default version of Python installed e.g. Fink, MacPorts or equivalent. You may very likely will have issues with version mismatches between the system versions and the non-default version of Python. It is therefore recommended to stick with the system versions of Python.**
+
 ## Prepackaged dependencies
 **Note that the instructions in this page assume you are running on Mac OS X 10.10.**
 
