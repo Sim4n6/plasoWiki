@@ -5,7 +5,7 @@ Checkout the plaso source from the git repo:
 git clone https://github.com/log2timeline/plaso.git
 ```
 
-To be able to run the plaso [development release](https://github.com/log2timeline/plaso/wiki/Releases-and-roadmap) on Windows you'll have to have installed the [dependencies](https://github.com/log2timeline/plaso/wiki/Dependencies-Mac-OS-X).
+To be able to run the plaso [development release](https://github.com/log2timeline/plaso/wiki/Releases-and-roadmap) on Mac OS X you'll have to have installed the [dependencies](https://github.com/log2timeline/plaso/wiki/Dependencies-Mac-OS-X).
 
 Check if you have all the dependencies installed and have the right minimum version:
 ```
