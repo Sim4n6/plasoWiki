@@ -23,7 +23,7 @@ Dependency | License
 [Libvhdi and Python-bindings](https://github.com/libyal/libvhdi/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
 [Libvmdk and Python-bindings](https://github.com/libyal/libvmdk/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
 [Libvshadow and Python-bindings](https://github.com/libyal/libvshadow/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
-[Pytsk](https://code.google.com/p/pytsk/) | [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+[Pytsk](https://github.com/py4n6/pytsk/) | [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 [SleuthKit](http://www.sleuthkit.org/) | The SleuthKit is multi licensed <br> Common Public License 1.0; applies to most of the code <br> IBM Public License 1.0; applies to the file system code (tsk/fs, tools/fstools) <br> [GNU General Public License 2](http://www.gnu.org/licenses/gpl-2.0.html); applies to srch_strings which **should not be included in a binary build of plaso**.
 [talloc](http://talloc.samba.org/talloc/doc/html/index.html) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
 
