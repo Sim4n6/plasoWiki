@@ -23,10 +23,14 @@ If check_dependencies.py keeps indicating it detected an out of date version che
 If you intend to do development on plaso you'll also need to install some development tools:
 
 * PyLint
+* Python Mock
 
 ### PyLint
 We recommend PyLint 1.0.0 or later.
 
+**TODO: add description.**
+
+### Python Mock
 **TODO: add description.**
 
 ## Creating a packaged release
