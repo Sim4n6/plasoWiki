@@ -44,7 +44,22 @@ We recommend PyLint 1.0.0 or later.
 **TODO: add description.**
 
 ### Python Mock
-**TODO: add description.**
+Download the latest source package from: https://pypi.python.org/pypi/mock
+
+To build the MSI file run the following commands from the build root directory:
+```
+tar xvf mock-1.0.1.tar.gz
+cd mock-1.0.1\
+C:\Python27\python.exe setup.py bdist_msi
+cd ..
+```
+
+This will create a MSI in the dist sub directory e.g.:
+```
+dist\mock-1.0.1.win32.msi
+```
+
+Install the MSI.
 
 ## Creating a packaged release
 To create a Windows packaged release from the development release you also need:
