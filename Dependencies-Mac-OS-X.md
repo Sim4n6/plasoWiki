@@ -56,13 +56,13 @@ tar xvfz bencode-1.0.tar.gz
 cd bencode-1.0/
 python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier org.python.pypi.bencode --version 1.0 --ownership recommended ../python-bencode.1.0.pkg
+pkgbuild --root dist/tmp --identifier org.python.pypi.bencode --version 1.0 --ownership recommended ../python-bencode-1.0.pkg
 cd ..
 ```
 
 To install the required pkg files run:
 ```
-sudo installer -target / -pkg python-bencode.1.0.pkg
+sudo installer -target / -pkg python-bencode-1.0.pkg
 ```
 
 ### Binplist
@@ -74,13 +74,13 @@ tar -zxvf binplist-0.1.4.tar.gz
 cd binplist-0.1.4/
 python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier com.google.code.p.binplist --version 0.1.4 --ownership recommended ../python-binplist.1.0.4.pkg
+pkgbuild --root dist/tmp --identifier com.google.code.p.binplist --version 0.1.4 --ownership recommended ../python-binplist-1.0.4.pkg
 cd ..
 ```
 
 To install the required pkg files run:
 ```
-sudo installer -target / -pkg python-binplist.1.0.4.pkg
+sudo installer -target / -pkg python-binplist-1.0.4.pkg
 ```
 
 ### Construct
@@ -94,13 +94,13 @@ tar xfvz construct-2.5.2.tar.gz
 cd construct-2.5.2/
 python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier org.python.pypi.construct --version 2.5.2 --ownership recommended ../python-construct.2.5.2.pkg
+pkgbuild --root dist/tmp --identifier org.python.pypi.construct --version 2.5.2 --ownership recommended ../python-construct-2.5.2.pkg
 cd ..
 ```
 
 To install the required pkg files run:
 ```
-sudo installer -target / -pkg python-construct.2.5.2.pkg
+sudo installer -target / -pkg python-construct-2.5.2.pkg
 ```
 
 ### dateutil.parser
@@ -121,13 +121,13 @@ python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
 mkdir -p dist/tmp/usr/share/doc/dfvfs
 cp AUTHORS ACKNOWLEDGEMENTS LICENSE dist/tmp/usr/share/doc/dfvfs
-pkgbuild --root dist/tmp --identifier com.github.log2timeline.dfvfs --version 20140219 --ownership recommended python-dfvfs.20140219.pkg
+pkgbuild --root dist/tmp --identifier com.github.log2timeline.dfvfs --version 20140219 --ownership recommended python-dfvfs-20140219.pkg
 cd ..
 ```
 
 To install the required pkg files run:
 ```
-sudo installer -target / -pkg python-dfvfs.20140219.pkg
+sudo installer -target / -pkg python-dfvfs-20140219.pkg
 ```
 
 ### DPKT
@@ -139,13 +139,13 @@ tar xfvz dpkt-1.8.tar.gz
 cd dpkt-1.8
 python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier com.google.code.p.dpkt --version 1.8 --ownership recommended ../python-dpkt.1.8.pkg
+pkgbuild --root dist/tmp --identifier com.google.code.p.dpkt --version 1.8 --ownership recommended ../python-dpkt-1.8.pkg
 cd ..
 ```
 
 To install the required pkg files run:
 ```
-sudo installer -target / -pkg python-dpkt.1.8.pkg
+sudo installer -target / -pkg python-dpkt-1.8.pkg
 ```
 
 ### IPython
@@ -232,13 +232,13 @@ cd protobuf-2.5.0
 ./configure --prefix=/usr
 make
 make install DESTDIR=$PWD/osx-pkg
-pkgbuild --root osx-pkg --identifier com.github.google.protobuf --version 2.5.0 --ownership recommended ../protobuf.2.5.0.pkg
+pkgbuild --root osx-pkg --identifier com.github.google.protobuf --version 2.5.0 --ownership recommended ../protobuf-2.5.0.pkg
 cd ..
 ```
 
 To install the required pkg files run:
 ```
-sudo installer -target / -pkg protobuf.2.5.0.pkg
+sudo installer -target / -pkg protobuf=2.5.0.pkg
 ```
 
 To build pkg files run the following command from the build root directory:
@@ -246,13 +246,13 @@ To build pkg files run the following command from the build root directory:
 cd protobuf-2.5.0/python
 python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier com.github.google.python-protobuf --version 2.5.0 --ownership recommended ../../python-protobuf.2.5.0.pkg
+pkgbuild --root dist/tmp --identifier com.github.google.python-protobuf --version 2.5.0 --ownership recommended ../../python-protobuf-2.5.0.pkg
 cd ../../
 ```
 
 To install the required pkg files run:
 ```
-sudo installer -target / -pkg python-protobuf.2.5.0.pkg
+sudo installer -target / -pkg python-protobuf-2.5.0.pkg
 ```
 
 ### libyal
@@ -299,12 +299,12 @@ cd libevt-alpha-20130415
 make && make install DESTDIR=$PWD/osx-pkg
 mkdir -p $PWD/osx-pkg/usr/share/doc/libevt
 cp LICENSE $PWD/osx-pkg/usr/share/doc/libevt
-pkgbuild --root osx-pkg --identifier com.github.libyal.libevt --version 20130415 --ownership recommended ../libevt.20130415.pkg
+pkgbuild --root osx-pkg --identifier com.github.libyal.libevt --version 20130415 --ownership recommended ../libevt-20130415.pkg
 ```
 
 To install the required pkg files run:
 ```
-sudo installer -target / -pkg libevt.20130415.pkg
+sudo installer -target / -pkg libevt-20130415.pkg
 ```
 
 ### Libyaml and Python-bindings
@@ -317,13 +317,13 @@ cd yaml-0.1.6
 ./configure --prefix=/usr
 make
 make install DESTDIR=$PWD/osx-pkg
-pkgbuild --root osx-pkg --identifier org.pyyaml.yaml --version 0.1.6 --ownership recommended ../libyaml.0.1.6.pkg
+pkgbuild --root osx-pkg --identifier org.pyyaml.yaml --version 0.1.6 --ownership recommended ../libyaml-0.1.6.pkg
 cd ..
 ```
 
 To install the required pkg files run:
 ```
-sudo installer -target / -pkg libyaml.0.1.6.pkg
+sudo installer -target / -pkg libyaml-0.1.6.pkg
 ```
 
 Download the latest source package from: http://pyyaml.org/wiki/PyYAML
@@ -334,12 +334,12 @@ tar xfvz PyYAML-3.11.tar.gz
 cd PyYAML-3.11/
 python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier org.pyyaml.yaml.python --version 3.11 --ownership recommended ../python-yaml.3.11.pkg
+pkgbuild --root dist/tmp --identifier org.pyyaml.yaml.python --version 3.11 --ownership recommended ../python-yaml-3.11.pkg
 ```
 
 To install the required pkg files run:
 ```
-sudo installer -target / -pkg python-yaml.3.11.pkg
+sudo installer -target / -pkg python-yaml-3.11.pkg
 ```
 
 ### Psutil
@@ -414,13 +414,13 @@ tar xfvz pytz-2014.10.tar.gz
 cd pytz-2014.10/
 python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier org.python.pypi.pytz --version 2014.10 --ownership recommended ../python-pytz.2014.10.pkg
+pkgbuild --root dist/tmp --identifier org.python.pypi.pytz --version 2014.10 --ownership recommended ../python-pytz-2014.10.pkg
 cd ..
 ```
 
 To install the required pkg files run:
 ```
-sudo installer -target / -pkg python-pytz.2014.10.pkg
+sudo installer -target / -pkg python-pytz-2014.10.pkg
 ```
 
 ### six
@@ -432,13 +432,13 @@ tar xfvz six-1.6.1.tar.gz
 cd six-1.6.1/
 python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier org.python.pypi.six --version 1.6.1 --ownership recommended ../python-six.1.6.1.pkg
+pkgbuild --root dist/tmp --identifier org.python.pypi.six --version 1.6.1 --ownership recommended ../python-six-1.6.1.pkg
 cd ..
 ```
 
 To install the required pkg files run:
 ```
-sudo installer -target / -pkg python-six.1.6.1.pkg
+sudo installer -target / -pkg python-six-1.6.1.pkg
 ```
 
 ### Sleuthkit and Pytsk
