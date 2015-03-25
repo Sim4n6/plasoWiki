@@ -25,6 +25,7 @@ The following sections contain a rough outline of the larger items on the roadma
 * changes due to dfVFS using more strict caching strategy
 * changes to handling of compressed files and archives
 * added signature-based parser pre-filtering
+* improved TimeSketch integration
 * split off l2tdevtools
 * clean-up and fixes
   * parser chain
