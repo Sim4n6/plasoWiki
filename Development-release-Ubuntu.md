@@ -44,6 +44,7 @@ git pull upstream master
 If you intend to do development on plaso you'll also need to install some development tools:
 
 * PyLint
+* Python Mock 
 
 ### PyLint
 We recommend PyLint 1.0.0 or later. 
