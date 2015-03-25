@@ -92,7 +92,10 @@ sudo dpkg -i python-logilab-common_0.60.0-1_all.deb python-astroid_1.0.1-1_all.d
 ```
 
 ### Python Mock
-**TODO: add description.**
+To install Python Mock run:
+```
+sudo apt-get install python-mock
+```
 
 ## Creating a packaged release
 **TODO: add description.**
