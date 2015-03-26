@@ -14,22 +14,25 @@ The following sections contain a rough outline of the larger items on the roadma
 
 ### Version 1.2.1
 
-* Event Log event messages support
-* initial hasher support
-* improved image export
+* Core
+  * added signature-based parser pre-filtering
+  * initial hasher support
+  * Windows Event Log event messages support
+  * changes due to dfVFS using more strict caching strategy
+  * changes to handling of compressed files and archives
 * Parsers
   * Chrome preferences parser
   * improved MSIECF parser
 * Windows Registry plugins
   * WinReg Timezone Plugin
-* changes due to dfVFS using more strict caching strategy
-* changes to handling of compressed files and archives
-* added signature-based parser pre-filtering
-* improved TimeSketch integration
-* split off l2tdevtools
+* Output
+  * improved TimeSketch integration
+* Tools
+  * improved image export
 * clean-up and fixes
   * parser chain
   * parser mediator
+  * split off build and update dependency utility scripts to a separate project
 
 ### Version 1.3.0
 
