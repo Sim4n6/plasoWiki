@@ -23,7 +23,7 @@ If you intend to do development on plaso you'll also need to install some develo
 * PyLint
 
 ### PyLint
-We recommend PyLint 1.0.0 or later. 
+We recommend PyLint 1.4.0 or later. 
 
 ```
 sudo yum install pylint
