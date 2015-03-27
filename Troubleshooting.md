@@ -6,7 +6,7 @@ This page contains instructions that can be used to assist you in debugging pote
 
 1. Check the [commit history](https://github.com/log2timeline/plaso/commits/master) and [issue tracker](https://github.com/log2timeline/plaso/issues?q=is%3Aissue) if the bug has already been fixed;
 2. If you are running the development release make sure plaso and dependencies are up to date, see: [Developers Guide](https://github.com/log2timeline/plaso/wiki/Developers-Guide)
-3. Check your system logs;
+3. If you are experiencing an issue that cannot directly be attributed to some broken code e.g. the test are getting killed, check your system logs it might be a problem with resources available to plaso;
 4. Try to isolate the error, see below.
 
 If everything fails create a new issue on the [issue tracker](https://github.com/log2timeline/plaso/issues). Please provide as much detailed information as possible, keep in mind that:
