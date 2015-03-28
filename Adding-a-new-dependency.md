@@ -15,13 +15,13 @@ Code licensed under a GPL or BSD 4-clause cannot be integrated in a binary build
 ## Automated testing
 The automated testing relies on having the dependencies available. We deliberately limit the usage of pip (or equivalent) in the automated testing scripts, mainly because pip distributed builds change continuously. We want to have a more stable set of dependencies on dependencies and limit the amount of troubleshooting due breakage caused by a dependency.
 
-## Getting a dependency in l2tdevtools
+### Getting a dependency in l2tdevtools
 **TODO: describe**
 
-## Getting a dependency in GIFT
+### Getting a dependency in GIFT
 **TODO: describe**
 
-## Getting a dependency in the [Google Drive Downloads](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/)
+### Getting a dependency in the [Google Drive Downloads](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/)
 **TODO: describe**
 
 ## Source changes
