@@ -103,10 +103,23 @@ To install the required pkg files run:
 sudo installer -target / -pkg python-construct-2.5.2.pkg
 ```
 
-### dateutil.parser
-**TODO describe**
+### dateutil
+Download the latest source package from: https://github.com/dateutil/dateutil/releases
 
-http://labix.org/python-dateutil#head-2f49784d6b27bae60cde1cff6a535663cf87497b
+To build pkg files run the following command from the build root directory:
+```
+tar xfvz dateutil-2.4.1.tar.gz
+cd dateutil-2.4.1/
+python setup.py bdist
+mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
+pkgbuild --root dist/tmp --identifier org.github.dateutil.dateutil --version 2.4.1 --ownership recommended ../python-dateutil-2.4.1.pkg
+cd ..
+```
+
+To install the required pkg files run:
+```
+sudo installer -target / -pkg python-dateutil-2.4.1.pkg
+```
 
 ### dfVFS
 The dfVFS build instructions can be found [here](https://github.com/log2timeline/dfvfs/wiki/Building). Note that for dfVFS to function correctly several dependencies, like pytsk, mentioned later in a section of this page, are required.
