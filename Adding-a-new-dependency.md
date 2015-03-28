@@ -4,7 +4,7 @@ There are several steps involved for a new dependency to plaso.
 * update [Licenses dependencies](https://github.com/log2timeline/plaso/wiki/Licenses-dependencies)
 
 ## Checklist
-If the answer on any of the questions below is no the dependency is not suitable for plaso. In that case see: Alternative options
+If the answer on any of the questions below is no the dependency is not suitable for plaso. In that case see: [Alternatives](https://github.com/log2timeline/plaso/wiki/Adding-a-new-dependency#alternatives)
 
 * Has the dependency a [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0) compatible license?
 
@@ -36,5 +36,5 @@ The automated testing relies on having the dependencies available. We deliberate
 
 * update: [Licenses dependencies](https://github.com/log2timeline/plaso/wiki/Licenses-dependencies)
 
-## Alternative options
+## Alternatives
 **TODO: describe**
