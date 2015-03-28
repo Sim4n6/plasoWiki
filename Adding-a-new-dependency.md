@@ -27,9 +27,9 @@ The automated testing relies on having the dependencies available. We deliberate
 ## Source changes
 **TODO: describe**
 
-* update: utils/check_dependencies.py
+* update: [utils/check_dependencies.py](https://github.com/log2timeline/plaso/blob/master/utils/check_dependencies.py)
 * update: appveyor.yml
-* update: .travis.yml
+* update: [.travis.yml](https://github.com/log2timeline/plaso/blob/master/.travis.yml)
 
 ## Documentation
 **TODO: describe**
