@@ -34,7 +34,13 @@ The automated testing relies on having the dependencies available. We deliberate
 ## Documentation
 **TODO: describe**
 
-* update: [Licenses dependencies](https://github.com/log2timeline/plaso/wiki/Licenses-dependencies)
+Update the following wiki pages:
+
+* [Licenses dependencies](https://github.com/log2timeline/plaso/wiki/Licenses-dependencies)
+* [Dependencies Fedora Core](https://github.com/log2timeline/plaso/wiki/Dependencies-Fedora-Core)
+* [Dependencies Mac OS X](https://github.com/log2timeline/plaso/wiki/Dependencies-Mac-OS-X)
+* [Dependencies Ubuntu](https://github.com/log2timeline/plaso/wiki/Dependencies---Ubuntu)
+* [Dependencies Windows](https://github.com/log2timeline/plaso/wiki/Dependencies-Windows)
 
 ## Alternatives
 **TODO: describe**
