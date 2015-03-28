@@ -1,9 +1,6 @@
-There are several steps involved for a new dependency to plaso.
+There are several steps involved for getting a new dependency added to plaso.
 
-**TODO describe**
-* update [Licenses dependencies](https://github.com/log2timeline/plaso/wiki/Licenses-dependencies)
-
-## Checklist
+## Before you begin checklist
 If the answer on any of the questions below is no the dependency is not suitable for plaso. In that case see: [Alternatives](https://github.com/log2timeline/plaso/wiki/Adding-a-new-dependency#alternatives)
 
 * Has the dependency a [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0) compatible license?
@@ -16,12 +13,14 @@ Code licensed under a GPL or BSD 4-clause cannot be integrated in a binary build
 The automated testing relies on having the dependencies available. We deliberately limit the usage of pip (or equivalent) in the automated testing scripts, mainly because pip distributed builds change continuously. We want to have a more stable set of dependencies on dependencies and limit the amount of troubleshooting due breakage caused by a dependency.
 
 ### Getting a dependency in l2tdevtools
-Plaso relies on [l2tdevtools](https://github.com/log2timeline/l2tdevtools) to limit the amount of manual effort involved in maintaining dependencies.
+Plaso uses [l2tdevtools](https://github.com/log2timeline/l2tdevtools) to limit the amount of manual effort required in maintaining dependencies.
 
-**TODO: describe**
+If the build process of the dependency is similar enough what is currently supported then adding a new dependency should be relative straight forward by adding it to [data/projects.ini](https://github.com/log2timeline/l2tdevtools/blob/master/data/projects.ini). If not reach out to discuss how we can get support into l2tdevtools for the specific dependency.
 
 ### Getting a dependency in GIFT
-**TODO: describe**
+Once the dependency has been added to l2tdevtools it can be added to the [GIFT PPA](https://launchpad.net/~gift). Ask one of the PPA maintainers to upload your package.
+
+**Note for PPA maintainers upload new packages always to the [testing track](https://launchpad.net/~gift/+archive/ubuntu/testing) first.**
 
 ### Getting a dependency in the [Google Drive Downloads](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/)
 **TODO: describe**
