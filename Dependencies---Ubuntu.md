@@ -64,7 +64,7 @@ sudo apt-get upgrade
 ### Build essentials
 Make sure the necessary building tools and development packages are installed on the system:
 ```
-sudo apt-get install build-essential autotools-dev libsqlite3-dev python-dev debhelper devscripts fakeroot quilt git mercurial python-dateutil python-setuptools libtool automake
+sudo apt-get install build-essential autotools-dev libsqlite3-dev python-dev debhelper devscripts fakeroot quilt git mercurial python-setuptools libtool automake
 ```
 
 ### Bencode
@@ -143,7 +143,10 @@ sudo dpkg -i python-construct_2.5.2-1_all.deb
 ```
 
 ### dateutil
-**TODO describe**
+To install dateutil run:
+```
+sudo apt-get install python-dateutil
+```
 
 ### dfVFS
 The dfVFS build instructions can be found [here](https://github.com/log2timeline/dfvfs/wiki/Building). Note that for dfVFS to function correctly several dependencies, like pytsk, mentioned later in a section of this page, are required.
