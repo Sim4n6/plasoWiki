@@ -142,6 +142,9 @@ To install the required deb files run:
 sudo dpkg -i python-construct_2.5.2-1_all.deb
 ```
 
+### dateutil
+**TODO describe**
+
 ### dfVFS
 The dfVFS build instructions can be found [here](https://github.com/log2timeline/dfvfs/wiki/Building). Note that for dfVFS to function correctly several dependencies, like pytsk, mentioned later in a section of this page, are required.
 
