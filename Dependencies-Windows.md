@@ -97,6 +97,24 @@ dist\construct-2.5.2.win32.msi
 
 Install the MSI.
 
+### dateutil
+Download the latest source package from: https://github.com/dateutil/dateutil/releases
+
+To build the MSI file run the following commands from the build root directory:
+```
+tar xfv dateutil-2.4.1.tar.gz
+cd dateutil-2.4.1\
+C:\Python27\python.exe setup.py bdist_msi
+cd ..
+```
+
+This will create a MSI in the dist sub directory e.g.:
+```
+dist\dateutil-2.4.1.win32.msi
+```
+
+Install the MSI.
+
 ### dfVFS
 The dfVFS build instructions can be found [here](https://github.com/log2timeline/dfvfs/wiki/Building). Note that for dfVFS to function correctly several dependencies, like pytsk, mentioned later in a section of this page, are required.
 
