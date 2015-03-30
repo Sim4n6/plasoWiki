@@ -48,7 +48,7 @@ Based on our definition an event technically should have a date or time (or dura
 **TODO: add description**
 
 ### Event time
-A plaso timestamp is a 64-bit signed integer that contains the number of micro seconds since January 1, 1970 00:00:00 UTC.
+A plaso timestamp is a 64-bit signed integer that contains the number of micro seconds since January 1, 1970 00:00:00 UTC. A negative time means that the event happened before the its reference date (or [epoch](http://en.wikipedia.org/wiki/Epoch_(reference_date))).
 
 * An event spanning a duration is currently not supported
 * Time-less events currently overload timestamp 0
