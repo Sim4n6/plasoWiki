@@ -16,7 +16,7 @@ An event consists of the following types of information:
 * an indication of what the event time represents e.g. Creation Time, Program Execution Duration, etc.
 * the source of the event e.g. the Windows Application Event Log C:\Windows\System32\config\AppEvent.evt or specific lines in the /var/log/messages
 * data specific to the event e.g. in case of process execution this could be the path of the executable file and arguments
-* contextual information about the event e.g. user comments or automatic generated tags (event source)
+* contextual information about the event e.g. the hostname of the system on which the event occurred, the identifier of the user account under which the event occurred, etc.
 
 A more analysts view on how an event can be defined is:
 
@@ -26,12 +26,30 @@ A more analysts view on how an event can be defined is:
 * Who/what affected the action (object)
 * Where did we learn from that the event happened (event source)
 
+### Time-less events
+Based on our definition an event technically should have a date or time (or duration). However there are cases where we know an action happened but have no indication of when. 
+
+**TODO: add description**
+
 ### Different levels of events
 **TODO: add description**
 
-* source-level event
-* system-level event
+* source-level event; e.g. a line in syslog representing an event
+* system-level event; e.g. 
 * user-level event
 
 ## How are events defined in plaso?
 **TODO: add description**
+
+### Event object
+**TODO: add description**
+
+#### Event object type
+**TODO: add description**
+
+### Event time
+A plaso timestamp is a 64-bit signed integer that contains the number of micro seconds since January 1, 1970 00:00:00 UTC.
+
+* An event spanning a duration is currently not supported
+* Time-less events currently overload timestamp 0
+
