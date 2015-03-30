@@ -7,7 +7,7 @@ This page contains some scribbles about events. It contains information about:
 ## What is an event?
 From [Wikipedia - Event (computing)](http://en.wikipedia.org/wiki/Event_%28computing%29)
 
-> In computing, an event is an action or occurrence detected by the program that may be handled by the program. Typically events are handled synchronously with the program flow, that is, the program has one or more dedicated places where events are handled, frequently an event loop. Typical sources of events include the user (who presses a key on the keyboard, in other words, through a keystroke). Another source is a hardware device such as a timer. Any program can trigger its own custom set of events as well, e.g. to communicate the completion of a task. A computer program that changes its behavior in response to events is said to be event-driven, often with the goal of being interactive.
+> In computing, an event is an action or occurrence detected by the program that may be handled by the program. Typically events are handled synchronously with the program flow, that is, the program has one or more dedicated places where events are handled, frequently an event loop. Typical sources of events include the user (who presses a key on the keyboard, in other words, through a keystroke). Another source is a hardware device such as a timer. Any program can trigger its own custom set of events as well, e.g. to communicate the completion of a task.
 
 ## How can an event be defined?
 An event consists of the following types of information:
