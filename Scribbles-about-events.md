@@ -8,17 +8,18 @@ From [Wikipedia - Event (computing)](http://en.wikipedia.org/wiki/Event_%28compu
 ## How can an event be defined?
 An event consists of the following types of information:
 
-* date and time or duration of the event;
-* an indication of what the time represents e.g. Creation Time, Program Execution Duration, etc.
+* date and time or duration of the event (event time);
+* an indication of what the event time represents e.g. Creation Time, Program Execution Duration, etc.
 * the source of the event e.g. the Windows Application Event Log C:\Windows\System32\config\AppEvent.evt or specific lines in the /var/log/messages
 * data specific to the event e.g. in case of process execution this could be the path of the executable file and arguments
-* contextual information about the event e.g. user comments or automatic generated tags
+* contextual information about the event e.g. user comments or automatic generated tags (event source)
 
-A more analysts view on an event is:
+A more analysts view on how an event can be defined is:
 
-* When or for how long this event happened (time)
-* Who/what did an action (actor or subject)
-* What action was done (action or predicate)
-* On who/what (object)
-* Who/what originated it (source)
+* When or for how long this event happened (event time)
+* Who/what did an action for the event to happen (actor or subject)
+* What was the action that happened (action or predicate)
+* Who/what affected the action (object)
+* Where did we learn from that the event happened (event source)
+
 
