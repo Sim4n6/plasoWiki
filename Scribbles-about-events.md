@@ -53,3 +53,5 @@ A plaso timestamp is a 64-bit signed integer that contains the number of micro s
 * An event spanning a duration is currently not supported
 * Time-less events currently overload timestamp 0
 
+### Event formatting
+**TODO: add description**
