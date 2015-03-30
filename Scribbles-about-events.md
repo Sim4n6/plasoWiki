@@ -1,4 +1,8 @@
-This page contains some scribbles about events. What are they? How can an event be defined? What is plaso's perspective on events?
+This page contains some scribbles about events. It contains information about:
+
+* What is an event?
+* How can an event be defined?
+* How are events defined in plaso?
 
 ## What is an event?
 From [Wikipedia - Event (computing)](http://en.wikipedia.org/wiki/Event_%28computing%29)
@@ -22,4 +26,12 @@ A more analysts view on how an event can be defined is:
 * Who/what affected the action (object)
 * Where did we learn from that the event happened (event source)
 
+### Different levels of events
+**TODO: add description**
 
+* source-level event
+* system-level event
+* user-level event
+
+## How are events defined in plaso?
+**TODO: add description**
