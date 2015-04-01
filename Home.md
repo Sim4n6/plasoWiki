@@ -14,11 +14,13 @@ And is moving to support:
 * adding more analysis context;
 * allowing more targeted approach to the collection/parsing.
 
-Code Coverage: [![Coverage Status](https://img.shields.io/coveralls/log2timeline/plaso.svg)](https://coveralls.io/r/log2timeline/plaso?branch=master)
+### Project status
+[Travis-CI](https://travis-ci.org/) | [AppVeyor](https://ci.appveyor.com) | [Coveralls](https://coveralls.io/)
+--- | --- | --- 
+[![Build Status](https://travis-ci.org/log2timeline/plaso.svg?branch=master)](https://travis-ci.org/log2timeline/plaso) | [![Build status](https://ci.appveyor.com/api/projects/status/g3x5ylegjjo61p4m?svg=true)](https://ci.appveyor.com/project/joachimmetz/plaso) | [![Coverage Status](https://img.shields.io/coveralls/log2timeline/plaso.svg)](https://coveralls.io/r/log2timeline/plaso?branch=master)
 
-Build Status: [![Build Status](https://travis-ci.org/log2timeline/plaso.svg?branch=master)](https://travis-ci.org/log2timeline/plaso)
+### Also see
 
-Also see:
 * [Project documentation](http://plaso.kiddaland.net/)
   * [Developers Guide](https://github.com/log2timeline/plaso/wiki/Developers-Guide)
   * [Users Guide](https://github.com/log2timeline/plaso/wiki/Users-Guide)
