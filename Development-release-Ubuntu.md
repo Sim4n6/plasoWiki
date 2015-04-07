@@ -100,7 +100,7 @@ sudo apt-get install python-mock
 ## Creating a packaged release
 **TODO: add description.**
 
-### Source dpkg
+### Source dpkg for gift PPA
 Copy the dpkg files to a debian sub directory:
 ```
 mkdir debian && cp config/dpkg/* debian
@@ -118,7 +118,7 @@ Build a source package:
 debuild -S -sa
 ```
 
-Upload to gift:
+Upload to the testing track of gift:
 ```
 dput ppa:gift/testing plaso-python_1.2.1-dev-20150507-1ppa1~trusty_source.changes
 ```
