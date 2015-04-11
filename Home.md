@@ -32,6 +32,7 @@ Volume System Format support is provided by [dfvfs](https://github.com/log2timel
 File System Format support is provided by [dfvfs](https://github.com/log2timeline/dfvfs/wiki#file-systems).
 
 #### File formats
+
 * [Apple System Log (ASL)](http://forensicswiki.org/index.php?title=Apple_System_Log_(ASL)&action=edit&redlink=1)
 * Android usage-history (app usage)
 * [Basic Security Module (BSM)](http://forensicswiki.org/wiki/Basic_Security_Module_(BSM)_file_format)
@@ -74,19 +75,23 @@ File System Format support is provided by [dfvfs](https://github.com/log2timelin
 * Windows XML Event Log (EVTX) using [libevtx](https://github.com/libyal/libevtx)
 * Xchat and Xchat scrollback files
 
-=== Bencode file formats ===
+#### Bencode file formats
+
 * Transmission
 * uTorrent
 
-=== ESE database file formats ===
+#### ESE database file formats
+
 * Internet Explorer WebCache format
 
-=== OLE Compound File formats ===
+#### OLE Compound File formats
+
 * Document summary information
 * Summary information (top-level only)
 * [Jump Lists](http://forensicswiki.org/wiki/Jump_Lists) .automaticDestinations-ms files
 
-=== Property list (plist) formats ===
+#### Property list (plist) formats
+
 * Airport
 * Apple Account
 * Bluetooth
@@ -99,7 +104,8 @@ File System Format support is provided by [dfvfs](https://github.com/log2timelin
 * Spotlight Volume Information
 * Timemachine
 
-=== SQLite database file formats ===
+#### SQLite database file formats
+
 * Android call logs
 * Android SMS
 * Chrome cookies
@@ -114,7 +120,8 @@ File System Format support is provided by [dfvfs](https://github.com/log2timelin
 * Skype text conversations
 * Zeitgeist activity database
 
-=== Windows Registry formats ===
+#### Windows Registry formats
+
 * AppCompatCache
 * BagMRU (or ShellBags)
 * CCleaner
