@@ -23,7 +23,7 @@ And is moving to support:
 The information below is based of version 1.2.0
 
 #### Storage Media Image File Formats
-Storage Media Image File Format support is provided by [dfvfs].(https://github.com/log2timeline/dfvfs/wiki#storage-media-types)
+Storage Media Image File Format support is provided by [dfvfs](https://github.com/log2timeline/dfvfs/wiki#storage-media-types).
 
 #### Volume System Formats
 Volume System Format support is provided by [dfvfs](https://github.com/log2timeline/dfvfs/wiki#volume-systems).
