@@ -23,6 +23,7 @@ The following sections contain a rough outline of the larger items on the roadma
 * Parsers
   * Chrome preferences parser
   * improved MSIECF parser
+  * rp.log parser
 * Windows Registry plugins
   * WinReg Timezone Plugin
 * Output
