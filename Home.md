@@ -19,6 +19,124 @@ And is moving to support:
 --- | --- | --- 
 [![Build Status](https://travis-ci.org/log2timeline/plaso.svg?branch=master)](https://travis-ci.org/log2timeline/plaso) | [![Build status](https://ci.appveyor.com/api/projects/status/g3x5ylegjjo61p4m?svg=true)](https://ci.appveyor.com/project/joachimmetz/plaso) | [![Coverage Status](https://img.shields.io/coveralls/log2timeline/plaso.svg)](https://coveralls.io/r/log2timeline/plaso?branch=master)
 
+### Supported Formats
+The information below is based of version 1.2.0
+
+#### Storage Media Image File Formats
+Storage Media Image File Format support is provided by [dfvfs].(https://github.com/log2timeline/dfvfs/wiki#storage-media-types)
+
+#### Volume System Formats
+Volume System Format support is provided by [dfvfs](https://github.com/log2timeline/dfvfs/wiki#volume-systems).
+
+#### File System Formats
+File System Format support is provided by [dfvfs](https://github.com/log2timeline/dfvfs/wiki#file-systems).
+
+#### File formats
+* [Apple System Log (ASL)](http://forensicswiki.org/index.php?title=Apple_System_Log_(ASL)&action=edit&redlink=1)
+* Android usage-history (app usage)
+* [Basic Security Module (BSM)](http://forensicswiki.org/wiki/Basic_Security_Module_(BSM)_file_format)
+* Bencode files
+* [Chrome Disk Cache Format](http://forensicswiki.org/wiki/Chrome_Disk_Cache_Format)
+* CUPS IPP
+* [Extensible Storage Engine (ESE) Database File (EDB) format](http://forensicswiki.org/wiki/Extensible_Storage_Engine_(ESE)_Database_File_(EDB)_format) using [libesedb](https://github.com/libyal/libesedb)
+* Firefox Cache
+* Java IDX
+* [Jump Lists](http://forensicswiki.org/wiki/Jump_Lists) .customDestinations-ms files
+* MacOS-X Application firewall
+* MacOS-X Keychain
+* MacOS-X Securityd
+* MacOS-X Wifi
+* (SleuthKit) mactime logs
+* McAfee Anti-Virus Logs
+* Microsoft Internet Explorer History File Format (also known as MSIE 4 - 9 Cache Files or index.dat) using [libmsiecf](https://github.com/libyal/libmsiecf)
+* Microsoft IIS log files
+* OLE Compound File using [libolecf](https://github.com/libyal/libolecf)
+* Opera Browser history
+* OpenXML
+* Pcap files
+* PL SQL cache file (PL-SQL developer recall files)
+* Popularity Contest log
+* Property list (plist) format using binplist
+* SELinux audit logs
+* SkyDrive log and error log files
+* SQLite database format using SQLite
+* Symantec AV Corporate Edition and Endpoint Protection log
+* Syslog
+* UTMP
+* UTMPX
+* Windows Event Log (EVT) using [libevt](https://github.com/libyal/libevt)
+* Windows Firewall
+* Windows Job files (also known as "at jobs")
+* Windows Prefetch files
+* Windows Recycle bin (INFO2 and $I/$R)
+* Windows NT Registry File (REGF) using [libregf](https://github.com/libyal/libregf)
+* LNK|Windows Shortcut File (LNK) format using [liblnk](https://github.com/libyal/liblnk) (including shell item support)
+* Windows XML Event Log (EVTX) using [libevtx](https://github.com/libyal/libevtx)
+* Xchat and Xchat scrollback files
+
+=== Bencode file formats ===
+* Transmission
+* uTorrent
+
+=== ESE database file formats ===
+* Internet Explorer WebCache format
+
+=== OLE Compound File formats ===
+* Document summary information
+* Summary information (top-level only)
+* [Jump Lists](http://forensicswiki.org/wiki/Jump_Lists) .automaticDestinations-ms files
+
+=== Property list (plist) formats ===
+* Airport
+* Apple Account
+* Bluetooth
+* Install History
+* iPod/iPhone
+* Mac User
+* Safari history
+* Software Update
+* Spotlight
+* Spotlight Volume Information
+* Timemachine
+
+=== SQLite database file formats ===
+* Android call logs
+* Android SMS
+* Chrome cookies
+* Chrome browsing and downloads history
+* Chrome Extension activity
+* Firefox cookies
+* Firefox browsing and downloads history
+* Google Drive
+* Launch services quarantine events
+* MacKeeper cache
+* Mac OS X document versions
+* Skype text conversations
+* Zeitgeist activity database
+
+=== Windows Registry formats ===
+* AppCompatCache
+* BagMRU (or ShellBags)
+* CCleaner
+* Less Frequently Used (LFU)
+* MountPoints2
+* Most Recently Used (MRU) MRUList and MRUListEx (including shell item support)
+* MSIE Zones
+* Office MRU
+* Outlook Search
+* Run and RunOnce keys
+* SAM
+* Services
+* Shutdown
+* Task Scheduler Cache (Task Cache)
+* Terminal Server MRU
+* Typed URLS
+* USB
+* USBStor
+* UserAssist
+* WinRar
+* Windows version information
+
 ### Also see
 
 * [Project documentation](http://plaso.kiddaland.net/)
