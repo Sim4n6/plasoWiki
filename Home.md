@@ -47,32 +47,32 @@ File System Format support is provided by [dfvfs](https://github.com/log2timelin
 * MacOS-X Keychain
 * MacOS-X Securityd
 * MacOS-X Wifi
-* (SleuthKit) mactime logs
+* [mactime logs](http://forensicswiki.org/wiki/Mactime)
 * McAfee Anti-Virus Logs
-* Microsoft Internet Explorer History File Format (also known as MSIE 4 - 9 Cache Files or index.dat) using [libmsiecf](https://github.com/libyal/libmsiecf)
+* Microsoft [Internet Explorer History File Format](http://forensicswiki.org/wiki/Internet_Explorer_History_File_Format) (also known as MSIE 4 - 9 Cache Files or index.dat) using [libmsiecf](https://github.com/libyal/libmsiecf)
 * Microsoft IIS log files
-* OLE Compound File using [libolecf](https://github.com/libyal/libolecf)
-* Opera Browser history
+* [OLE Compound File](http://forensicswiki.org/wiki/OLE_Compound_File) using [libolecf](https://github.com/libyal/libolecf)
+* [Opera Browser history](http://forensicswiki.org/wiki/Opera)
 * OpenXML
 * Pcap files
 * PL SQL cache file (PL-SQL developer recall files)
 * Popularity Contest log
-* Property list (plist) format using binplist
+* [Property list (plist) format](http://forensicswiki.org/wiki/Property_list_(plist)) using [binplist](http://forensicswiki.org/wiki/Binplist)
 * SELinux audit logs
 * SkyDrive log and error log files
-* SQLite database format using SQLite
+* [SQLite database format](http://forensicswiki.org/wiki/SQLite_database_format) using [SQLite](http://forensicswiki.org/wiki/SQLite)
 * Symantec AV Corporate Edition and Endpoint Protection log
 * Syslog
 * UTMP
 * UTMPX
-* Windows Event Log (EVT) using [libevt](https://github.com/libyal/libevt)
+* [Windows Event Log (EVT)](http://forensicswiki.org/wiki/Windows_Event_Log_(EVT)) using [libevt](https://github.com/libyal/libevt)
 * Windows Firewall
-* Windows Job files (also known as "at jobs")
-* Windows Prefetch files
-* Windows Recycle bin (INFO2 and $I/$R)
-* Windows NT Registry File (REGF) using [libregf](https://github.com/libyal/libregf)
-* LNK|Windows Shortcut File (LNK) format using [liblnk](https://github.com/libyal/liblnk) (including shell item support)
-* Windows XML Event Log (EVTX) using [libevtx](https://github.com/libyal/libevtx)
+* [Windows Job files](http://forensicswiki.org/wiki/Windows_Job_File_Format) (also known as "at jobs")
+* [Windows Prefetch files](http://forensicswiki.org/wiki/Windows_Prefetch_File_Format)
+* [Windows Recycle bin](http://forensicswiki.org/wiki/Windows#Recycle_Bin) (INFO2 and $I/$R)
+* [Windows NT Registry File (REGF)](http://forensicswiki.org/wiki/Windows_NT_Registry_File_(REGF)) using [libregf](https://github.com/libyal/libregf)
+* [Windows Shortcut File (LNK) format](http://forensicswiki.org/wiki/LNK) using [liblnk](https://github.com/libyal/liblnk) (including shell item support)
+* [Windows XML Event Log (EVTX)](http://forensicswiki.org/wiki/Windows_XML_Event_Log_(EVTX)) using [libevtx](https://github.com/libyal/libevtx)
 * Xchat and Xchat scrollback files
 
 #### Bencode file formats
