@@ -41,7 +41,7 @@ File System Format support is provided by [dfvfs](https://github.com/log2timelin
 * CUPS IPP
 * [Extensible Storage Engine (ESE) Database File (EDB) format](http://forensicswiki.org/wiki/Extensible_Storage_Engine_(ESE)_Database_File_(EDB)_format) using [libesedb](https://github.com/libyal/libesedb)
 * Firefox Cache
-* Java IDX
+* [Java WebStart IDX](http://forensicswiki.org/wiki/Java)
 * [Jump Lists](http://forensicswiki.org/wiki/Jump_Lists) .customDestinations-ms files
 * MacOS-X Application firewall
 * MacOS-X Keychain
@@ -98,7 +98,7 @@ File System Format support is provided by [dfvfs](https://github.com/log2timelin
 * Install History
 * iPod/iPhone
 * Mac User
-* Safari history
+* [Safari history](http://forensicswiki.org/wiki/Apple_Safari)
 * Software Update
 * Spotlight
 * Spotlight Volume Information
