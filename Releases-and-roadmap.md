@@ -24,6 +24,8 @@ The following sections contain a rough outline of the larger items on the roadma
   * Chrome preferences parser
   * improved MSIECF parser
   * rp.log parser
+* ESE database file formats
+  * Windows 8 File History
 * Windows Registry plugins
   * WinReg Timezone Plugin
 * Output
