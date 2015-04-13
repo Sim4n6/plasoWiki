@@ -43,10 +43,10 @@ File System Format support is provided by [dfvfs](https://github.com/log2timelin
 * Firefox Cache
 * [Java WebStart IDX](http://forensicswiki.org/wiki/Java)
 * [Jump Lists](http://forensicswiki.org/wiki/Jump_Lists) .customDestinations-ms files
-* MacOS-X Application firewall
-* MacOS-X Keychain
-* MacOS-X Securityd
-* MacOS-X Wifi
+* Mac OS X Application firewall
+* Mac OS X Keychain
+* Mac OS X Securityd
+* Mac OS X Wifi
 * [mactime logs](http://forensicswiki.org/wiki/Mactime)
 * McAfee Anti-Virus Logs
 * Microsoft [Internet Explorer History File Format](http://forensicswiki.org/wiki/Internet_Explorer_History_File_Format) (also known as MSIE 4 - 9 Cache Files or index.dat) using [libmsiecf](https://github.com/libyal/libmsiecf)
