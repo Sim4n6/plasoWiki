@@ -10,9 +10,23 @@ If you do not plan to develop or live on the edge, regarding plaso, we highly re
 ## Roadmap
 The following sections contain a rough outline of the larger items on the roadmap. For more detailed information see: [Plaso - Roadmap and Assignment](http://goo.gl/cRjA7y)
 
-**TODO describe larger ideas below.**
+* [Artifact support](https://github.com/log2timeline/plaso/issues/155)
+* Migration to Python 3
+  * requires other dependencies being Python 3 compatible
+  * Migration to construct 3
+* Handling recovered (deleted) data
+* Parsers
+  * [add more parsers](http://goo.gl/cRjA7y)
+  * improve existing parsers
+    * job file parser - add format improvements
+* Plaso as a module; Clean up and rewrite of the engine code (the parts that were not touched previously); Stabilize an API
+  * [storage redesign](https://github.com/log2timeline/plaso/issues/102)
+* Plaso as a service
+* Sandboxing the workers
+* [Windows Registry support improvements](https://github.com/log2timeline/plaso/issues/145)
 
-### Version 1.2.1
+## Changes in development release
+Changes in the version 1.2.1 development release:
 
 * Core
   * added signature-based parser pre-filtering
@@ -26,6 +40,7 @@ The following sections contain a rough outline of the larger items on the roadma
   * rp.log parser
 * ESE database file formats
   * Windows 8 File History
+  * long value support
 * Windows Registry plugins
   * WinReg Timezone Plugin
 * Output
@@ -36,24 +51,7 @@ The following sections contain a rough outline of the larger items on the roadma
   * parser chain
   * parser mediator
   * split off build and update dependency utility scripts to a separate project
-
-### Version 1.3.0
-
-* Plaso as a module; Clean up and rewrite of the engine code (the parts that were not touched previously); Stabilize an API
-* [storage redesign](https://github.com/log2timeline/plaso/issues/102)
-* [winreg: clean up and improve](https://github.com/log2timeline/plaso/issues/145)
-* Parsers
-  * job file parser - add format improvements
-
-### Mid/Long term
-
-* Artifact support
-* Migration to Python 3
-  * requires other dependencies being Python 3 compatible
-  * Migration to construct 3
-* Improved handling recovered (deleted) data
-* Plaso as a service
-* Sandboxing the workers
+  * various refactors
 
 ## Packaged release history
 Version | Name | Release date | Comments
