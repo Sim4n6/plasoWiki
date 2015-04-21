@@ -74,24 +74,7 @@ c
 Wait until the crash occurs and generate a back trace.
 
 ## High memory usage
-Plaso consists of various components. It can happen that one of these components uses a lot of memory or even leaks memory. In these cases it is important to isolate the error, see before, to track down what the possible culprit is.
-
-### Profiling with guppy
-Plaso supports memory profiling of the worker processes. To enable profiling you'll need to install guppy, version 0.1.10 or later is recommended.
-
-If plaso detects that guppy is available it will enable the profiling options, e.g.
-```
-log2timeline.py --profile --profile-sample-rate=5000 plaso.db image.raw
-```
-
-This will create a #.hpy file per worker, where # is the number of the worker.
-
-Guppy has a built-in profile browser to view the .hpy files e.g.
-```
-from guppy import hpy
-heapy = hpy()
-heapy.pb('0.hpy')
-```
+Plaso consists of various components. It can happen that one of these components uses a lot of memory or even leaks memory. In these cases it is important to isolate the error, see before, to track down what the possible culprit is. Also see: [Profiling memory usage](https://github.com/log2timeline/plaso/wiki/Profiling#profiling-memory-usage)
 
 ## Also see
 
