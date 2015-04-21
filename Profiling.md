@@ -1,11 +1,12 @@
 ## Profiling memory usage
+The memory usage of the worker processes used by log2timeline.py can be profiled with guppy.
 
 ### Profiling with guppy
-Plaso supports memory profiling of the worker processes. To enable profiling you'll need to install guppy, version 0.1.10 or later is recommended.
+To enable profiling you'll need to install [guppy](https://pypi.python.org/pypi/guppy), version 0.1.10 or later is recommended.
 
 If plaso detects that guppy is available it will enable the profiling options, e.g.
 ```
-log2timeline.py --profile --profile-sample-rate=5000 plaso.db image.raw
+log2timeline.py --profile --profiling-sample-rate=5000 --profiling-type=memory plaso.dump image.raw
 ```
 
 This will create a #.hpy file per worker, where # is the number of the worker.
@@ -17,6 +18,8 @@ heapy = hpy()
 heapy.pb('0.hpy')
 ```
 
-## Also see
-
-* [Troubleshooting Plaso Issues - Memory Edition](http://blog.kiddaland.net/2014/11/troubleshooting-plaso-issues-memory.html)
+## Profiling parsers
+To profile the CPU usage of the parsers run log2timeline.py with the following options:
+```
+log2timeline.py --profile --profiling-type=parsers plaso.db image.raw
+```
