@@ -1,3 +1,18 @@
+Plaso supports various profiling options for troubleshooting and performance tuning.
+
+## Profiling CPU usage
+### Profiling parsers
+To profile the CPU usage of the parsers run log2timeline.py with the following options:
+```
+log2timeline.py --profile --profiling-type=parsers plaso.db image.raw
+```
+
+### Profiling serialization
+**TODO**
+
+### Profiling storage
+**TODO**
+
 ## Profiling memory usage
 The memory usage of the worker processes used by log2timeline.py can be profiled with guppy.
 
@@ -17,16 +32,3 @@ from guppy import hpy
 heapy = hpy()
 heapy.pb('0.hpy')
 ```
-
-## Profiling CPU usage
-### Profiling parsers
-To profile the CPU usage of the parsers run log2timeline.py with the following options:
-```
-log2timeline.py --profile --profiling-type=parsers plaso.db image.raw
-```
-
-### Profiling serialization
-**TODO**
-
-### Profiling storage
-**TODO**
