@@ -28,8 +28,7 @@ Once the dependency has been added to l2tdevtools it can be added to the [GIFT P
 ## Source changes
 **TODO: describe**
 
-* update: plaso/dependencies.py ([in upcoming change](https://codereview.appspot.com/220440043/))
-* update: [utils/check_dependencies.py](https://github.com/log2timeline/plaso/blob/master/utils/check_dependencies.py)
+* update: [plaso/dependencies.py] (https://github.com/log2timeline/plaso/blob/master/plaso/dependencies.py)
 * update: [appveyor.yml] (https://github.com/log2timeline/plaso/blob/master/appveyor.yml)
 * update: [.travis.yml](https://github.com/log2timeline/plaso/blob/master/.travis.yml)
 
