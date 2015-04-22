@@ -18,8 +18,15 @@ heapy = hpy()
 heapy.pb('0.hpy')
 ```
 
-## Profiling parsers
+## Profiling CPU usage
+### Profiling parsers
 To profile the CPU usage of the parsers run log2timeline.py with the following options:
 ```
 log2timeline.py --profile --profiling-type=parsers plaso.db image.raw
 ```
+
+### Profiling serialization
+**TODO**
+
+### Profiling storage
+**TODO**
