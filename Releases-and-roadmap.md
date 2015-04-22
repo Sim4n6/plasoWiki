@@ -11,6 +11,9 @@ If you do not plan to develop or live on the edge, regarding plaso, we highly re
 The following sections contain a rough outline of the larger items on the roadmap. For more detailed information see: [Plaso - Roadmap and Assignment](http://goo.gl/cRjA7y)
 
 * [Artifact support](https://github.com/log2timeline/plaso/issues/155)
+* Improve file system support
+  * [dfVFS](https://github.com/log2timeline/dfvfs/wiki/Roadmap)
+  * $MFT, $UsnJrnl parsing
 * Migration to Python 3
   * requires other dependencies being Python 3 compatible
   * Migration to construct 3
@@ -19,6 +22,7 @@ The following sections contain a rough outline of the larger items on the roadma
   * [add more parsers](http://goo.gl/cRjA7y)
   * improve existing parsers
     * job file parser - add format improvements
+* Add analysis plugins
 * Plaso as a module; Clean up and rewrite of the engine code (the parts that were not touched previously); Stabilize an API
   * [storage redesign](https://github.com/log2timeline/plaso/issues/102)
 * Plaso as a service
