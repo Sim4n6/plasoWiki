@@ -30,6 +30,7 @@ Dependency | License
 ## Parser dependencies
 Dependency | License
 --- | ---
+[artifacts](https://github.com/ForensicArtifacts/artifacts) | [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 [bencode](https://pypi.python.org/pypi/bencode) | [BitTorrent Open Source License](http://web.archive.org/web/20080213154112/http://www.bittorrent.com/bittorrent-open-source-license)
 [binplist](https://code.google.com/p/binplist/) | [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 [construct](http://construct.readthedocs.org) | [MIT license](http://opensource.org/licenses/MIT)
@@ -45,6 +46,7 @@ Dependency | License
 [Libregf and Python-bindings](https://github.com/libyal/libregf/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
 [Six](https://pypi.python.org/pypi/six/) | [MIT license](http://opensource.org/licenses/MIT)
 [Sqlite](http://www.sqlite.org/index.html) | [Public domain](http://www.sqlite.org/copyright.html)
+[pefile](https://github.com/erocarrera/pefile) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
 [Pyparsing](http://pyparsing.wikispaces.com/) | [MIT license](http://opensource.org/licenses/MIT)
 [Pysqlite](https://pypi.python.org/pypi/pysqlite) | [zlib/libpng license](https://github.com/ghaering/pysqlite/blob/master/LICENSE)
 
