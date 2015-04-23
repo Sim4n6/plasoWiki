@@ -75,8 +75,14 @@ There can be a code freeze announced before a release, in which we try to focus 
 3. Make user plaso runs all the tests successfully on your development system
 4. Get yourself added as a committer on the plaso git repo: https://github.com/orgs/log2timeline/teams/plaso-contribs
 5. Make sure your development system is set up correctly so that you can push code to github. See: https://github.com/log2timeline/plaso
-6. Make sure your email address and name are correctly set in git: `git config -l` provides you a list of the current configuration.
+6. Make sure your email address and name are correctly set in git:
+```
+git config --global user.name "Full Name"
+git config --global user.email name@example.com
+git config --global push.default matching
+```
+
+Use `git config -l` to determine the current configuration.
 
 **TODO: add more text**
-
 
