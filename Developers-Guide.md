@@ -67,4 +67,16 @@ And if things are unclear, don't hesitate to ask. The developer mailing list is:
 ### Submitting code
 There can be a code freeze announced before a release, in which we try to focus on testing and bug fixes. In such a freeze, new features will added to the codebase after the release.
 
+#### Prerequisites
+
+1. Go to https://codereview.appspot.com to setup your account, you'll need a Google account for this.
+2. Join the development mailing list: log2timeline-dev@googlegroups.com (https://groups.google.com/forum/?fromgroups#!forum/log2timeline-dev), we recommend using the same account as step 1
+2. Install the required development tools like pylint, python-mock
+3. Make user plaso runs all the tests successfully on your development system
+4. Get yourself added as a committer on the plaso git repo: https://github.com/orgs/log2timeline/teams/plaso-contribs
+5. Make sure your development system is set up correctly so that you can push code to github. See: https://github.com/log2timeline/plaso
+6. Make sure your email address and name are correctly set in git: `git config -l` provides you a list of the current configuration.
+
 **TODO: add more text**
+
+
