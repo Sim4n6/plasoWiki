@@ -23,6 +23,11 @@ The following sections contain a rough outline of the larger items on the roadma
   * improve existing parsers
     * job file parser - add format improvements
 * Add analysis plugins
+  * NSRL Server
+  * Virustotal
+* Hashing
+  * Do NSRL matching prior to event extraction
+  * Use an event database to shortcut file processing
 * Plaso as a module; Clean up and rewrite of the engine code (the parts that were not touched previously); Stabilize an API
   * [storage redesign](https://github.com/log2timeline/plaso/issues/102)
 * Plaso as a service
