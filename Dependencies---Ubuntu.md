@@ -38,7 +38,7 @@ sudo apt-get install libbde-dbg libbde-python-dbg libesedb-dbg libesedb-python-d
 ## Batch build
 Set up the [l2tdevtools build script](https://github.com/log2timeline/l2tdevtools/wiki/Build-script) and run:
 ```
-PYTHONPATH=. python scripts/build.py dpkg
+PYTHONPATH=. python tools/build.py dpkg
 ```
 
 **Note that the build script is currently still work in progress, but it will build most of the dependencies.**
