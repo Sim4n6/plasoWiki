@@ -22,7 +22,7 @@ Individual prepackaged Mac OS X dependencies can be downloaded: [here](https://g
 ## Batch build
 Set up the [l2tdevtools build script](https://github.com/log2timeline/l2tdevtools/wiki/Build-script) and run:
 ```
-PYTHONPATH=. python scripts/build.py pkg
+PYTHONPATH=. python tools/build.py pkg
 ```
 
 **Note that the build script is currently still work in progress, but it will build most of the dependencies.**
