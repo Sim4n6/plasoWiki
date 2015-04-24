@@ -8,10 +8,15 @@ log2timeline.py --profile --profiling-type=parsers plaso.db image.raw
 ```
 
 ### Profiling serialization
-**TODO**
+To profile the CPU usage of the serialization run log2timeline.py with the following options:
+```
+log2timeline.py --profile --profiling-type=serializers plaso.db image.raw
+```
+
+**TODO: add serialization profiling to psort as well**
 
 ### Profiling storage
-**TODO**
+**TODO: add write profiling for storage?**
 
 ## Profiling memory usage
 The memory usage of the worker processes used by log2timeline.py can be profiled with guppy.
