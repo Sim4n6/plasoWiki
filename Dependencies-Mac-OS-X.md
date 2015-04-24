@@ -66,7 +66,7 @@ sudo installer -target / -pkg python-bencode-1.0.pkg
 ```
 
 ### Binplist
-Download the latest source package from: https://code.google.com/p/binplist/downloads/list
+Download the latest source package from: https://github.com/google/binplist/releases
 
 To build pkg files run the following command from the build root directory:
 ```

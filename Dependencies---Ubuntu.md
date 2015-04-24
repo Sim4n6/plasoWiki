@@ -91,7 +91,7 @@ sudo dpkg -i python-bencode_1.0-1_all.deb
 ```
 
 ### binplist
-Download the latest source package from: https://code.google.com/p/binplist/downloads/list
+Download the latest source package from: https://github.com/google/binplist/releases
 
 To build deb files run the following command from the build root directory:
 ```

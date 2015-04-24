@@ -60,7 +60,7 @@ dist\bencode-1.0.win32.msi
 Install the MSI.
 
 ### Binplist
-Download the latest source package from: https://code.google.com/p/binplist/downloads/list
+Download the latest source package from: https://github.com/google/binplist/releases
 
 To build the MSI file run the following commands from the build root directory:
 ```

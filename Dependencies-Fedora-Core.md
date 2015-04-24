@@ -61,7 +61,7 @@ sudo yum install bencode-1.0/dist/bencode-1.0-1.noarch.rpm
 ```
 
 ### Binplist
-Download the latest source package from: https://code.google.com/p/binplist/downloads/list
+Download the latest source package from: https://github.com/google/binplist/releases
 
 To build rpm files run the following command from the build root directory:
 ```
