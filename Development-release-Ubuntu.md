@@ -56,7 +56,7 @@ sudo apt-get remove pylint
 
 Install the necessary dependencies for building PyLint:
 ```
-sudo aptitude install python-epydoc graphviz python-unittest2
+sudo aptitude install python-epydoc graphviz python-unittest2 mercurial
 ```
 
 Download and build the python-logilab-common Debian package:
