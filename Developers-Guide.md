@@ -37,7 +37,7 @@ If you cannot program and still have a great idea for a feature please go ahead 
 * [Adding a new dependency](https://github.com/log2timeline/plaso/wiki/Adding-a-new-dependency)
 * Changing the protobufs
 
-### Rational behind style guide and code review
+### Rationale behind style guide and code review
 To keep the code base maintainable and readable all code is developed using a similar coding style. It ensures:
 
 * the code is easy to maintain and understand. As a developer you'll sometimes find yourself thinking [WTF](http://en.wikipedia.org/wiki/WTF), what is the code supposed to do here. So it is really important point that you need to be able to come back to code 5 months later and still quickly understand what it supposed to be doing. Also for other people that want to contribute it is necessary that they need to be able to quickly understand the code. Be that said, quick-and-dirty solutions might work when you're working on a case, but we'll ban them from the code base.
