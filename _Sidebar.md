@@ -1,5 +1,5 @@
-# Developer Guide
+# For Developers
 
-https://github.com/log2timeline/plaso/wiki/Developers-Guide
-https://github.com/log2timeline/plaso/wiki/Style-guide
-https://github.com/log2timeline/plaso/wiki/Codereview
+[Guide] (https://github.com/log2timeline/plaso/wiki/Developers-Guide)
+[Style Guide] (https://github.com/log2timeline/plaso/wiki/Style-guide)
+[Codereview] (https://github.com/log2timeline/plaso/wiki/Codereview)
