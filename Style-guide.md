@@ -19,7 +19,7 @@ Tests are part of a maintainable code base. Code without sufficient test is very
 Some guidelines for writing tests:
 
 * Use as much as possible the test functions available in the local test_lib.py instead of writing your own test functions. If you think a test function is missing please mail the developer list.
-* Use timelib_test.CopyStringToTimestamp() for calculating expected timestamp values.
+* Use timelib.Timestamp.CopyFromString() for calculating expected timestamp values.
 
 Common test code should be stored in "test library" files, e.g. the parser test library:
 ```
