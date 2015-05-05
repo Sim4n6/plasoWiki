@@ -129,4 +129,4 @@ If the code submitted breaks travis, please create another CL (changelist) that 
 
 Shortly before we make a new release a code freeze period will be announced on the development mailing list. During that code freeze no new features will be allowed to be submitted into the project codebase. During that time the focus is on testing and bug fixes.
 
-In such a freeze, new features will added to the codebase after the release.
+In such a freeze, new features will added to the codebase after the release. The project owners should typically warn you that we are in a code freeze if there is any chance of you needing to submit a new feature during code freeze.
