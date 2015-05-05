@@ -113,10 +113,13 @@ Given that everything is still working you can now submit the code:
 
 This will run all the previous steps again, such as checking linter and tests. If all succeeds the script then does a `git commit` and a `git push` to push out the changes. There should be no need to do anything else on the git side.
 
+The next step is to manually close the Rietveld code review (a picture of a X in the upper left corner). If the ticket is not closed it will stay in the reviewer queue.
+
 There are also other things that happen once the code is submitted to the codebase, a new test run is executed on travis and code coverage is added to coveralls, see:
 
  * [Travis] (https://travis-ci.org/log2timeline/plaso)
  * [Coverage] (https://coveralls.io/r/log2timeline/plaso)
+ * [AppVeyor] (https://ci.appveyor.com/project/joachimmetz/plaso)
 
 If for some reasons the code breaks on travis yet works on the developer workstation that may be an indication that some dependencies are missing or the developer made some assumptions that do not apply on other machines (such as explicit path declaration to reach out to files on their workstation, etc).
 
