@@ -1,12 +1,8 @@
-# Users
+# Project
 
+ * [Release/Roadmap] (https://github.com/log2timeline/plaso/wiki/Releases-and-roadmap)
+ * [Scribbles about events] (https://github.com/log2timeline/plaso/wiki/Scribbles-about-events)
  * [User Guide] (https://github.com/log2timeline/plaso/wiki/Users-Guide)
-
-# Troubleshooting
-
- * [Profiling] (https://github.com/log2timeline/plaso/wiki/Profiling)
- * [Troubleshooting] (https://github.com/log2timeline/plaso/wiki/Troubleshooting)
- * [Troubleshooting - Windows](https://github.com/log2timeline/plaso/wiki/Troubleshooting-Windows)
 
 # Installation
 
@@ -23,7 +19,8 @@
  * [New Dependency] (https://github.com/log2timeline/plaso/wiki/Adding-a-new-dependency)
  * [Licenses] (https://github.com/log2timeline/plaso/wiki/Licenses-dependencies)
 
-# Other
+# Troubleshooting
 
- * [Release/Roadmap] (https://github.com/log2timeline/plaso/wiki/Releases-and-roadmap)
- * [Event Objects] (https://github.com/log2timeline/plaso/wiki/Scribbles-about-events)
+ * [Profiling] (https://github.com/log2timeline/plaso/wiki/Profiling)
+ * [Troubleshooting] (https://github.com/log2timeline/plaso/wiki/Troubleshooting)
+ * [Troubleshooting - Windows](https://github.com/log2timeline/plaso/wiki/Troubleshooting-Windows)
