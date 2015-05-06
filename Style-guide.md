@@ -5,7 +5,7 @@ We primarily follow the [Google Python Style Guide](http://google-styleguide.goo
 Various plaso specific additions/variations are:
 
  * Indent your code blocks with 2 spaces (not 4 as in the style guide). In the case of a hanging indent, use four spaces (according to the style guide).
- * Method and function names follow the following logic: <public> **CapWords()**, <internal> **_CapWords()** (protected) and <internal> **__CapWords()** (private). Note that acronyms and initialisms should be preserved, eg HTMLParser, and not HtmlParser.
+ * Method and function names follow the following logic: <public> **CapWords()**, <internal> **_CapWords()** (protected) and <internal> **__CapWords()** (private). Acronyms and initialisms should be preserved, eg HTMLParser, and not HtmlParser.
  * Quote strings as ' or """ instead of "
    * Quote strings in command line arguments (argparse) as "
  * Textual strings should be Unicode strings and hence defined as u'string'
