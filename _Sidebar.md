@@ -8,13 +8,12 @@
  * [Troubleshooting] (https://github.com/log2timeline/plaso/wiki/Troubleshooting)
  * [Troubleshooting - Windows](https://github.com/log2timeline/plaso/wiki/Troubleshooting-Windows)
 
-# Install
+# Installation
 
- * Platforms
-   * [Ubuntu] (https://github.com/log2timeline/plaso/wiki/Development-release-Ubuntu)
-   * [Fedora Core] (https://github.com/log2timeline/plaso/wiki/Development-release-Fedora-Core)
-   * [Mac OS X] (https://github.com/log2timeline/plaso/wiki/Development-release-Mac-OS-X)
-   * [Windows] (https://github.com/log2timeline/plaso/wiki/Development-release-Windows)
+ * [Ubuntu] (https://github.com/log2timeline/plaso/wiki/Development-release-Ubuntu)
+ * [Fedora Core] (https://github.com/log2timeline/plaso/wiki/Development-release-Fedora-Core)
+ * [Mac OS X] (https://github.com/log2timeline/plaso/wiki/Development-release-Mac-OS-X)
+ * [Windows] (https://github.com/log2timeline/plaso/wiki/Development-release-Windows)
 
 # Development
 
