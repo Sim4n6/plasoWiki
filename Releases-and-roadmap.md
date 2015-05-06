@@ -17,6 +17,9 @@ The following sections contain a rough outline of the larger items on the roadma
   * $MFT, $UsnJrnl parsing
 * Refactors
   * storage
+    * redesign how event objects are stored
+    * add support for event groups
+    * add support for events without a date and time value
   * analysis plugins
   * front-end, CLI, tools
   * output modules
