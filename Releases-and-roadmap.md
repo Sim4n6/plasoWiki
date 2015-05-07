@@ -11,10 +11,6 @@ If you do not plan to develop or live on the edge, regarding plaso, we highly re
 The following sections contain a rough outline of the larger items on the roadmap. For more detailed information see: [Plaso - Roadmap and Assignment](http://goo.gl/cRjA7y)
 
 * [Artifact support](https://github.com/log2timeline/plaso/issues/155)
-* Multi volume support
-* Improve file system support
-  * [dfVFS](https://github.com/log2timeline/dfvfs/wiki/Roadmap)
-  * $MFT, $UsnJrnl parsing
 * Refactors
   * storage
     * redesign how event objects are stored
@@ -24,10 +20,13 @@ The following sections contain a rough outline of the larger items on the roadma
   * front-end, CLI, tools
   * output modules
   * text parser rewrite/optimization
+* Improve file system support
+  * [dfVFS](https://github.com/log2timeline/dfvfs/wiki/Roadmap)
+  * $MFT, $UsnJrnl parsing
+* Multi volume support
 * Migration to Python 3
   * requires other dependencies being Python 3 compatible
   * Migration to construct 3
-* Handling recovered (deleted) data
 * Parsers
   * [add more parsers](http://goo.gl/cRjA7y)
   * improve existing parsers
@@ -35,15 +34,19 @@ The following sections contain a rough outline of the larger items on the roadma
 * Add analysis plugins
   * NSRL Server
   * Virustotal
+* Collection
+  * Improve collection filters
 * Hashing
   * Do NSRL matching prior to event extraction
   * Use an event database to shortcut file processing
-* Plaso as a module; Clean up and rewrite of the engine code (the parts that were not touched previously); Stabilize an API
+* Deployment
+  * Plaso as a module; Clean up and rewrite of the engine code (the parts that were not touched previously); Stabilize an API
+  * Sandboxing the workers
+  * Plaso as a service
+  * Cross-system distributed plaso workers (RPC)
   * [storage redesign](https://github.com/log2timeline/plaso/issues/102)
-* Plaso as a service
-* Sandboxing the workers
-* Distributed plaso workers
 * [Windows Registry support improvements](https://github.com/log2timeline/plaso/issues/145)
+* Handling recovered (deleted) data
 
 ## Changes in development release
 Changes in the version 1.2.1 development release:
