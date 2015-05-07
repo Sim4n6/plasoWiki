@@ -4,4 +4,4 @@ For the current version of the documentation see: https://sites.google.com/a/kid
 
 ## How to get started
 
-1. Determine which version of plaso is must suitable to your needs, see [Releases and roadmap](https://github.com/log2timeline/plaso/wiki/Releases-and-roadmap)
+1. Determine which version of plaso is must suitable to your needs, for more information see [Releases and roadmap](https://github.com/log2timeline/plaso/wiki/Releases-and-roadmap)
