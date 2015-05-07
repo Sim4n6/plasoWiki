@@ -31,6 +31,7 @@ The following sections contain a rough outline of the larger items on the roadma
   * [add more parsers](http://goo.gl/cRjA7y)
   * improve existing parsers
     * job file parser - add format improvements
+  * deprecate stat object in favour of file entry attributes
 * Add analysis plugins
   * NSRL Server
   * Virustotal
