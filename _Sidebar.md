@@ -1,4 +1,4 @@
-# Project
+# Main
 
  * [Release/Roadmap] (https://github.com/log2timeline/plaso/wiki/Releases-and-roadmap)
  * [Scribbles about events] (https://github.com/log2timeline/plaso/wiki/Scribbles-about-events)
