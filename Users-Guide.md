@@ -8,5 +8,5 @@ For the current version of the documentation see: https://sites.google.com/a/kid
 
 ## Only Used to Old Perl Version
 
-I'm an old time and liked the old perl version of the tool but I really like to make the switch. Fear not, [here](https://github.com/log2timeline/plaso/wiki/Upgrading-From-0.x-Branch) is a guide to help you out.
+I'm an old timer and liked the old perl version of the tool but I really like to make the switch. Fear not, [here](https://github.com/log2timeline/plaso/wiki/Upgrading-From-0.x-Branch) is a guide to help you out.
 
