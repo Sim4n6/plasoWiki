@@ -3,6 +3,7 @@ Although plaso is licensed under the [Apache License 2.0](http://www.apache.org/
 ## Core dependencies
 Dependency | License
 --- | ---
+[artifacts](https://github.com/ForensicArtifacts/artifacts) | [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 [Libprotobuf and Python-bindings](https://github.com/google/protobuf) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
 [LibYAML and Python-bindings](http://pyyaml.org/wiki/LibYAML) | [MIT license](http://opensource.org/licenses/MIT)
 [Python](http://www.python.org/) | [Python Software Foundation License](http://opensource.org/licenses/Python-2.0) <br> Also see: http://docs.python.org/2/license.html
@@ -30,7 +31,6 @@ Dependency | License
 ## Parser dependencies
 Dependency | License
 --- | ---
-[artifacts](https://github.com/ForensicArtifacts/artifacts) | [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 [bencode](https://pypi.python.org/pypi/bencode) | [BitTorrent Open Source License](http://web.archive.org/web/20080213154112/http://www.bittorrent.com/bittorrent-open-source-license)
 [binplist](https://github.com/google/binplist/) | [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 [construct](http://construct.readthedocs.org) | [MIT license](http://opensource.org/licenses/MIT)
