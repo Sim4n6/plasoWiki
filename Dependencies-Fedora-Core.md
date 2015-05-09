@@ -44,6 +44,22 @@ For some of the dependent packages you also require:
 sudo yum install flex byacc zlib-devel bzip2-devel openssl-devel fuse-devel
 ```
 
+### Artifacts
+Download the latest source package from: https://github.com/ForensicArtifacts/artifacts/releases
+
+To build rpm files run the following command from the build root directory:
+```
+tar xvf artifacts-20150409.tar.gz 
+cd artifacts-20150409/
+python setup.py bdist_rpm
+cd ..
+```
+
+To install the required rpm files run:
+```
+sudo yum install artifacts-20150409/dist/artifacts-20150409-1.noarch.rpm
+```
+
 ### Bencode
 Download the latest source package from: https://pypi.python.org/pypi/bencode
 
@@ -241,11 +257,13 @@ sudo rpm -ivh ~/rpmbuild/RPMS/x86_64/libevt-20130923-1.x86_64.rpm ~/rpmbuild/RPM
 ```
 
 ### Libyaml and Python-bindings
-
 To install libyaml and Python-bindings run:
 ```
 sudo yum install libyaml PyYAML
 ```
+
+### Pefile
+**TODO describe**
 
 ### Psutil
 Download the latest source package from: https://pypi.python.org/pypi/psutil
@@ -262,13 +280,6 @@ To install the required rpm files run:
 ```
 sudo yum install psutil-1.2.1/dist/psutil-1.2.1.x86_64.rpm
 ```
-
-### PyElasticsearch
-**Note that this dependency is optional.**
-
-Download the latest source package from: https://github.com/rhec/pyelasticsearch/releases
-
-**TODO: describe**
 
 ### PyParsing
 To install the necessary Python-modules run:
@@ -291,3 +302,12 @@ The build and install Sleuthkit and Pytsk see:
 
 * https://github.com/py4n6/pytsk/wiki/Building-SleuthKit
 * https://github.com/py4n6/pytsk/wiki/Building
+
+### Optional dependencies for Elastic Search
+#### pyelasticsearch
+Download the latest source package from: https://github.com/rhec/pyelasticsearch/releases
+
+**TODO: describe**
+
+#### requests
+**TODO describe**
