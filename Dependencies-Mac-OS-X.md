@@ -47,6 +47,24 @@ Make sure the necessary building tools and development packages are installed on
 * XCode
   * Command Line Tools
 
+### Artifacts
+Download the latest source package from: https://github.com/ForensicArtifacts/artifacts/releases
+
+To build pkg files run the following command from the build root directory:
+```
+tar -zxvf artifacts-20150409.tar.gz 
+cd artifacts-20150409/
+python setup.py bdist
+mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
+pkgbuild --root dist/tmp --identifier com.github.ForensicArtifacts.artifacts --version 20150409 --ownership recommended ../python-artifacts-20150409.pkg
+cd ..
+```
+
+To install the required pkg files run:
+```
+sudo installer -target / -pkg python-artifacts-20150409.pkg
+```
+
 ### Bencode
 Download the latest source package from: https://pypi.python.org/pypi/bencode/1.0
 
@@ -70,17 +88,17 @@ Download the latest source package from: https://github.com/google/binplist/rele
 
 To build pkg files run the following command from the build root directory:
 ```
-tar -zxvf binplist-0.1.4.tar.gz 
-cd binplist-0.1.4/
+tar -zxvf binplist-0.1.5.tar.gz 
+cd binplist-0.1.5/
 python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier com.google.code.p.binplist --version 0.1.4 --ownership recommended ../python-binplist-1.0.4.pkg
+pkgbuild --root dist/tmp --identifier com.google.code.p.binplist --version 0.1.5 --ownership recommended ../python-binplist-0.1.5.pkg
 cd ..
 ```
 
 To install the required pkg files run:
 ```
-sudo installer -target / -pkg python-binplist-1.0.4.pkg
+sudo installer -target / -pkg python-binplist-0.1.5.pkg
 ```
 
 ### Construct
@@ -355,6 +373,9 @@ To install the required pkg files run:
 sudo installer -target / -pkg python-yaml-3.11.pkg
 ```
 
+### Pefile
+**TODO describe**
+
 ### Psutil
 Download the latest source package from: https://pypi.python.org/pypi/psutil/#downloads
 
@@ -373,26 +394,6 @@ cd ..
 To install the required pkg files run:
 ```
 sudo installer -target / -pkg python-psutil-1.2.1.pkg
-```
-
-### PyElasticsearch
-**Note that this dependency is optional.**
-
-Download the latest source package from: https://github.com/rhec/pyelasticsearch/releases
-
-To build pkg files run the following command from the build root directory:
-```
-tar zxfv pyelasticsearch-1.0.tar,gz
-cd pyelasticsearch-1.0/
-python setup.py bdist
-mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier com.github.pyelasticsearch.pyelasticsearch --version 1.0 --ownership recommended ../python-pyelasticsearch-1.0.pkg
-cd ..
-```
-
-To install the required pkg files run:
-```
-sudo installer -target / -pkg python-pyelasticsearch-1.0.pkg
 ```
 
 ### Pyparsing
@@ -461,4 +462,26 @@ The build and install Sleuthkit and Pytsk see:
 * https://github.com/py4n6/pytsk/wiki/Building#using-mac-os-x-pkgbuild
 
 ### SQLite
+**TODO describe**
+
+### Optional dependencies for Elastic Search
+#### PyElasticsearch
+Download the latest source package from: https://github.com/rhec/pyelasticsearch/releases
+
+To build pkg files run the following command from the build root directory:
+```
+tar zxfv pyelasticsearch-1.0.tar,gz
+cd pyelasticsearch-1.0/
+python setup.py bdist
+mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
+pkgbuild --root dist/tmp --identifier com.github.pyelasticsearch.pyelasticsearch --version 1.0 --ownership recommended ../python-pyelasticsearch-1.0.pkg
+cd ..
+```
+
+To install the required pkg files run:
+```
+sudo installer -target / -pkg python-pyelasticsearch-1.0.pkg
+```
+
+#### requests
 **TODO describe**
