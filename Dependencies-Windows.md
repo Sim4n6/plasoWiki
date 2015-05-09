@@ -41,6 +41,24 @@ C:\plaso-build\
 
 If you are not familiar with extracting tar files on Windows see: [How to unpack a tar file in Windows](https://wiki.haskell.org/How_to_unpack_a_tar_file_in_Windows)
 
+### Artifacts
+Download the latest source package from: https://github.com/ForensicArtifacts/artifacts/releases
+
+To build the MSI file run the following commands from the build root directory:
+```
+tar xvf artifacts-20150409.tar.gz
+cd artifacts-20150409\
+C:\Python27\python.exe setup.py bdist_msi
+cd ..
+```
+
+This will create a MSI in the dist sub directory e.g.:
+```
+dist\artifacts-20150409.1.win32.msi
+```
+
+Install the MSI.
+
 ### Bencode
 Download the latest source package from: https://pypi.python.org/pypi/bencode
 
@@ -64,15 +82,15 @@ Download the latest source package from: https://github.com/google/binplist/rele
 
 To build the MSI file run the following commands from the build root directory:
 ```
-tar xvf binplist-0.1.4.tar.gz
-cd binplist-0.1.4\
+tar xvf binplist-0.1.5.tar.gz
+cd binplist-0.1.5\
 C:\Python27\python.exe setup.py bdist_msi
 cd ..
 ```
 
 This will create a MSI in the dist sub directory e.g.:
 ```
-dist\binplist-0.1.4.win32.msi
+dist\binplist-0.1.5.win32.msi
 ```
 
 Install the MSI.
@@ -344,6 +362,9 @@ dist\PyYAML-3.10.win32.msi
 
 Install the MSI.
 
+### Pefile
+**TODO describe**
+
 ### Psutils
 Download the latest source package from: https://pypi.python.org/pypi/psutil
 
@@ -370,28 +391,6 @@ Then set the VS90COMNTOOLS to match VS100COMNTOOLS for setup.py to detect Visual
 ```
 set VS90COMNTOOLS=%VS100COMNTOOLS%
 ```
-
-### PyElasticsearch
-**Note that this dependency is optional.**
-
-To have plaso support elastic search output it needs pyelasticsearch. 
-
-Download the latest source package from: https://github.com/rhec/pyelasticsearch/releases
-
-To build the MSI file run the following commands from the build root directory:
-```
-tar xfv pyelasticsearch-1.0.tar.gz
-cd pyelasticsearch-1.0\
-C:\Python27\python.exe setup.py bdist_msi
-cd ..
-```
-
-This will create a MSI in the dist sub directory e.g.:
-```
-dist\pyelasticsearch-1.0.win32.msi
-```
-
-Install the MSI.
 
 ### PyParsing
 Download the latest source package from: http://sourceforge.net/projects/pyparsing/files/
@@ -522,6 +521,30 @@ If the build is successful copy the SQLite DLL to your Python installation:
 ```
 copy C:\plaso-build\sqlite-amalgamation-3080100\msvscpp\Release\sqlite3.dll C:\Python27\DLLs\
 ```
+
+### Optional dependencies for Elastic Search
+#### PyElasticsearch
+To have plaso support elastic search output it needs pyelasticsearch. 
+
+Download the latest source package from: https://github.com/rhec/pyelasticsearch/releases
+
+To build the MSI file run the following commands from the build root directory:
+```
+tar xfv pyelasticsearch-1.0.tar.gz
+cd pyelasticsearch-1.0\
+C:\Python27\python.exe setup.py bdist_msi
+cd ..
+```
+
+This will create a MSI in the dist sub directory e.g.:
+```
+dist\pyelasticsearch-1.0.win32.msi
+```
+
+Install the MSI.
+
+#### requests
+**TODO describe**
 
 ## Additional information
 ### Microsoft Visual Studio 2010 express and 64-bit compilation
