@@ -55,6 +55,7 @@ Dependency | License
 Dependency | License
 --- | ---
 [Pyelasticsearch](https://github.com/rhec/pyelasticsearch/) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
+[requests](https://github.com/kennethreitz/requests/) | [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
 ## Tool dependencies
 Dependency | License
