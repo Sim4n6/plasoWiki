@@ -23,7 +23,7 @@ sudo add-apt-repository ppa:gift/dev
 To install the dependencies run:
 ```
 sudo apt-get update
-sudo apt-get install binplist ipython libbde-python libesedb-python libevt-python libevtx-python libewf-python libfwsi-python liblnk-python libmsiecf-python libolecf-python libqcow-python libregf-python libsigscan-python libsmdev-python libsmraw-python libtsk libvhdi-python libvmdk-python libvshadow-python python-bencode python-coveralls python-construct python-dateutil python-dfvfs python-dpkt python-hachoir-core python-hachoir-metadata python-hachoir-parser python-protobuf python-psutil python-pyparsing python-six python-yaml python-tz pytsk3
+sudo apt-get install binplist ipython libbde-python libesedb-python libevt-python libevtx-python libewf-python libfwsi-python liblnk-python libmsiecf-python libolecf-python libqcow-python libregf-python libsigscan-python libsmdev-python libsmraw-python libtsk libvhdi-python libvmdk-python libvshadow-python python-artifacts python-bencode python-coveralls python-construct python-dateutil python-dfvfs python-dpkt python-hachoir-core python-hachoir-metadata python-hachoir-parser python-pefile python-protobuf python-psutil python-pyparsing python-six python-yaml python-tz pytsk3
 ```
 
 **Note for the most up to date list of dependencies see: [.travis.yml](https://github.com/log2timeline/plaso/blob/master/.travis.yml)**
@@ -67,6 +67,28 @@ Make sure the necessary building tools and development packages are installed on
 sudo apt-get install build-essential autotools-dev libsqlite3-dev python-dev debhelper devscripts fakeroot quilt git mercurial python-setuptools libtool automake
 ```
 
+### artifacts
+Download the latest source package from: https://github.com/ForensicArtifacts/artifacts/releases
+
+To build deb files run the following command from the build root directory:
+```
+tar xvf artifacts-20150409.tar.gz 
+cd artifacts-20150409/
+cp -rf config/dpkg debian
+dpkg-buildpackage -rfakeroot
+cd ..
+```
+
+This will create the following files in the build root directory:
+```
+python-artifacts-20150409-1_all.deb
+```
+
+To install the required deb files run:
+```
+sudo dpkg -i python-artifacts-20150409-1_all.deb
+```
+
 ### Bencode
 Download the 1.0 version from Download the latest source package from: https://pypi.python.org/pypi/bencode and the [Debian packaging files](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/3rd%20party/build-files/deprecated/bencode-1.0-dpkg.tar.gz).
 
@@ -95,8 +117,8 @@ Download the latest source package from: https://github.com/google/binplist/rele
 
 To build deb files run the following command from the build root directory:
 ```
-tar xvf binplist-0.1.4.tar.gz 
-cd binplist-0.1.4/
+tar xvf binplist-0.1.5.tar.gz 
+cd binplist-0.1.5/
 cp -rf config/dpkg debian
 dpkg-buildpackage -rfakeroot
 cd ..
@@ -104,12 +126,12 @@ cd ..
 
 This will create the following files in the build root directory:
 ```
-binplist_0.1.4-1_all.deb
+python-binplist_0.1.5-1_all.deb
 ```
 
 To install the required deb files run:
 ```
-sudo dpkg -i binplist_0.1.4-1_all.deb
+sudo dpkg -i python-binplist_0.1.5-1_all.deb
 ```
 
 ### Construct
@@ -260,6 +282,9 @@ To install libyaml and Python-bindings run:
 sudo apt-get install libyaml-0-2 python-yaml
 ```
 
+### Pefile
+**TODO describe**
+
 ### psutil
 To install psutil run:
 ```
@@ -312,3 +337,12 @@ The build and install Sleuthkit and Pytsk see:
 
 * https://github.com/py4n6/pytsk/wiki/Building-SleuthKit
 * https://github.com/py4n6/pytsk/wiki/Building
+
+### Optional dependencies for Elastic Search
+#### pyelasticsearch
+Download the latest source package from: https://github.com/rhec/pyelasticsearch/releases
+
+**TODO describe**
+
+#### requests
+**TODO describe**
