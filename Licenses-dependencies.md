@@ -6,6 +6,7 @@ Dependency | License
 [artifacts](https://github.com/ForensicArtifacts/artifacts) | [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 [Libprotobuf and Python-bindings](https://github.com/google/protobuf) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
 [LibYAML and Python-bindings](http://pyyaml.org/wiki/LibYAML) | [MIT license](http://opensource.org/licenses/MIT)
+[Psutil](https://code.google.com/p/psutil/) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
 [Python](http://www.python.org/) | [Python Software Foundation License](http://opensource.org/licenses/Python-2.0) <br> Also see: http://docs.python.org/2/license.html
 [Python dateutil](https://dateutil.readthedocs.org) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
 [pytz](http://pytz.sourceforge.net/) | [MIT license](http://opensource.org/licenses/MIT)
@@ -60,7 +61,6 @@ Dependency | License
 ## Tool dependencies
 Dependency | License
 --- | ---
-[Psutil](https://code.google.com/p/psutil/) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
 [IPython](http://ipython.org/) <br> PyReadline is considered part of IPython | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
 
 ## Windows packaged version dependencies
