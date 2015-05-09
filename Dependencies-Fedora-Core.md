@@ -81,15 +81,15 @@ Download the latest source package from: https://github.com/google/binplist/rele
 
 To build rpm files run the following command from the build root directory:
 ```
-tar xvf binplist-0.1.4.tar.gz 
-cd binplist-0.1.4/
+tar xvf binplist-0.1.5.tar.gz 
+cd binplist-0.1.5/
 python setup.py bdist_rpm
 cd ..
 ```
 
 To install the required rpm files run:
 ```
-sudo yum install binplist-0.1.4/dist/binplist-0.1.4-1.noarch.rpm
+sudo yum install binplist-0.1.5/dist/binplist-0.1.5-1.noarch.rpm
 ```
 
 ### Construct
@@ -304,7 +304,7 @@ The build and install Sleuthkit and Pytsk see:
 * https://github.com/py4n6/pytsk/wiki/Building
 
 ### Optional dependencies for Elastic Search
-#### pyelasticsearch
+#### PyElasticsearch
 Download the latest source package from: https://github.com/rhec/pyelasticsearch/releases
 
 **TODO: describe**
