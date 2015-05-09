@@ -339,7 +339,7 @@ The build and install Sleuthkit and Pytsk see:
 * https://github.com/py4n6/pytsk/wiki/Building
 
 ### Optional dependencies for Elastic Search
-#### pyelasticsearch
+#### PyElasticsearch
 Download the latest source package from: https://github.com/rhec/pyelasticsearch/releases
 
 **TODO describe**
