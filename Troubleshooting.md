@@ -73,7 +73,7 @@ c
 
 Wait until the crash occurs and generate a back trace.
 
-Also see: [Python.org DebuggingWithGdb](https://wiki.python.org/moin/DebuggingWithGdb)
+Also see: [DebuggingWithGdb](https://wiki.python.org/moin/DebuggingWithGdb), [gdb Support](https://docs.python.org/devguide/gdb.html)
 
 ## High memory usage
 Plaso consists of various components. It can happen that one of these components uses a lot of memory or even leaks memory. In these cases it is important to isolate the error, see before, to track down what the possible culprit is. Also see: [Profiling memory usage](https://github.com/log2timeline/plaso/wiki/Profiling#profiling-memory-usage)
