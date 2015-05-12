@@ -21,6 +21,8 @@ python utils/check_dependencies.py
 If you intend to do development on plaso you'll also need to install some development tools:
 
 * PyLint
+* Python mock
+* Sphinx
 
 ### PyLint
 We recommend PyLint 1.4.0 or later. 
@@ -30,6 +32,13 @@ sudo yum install pylint
 ```
 
 **TODO: check distributed version**
+
+### Python mock
+**TODO: add description.**
+
+### Sphinx
+**TODO: add description.**
+http://sphinx-doc.org/
 
 ## Creating a packaged release
 **TODO: add description.**
