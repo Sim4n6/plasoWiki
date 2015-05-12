@@ -10,39 +10,39 @@ xrange(10) => range(0, 10)
 ### Python 3 status
 Dependency | Python 3 compatible
 --- | ---
-artifacts | <span style="color:green">yes</span>
+artifacts | yes
 bencode | unknown
 binplist | unknown
 construct | unknown (version 3?) 
 dateutil.parser | unknown
-pefile | <span style="color:red">no</span>
+pefile | no
 dpkt | unknown
 hachoir_core | unknown
 hachoir_parser | unknown
 hachoir_metadata | unknown
-IPython | <span style="color:green">yes</span>
-pefile | <span style="color:red">no</span>
-protobuf | <span style="color:green">yes (as of 2.6.0)</span>
-psutil | <span style="color:green">yes</span>
-pybde | <span style="color:green">yes (as of 20141222)</span>
-pyesedb | <span style="color:green">yes (as of 20141224)</span>
-pyevt | <span style="color:green">yes (as of 20141220)</span>
-pyevtx | <span style="color:green">yes (as of 20141220)</span>
-pyewf | <span style="color:green">yes (as of 20141225)</span>
-pyfwsi | <span style="color:green">yes (as of 20141223)</span>
-pylnk | <span style="color:green">yes (as of 20141220)</span>
-pymsiecf | <span style="color:green">yes (as of 20141222)</span>
-pyolecf | <span style="color:green">yes (as of 20141221)</span>
-pyparsing | <span style="color:green">yes</span>
-pyqcow | <span style="color:green">yes (as of 20141221)</span>
-pyregf | <span style="color:green">yes (as of 20141222)</span>
-pysmdev | <span style="color:green">yes (as of 20141225)</span>
-pysmraw | <span style="color:green">yes (as of 20141221)</span>
-pytsk | <span style="color:green">yes (as of 20141224)</span>
-pytz | <span style="color:green">yes</span>
-pyvhdi | <span style="color:green">yes (as of 20141221)</span>
-pyvmdk | <span style="color:green">yes (as of 20141221)</span>
-pyvshadow | <span style="color:green">yes (as of 20141223)</span>
-six | <span style="color:green">yes</span>
+IPython | yes
+pefile | no
+protobuf | yes (as of 2.6.0)
+psutil | yes
+pybde | yes (as of 20141222)
+pyesedb | yes (as of 20141224)
+pyevt | yes (as of 20141220)
+pyevtx | yes (as of 20141220)
+pyewf | yes (as of 20141225)
+pyfwsi | yes (as of 20141223)
+pylnk | yes (as of 20141220)
+pymsiecf | yes (as of 20141222)
+pyolecf | yes (as of 20141221)
+pyparsing | yes
+pyqcow | yes (as of 20141221)
+pyregf | yes (as of 20141222)
+pysmdev | yes (as of 20141225)
+pysmraw | yes (as of 20141221)
+pytsk | yes (as of 20141224)
+pytz | yes
+pyvhdi | yes (as of 20141221)
+pyvmdk | yes (as of 20141221)
+pyvshadow | yes (as of 20141223)
+six | yes
 sqlite3 (pysqlite) | unknown
-yaml | <span style="color:green">yes</span>
+yaml | yes
