@@ -24,6 +24,7 @@ If you intend to do development on plaso you'll also need to install some develo
 
 * PyLint
 * Python Mock
+* Sphinx
 
 ### PyLint
 We recommend PyLint 1.4.0 or later.
@@ -32,6 +33,10 @@ We recommend PyLint 1.4.0 or later.
 
 ### Python Mock
 **TODO: add description.**
+
+### Sphinx
+**TODO: add description.**
+http://sphinx-doc.org/
 
 ## Creating a packaged release
 If all dependency packages have been compiled accordingly make sure they are placed in a sub directory of the plaso source directory named:
