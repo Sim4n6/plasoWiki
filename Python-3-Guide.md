@@ -1,11 +1,15 @@
-### Python 3 Guide
+## Python 3 Guide
 At the moment plaso is not Python 3 compatible. This page contains information about which Python language features to use to help plaso to stay Python 2.7 compatible and become Python 3 compatible.
 
+### Python
 #### xrange()
 xrange() is no longer supported by Python 3 use range() instead:
 ```
 xrange(10) => range(0, 10)
 ```
+
+### C extensions
+See: http://python3porting.com/cextensions.html
 
 ### Python 3 status
 Dependency | Python 3 compatible
