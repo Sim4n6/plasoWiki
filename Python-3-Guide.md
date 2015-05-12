@@ -30,6 +30,9 @@ For compatibility with Python 2, and to stop pylint complaining, add the followi
 from __future__ import print_function
 ```
 
+#### StringIO.StringIO
+StringIO.StringIO is replaced by io.StringIO and io.BytesIO
+
 #### xrange()
 xrange() is no longer supported by Python 3 use range() instead:
 ```
