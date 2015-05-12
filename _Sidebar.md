@@ -13,8 +13,9 @@
 
 # Development
 
- * [Dev Guide] (https://github.com/log2timeline/plaso/wiki/Developers-Guide)
+ * [Developers Guide] (https://github.com/log2timeline/plaso/wiki/Developers-Guide)
  * [Style Guide] (https://github.com/log2timeline/plaso/wiki/Style-guide)
+ * [Python 3 Guide] (https://github.com/log2timeline/plaso/wiki/Python-3-Guide)
  * [Codereview] (https://github.com/log2timeline/plaso/wiki/Codereview)
  * [New Dependency] (https://github.com/log2timeline/plaso/wiki/Adding-a-new-dependency)
  * [Licenses] (https://github.com/log2timeline/plaso/wiki/Licenses-dependencies)
