@@ -6,7 +6,7 @@ See: https://docs.python.org/3/howto/pyporting.html
 
 * the result of \ is a floating point, use divmod() instead (or \\)
 * exception.message no longer accessible
-*% format notation on longer supported, replaced by format and {} notation
+* % format notation on longer supported, replaced by format and {} notation
 * explicitly mark byte strings (b'')
 * dict.sort() no longer works
 * str is Unicode not bytes so str.decode fails
