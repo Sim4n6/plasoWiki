@@ -44,7 +44,8 @@ git pull upstream master
 If you intend to do development on plaso you'll also need to install some development tools:
 
 * PyLint
-* Python Mock 
+* Python Mock
+* Sphinx
 
 ### PyLint
 We recommend PyLint 1.4.0 or later. 
@@ -96,6 +97,10 @@ To install Python Mock run:
 ```
 sudo apt-get install python-mock
 ```
+
+### Sphinx
+**TODO: add description.**
+http://sphinx-doc.org/
 
 ## Creating a packaged release
 **TODO: add description.**
