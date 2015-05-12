@@ -11,10 +11,10 @@ See: https://docs.python.org/3/howto/pyporting.html
 * dict.sort() no longer works
 * str is Unicode not bytes so str.decode fails
 * more picky about string conversion in format e.g. printing a set as {0:s}
-* Use __unicode__ in preference of __str__
+* Use `__unicode__` in preference of `__str__`
 * unicode() no longer works
 * open() must be passed binary mode
-* next() replaced by __next__()
+* next() replaced by `__next__()`
 * dict iter functions: https://docs.python.org/3.1/whatsnew/3.0.html#views-and-iterators-instead-of-lists
 
 from __future__ import unicode_literals
