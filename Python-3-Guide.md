@@ -10,39 +10,39 @@ xrange(10) => range(0, 10)
 ### Python 3 status
 Dependency | Python 3 compatible
 --- | ---
-artifacts | <font color='green'>yes</font>
+artifacts | <span style="color:green">yes</span>
 bencode | unknown
 binplist | unknown
 construct | unknown (version 3?) 
 dateutil.parser | unknown
-pefile | <font color='red'>no</font>
+pefile | <span style="color:red">no</span>
 dpkt | unknown
 hachoir_core | unknown
 hachoir_parser | unknown
 hachoir_metadata | unknown
-IPython | <font color='green'>yes</font>
-pefile | <font color='red'>no</font>
-protobuf | <font color='green'>yes (as of 2.6.0)</font>
-psutil | <font color='green'>yes</font>
-pybde | <font color='green'>yes (as of 20141222)</font>
-pyesedb | <font color='green'>yes (as of 20141224)</font>
-pyevt | <font color='green'>yes (as of 20141220)</font>
-pyevtx | <font color='green'>yes (as of 20141220)</font>
-pyewf | <font color='green'>yes (as of 20141225)</font>
-pyfwsi | <font color='green'>yes (as of 20141223)</font>
-pylnk | <font color='green'>yes (as of 20141220)</font>
-pymsiecf | <font color='green'>yes (as of 20141222)</font>
-pyolecf | <font color='green'>yes (as of 20141221)</font>
-pyparsing | <font color='green'>yes</font>
-pyqcow | <font color='green'>yes (as of 20141221)</font>
-pyregf | <font color='green'>yes (as of 20141222)</font>
-pysmdev | <font color='green'>yes (as of 20141225)</font>
-pysmraw | <font color='green'>yes (as of 20141221)</font>
-pytsk | <font color='green'>yes (as of 20141224)</font>
-pytz | <font color='green'>yes</font>
-pyvhdi | <font color='green'>yes (as of 20141221)</font>
-pyvmdk | <font color='green'>yes (as of 20141221)</font>
-pyvshadow | <font color='green'>yes (as of 20141223)</font>
-six | <font color='green'>yes</font>
+IPython | <span style="color:green">yes</span>
+pefile | <span style="color:red">no</span>
+protobuf | <span style="color:green">yes (as of 2.6.0)</span>
+psutil | <span style="color:green">yes</span>
+pybde | <span style="color:green">yes (as of 20141222)</span>
+pyesedb | <span style="color:green">yes (as of 20141224)</span>
+pyevt | <span style="color:green">yes (as of 20141220)</span>
+pyevtx | <span style="color:green">yes (as of 20141220)</span>
+pyewf | <span style="color:green">yes (as of 20141225)</span>
+pyfwsi | <span style="color:green">yes (as of 20141223)</span>
+pylnk | <span style="color:green">yes (as of 20141220)</span>
+pymsiecf | <span style="color:green">yes (as of 20141222)</span>
+pyolecf | <span style="color:green">yes (as of 20141221)</span>
+pyparsing | <span style="color:green">yes</span>
+pyqcow | <span style="color:green">yes (as of 20141221)</span>
+pyregf | <span style="color:green">yes (as of 20141222)</span>
+pysmdev | <span style="color:green">yes (as of 20141225)</span>
+pysmraw | <span style="color:green">yes (as of 20141221)</span>
+pytsk | <span style="color:green">yes (as of 20141224)</span>
+pytz | <span style="color:green">yes</span>
+pyvhdi | <span style="color:green">yes (as of 20141221)</span>
+pyvmdk | <span style="color:green">yes (as of 20141221)</span>
+pyvshadow | <span style="color:green">yes (as of 20141223)</span>
+six | <span style="color:green">yes</span>
 sqlite3 (pysqlite) | unknown
-yaml | <font color='green'>yes</font>
+yaml | <span style="color:green">yes</span>
