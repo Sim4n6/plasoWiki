@@ -1,6 +1,6 @@
 Plaso comes in 2 different forms of releases:
 
-* a packaged release; found on in the [l2tbinaries repository](https://github.com/log2timeline/l2tbinaries)
+* a packaged release; found on the [releases page](https://github.com/log2timeline/plaso/releases)
 * a development release; found in the [git repository](https://github.com/log2timeline/plaso)
 
 **Note that the development release is for development, expect frequent updates and potential breakage.**
