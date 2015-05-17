@@ -2,7 +2,9 @@
 
 ## Design
 Overview of the general architecture of plaso:
+
 * [Architecture](https://sites.google.com/a/kiddaland.net/plaso/developer/architecture)
+* [API documentation](http://plaso-api.readthedocs.org/en/latest/modules.html)
 
 ## Roadmap
 
@@ -93,4 +95,3 @@ We do this for various reasons:
 * to make the tests more uniform in both look-and-feel but also what is tested;
 * improve test coverage;
 * isolate core functionality from tests to prevent some future core changes affecting the parsers and plugins too much.
-
