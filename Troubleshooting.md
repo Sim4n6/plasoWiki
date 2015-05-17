@@ -41,7 +41,11 @@ Ran 585 tests in 66.530s
 OK
 ```
 
-If an error occurs when processing a storage media image try to run with the storage image media file and/or the file system directly mounted. Mounting the storage image media file will bypass libraries (modules) supporting the storage image media format.
+If an error occurs when processing a storage media image try to run with the storage image media file and/or the file system directly mounted. Mounting the storage image media file will bypass libraries (modules) supporting the storage image media format. Running [source_analyzer.py](https://github.com/log2timeline/dfvfs/blob/master/examples/source_analyzer.py) can help pinpointing the issue, e.g.
+
+```
+PYTHONPATH=. python examples/source_analyzer.py --no-auto-recurse
+```
 
 If the high memory usage still persists try mounting the file system as well to bypass bypass libraries (modules) supporting the file system, e.g. the SleuthKit and pytsk.
 
