@@ -4,7 +4,7 @@
 Overview of the general architecture of plaso:
 
 * [Architecture](https://sites.google.com/a/kiddaland.net/plaso/developer/architecture)
-* [API documentation](http://plaso-api.readthedocs.org/en/latest/modules.html)
+* [Source code and API documentation](http://plaso-api.readthedocs.org/en/latest/modules.html)
 
 ## Roadmap
 
