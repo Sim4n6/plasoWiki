@@ -2,8 +2,18 @@ This page contains detailed instructions on how to build and install dependencie
 
 There are multiple ways to install the dependencies on Windows:
 
+* Prepackaged dependencies;
 * Using the [log2timeline devtools](https://github.com/log2timeline/devtools) to batch build most of the dependencies;
 * Manual build of the dependencies.
+
+## Prepackaged dependencies
+Prepackaged versions of the dependencies can be found here: https://github.com/log2timeline/l2tbinaries
+
+The l2tdevtools project provides [an update script](https://github.com/log2timeline/l2tdevtools/wiki/Update-script) to ease the process of keeping the dependencies up to date. To run:
+```
+set PYTHONPATH=.
+C:\Python27\python.exe tools\update.py
+```
 
 ## Batch build
 Set up the [l2tdevtools build script](https://github.com/log2timeline/l2tdevtools/wiki/Build-script) and run:
