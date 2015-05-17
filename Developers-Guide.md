@@ -30,8 +30,8 @@ The first challenge you will encounter is setting up and maintaining your develo
 
 1. Go to https://codereview.appspot.com to setup your account, you'll need a Google account for this.
 2. Join the development mailing list: [log2timeline-dev@googlegroups.com](https://groups.google.com/forum/?fromgroups#!forum/log2timeline-dev), we recommend using the same account as step 1
-2. Install the required development tools like pylint, python-mock
-3. Make sure to run all the tests inside the plaso codebase and the dfvfs one, and that they successfully complete on your development system
+2. Install the required development tools like pylint, python-mock, sphinx
+3. Make sure to run all the tests inside the plaso and the dfVFS codebase, and that they successfully complete on your development system
 4. Get yourself added as a committer on the [plaso git repo](https://github.com/orgs/log2timeline/teams/plaso-contribs)
 5. Make sure your development system is set up correctly so that you can push code to github.
 6. Make sure your email address and name are correctly set in git e.g.:
