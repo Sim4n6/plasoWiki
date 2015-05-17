@@ -35,6 +35,13 @@ Can you run the tests successfully?
 ```
 python run_tests.py
 ```
+```
+...
+----------------------------------------------------------------------
+Ran 585 tests in 66.530s
+
+OK
+```
 
 If an error occurs when processing a storage media image try to run with the storage image media file and/or the file system directly mounted. Mounting the storage image media file will bypass libraries (modules) supporting the storage image media format.
 
