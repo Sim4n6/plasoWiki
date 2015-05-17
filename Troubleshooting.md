@@ -76,11 +76,24 @@ It also sometimes means that you have multiple versions of plaso installed on yo
 ## Crashes, hangs and tracebacks
 In the context of plaso crashes and tracebacks have different meanings:
 
-* crash; an error that causes an abrupt termination of the program you were running
+* crash; an error that causes an abrupt termination of the program you were running e.g. a SEGFAULT
 * traceback; the back trace of an error that was caught by an exception handler that can cause a termination of the program you were running
 
+### Which processes are running
+The following command help you determine which plaso processes are running on your system:
+
+Linux:
+```
+top -p `ps -ef | grep log2timeline.py | grep python | awk '{ print $2 }' | tr '\n' ',' | sed 's/,$//'`
+```
+
+Mac OS X:
+```
+ps aux | grep log2timeline.py | grep python | awk '{print $2}' | tr '\n' ',' | sed 's/,$//'
+```
+
 ### Analyzing crashes with gdb
-Once you've isolated the file that causes the crash and you cannot share the file you can generate a back trace that can help us fix the error.
+Once you havve isolated the file that causes the crash and you cannot share the file you can generate a back trace that can help us fix the error.
 
 First make sure you have the debug symbols installed.
 
