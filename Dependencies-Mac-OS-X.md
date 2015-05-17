@@ -2,22 +2,19 @@ This page contains detailed instructions on how to build and install dependencie
 
 There are multiple ways to install the dependencies on Ubuntu:
 
+* Prepackaged dependencies;
 * Using the [log2timeline devtools](https://github.com/log2timeline/devtools) to batch build most of the dependencies;
 * Manual build of the dependencies.
 
 **Note that if you have a non-Apple version of Python installed e.g. downloaded from Python.org, MacPorts or equivalent. You may very likely will have issues with version mismatches between the Apple versions and the non-Apple version of Python. It is therefore recommended to stick with the Apple versions of Python.**
 
 ## Prepackaged dependencies
-**Note that the instructions in this page assume you are running on Mac OS X 10.10.**
+Prepackaged versions of the dependencies can be found here: https://github.com/log2timeline/l2tbinaries
 
-The latest bundled and prepackaged Mac OS X plaso version can be found: [here](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/)
-
-E.g. the final release of plaso 1.2.0:
-https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/1.2.0/final/plaso-1.2.0_macosx-10.10.dmg
-
-Mount the DMG file and run the install.sh script. This installs plaso and its dependencies as separate pkg files.
-
-Individual prepackaged Mac OS X dependencies can be downloaded: [here](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/3rd%20party/macosx%2010.10/)
+The l2tdevtools project provides [an update script](https://github.com/log2timeline/l2tdevtools/wiki/Update-script) to ease the process of keeping the dependencies up to date. To run:
+```
+PYTHONPATH=. python tools/update.py
+```
 
 ## Batch build
 Set up the [l2tdevtools build script](https://github.com/log2timeline/l2tdevtools/wiki/Build-script) and run:
