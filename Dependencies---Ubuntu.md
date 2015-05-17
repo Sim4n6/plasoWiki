@@ -292,17 +292,15 @@ sudo apt-get install python-psutil
 ```
 
 ### PyParsing
-**Note that Unbuntu 14.04 provides python-pyparsing 2.0.1 which contains known issues hence we recommend upgrading to version 2.0.2.**
+**Note that Unbuntu 14.04 provides python-pyparsing 2.0.1 which contains known issues hence we recommend upgrading to version 2.0.3.**
 
-**TODO: should this be version 2.0.3?**
-
-Download the 2.0.2 version from http://sourceforge.net/projects/pyparsing/files/pyparsing/pyparsing-2.0.2/ and the [Debian packaging files](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/3rd%20party/build-files/deprecated/python-pyparsing-2.0.2-dpkg.tar.gz).
+Download the 2.0.3 version from http://sourceforge.net/projects/pyparsing/files/pyparsing/pyparsing-2.0.3/ and the [Debian packaging files](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/3rd%20party/build-files/deprecated/python-pyparsing-2.0.3-dpkg.tar.gz).
 
 To build deb files run the following command from the build root directory:
 ```
-tar zxfv pyparsing-2.0.2.tar.gz
-cd pyparsing-2.0.2/
-tar zxfv ../python-pyparsing-2.0.2-dpkg.tar.gz
+tar zxfv pyparsing-2.0.3.tar.gz
+cd pyparsing-2.0.3/
+tar zxfv ../python-pyparsing-2.0.3-dpkg.tar.gz
 cp -rf dpkg debian
 dpkg-buildpackage -rfakeroot
 cd ..
@@ -310,12 +308,12 @@ cd ..
 
 This will create the following files in the build root directory:
 ```
-python-pyparsing-2.0.2-1_all.deb
+python-pyparsing-2.0.3-1_all.deb
 ```
 
 To install the required deb files run:
 ```
-sudo dpkg -i python-pyparsing-2.0.2-1_all.deb
+sudo dpkg -i python-pyparsing-2.0.3-1_all.deb
 ```
 
 ### PySQLite
