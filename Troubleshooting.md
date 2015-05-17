@@ -15,7 +15,6 @@ If everything fails create a new issue on the [issue tracker](https://github.com
 * we cannot look into your thoughts or on your systems;
 * we cannot easily isolate errors if you keep changing your test environment.
 
-
 Hence please provide us with the following details:
 
 * What steps will reproduce the problem? What output did you expect? What do you see instead?
@@ -32,11 +31,39 @@ Also see the sections below on how to troubleshoot issues of a specific nature.
 ## Isolating errors
 The most important part of troubleshooting is isolating the error.
 
+Can you run the tests successfully?
+```
+python run_tests.py
+```
+
 If an error occurs when processing a storage media image try to run with the storage image media file and/or the file system directly mounted. Mounting the storage image media file will bypass libraries (modules) supporting the storage image media format.
 
 If the high memory usage still persists try mounting the file system as well to bypass bypass libraries (modules) supporting the file system, e.g. the SleuthKit and pytsk.
 
 Also try running in single process mode this will bypass any issues with multi processing.
+
+## Import errors
+It sometimes happen that the tests fail with an import error e.g.
+```
+ImportError: Failed to import test module:
+plaso.parsers.winreg_plugins.shutdown_test
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/unittest/loader.py", line 254, in _find_tests
+    module = self._get_module_from_name(name)
+  File "/usr/lib64/python2.7/unittest/loader.py", line 232, in
+_get_module_from_name
+    __import__(name)
+  File "./plaso/parsers/__init__.py", line 4, in <module>
+    from plaso.parsers import asl
+ImportError: cannot import name asl
+```
+
+This does not necessarily mean that the code cannot find the asl module. The import error can mask an underlying import issue. Try running the following commands in a python shell:
+```
+import sys
+sys.path.insert(0, u'.')
+import plaso
+```
 
 ## Crashes, hangs and tracebacks
 In the context of plaso crashes and tracebacks have different meanings:
