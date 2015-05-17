@@ -11,7 +11,7 @@ There are multiple ways to install the dependencies on Ubuntu:
 
 The [GIFT PPA](https://launchpad.net/~gift), pun intended, contains the necessary packages for running plaso. The GIFT PPA provides the following tracks:
 
-* Stable; track intended for the "packaged release" of plaso and dependencies;
+* Release; track intended for the "packaged release" of plaso and dependencies;
 * Bleeding Edge (or Development); track intended for the "development release" of plaso;
 * Testing; track intended for testing newly created packages.
 
