@@ -33,9 +33,7 @@ The most important part of troubleshooting is isolating the error.
 
 Can you run the tests successfully?
 ```
-python run_tests.py
-```
-```
+$ python run_tests.py
 ...
 ----------------------------------------------------------------------
 Ran 585 tests in 66.530s
@@ -65,12 +63,15 @@ _get_module_from_name
 ImportError: cannot import name asl
 ```
 
-This does not necessarily mean that the code cannot find the asl module. The import error can mask an underlying import issue. Try running the following commands in a python shell:
+This does not necessarily mean that the code cannot find the asl module. The import error can mask an underlying issue. Try running the following commands in a Python shell:
 ```
+$ python
 import sys
 sys.path.insert(0, u'.')
 import plaso
 ```
+
+It also sometimes means that you have multiple versions of plaso installed on your system and Python tries to import for the wrong one.
 
 ## Crashes, hangs and tracebacks
 In the context of plaso crashes and tracebacks have different meanings:
