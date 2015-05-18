@@ -10,7 +10,12 @@ See: https://docs.python.org/3/howto/pyporting.html
 * more picky about string conversion in format e.g. printing a set as {0:s}
 * open() must be passed binary mode
 * next() replaced by `__next__()`
+
 * dict iter functions: https://docs.python.org/3.1/whatsnew/3.0.html#views-and-iterators-instead-of-lists
+
+```
+dict.iteritems() => iter(dict.items())
+```
 
 #### Integer division
 The result of \ is a floating point, use divmod() instead (or \\)
