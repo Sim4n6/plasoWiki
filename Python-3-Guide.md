@@ -4,7 +4,6 @@ At the moment plaso is not Python 3 compatible. This page contains information a
 ### Python
 See: https://docs.python.org/3/howto/pyporting.html
 
-* the result of \ is a floating point, use divmod() instead (or \\)
 * exception.message no longer accessible
 * dict.sort() no longer works
 * str is Unicode not bytes so str.decode fails
@@ -12,6 +11,9 @@ See: https://docs.python.org/3/howto/pyporting.html
 * open() must be passed binary mode
 * next() replaced by `__next__()`
 * dict iter functions: https://docs.python.org/3.1/whatsnew/3.0.html#views-and-iterators-instead-of-lists
+
+#### Integer division
+The result of \ is a floating point, use divmod() instead (or \\)
 
 #### Strings
 
@@ -42,6 +44,15 @@ StringIO.StringIO is replaced by io.StringIO and io.BytesIO
 xrange() is no longer supported by Python 3 use range() instead:
 ```
 xrange(10) => range(0, 10)
+```
+
+#### To do
+```
+from __future__ absolute_import
+```
+
+```
+from __future__ import division
 ```
 
 ### C extensions
