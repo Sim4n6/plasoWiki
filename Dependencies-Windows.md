@@ -9,7 +9,11 @@ There are multiple ways to install the dependencies on Windows:
 ## Prepackaged dependencies
 Prepackaged versions of the dependencies can be found here: https://github.com/log2timeline/l2tbinaries
 
-The l2tdevtools project provides [an update script](https://github.com/log2timeline/l2tdevtools/wiki/Update-script) to ease the process of keeping the dependencies up to date. To run:
+The l2tdevtools project provides [an update script](https://github.com/log2timeline/l2tdevtools/wiki/Update-script) to ease the process of keeping the dependencies up to date.
+
+The script requires [Python WMI](https://pypi.python.org/pypi/WMI/).
+
+To run:
 ```
 set PYTHONPATH=.
 C:\Python27\python.exe tools\update.py
