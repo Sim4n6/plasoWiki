@@ -82,6 +82,7 @@ Projects/tests/.extract_and_output/
 ```
 
 that is a test script configuration directory and per test set contains:
+
 * previous test results used comparison
 * the test set configuration
   * which files in the test set to test on
