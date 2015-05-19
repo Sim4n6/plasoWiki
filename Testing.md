@@ -22,13 +22,15 @@ The end-to-end tests are intended to detect issues in how the various parts of p
 The end-to-end tests are divided in multiple parts:
 
 * the test scripts; stored in `tests`
-* the test sets directory, that contains a sub directory per test set and test script.
+* the test sets directory that contains:
   * the test set sub directory that contains:
     * the input (source) directory and files to run the tests on
   * the test script sub directory that contains:
-    * previous test results used comparison
-    * the test set configuration
-    * the test script configuration
+    * a sub directory per test set that contains:
+      * previous test results used comparison
+      * the test set configuration
+        * which files in the test set to test on
+        * which options to use in the test script
 
 **TODO: write the result files somewhere for debugging**
 
@@ -37,9 +39,30 @@ Projects/
   plaso/
     plaso/
     tests/
+      test_extract_and_output.sh
     ...
   tests/
+    .extract_and_output/
+      test_set1/
+        files
+        options
+        results/
+          log2timeline.log.gz
+          pinfo.log.gz
+          psort.log.gz
+          storage.plaso
+
+      test_set2/
+        files
+        options
+        results/
+
     test_set1/
+      image.raw
+
     test_set2/
+      test_dir/
+        test.log
+        test.Evtx
     ...
 ```
