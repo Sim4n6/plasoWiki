@@ -24,6 +24,7 @@ The end-to-end tests are divided in multiple parts:
 * the test scripts
 * the test sets
 
+A more complete directory hierarchy would look similar to:
 ```
 Projects/
   plaso/
@@ -59,31 +60,33 @@ Projects/
 
 **TODO: write the result files somewhere for debugging**
 
-In the example above the test scripts are stored in:
+Where the end-to-end test scripts are stored in:
 ```
 Projects/plaso/tests/
 ```
 
-And the test sets in:
+And the test data in:
 ```
 Projects/tests/
 ```
 
-This directory contains multiple sub directories e.g.
+The test data directory contains multiple sub directories as the test set directory which contains:
+
+* the input (source) directory and files to run the tests on.
+
+E.g.
 ```
 Projects/tests/test_set1/
 ```
 
-that is a test set directory and contains the the input (source) directory and files to run the tests on.
-
-Or:
-```
-Projects/tests/.extract_and_output/
-```
-
-that is a test script configuration directory and per test set contains:
+And the test script configuration directory, that for every test set contains:
 
 * previous test results used comparison
 * the test set configuration
   * which files in the test set to test on
   * which options to use in the test script
+
+E.g.
+```
+Projects/tests/.extract_and_output/test_set1/
+```
