@@ -32,7 +32,7 @@ Projects/
     tests/
       test_extract_and_output.sh
     ...
-  tests/
+  test_data/
     .extract_and_output/
       test_set1/
         files
@@ -56,6 +56,7 @@ Projects/
         test.log
         test.Evtx
     ...
+  test_results/
 ```
 
 **TODO: write the result files somewhere for debugging**
@@ -67,7 +68,7 @@ Projects/plaso/tests/
 
 And the test data in:
 ```
-Projects/tests/
+Projects/test_data/
 ```
 
 The test data directory contains multiple sub directories as the test set directory which contains:
@@ -76,7 +77,7 @@ The test data directory contains multiple sub directories as the test set direct
 
 E.g.
 ```
-Projects/tests/test_set1/
+Projects/test_data/test_set1/
 ```
 
 And the test script configuration directory, that for every test set contains:
@@ -88,5 +89,5 @@ And the test script configuration directory, that for every test set contains:
 
 E.g.
 ```
-Projects/tests/.extract_and_output/test_set1/
+Projects/test_data/.extract_and_output/test_set1/
 ```
