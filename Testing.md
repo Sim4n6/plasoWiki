@@ -31,3 +31,15 @@ The end-to-end tests are divided in multiple parts:
     * the test script configuration
 
 **TODO: write the result files somewhere for debugging**
+
+```
+Projects/
+  plaso/
+    plaso/
+    tests/
+    ...
+  tests/
+    test_set1/
+    test_set2/
+    ...
+```
