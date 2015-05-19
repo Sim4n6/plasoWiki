@@ -17,11 +17,12 @@
  * [Style Guide] (https://github.com/log2timeline/plaso/wiki/Style-guide)
  * [Python 3 Guide] (https://github.com/log2timeline/plaso/wiki/Python-3-Guide)
  * [Codereview] (https://github.com/log2timeline/plaso/wiki/Codereview)
- * [New Dependency] (https://github.com/log2timeline/plaso/wiki/Adding-a-new-dependency)
+ * [Adding a new Dependency] (https://github.com/log2timeline/plaso/wiki/Adding-a-new-dependency)
  * [Licenses] (https://github.com/log2timeline/plaso/wiki/Licenses-dependencies)
 
-# Troubleshooting
+# Testing and troubleshooting
 
  * [Profiling] (https://github.com/log2timeline/plaso/wiki/Profiling)
+ * [Testing](https://github.com/log2timeline/plaso/wiki/Testing)
  * [Troubleshooting] (https://github.com/log2timeline/plaso/wiki/Troubleshooting)
- * [Troubleshooting - Windows](https://github.com/log2timeline/plaso/wiki/Troubleshooting-Windows)
+ * [Troubleshooting on Windows](https://github.com/log2timeline/plaso/wiki/Troubleshooting-Windows)
