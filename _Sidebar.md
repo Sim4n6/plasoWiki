@@ -20,7 +20,7 @@
  * [Adding a new Dependency] (https://github.com/log2timeline/plaso/wiki/Adding-a-new-dependency)
  * [Licenses] (https://github.com/log2timeline/plaso/wiki/Licenses-dependencies)
 
-# Testing and troubleshooting
+# Troubleshooting
 
  * [Profiling] (https://github.com/log2timeline/plaso/wiki/Profiling)
  * [Testing](https://github.com/log2timeline/plaso/wiki/Testing)
