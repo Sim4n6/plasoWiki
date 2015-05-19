@@ -23,9 +23,11 @@ The end-to-end tests are divided in multiple parts:
 
 * the test scripts; stored in `tests`
 * the test sets directory, that contains a sub directory per test set and test script.
-  * the test set sub directory that contains the input (source) directory and files to run the tests on;
-  * the test script sub directory that contains the test script and test set configuration
+  * the test set sub directory that contains:
+    * the input (source) directory and files to run the tests on
+  * the test script sub directory that contains:
+    * previous test results used comparison
+    * the test set configuration
+    * the test script configuration
 
-**TODO: result files**
-
-
+**TODO: write the result files somewhere for debugging**
