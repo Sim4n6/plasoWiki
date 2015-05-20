@@ -34,6 +34,7 @@ Projects/
     ...
   test_data/
     .extract_and_output/
+      ignore
       test_set1/
         files
         options
@@ -91,3 +92,5 @@ E.g.
 ```
 Projects/test_data/.extract_and_output/test_set1/
 ```
+
+**TODO: describe ignore file**
