@@ -116,6 +116,9 @@ cat << EOT > test_data/.extract_and_output/my_test_set/options
 --vss-stores=1
 --vss-stores=all
 EOT
+
+# Enable the test set.
+sed '/^my_test_set$/ d' -i test_data/.extract_and_output/ignore
 ```
 
 ```
