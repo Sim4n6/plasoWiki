@@ -79,18 +79,4 @@ The current design docs are [stored here] (https://drive.google.com/folderview?i
 
 Tests are part of a maintainable code base. Code without sufficient test is very likely to be broken by a large rewrite/refactor.
 
-Some guidelines for writing tests:
-
-* Use as much as possible the test functions available in the local test_lib.py instead of writing your own test functions. If you think a test function is missing please mail the developer list.
-* Use timelib.Timestamp.CopyFromString() for calculating expected timestamp values.
-
-Common test code should be stored in "test library" files, e.g. the parser test library:
-
-    plaso/parsers/test_lib.py
-
-We do this for various reasons:
-
-* to remove code duplication in "boiler plate" test code;
-* to make the tests more uniform in both look-and-feel but also what is tested;
-* improve test coverage;
-* isolate core functionality from tests to prevent some future core changes affecting the parsers and plugins too much.
+Some guidelines for writing tests: [Style guide - tests](https://github.com/log2timeline/plaso/wiki/Style-guide#tests)
