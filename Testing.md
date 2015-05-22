@@ -94,3 +94,31 @@ Projects/test_data/.extract_and_output/test_set1/
 ```
 
 **TODO: describe ignore file**
+
+# Helpful commands
+Setting up the end-to-end test directories can be a bit tedious, some helpful commands:
+
+```
+# Commands to bootstrap the test configuration directories.
+
+# Start by ignoring all test sets.
+ls -1 test_data > test_data/.extract_and_output/ignore
+
+# Create a test set configuration directory.
+for FILE in `ls -1 test_data/`; do mkdir "test_data/.extract_and_output/$FILE"; done
+
+# Set up the test files per test set.
+echo "image.raw" > test_data/.extract_and_output/my_test_set/files
+
+# Set up the test options per test set.
+cat << EOT > test_data/.extract_and_output/my_test_set/options
+--no-vss
+--vss-stores=1
+--vss-stores=all
+EOT
+```
+
+```
+# To run the end-to-end tests.
+~/Projects/plaso/tests/test_extract_and_output.sh --module ~/Projects/plaso --tools ~/Projects/plaso/tools test_data results
+```
