@@ -21,7 +21,6 @@ Various plaso specific additions/variations are:
 Also see: [Python 3 Guide](https://github.com/log2timeline/plaso/wiki/Python-3-Guide)
 
 ## Tests
-Some guidelines for writing tests:
 
 * Use as much as possible the test functions available in the local test_lib.py instead of writing your own test functions. If you think a test function is missing please mail the developer list.
 * Use timelib.Timestamp.CopyFromString() for calculating expected timestamp values.
