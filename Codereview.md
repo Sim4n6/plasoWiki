@@ -43,59 +43,88 @@ Another downside of using github pull requests are that they convolute the commi
 We have looked at [reviewable.io](https://reviewable.io) and our current assessment is that it looks very nice but does not make for a very functional User Interface/Experience. It also convolutes the git commit history.
 
 ### How it Works
+The code review workflow predates plaso's move to github. We are in the process of adding support for a more github aligned workflow. To be able to use the advantages github offers without having to fight against its limitations.
 
-Disclaimer: this process is geared towards those that do their development on a platform that supports bash scripts (as in *NIX and Mac OS X). For those that do not have that luxory, you may need to use alternative methods (as in more manual approach).
+#### How it Works - pre github
+**Disclaimer**: this process is geared towards those that do their development on a platform that supports bash scripts (as in *NIX and Mac OS X). For those that do not have that luxury, you may need to use alternative methods (as in more manual approach).
 
- * From your local checkout make your changes, do **not do** a `git commit`
- * Write both the code and accompanying unit tests
- * Test your code, preferably running both the unit tests and test it against real data
- * When you are ready for the code to be reviewed follow the next steps.
+* From your local checkout make your changes, do **not** do a `git commit`
+* Write both the code and accompanying unit tests
+* Test your code, preferably running both the unit tests and test it against real data
+* Once you think your changes are ready for review start the code review as described below
 
-#### Uploading code to Code Review Site
+#### How it Works - github
+**Note that this workflow is still work in progress**
 
-Use the `review.sh` script:
+* Within github create a fork of the plaso project
+* Checkout (or clone) your fork and add the plaso repository as upstream e.g.
 
-    ./utils/review.sh [--nobrowser] email_of_a_reviewer
+```
+git remote add upstream https://github.com/log2timeline/plaso.git
+```
+
+* Create a feature branch per change
+
+```
+git checkout -b feature
+```
+
+* Make your changes on the feature branch and commit and push them to your personal fork
+* Once you think your changes are ready for review start the code review as described below
+
+#### Starting the code review
+To start the code review run the `review.sh` script:
+```
+./utils/review.sh [--nobrowser] email_of_a_reviewer
+```
 
 Where the "*email_of_a_reviewer*" can be anyone from the plaso [owners](https://github.com/orgs/log2timeline/teams/owners).
 
-The upload script uses OAuth to authenticate so you need to have a browser that is signed in using the developers account and give the app permissions to your account (needs to be a Google account).
+Under the hood the `review.sh` script uses Rietveld's upload script (utils/upload.py) which uses OAuth to authenticate. You'll need to have a browser that is logged-in using the developers account and give the codereview application permissions to your account (needs to be a Google account).
 
-This will invoke few things; running pylint to catch obvious style guide issues, run all local tests, etc. If all of these things run successfully the script will ask you for a description of the change. The description should refer to the relevant issue ticket you are working on, eg:
+The `review.sh` script will:
 
-    Added serializers profiler #120
+* will run pylint to catch obvious style guide issues. You can also do this manually by running `./utils/run_linter.sh`.
+* run all unit tests. You can also do this manually by running `./run_tests.py`.
 
-Where the "#120" is a reference to issue nr. 120 on the github site. After the description has been entered in the code will be uploaded to rietveld for review.
+If both the lint check and tests ran successful the `review.sh` script will prompt you for a description of the change. If your changes relate to a specific [github issue](https://github.com/log2timeline/plaso/issues) add the issue number as following:
 
-If you are developing the code from a computer that does not have a browser installed, or you are accessing the dev machine remotely you need to supply the "*--nobrowser*" parameter and then visit the following site on a computer that has a browser:
+```
+Added serializers profiler #120
+```
 
-    https://codereview.appspot.com/get-access-token
+Where the "#120" is a reference to issue number 120.
 
-This will create an OAuth token that you can copy+paste to the terminal window.
+After the description has been entered in the code will be uploaded to rietveld for review.
 
-You should see something like this if everything goes well:
+If you are developing the code from a computer that does not have a browser installed, or you are accessing the development machine remotely you need to supply the `--nobrowser` command line argument and then visit the [following site](https://codereview.appspot.com/get-access-token) on a computer with a browser.
 
-    Issue created: URL: http://codereview.appspot.com/6811077
+This will create an OAuth token that you can copy paste to the terminal window.
 
-That is the tool should print the URL of your code change on rietveld showing your submission number. If necessary you can go to the review page, click edit and update the reviewers or description.
+If everything goes well the script will report the code review (or change list (CL)) created on Rietveld e.g.:
+```
+Issue created: URL: http://codereview.appspot.com/6811077
+```
 
-This will trigger an email sent out to the developer mailing list, notifying people that there is a code review pending and it will show up in the reviewers queue on the rietveld site.
+The details of the code review can be changed at a later point in time via that URL.
 
-After the code is uploaded to rietveld, please go back into github and update the issue indicating that you've submitted code for review. That makes it simpler to track the status of the various issues.
+The creation of the code review will also send an email the [developer mailing list](https://groups.google.com/forum/#!forum/log2timeline-dev), notifying people that there is a code review pending and it will show up in the reviewers queue on the Rietveld site.
 
-#### Working Through Code Review
+After the code is uploaded to Rietveld, please go back into github and update the issue indicating that you've submitted code for review. That makes it simpler to track the status of the various issues.
 
+#### Updating the code review
 During the code review process you'll be asked to change few things, that is the reviewer will add comments. Please follow the following guideline during the code review process:
 
- * Answer **ALL** comments made in the code review, even if it is only an ACK or "Done".
-   * It is also necessary to publish the comments, otherwise the reviewer doesn't see the answers.
-   * On the codereview site hit "m" for "Publish+Mail Comments" so that the review gets updated alongside the newly updated code.
- * Make the necessary changes to the code, as suggested by the reviewer.
- * Make sure you have not checked in the changes locally (as in not executed `git commit`").
+* Answer **ALL** comments made in the code review, even if it is only an ACK or "Done".
+  * It is also necessary to publish the comments, otherwise the reviewer doesn't see the answers.
+  * On the codereview site hit "m" for "Publish+Mail Comments" so that the review gets updated alongside the newly updated code.
+* Make the necessary changes to the code, as suggested by the reviewer.
+* Make sure you have not checked in the changes locally (as in not executed `git commit`").
 
 When all code changes have been completed and you are ready for another round execute:
-
-    ./utils/update.sh [--nobrowser]
+```
+./utils/update.sh [--nobrowser]
+```
 
 This will invoke similar process as before (running linter, tests, etc).
 
