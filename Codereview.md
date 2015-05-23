@@ -45,7 +45,7 @@ We have looked at [reviewable.io](https://reviewable.io) and our current assessm
 ### How it Works
 The code review workflow predates plaso's move to github. We are in the process of adding support for a more github aligned workflow. To be able to use the advantages github offers without having to fight against its limitations.
 
-#### How it Works - pre github
+#### How it works - pre github
 **Disclaimer**: this process is geared towards those that do their development on a platform that supports bash scripts (as in *NIX and Mac OS X). For those that do not have that luxury, you may need to use alternative methods (as in more manual approach).
 
 * From your local checkout make your changes, do **not** do a `git commit`
@@ -53,7 +53,7 @@ The code review workflow predates plaso's move to github. We are in the process 
 * Test your code, preferably running both the unit tests and test it against real data
 * Once you think your changes are ready for review start the code review as described below
 
-#### How it Works - github
+#### How it works - github
 **Note that this workflow is still work in progress**
 
 * Within github create a fork of the plaso project
@@ -130,11 +130,11 @@ When all code changes have been completed and you are ready for another round ex
 ./utils/update.sh [--nobrowser]
 ```
 
-If you are running the `update.sh` script off a github fork make sure all changes have been committed and pushed to your fork.
+If you are running the `update.sh` script off a github fork make sure all changes have been committed and pushed to your fork before running `update.sh`.
 
 The `update.sh` script will also run the linter and the unit tests.
 
-This process continues until the reviewer thinks the code is good enough to be submitted into the project. Then a "**LGTM**" (Looks Good To Me) is given and you can submit the code.
+The update process continues until the reviewer thinks the code is good enough to be submitted into the project. Then a "**LGTM**" (Looks Good To Me) is given and you can submit the code.
 
 **DO NOT SUBMIT** code to the project before a LGTM has been sent in the code review site. All code submitted without an explicit LGTM will be revoked and rolled back.
 
@@ -155,22 +155,31 @@ Given that everything is still working you can now submit the code:
 ./utils/submit.sh [--nobrowser]
 ```
 
-This will run all the previous steps again, such as checking linter and tests. If all succeeds the script then does a `git commit` and a `git push` to push out the changes. There should be no need to do anything else on the git side.
+The `submit.sh` script will also run the linter and the unit tests.
 
-The next step is to manually close the Rietveld code review (a picture of a X in the upper left corner). If the ticket is not closed it will stay in the reviewer queue.
+If you're not using a github fork the `submit.sh` script runs `git commit` and a `git push` to push out the changes to the plaso repository. There should be no need to do anything else on the git side.
+
+If you're using a github fork the `submit.sh` script the reviewer has to run the `merge_submit.sh` script.
+
+The next step is to check if the `submit.sh` script closed the Rietveld code review. If not please close it manually (a picture of a X in the upper left corner). If the code review is not closed it will stay in the reviewer queue.
 
 There are also other things that happen once the code is submitted to the codebase, a new test run is executed on travis and code coverage is added to coveralls, see:
 
- * [Travis] (https://travis-ci.org/log2timeline/plaso)
- * [Coverage] (https://coveralls.io/r/log2timeline/plaso)
+ * [Travis-CI] (https://travis-ci.org/log2timeline/plaso)
  * [AppVeyor] (https://ci.appveyor.com/project/joachimmetz/plaso)
+ * [Coverage] (https://coveralls.io/r/log2timeline/plaso)
 
-If for some reasons the code breaks on travis yet works on the developer workstation that may be an indication that some dependencies are missing or the developer made some assumptions that do not apply on other machines (such as explicit path declaration to reach out to files on their workstation, etc).
+If for some reasons the code breaks on Travis-CI and/or AppVeyor yet works on the developer workstation that may be an indication that some dependencies are missing or the developer made some assumptions that do not apply on other machines (such as explicit path declaration to reach out to files on their workstation, etc).
 
-If the code submitted breaks travis, please create another CL (changelist) that fixes the issue. All the fixes need to go through code review, so don't push out a change without having someone review the change. Fixes that break travis should go through code review pretty quickly.
+If the code submitted breaks Travis-CI and/or AppVeyor, please create another CL (change list) that fixes the issue. All the fixes need to go through code review, so don't push out a change without having someone review the change. Fixes that break Travis-CI and/or AppVeyor should go through code review pretty quickly.
 
-#### Caveats to Submit
+#### Merging submitting code
+**Note** that the `merge_submit.sh` is intended to be only used by the project maintainers.
+```
+./utils/merge_submit.sh CL_NUMBER USERNAME BRANCH
+```
 
+#### Code freeze period
 Shortly before we make a new release a code freeze period will be announced on the development mailing list. During that code freeze no new features will be allowed to be submitted into the project codebase. During that time the focus is on testing and bug fixes.
 
 In such a freeze, new features will added to the codebase after the release. The project owners should typically warn you that we are in a code freeze if there is any chance of you needing to submit a new feature during code freeze.
