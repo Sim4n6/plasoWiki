@@ -112,6 +112,10 @@ The creation of the code review will also send an email the [developer mailing l
 
 After the code is uploaded to Rietveld, please go back into github and update the issue indicating that you've submitted code for review. That makes it simpler to track the status of the various issues.
 
+If you are running the `review.sh` script off a github fork the script will also create a github pull requests. For this the script needs to be able to read `~/.netrc`.
+
+Creating a pull request makes sure github invokes additional services like Travis-CI and AppVeyor for automated testing.
+
 #### Updating the code review
 During the code review process you'll be asked to change few things, that is the reviewer will add comments. Please follow the following guideline during the code review process:
 
@@ -126,29 +130,30 @@ When all code changes have been completed and you are ready for another round ex
 ./utils/update.sh [--nobrowser]
 ```
 
-This will invoke similar process as before (running linter, tests, etc).
+If you are running the `update.sh` script off a github fork make sure all changes have been committed and pushed to your fork.
+
+The `update.sh` script will also run the linter and the unit tests.
 
 This process continues until the reviewer thinks the code is good enough to be submitted into the project. Then a "**LGTM**" (Looks Good To Me) is given and you can submit the code.
 
 **DO NOT SUBMIT** code to the project before a LGTM has been sent in the code review site. All code submitted without an explicit LGTM will be revoked and rolled back.
 
 #### Submitting code
-
 At this point the code is ready, has been approved for submission and everything should be good to go.
 
 At this point it is good to double check that there hasn't been any code submitted into the project again that may break your code. A good rule of thumb is to:
-
-    git stash
-    git pull
-    git stash pop
+```
+git stash && git pull && git stash pop
+```
 
 If there are changes applied during the `git pull` command you may want to re-run all of your tests to make sure things are still working as intended.
 
 In the case where there are merge conflicts git will warn you and you need to manually fix them before continuing.
 
 Given that everything is still working you can now submit the code:
-
-    ./utils/submit.sh [--nobrowser]
+```
+./utils/submit.sh [--nobrowser]
+```
 
 This will run all the previous steps again, such as checking linter and tests. If all succeeds the script then does a `git commit` and a `git push` to push out the changes. There should be no need to do anything else on the git side.
 
