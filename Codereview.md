@@ -40,7 +40,7 @@ Another downside of using github pull requests are that they convolute the commi
 
 ### Why not use reviewable.io?
 
-We have looked at reviewable.io and our current assessment is that it looks very nice but does not make for a very functional User Interface/Experience. It also convolutes the git commit history.
+We have looked at [reviewable.io](https://reviewable.io) and our current assessment is that it looks very nice but does not make for a very functional User Interface/Experience. It also convolutes the git commit history.
 
 ### How it Works
 
