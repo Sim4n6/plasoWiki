@@ -1,6 +1,6 @@
 # Main
 
- * [Releases and Roadmap] (https://github.com/log2timeline/plaso/wiki/Releases-and-roadmap)
+ * [Releases and roadmap] (https://github.com/log2timeline/plaso/wiki/Releases-and-roadmap)
  * [Scribbles about events] (https://github.com/log2timeline/plaso/wiki/Scribbles-about-events)
  * [User Guide] (https://github.com/log2timeline/plaso/wiki/Users-Guide)
 
@@ -13,11 +13,11 @@
 
 # Development
 
- * [Developers Guide] (https://github.com/log2timeline/plaso/wiki/Developers-Guide)
- * [Style Guide] (https://github.com/log2timeline/plaso/wiki/Style-guide)
- * [Python 3 Guide] (https://github.com/log2timeline/plaso/wiki/Python-3-Guide)
- * [Code Review] (https://github.com/log2timeline/plaso/wiki/Codereview)
- * [Adding a new Dependency] (https://github.com/log2timeline/plaso/wiki/Adding-a-new-dependency)
+ * [Developers guide] (https://github.com/log2timeline/plaso/wiki/Developers-Guide)
+ * [Style guide] (https://github.com/log2timeline/plaso/wiki/Style-guide)
+ * [Python 3 guide] (https://github.com/log2timeline/plaso/wiki/Python-3-Guide)
+ * [Code review] (https://github.com/log2timeline/plaso/wiki/Codereview)
+ * [Adding a new dependency] (https://github.com/log2timeline/plaso/wiki/Adding-a-new-dependency)
  * [Licenses] (https://github.com/log2timeline/plaso/wiki/Licenses-dependencies)
 
 # Troubleshooting
