@@ -32,6 +32,16 @@ Therefore we would like to ask people to hang on, to get through the code review
 
 And if things are unclear, don't hesitate to ask. The developer mailing list is: log2timeline-dev@googlegroups.com
 
+### Why not use github pull requests?
+
+Although github pull requests are convenient for small code reviews they are not very well suited for larger ones. It is also not a very efficient User Interface/Experience on the reviewer side.
+
+Another downside of using github pull requests are that they convolute the commit history and we really don't want to have contributors have to extensively study git first before being able to commit to the project. [More discussion on the matter.](http://blog.spreedly.com/2014/06/24/merge-pull-request-considered-harmful/)
+
+### Why not use reviewable.io?
+
+We have looked at reviewable.io and our current assessment is that it looks very nice but does not make for a very functional User Interface/Experience. It also convolutes the git commit history.
+
 ### How it Works
 
 Disclaimer: this process is geared towards those that do their development on a platform that supports bash scripts (as in *NIX and Mac OS X). For those that do not have that luxory, you may need to use alternative methods (as in more manual approach).
