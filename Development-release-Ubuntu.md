@@ -114,7 +114,8 @@ mkdir debian && cp -r config/dpkg/* debian
 Work around for a Unicode bug on launchpad:
 ```
 mv test_data/ímynd.dd test_data/image.dd
-for FILE in `grep -r ímynd.dd | sed 's/:.*$//'`; do sed 's/ímynd.dd/image.dd/g' -i $FILE; done
+IFS="
+"; for FILE in `grep -r ímynd.dd | sed 's/:.*$//'`; do sed 's/ímynd.dd/image.dd/g' -i $FILE; done
 ```
 Update the dpkg changelog:
 ```
