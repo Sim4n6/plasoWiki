@@ -108,7 +108,7 @@ http://sphinx-doc.org/
 ### Source dpkg for gift PPA
 Copy the dpkg files to a debian sub directory:
 ```
-mkdir debian && cp config/dpkg/* debian
+mkdir debian && cp -r config/dpkg/* debian
 ```
 
 Work around for a Unicode bug on launchpad:
