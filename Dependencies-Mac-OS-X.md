@@ -89,7 +89,7 @@ tar -zxvf binplist-0.1.5.tar.gz
 cd binplist-0.1.5/
 python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier com.google.code.p.binplist --version 0.1.5 --ownership recommended ../python-binplist-0.1.5.pkg
+pkgbuild --root dist/tmp --identifier com.github.google.binplist --version 0.1.5 --ownership recommended ../python-binplist-0.1.5.pkg
 cd ..
 ```
 
@@ -371,7 +371,24 @@ sudo installer -target / -pkg python-yaml-3.11.pkg
 ```
 
 ### Pefile
-**TODO describe**
+Download the latest source package from: https://github.com/erocarrera/pefile/releases
+
+**TODO describe manual fixes**
+
+To build pkg files run the following command from the build root directory:
+```
+tar -zxvf pefile-1.2.10-139.tar.gz
+cd pefile-pefile-1.2.10-139/
+python setup.py bdist
+mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
+pkgbuild --root dist/tmp --identifier com.github.erocarrer.pefile --version 1.2.10-139 --ownership recommended ../python-pefile-1.2.10-139.pkg
+cd ..
+```
+
+To install the required pkg files run:
+```
+sudo installer -target / -pkg python-pefile-1.2.10-139.pkg
+```
 
 ### Psutil
 Download the latest source package from: https://pypi.python.org/pypi/psutil/#downloads
