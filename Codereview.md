@@ -179,6 +179,8 @@ If the code submitted breaks Travis-CI and/or AppVeyor, please create another CL
 ./utils/merge_submit.sh CL_NUMBER USERNAME BRANCH
 ```
 
+**TODO: close pull request**
+
 #### Code freeze period
 Shortly before we make a new release a code freeze period will be announced on the development mailing list. During that code freeze no new features will be allowed to be submitted into the project codebase. During that time the focus is on testing and bug fixes.
 
