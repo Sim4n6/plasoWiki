@@ -164,6 +164,7 @@ If you're using a github fork the `submit.sh` script the reviewer has to run the
 The next step is to check if the `submit.sh` script closed the Rietveld code review. If not please close it manually (a picture of a X in the upper left corner). If the code review is not closed it will stay in the reviewer queue.
 
 **TODO: automatic close broken?**
+**TODO: delete branch**
 
 There are also other things that happen once the code is submitted to the codebase, a new test run is executed on Travis-CI and code coverage is added to coveralls, see:
 
