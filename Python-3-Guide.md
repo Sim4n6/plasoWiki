@@ -27,6 +27,7 @@ The result of \ is a floating point, use divmod() instead (or \\)
 * Use `__unicode__` in preference of `__str__`
 * unicode() no longer works
 
+Make the default string type Unicode.
 ```
 from __future__ import unicode_literals
 ```
