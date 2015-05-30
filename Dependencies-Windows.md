@@ -260,16 +260,18 @@ dist\hachoir-metadata-1.3.3.win32.msi
 Install the MSI.
 
 ### Libprotobuf and Python-bindings
+Libprotobuf is dependent on python-gflags see the instructions below how to build and install python-gflags.
+
 Download the latest 2.x source package from: https://github.com/google/protobuf/releases
 
 Extract the source package:
 ```
-tar xfv protobuf-2.5.0.tar.gz
+tar xfv protobuf-2.6.1.tar.gz
 ```
 
 To build the proto compiler (protoc) open the Microsoft Visual Studio solution file:
 ```
-protobuf-2.5.0\vsprojects\protobuf.sln
+protobuf-2.6.1\vsprojects\protobuf.sln
 ```
 
 Change the solution configuration to "Release".
@@ -280,14 +282,14 @@ For information on how to create a 64-bit build on Visual Studio 2010 express al
 
 To build the MSI file run the following commands from the build root directory:
 ```
-cd protobuf-2.5.0\python\
+cd protobuf-2.6.1\python\
 C:\Python27\python.exe setup.py bdist_msi
 cd ..\..
 ```
 
 This will create a MSI in the dist sub directory e.g.:
 ```
-dist\protobuf-2.5.0.win32.msi
+dist\protobuf-2.6.1.win32.msi
 ```
 
 **TODO: check MSI name.**
@@ -465,6 +467,22 @@ dist\python-dateutil-2.4.0.win32.msi
 ```
 
 Install the MSI.
+
+#### python-gflags
+Download the latest source package from: https://github.com/google/python-gflags/releases
+
+To build the MSI file run the following commands from the build root directory:
+```
+tar xfv python-gflags-2.0.tar.gz
+cd python-gflags-2.0\
+C:\Python27\python.exe setup.py bdist_msi
+cd ..
+```
+
+This will create a MSI in the dist sub directory e.g.:
+```
+dist\python-gflags-2.0.win32.msi
+```
 
 ### pytz
 Download the latest source package from: https://pypi.python.org/pypi/pytz
