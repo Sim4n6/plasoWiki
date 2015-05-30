@@ -292,8 +292,6 @@ This will create a MSI in the dist sub directory e.g.:
 dist\protobuf-2.6.1.win32.msi
 ```
 
-**TODO: check MSI name.**
-
 Install the MSI.
 
 ### libyal
