@@ -504,7 +504,7 @@ Install the MSI.
 Download the latest installer from: http://sourceforge.net/projects/pywin32/files/pywin32/
 
 ### requests
-Download the latest 1.x source package from: https://github.com/kennethreitz/requests/releases
+Download the latest source package from: https://github.com/kennethreitz/requests/releases
 
 **Make sure to click on:** "Show # newer tags"
 
