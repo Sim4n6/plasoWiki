@@ -503,6 +503,26 @@ Install the MSI.
 ### pywin32
 Download the latest installer from: http://sourceforge.net/projects/pywin32/files/pywin32/
 
+### requests
+Download the latest 1.x source package from: https://github.com/kennethreitz/requests/releases
+
+**Make sure to click on:** "Show # newer tags"
+
+To build the MSI file run the following commands from the build root directory:
+```
+tar xfv requests-2.7.0.tar.gz
+cd requests-2.7.0\
+C:\Python27\python.exe setup.py bdist_msi
+cd ..
+```
+
+This will create a MSI in the dist sub directory e.g.:
+```
+dist\requests-2.7.0.win32.msi
+```
+
+Install the MSI.
+
 ### Six
 Download the latest 1.x source package from: https://pypi.python.org/pypi/six#downloads
 
@@ -572,9 +592,6 @@ dist\pyelasticsearch-1.0.win32.msi
 ```
 
 Install the MSI.
-
-#### requests
-**TODO describe**
 
 ## Additional information
 ### Microsoft Visual Studio 2010 express and 64-bit compilation
