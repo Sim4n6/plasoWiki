@@ -193,6 +193,7 @@ git push
 #### Clean up script
 **TODO: create clean up script**
 
+**TODO: build in some safe guards to prevent accidental clean up**
 **TODO: close code review**
 **TODO: close pull request**
 
@@ -200,6 +201,11 @@ git push
 git checkout master
 git fetch upstream
 git pull upstream master
+```
+
+**TODO: handle commit message**
+
+```
 git push origin --delete branch
 git branch -D branch
 rm -f .reviews/branch
