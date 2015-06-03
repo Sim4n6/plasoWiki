@@ -23,7 +23,7 @@ sudo add-apt-repository ppa:gift/dev
 To install the dependencies run:
 ```
 sudo apt-get update
-sudo apt-get install binplist ipython libbde-python libesedb-python libevt-python libevtx-python libewf-python libfwsi-python liblnk-python libmsiecf-python libolecf-python libqcow-python libregf-python libsigscan-python libsmdev-python libsmraw-python libtsk libvhdi-python libvmdk-python libvshadow-python python-artifacts python-bencode python-coveralls python-construct python-dateutil python-dfvfs python-dpkt python-hachoir-core python-hachoir-metadata python-hachoir-parser python-pefile python-protobuf python-psutil python-pyparsing python-six python-yaml python-tz pytsk3
+sudo apt-get install ipython libbde-python libesedb-python libevt-python libevtx-python libewf-python libfwsi-python liblnk-python libmsiecf-python libolecf-python libqcow-python libregf-python libsigscan-python libsmdev-python libsmraw-python libtsk libvhdi-python libvmdk-python libvshadow-python python-artifacts python-bencode python-binplist python-coveralls python-construct python-dateutil python-dfvfs python-dpkt python-hachoir-core python-hachoir-metadata python-hachoir-parser python-pefile python-protobuf python-psutil python-pyparsing python-six python-yaml python-tz pytsk3
 ```
 
 **Note for the most up to date list of dependencies see: [.travis.yml](https://github.com/log2timeline/plaso/blob/master/.travis.yml)**
@@ -330,6 +330,31 @@ To install pytz run:
 sudo apt-get install python-tz
 ```
 
+### requests
+Download the latest source package from: https://github.com/kennethreitz/requests/releases
+
+**TODO describe obtaining packing files**
+
+To build deb files run the following command from the build root directory:
+```
+mv v2.7.0.tar.gz requests-2.7.0.tar.gz
+tar xvf requests-2.7.0.tar.gz 
+cd requests-2.7.0
+cp -rf config/dpkg debian
+dpkg-buildpackage -rfakeroot
+cd ..
+```
+
+This will create the following files in the build root directory:
+```
+python-requests-2.7.0-1_all.deb
+```
+
+To install the required deb files run:
+```
+sudo dpkg -i python-requests-2.7.0-1_all.deb
+```
+
 ### Sleuthkit and Pytsk
 The build and install Sleuthkit and Pytsk see:
 
@@ -340,7 +365,4 @@ The build and install Sleuthkit and Pytsk see:
 #### PyElasticsearch
 Download the latest source package from: https://github.com/rhec/pyelasticsearch/releases
 
-**TODO describe**
-
-#### requests
 **TODO describe**
