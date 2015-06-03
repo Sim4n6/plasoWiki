@@ -166,6 +166,7 @@ The next step is to check if the `submit.sh` script closed the Rietveld code rev
 **TODO: automatic close broken?**
 
 **TODO: delete branch**
+**TODO: delete review file ./reviews/branch**
 
 ```
 git push origin --delete branch
