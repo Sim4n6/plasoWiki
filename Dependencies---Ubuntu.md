@@ -333,6 +333,8 @@ sudo apt-get install python-tz
 ### requests
 Download the latest source package from: https://github.com/kennethreitz/requests/releases
 
+**Make sure to click on:** "Show # newer tags"
+
 **TODO describe obtaining packing files**
 
 To build deb files run the following command from the build root directory:
