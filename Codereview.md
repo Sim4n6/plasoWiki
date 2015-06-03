@@ -161,16 +161,9 @@ If you're not using a github fork the `submit.sh` script runs `git commit` and a
 
 If you're using a github fork the `submit.sh` script the reviewer has to run the `merge_submit.sh` script.
 
+**TODO: revisit role of submit script in new workflow in combination with create clean up script**
+
 The next step is to check if the `submit.sh` script closed the Rietveld code review. If not please close it manually (a picture of a X in the upper left corner). If the code review is not closed it will stay in the reviewer queue.
-
-**TODO: automatic close broken?**
-
-**TODO: delete branch**
-**TODO: delete review file ./reviews/branch**
-
-```
-git push origin --delete branch
-```
 
 There are also other things that happen once the code is submitted to the codebase, a new test run is executed on Travis-CI and code coverage is added to coveralls, see:
 
@@ -188,7 +181,20 @@ If the code submitted breaks Travis-CI and/or AppVeyor, please create another CL
 ./utils/merge_submit.sh CL_NUMBER USERNAME BRANCH
 ```
 
+#### Clean up script
+**TODO: create clean up script**
+
+**TODO: close code review**
 **TODO: close pull request**
+
+```
+git checkout master
+git fetch upstream
+git pull upstream master
+git push origin --delete branch
+git branch -D branch
+rm -f .reviews/branch
+```
 
 #### Code freeze period
 Shortly before we make a new release a code freeze period will be announced on the development mailing list. During that code freeze no new features will be allowed to be submitted into the project codebase. During that time the focus is on testing and bug fixes.
