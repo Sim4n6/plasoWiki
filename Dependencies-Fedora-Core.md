@@ -327,6 +327,25 @@ sudo yum install pytz
 
 **TODO: describe manual installation**
 
+### requests
+Download the latest source package from: https://github.com/kennethreitz/requests/releases
+
+**Make sure to click on:** "Show # newer tags"
+
+To build rpm files run the following command from the build root directory:
+```
+mv v2.7.0.tar.gz requests-2.7.0.tar.gz
+tar xvf requests-2.7.0.tar.gz 
+cd requests-2.7.0/
+python setup.py bdist_rpm
+cd ..
+```
+
+To install the required rpm files run:
+```
+sudo yum install requests-2.7.0/dist/requests-2.7.0-1.noarch.rpm
+```
+
 ### Sleuthkit and Pytsk
 The build and install Sleuthkit and Pytsk see:
 
@@ -338,6 +357,3 @@ The build and install Sleuthkit and Pytsk see:
 Download the latest source package from: https://github.com/rhec/pyelasticsearch/releases
 
 **TODO: describe**
-
-#### requests
-**TODO describe**
