@@ -19,7 +19,7 @@ If check_dependencies.py keeps indicating it detected an out of date version che
 /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/
 ```
 
-Apple also ships version 2.0.1 of pyparsing under /System/Library/Frameworks/Python.framework which is loaded first, even if you have a newer pyparsing installed. You can work around this by specifying the PYTHONPATH when you run one of the command line tools - try ```PYTHONPATH=/Library/Python/2.7/site-packages:$PYTHONPATH ./tools/log2timeline.py --help``` if you're having problems.
+Apple also ships version 2.0.1 of pyparsing under ```/System/Library/Frameworks/Python.framework``` which is loaded first, even if you have a newer pyparsing installed. You can work around this by specifying the PYTHONPATH when you run one of the command line tools - try ```PYTHONPATH=/Library/Python/2.7/site-packages:$PYTHONPATH ./tools/log2timeline.py --help``` if you're having problems.
 
 ## Development tools
 If you intend to do development on plaso you'll also need to install some development tools:
