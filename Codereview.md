@@ -181,6 +181,15 @@ If the code submitted breaks Travis-CI and/or AppVeyor, please create another CL
 ./utils/merge_submit.sh CL_NUMBER USERNAME BRANCH
 ```
 
+##### Manual
+**TODO: notes on a manual clean merge**
+```
+git pull origin master
+git pull --squash https://github.com/joachimmetz/plaso.git scripts
+git commit -a -m "Code review: 1234567890: Changes to code."
+git push
+```
+
 #### Clean up script
 **TODO: create clean up script**
 
