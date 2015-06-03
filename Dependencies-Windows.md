@@ -510,6 +510,7 @@ Download the latest source package from: https://github.com/kennethreitz/request
 
 To build the MSI file run the following commands from the build root directory:
 ```
+move v2.7.0.tar.gz requests-2.7.0.tar.gz
 tar xfv requests-2.7.0.tar.gz
 cd requests-2.7.0\
 C:\Python27\python.exe setup.py bdist_msi
