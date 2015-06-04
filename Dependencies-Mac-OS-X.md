@@ -257,32 +257,32 @@ Download the latest 2.x source package from: https://github.com/google/protobuf/
 
 To build pkg files run the following command from the build root directory:
 ```
-tar xfvj protobuf-2.5.0.tar.bz2
-cd protobuf-2.5.0
+tar xfvz protobuf-2.6.1.tar.gz
+cd protobuf-2.6.1
 ./configure --prefix=/usr
 make
 make install DESTDIR=$PWD/osx-pkg
-pkgbuild --root osx-pkg --identifier com.github.google.protobuf --version 2.5.0 --ownership recommended ../protobuf-2.5.0.pkg
+pkgbuild --root osx-pkg --identifier com.github.google.protobuf --version 2.6.1 --ownership recommended ../protobuf-2.6.1.pkg
 cd ..
 ```
 
 To install the required pkg files run:
 ```
-sudo installer -target / -pkg protobuf=2.5.0.pkg
+sudo installer -target / -pkg protobuf-2.6.1.pkg
 ```
 
 To build pkg files run the following command from the build root directory:
 ```
-cd protobuf-2.5.0/python
+cd protobuf-2.6.1/python
 python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier com.github.google.python-protobuf --version 2.5.0 --ownership recommended ../../python-protobuf-2.5.0.pkg
+pkgbuild --root dist/tmp --identifier com.github.google.python-protobuf --version 2.6.1 --ownership recommended ../../python-protobuf-2.6.1.pkg
 cd ../../
 ```
 
 To install the required pkg files run:
 ```
-sudo installer -target / -pkg python-protobuf-2.5.0.pkg
+sudo installer -target / -pkg python-protobuf-2.6.1.pkg
 ```
 
 ### libyal
