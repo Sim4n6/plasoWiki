@@ -47,9 +47,12 @@ If an error occurs when processing a storage media image try to run with the sto
 PYTHONPATH=. python examples/source_analyzer.py --no-auto-recurse
 ```
 
-If the high memory usage still persists try mounting the file system as well to bypass bypass libraries (modules) supporting the file system, e.g. the SleuthKit and pytsk.
+Try:
 
-Also try running in single process mode this will bypass any issues with multi processing.
+* logging to a log file `log2timeline.py --log-file=log2timeline.log ...`;
+* running in debug mode `log2timeline.py --debug ...`;
+* running in single process mode this will bypass any issues with multi processing `log2timeline.py --single-processs ...`;
+* mounting the file system as well to bypass libraries (modules) supporting the file system, e.g. the SleuthKit and pytsk.
 
 ## Import errors
 It sometimes happen that the tests fail with an import error e.g.
@@ -80,8 +83,21 @@ It also sometimes means that you have multiple versions of plaso installed on yo
 ## Crashes, hangs and tracebacks
 In the context of plaso crashes and tracebacks have different meanings:
 
-* crash; an error that causes an abrupt termination of the program you were running e.g. a SEGFAULT
+* crash; an error that causes an abrupt termination of the program you were running e.g. a segfault (SIGSEGV)
 * traceback; the back trace of an error that was caught by an exception handler that can cause a termination of the program you were running
+
+### A worker gives an error status
+The "error" status typically indicates that there was a critical error e.g. a segfault (SIGSEGV).
+
+**Work in progress**
+The foreman tries to determine the file entry the worker error-ed on before it is terminated. 
+
+Your system logs might indicate why the worker segfault-ed.
+
+### A worker gives a killed status
+This typically indicates that the worker was killed (SIGKILL) likely by an external process e.g the Out Of Memory (OOM) killer.
+
+Your system logs might indicate why the worker was killed.
 
 ### Which processes are running
 The following command help you determine which plaso processes are running on your system:
@@ -97,7 +113,7 @@ ps aux | grep log2timeline.py | grep python | awk '{print $2}' | tr '\n' ',' | s
 ```
 
 ### Analyzing crashes with gdb
-Once you havve isolated the file that causes the crash and you cannot share the file you can generate a back trace that can help us fix the error.
+Once you have isolated the file that causes the crash and you cannot share the file you can generate a back trace that can help us fix the error.
 
 First make sure you have the debug symbols installed.
 
