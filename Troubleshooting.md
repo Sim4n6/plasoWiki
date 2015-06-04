@@ -51,8 +51,9 @@ Try:
 
 * logging to a log file `log2timeline.py --log-file=log2timeline.log ...`;
 * running in debug mode `log2timeline.py --debug ...`;
-* running in single process mode this will bypass any issues with multi processing `log2timeline.py --single-processs ...`;
-* mounting the file system as well to bypass libraries (modules) supporting the file system, e.g. the SleuthKit and pytsk.
+* running in single process mode this will bypass any issues with multi processing `log2timeline.py --single-process ...`;
+* mounting the file system as well to bypass libraries (modules) supporting the file system, e.g. the SleuthKit and pytsk;
+* running in single process and debug mode, see section below.
 
 ## Import errors
 It sometimes happen that the tests fail with an import error e.g.
@@ -110,6 +111,23 @@ top -p `ps -ef | grep log2timeline.py | grep python | awk '{ print $2 }' | tr '\
 Mac OS X:
 ```
 ps aux | grep log2timeline.py | grep python | awk '{print $2}' | tr '\n' ',' | sed 's/,$//'
+```
+
+### Analyzing crashes with single process and debug mode
+In single process and debug mode `log2timeline.py --debug --single-process ...` log2timeline will run a pdb shell when an uncaught Python exception is raised.
+
+Inside the pdb shell you can see where in the code the exception was raised and you have access to the last state of the program.
+
+Use `u` to go up one level and 'd' to go down one level .
+
+Print the attributes of the current object you are looking for.
+```
+!self.__dict__
+```
+
+Print the current argument stack to see what arguments are available to you.
+```
+args
 ```
 
 ### Analyzing crashes with gdb
