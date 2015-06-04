@@ -1,5 +1,3 @@
-**TODO: migrating from https://sites.google.com/a/kiddaland.net/plaso/developer/troubleshooting**
-
 This page contains instructions that can be used to assist you in debugging potential issues with the plaso and its dependencies.
 
 ## Quick list
@@ -114,9 +112,7 @@ ps aux | grep log2timeline.py | grep python | awk '{print $2}' | tr '\n' ',' | s
 ```
 
 ### Analyzing crashes with single process and debug mode
-In single process and debug mode `log2timeline.py --debug --single-process ...` log2timeline will run a pdb shell when an uncaught Python exception is raised.
-
-Inside the pdb shell you can see where in the code the exception was raised and you have access to the last state of the program.
+In single process and debug mode `log2timeline.py --debug --single-process ...` log2timeline will run a Python debug shell (pdb) when an uncaught Python exception is raised.
 
 Use `u` to go up one level and `d` to go down one level .
 
@@ -129,6 +125,8 @@ Print the current argument stack to see what arguments are available to you.
 ```
 args
 ```
+
+Note that inside pdb you can run any Python commands including loading new libraries e.g. for troubleshooting. You can prepend commands with an exclamation mark (!) to indicate that you want to run a Python command as an opposed to a debug shell one.
 
 ### Analyzing crashes with gdb
 Once you have isolated the file that causes the crash and you cannot share the file you can generate a back trace that can help us fix the error.
