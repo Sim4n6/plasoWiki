@@ -118,7 +118,7 @@ In single process and debug mode `log2timeline.py --debug --single-process ...` 
 
 Inside the pdb shell you can see where in the code the exception was raised and you have access to the last state of the program.
 
-Use `u` to go up one level and 'd' to go down one level .
+Use `u` to go up one level and `d` to go down one level .
 
 Print the attributes of the current object you are looking for.
 ```
