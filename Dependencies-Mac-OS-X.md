@@ -251,6 +251,8 @@ sudo installer -target / -pkg python-hachoir-metadata-1.3.3.pkg
 ```
 
 ### Libprotobuf and Python-bindings
+Libprotobuf is dependent on python-gflags see the instructions below how to build and install python-gflags.
+
 Download the latest 2.x source package from: https://github.com/google/protobuf/releases
 
 To build pkg files run the following command from the build root directory:
@@ -432,6 +434,24 @@ sudo installer -target / -pkg python-pyparsing-2.0.3.pkg
 Download the latest 1.x source package from: https://pypi.python.org/pypi/pyreadline/#downloads
 
 **TODO describe**
+
+#### python-gflags
+Download the latest source package from: https://github.com/google/python-gflags/releases
+
+To build pkg files run the following command from the build root directory:
+```
+tar xfvz python-gflags-2.0.tar.gz
+cd python-gflags-python-gflags-2.0/
+python setup.py bdist
+mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
+pkgbuild --root dist/tmp --identifier com.github.google.python-gflags --version 2.0 --ownership recommended ../python-gflags-2.0.pkg
+cd ..
+```
+
+To install the required pkg files run:
+```
+sudo installer -target / -pkg python-gflags-2.0.pkg
+```
 
 ### pytz
 Download the latest source package from: http://pypi.python.org/pypi/pytz/#downloads
