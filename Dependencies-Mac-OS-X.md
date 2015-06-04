@@ -451,6 +451,27 @@ To install the required pkg files run:
 sudo installer -target / -pkg python-pytz-2014.10.pkg
 ```
 
+### requests
+Download the latest source package from: https://github.com/kennethreitz/requests/releases
+
+**Make sure to click on:** "Show # newer tags"
+
+To build pkg files run the following command from the build root directory:
+```
+mv v2.7.0.tar.gz requests-2.7.0.tar.gz
+tar xfvz requests-2.7.0.tar.gz
+cd requests-2.7.0/
+python setup.py bdist
+mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
+pkgbuild --root dist/tmp --identifier com.github.kennethreitz.requests --version 2.7.0 --ownership recommended ../python-requests-2.7.0.pkg
+cd ..
+```
+
+To install the required pkg files run:
+```
+sudo installer -target / -pkg python-requests-2.7.0.pkg
+```
+
 ### six
 Download the latest 1.x source package from: https://pypi.python.org/pypi/six#downloads
 
@@ -496,6 +517,3 @@ To install the required pkg files run:
 ```
 sudo installer -target / -pkg python-pyelasticsearch-1.0.pkg
 ```
-
-#### requests
-**TODO describe**
