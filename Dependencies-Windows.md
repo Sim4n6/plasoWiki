@@ -168,11 +168,11 @@ dist\dfvfs-20150129.win32.msi
 Install the MSI.
 
 ### DPKT
-Download the latest source package from: https://code.google.com/p/dpkt/downloads/list
+Download the latest source package from: https://pypi.python.org/pypi/dpkt
 
 To build the MSI file run the following commands from the build root directory:
 ```
-tar xfv dpkt-1.8.tar.gz
+tar xfv dpkt-1.8.6.tar.gz
 cd dpkt\
 C:\Python27\python.exe setup.py bdist_msi
 cd ..
@@ -180,7 +180,7 @@ cd ..
 
 This will create a MSI in the dist sub directory e.g.:
 ```
-dist\dpkt-1.8.win32.msi
+dist\dpkt-1.8.6.win32.msi
 ```
 
 Install the MSI.
