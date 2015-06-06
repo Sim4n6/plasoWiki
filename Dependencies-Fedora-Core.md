@@ -140,7 +140,20 @@ sudo rpm -ivh dfvfs-20140219/dist/dfvfs-20140219-1.noarch.rpm
 ```
 
 ### DPKT
-**TODO: describe.**
+Download the latest source package from: https://pypi.python.org/pypi/dpkt
+
+To build rpm files run the following command from the build root directory:
+```
+tar xvf dpkt-1.8.6.tar.gz
+cd dpkt-1.8.6/
+python setup.py bdist_rpm
+cd ..
+```
+
+To install the required rpm files run:
+```
+sudo yum install dpkt-1.8.6/dist/dpkt-1.8.6-1.noarch.rpm
+```
 
 ### IPython
 By default Fedora 20 comes with IPython 0.13.2. Plaso requires version 1.2.1 or later.
