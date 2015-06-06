@@ -159,21 +159,21 @@ sudo installer -target / -pkg python-dfvfs-20140219.pkg
 ```
 
 ### DPKT
-Download the latest source package from: https://code.google.com/p/dpkt/downloads/list
+Download the latest source package from: https://pypi.python.org/pypi/dpkt
 
 To build pkg files run the following command from the build root directory:
 ```
-tar xfvz dpkt-1.8.tar.gz
-cd dpkt-1.8
+tar xfvz dpkt-1.8.6.tar.gz
+cd dpkt-1.8.6
 python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier com.google.code.p.dpkt --version 1.8 --ownership recommended ../python-dpkt-1.8.pkg
+pkgbuild --root dist/tmp --identifier com.google.code.p.dpkt --version 1.8.6 --ownership recommended ../python-dpkt-1.8.6.pkg
 cd ..
 ```
 
 To install the required pkg files run:
 ```
-sudo installer -target / -pkg python-dpkt-1.8.pkg
+sudo installer -target / -pkg python-dpkt-1.8.6.pkg
 ```
 
 ### IPython
