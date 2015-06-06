@@ -197,7 +197,28 @@ sudo dpkg -i python-dfvfs_20140219-1_all.deb
 ### DPKT
 **Note that Unbuntu 14.04 provides DPKT 1.6 which contains known issues hence we recommend upgrading to version 1.8.**
 
-**TODO describe**
+Download the latest source package from: https://pypi.python.org/pypi/dpkt
+
+**TODO describe obtaining packing files**
+
+To build deb files run the following command from the build root directory:
+```
+tar xvf dpkt-1.8.6.tar.gz
+cd dpkt-1.8.6
+cp -rf config/dpkg debian
+dpkg-buildpackage -rfakeroot
+cd ..
+```
+
+This will create the following files in the build root directory:
+```
+python-dpkt-1.8.6-1_all.deb
+```
+
+To install the required deb files run:
+```
+sudo dpkg -i python-dpkt-1.8.6-1_all.deb
+```
 
 ### Hachoir
 To install hachoir run:
