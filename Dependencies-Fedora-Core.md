@@ -202,8 +202,6 @@ sudo rpm -ivh hachoir-metadata-1.3.3/dist/hachoir-metadata-1.3.3-1.noarch.rpm
 ```
 
 ### Libprotobuf and Python-bindings
-Libprotobuf is dependent on python-gflags see the instructions below how to build and install python-gflags.
-
 To install libprotobuf and Python-bindings run:
 ```
 sudo yum install protobuf-python
@@ -216,6 +214,8 @@ sudo yum install protobuf-compiler
 
 #### Manual
 **TODO: complete this section**
+
+Libprotobuf is dependent on python-gflags see the instructions below how to build and install python-gflags.
 
 Download the latest 2.x source package from: https://github.com/google/protobuf/releases
 
