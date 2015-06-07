@@ -115,12 +115,6 @@ sudo yum install construct-2.5.2/dist/construct-2.5.2-1.noarch.rpm
 
 **Note if this package could conflict with Fedora distribute version of construct.**
 
-### dateutil
-To install dateutil run:
-```
-sudo yum install python-dateutil
-```
-
 ### dfVFS
 The dfVFS build instructions can be found [here](https://github.com/log2timeline/dfvfs/wiki/Building). Note that for dfVFS to function correctly several dependencies, like pytsk, mentioned later in a section of this page, are required.
 
@@ -208,6 +202,8 @@ sudo rpm -ivh hachoir-metadata-1.3.3/dist/hachoir-metadata-1.3.3-1.noarch.rpm
 ```
 
 ### Libprotobuf and Python-bindings
+Libprotobuf is dependent on python-gflags see the instructions below how to build and install python-gflags.
+
 To install libprotobuf and Python-bindings run:
 ```
 sudo yum install protobuf-python
@@ -331,6 +327,28 @@ sudo yum install pyparsing
 ```
 
 **TODO: describe manual installation**
+
+### python-dateutil
+To install python-dateutil run:
+```
+sudo yum install python-dateutil
+```
+
+#### python-gflags
+Download the latest source package from: https://github.com/google/python-gflags/releases
+
+To build rpm files run the following command from the build root directory:
+```
+tar xvf python-gflags-python-gflags-2.0.tar.gz
+cd python-gflags-python-gflags-2.0/
+python setup.py bdist_rpm
+cd ..
+```
+
+To install the required rpm files run:
+```
+sudo yum install python-gflags-python-gflags-2.0/dist/python-gflags-2.0-1.noarch.rpm
+```
 
 ### pytz
 To install the necessary Python-modules run:
