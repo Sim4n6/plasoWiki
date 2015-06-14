@@ -38,6 +38,8 @@ Projects/
       test_set1/
         files
         options
+        psort_options
+        psort_filters
         results/
           log2timeline.log.gz
           pinfo.log.gz
@@ -115,6 +117,19 @@ cat << EOT > test_data/.extract_and_output/my_test_set/options
 --no-vss
 --vss-stores=1
 --vss-stores=all
+EOT
+
+# Set up test options for psort.
+cat << EOT > test_data/.extract_and_output/my_test_set/psort_options
+-o tln
+--analysis browser_search
+-o l2tcsv --analysis tagging --tagging_file tag_windows.txt
+EOT
+
+# Set up test filters for psort
+cat << EOT > test_data/.extract_and_output/my_test_set/psort_filters
+parser contains 'filestat'
+parser contains 'winreg' and message contains 'zone'
 EOT
 
 # Enable the test set.
