@@ -85,13 +85,12 @@ In the context of plaso crashes and tracebacks have different meanings:
 * crash; an error that causes an abrupt termination of the program you were running e.g. a segfault (SIGSEGV)
 * traceback; the back trace of an error that was caught by an exception handler that can cause a termination of the program you were running
 
-### A worker gives an error status
-The "error" status typically indicates that there was a critical error e.g. a segfault (SIGSEGV).
+### A worker segfault-ing
+Since plaso relies on several compiled dependencies it is possible that a worker segfault (SIGSEGV).
 
-**Work in progress**
-The foreman tries to determine the file entry the worker error-ed on before it is terminated. 
+As part of the 1.3 a SIGSEGV signal handler was added however this process turned out, as expected, unreliable. However it added an interesting side effect that is very useful for debugging. If the SIGSEGV signal handler is enable the worker process typically remains in the "running" state but stops producing event object. What happens under the hood is that the SIGSEGV signal is caught but the worker is unable to cleanly terminate. Because of this "frozen" state of the worker it is very easy to attach a debugger e.g. `gdb python -p PID`.
 
-Your system logs might indicate why the worker segfault-ed.
+A `kill -11 PID` however seems to be cleanly handled by the SIGSEGV signal handler and puts the worker into "error" status.
 
 ### A worker gives a killed status
 This typically indicates that the worker was killed (SIGKILL) likely by an external process e.g the Out Of Memory (OOM) killer.
@@ -147,7 +146,7 @@ Note that often the first 10 lines of the back trace are sufficient information.
 
 An alternative approach is to attach a debugger to it once the program is running:
 ```
-gdb -p PID
+gdb python -p PID
 ```
 
 Where PID is the process identifier of the program. Once the debugger is attached continue running:
