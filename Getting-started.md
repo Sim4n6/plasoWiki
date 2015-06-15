@@ -19,4 +19,4 @@ To get started have a look at the
 
 **Note that the codelabs currently reflect plaso 1.2 and we are working on updating them to reflect plaso 1.3**
 
-And we recommend joining the development mailing list: [log2timeline-dev](https://groups.google.com/forum/#!forum/log2timeline-dev)
+Last but not least we also recommend joining the development mailing list: [log2timeline-dev](https://groups.google.com/forum/#!forum/log2timeline-dev)
