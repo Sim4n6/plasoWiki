@@ -18,7 +18,7 @@ dict.iteritems() => iter(dict.items())
 ```
 
 #### Integer division
-The result of \ is a floating point, use divmod() instead (or \\)
+The result of `\` is a floating point, use divmod() instead (or `\\`)
 
 #### Strings
 
