@@ -88,7 +88,7 @@ In the context of plaso crashes and tracebacks have different meanings:
 ### A worker segfault-ing
 Since plaso relies on several compiled dependencies it is possible that a worker segfault (SIGSEGV).
 
-As part of the 1.3 a SIGSEGV signal handler was added however this process turned out, as expected, unreliable. However it added an interesting side effect that is very useful for debugging. If the SIGSEGV signal handler is enable the worker process typically remains in the "running" state but stops producing event object. What happens under the hood is that the SIGSEGV signal is caught but the worker is unable to cleanly terminate. Because of this "frozen" state of the worker it is very easy to attach a debugger e.g. `gdb python -p PID`.
+As part of the 1.3 pre-release bug hunting a SIGSEGV signal handler was added however this process turned out, as expected, unreliable. However it added an interesting side effect that is very useful for debugging. If the SIGSEGV signal handler is enable the worker process typically remains in the "running" state but stops producing event object. What happens under the hood is that the SIGSEGV signal is caught but the worker is unable to cleanly terminate. Because of this "frozen" state of the worker it is very easy to attach a debugger e.g. `gdb python -p PID`.
 
 A `kill -11 PID` however seems to be cleanly handled by the SIGSEGV signal handler and puts the worker into "error" status.
 
