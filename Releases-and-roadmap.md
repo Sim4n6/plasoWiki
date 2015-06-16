@@ -32,9 +32,9 @@ The following sections contain a rough outline of the larger items on the roadma
   * improve existing parsers
     * job file parser - add format improvements
   * deprecate stat object in favour of file entry attributes
+  * Add Windows 10 Prefetch support (pyscca)
 * Add analysis plugins
   * NSRL Server
-  * Virustotal
 * Collection
   * Improve collection filters
 * Hashing
@@ -61,16 +61,19 @@ Changes in the version 1.2.1 development release:
 * Parsers
   * Chrome preferences parser
   * improved MSIECF parser
-  * rp.log parser
+  * Added rp.log parser
 * ESE database file formats
   * Windows 8 File History
   * long value support
 * Windows Registry plugins
   * WinReg Timezone Plugin
+  * AppCompatCache Windows 10 support
 * Output
   * improved TimeSketch integration
 * Tools
   * improved image export
+* Analysis plugins
+  * Virustotal
 * clean-up and fixes
   * parser chain
   * parser mediator
