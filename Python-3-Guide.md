@@ -54,7 +54,7 @@ xrange(10) => range(0, 10)
 
 #### To do
 ```
-from __future__ absolute_import
+from __future__ import absolute_import
 ```
 
 ```
