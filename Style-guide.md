@@ -21,7 +21,7 @@ Various plaso specific additions/variations are:
 Also see: [Python 3 Guide](https://github.com/log2timeline/plaso/wiki/Python-3-Guide)
 
 ## Source files
-Start your source files with:
+At the start your source files define the encoding, which should be UTF-8, e.g.:
 ```
 # -*- coding: utf-8 -*-
 ```
