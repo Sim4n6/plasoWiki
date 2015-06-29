@@ -25,7 +25,7 @@ Start your source files with:
 ```
 # -*- coding: utf-8 -*-
 ```
-Also see: [https://www.python.org/dev/peps/pep-0263/](PEP 0263)
+Also see: [PEP 0263](https://www.python.org/dev/peps/pep-0263/)
 
 ## Tests
 
