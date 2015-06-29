@@ -20,6 +20,13 @@ Various plaso specific additions/variations are:
 
 Also see: [Python 3 Guide](https://github.com/log2timeline/plaso/wiki/Python-3-Guide)
 
+## Source files
+Start your source files with:
+```
+# -*- coding: utf-8 -*-
+```
+Also see: [https://www.python.org/dev/peps/pep-0263/](PEP 0263)
+
 ## Tests
 
 * Use as much as possible the test functions available in the local test_lib.py instead of writing your own test functions. If you think a test function is missing please mail the developer list.
