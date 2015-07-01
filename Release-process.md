@@ -25,5 +25,11 @@ Mark issues that need to be addressed before the release with the label and refe
 * Packaging
 * Blog post
 
+### Check list
+* [ ] Are the Ubuntu packages in [GIFT](https://launchpad.net/~gift) up to date?
+* [ ] Are the Mac OS X [l2tbinaries](https://github.com/log2timeline/l2tbinaries) packages up to date?
+* [ ] Are the Windows 32-bit [l2tbinaries](https://github.com/log2timeline/l2tbinaries) packages up to date?
+* [ ] Are the Windows 64-bit [l2tbinaries](https://github.com/log2timeline/l2tbinaries) packages up to date?
+
 ## Aftercare
 * Announce code feature freeze is over on the mailing list.
