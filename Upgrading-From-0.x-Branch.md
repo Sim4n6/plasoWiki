@@ -60,7 +60,7 @@ Since the new version works directly on a raw image file there is no need to mou
 The tool will detect whether or not the input is a file, directory or a disk image/partition. If the tool requires additional information, such as when VSS stores are detected or more than a single partition in the volume the tool will ask for additional details. An example of that:
 
     The following Volume Shadow Snapshots (VSS) were found:
-    Identifier      VSS store identifier    Creation Time
+    Identifier      VSS store identifier                    Creation Time
     vss1            23b509aa-3499-11e3-be88-24fd52566ede    2013-10-16T13:18:01.685825+00:00
     vss2            8dfc93b3-376f-11e3-be88-24fd52566ede    2013-10-18T00:28:29.120593+00:00
     vss3            dc8ffcf4-3a6b-11e3-be8a-24fd52566ede    2013-10-21T19:24:50.879381+00:00
