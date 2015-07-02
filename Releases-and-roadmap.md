@@ -50,35 +50,9 @@ The following sections contain a rough outline of the larger items on the roadma
 * Handling recovered (deleted) data
 
 ## Changes in development release
-Changes in the version 1.2.1 development release:
+Changes in the version 1.3.1 development release:
 
-* Core
-  * added signature-based parser pre-filtering
-  * initial hasher support
-  * Windows Event Log event messages support
-  * changes due to dfVFS using more strict caching strategy
-  * changes to handling of compressed files and archives
-* Parsers
-  * Chrome preferences parser
-  * improved MSIECF parser
-  * Added rp.log parser
-* ESE database file formats
-  * Windows 8 File History
-  * long value support
-* Windows Registry plugins
-  * WinReg Timezone Plugin
-  * AppCompatCache Windows 10 support
-* Output
-  * improved TimeSketch integration
-* Tools
-  * improved image export
-* Analysis plugins
-  * Virustotal
-* clean-up and fixes
-  * parser chain
-  * parser mediator
-  * split off build and update dependency utility scripts to a separate project
-  * various refactors
+**TODO**
 
 ## Packaged release history
 Version | Name | Release date | Comments
@@ -88,4 +62,4 @@ Version | Name | Release date | Comments
 1.0.2 | Spooky edition | October 2013 | [Blog post](http://blog.kiddaland.net/2013/10/halloween-brings-with-it-riding-witches.html)
 1.1.0 | SuperBark edition | June 2014 | [Blog post](http://blog.kiddaland.net/2014/06/what-is-one-to-say-about-june-time-of.html)
 1.2.0 | Griswold edition | December 2014 | [Blog post](http://blog.kiddaland.net/2014/12/hey-kids-i-heard-on-news-that-airline.html)
-1.3.0 | | Planned June 2015 | 
+1.3.0 | | July 2015 | 
