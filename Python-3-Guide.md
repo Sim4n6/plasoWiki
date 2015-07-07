@@ -12,6 +12,7 @@ See: https://docs.python.org/3/howto/pyporting.html
 * next() replaced by `__next__()`
 
 * dict iter functions: https://docs.python.org/3.1/whatsnew/3.0.html#views-and-iterators-instead-of-lists
+  * What about plistlib._InternalDict.iteritems() ?
 
 ```
 dict.iteritems() => iter(dict.items())
@@ -103,5 +104,3 @@ pyvshadow | yes (as of 20141223)
 six | yes
 sqlite3 (pysqlite) | unknown
 yaml | yes
-
-What about plistlib._InternalDict ?
