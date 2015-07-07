@@ -103,3 +103,5 @@ pyvshadow | yes (as of 20141223)
 six | yes
 sqlite3 (pysqlite) | unknown
 yaml | yes
+
+What about plistlib._InternalDict ?
