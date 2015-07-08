@@ -5,7 +5,7 @@ If the answer on any of the questions below is no the dependency is not suitable
 
 * Has the dependency a [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0) compatible license?
 
-Code licensed under a GPL or BSD 4-clause cannot be integrated in a binary build, hence these licenses are deemed incompatible. Note that this could also apply to other source code licenses.
+Code licensed under a GPL, AGPL or BSD 4-clause cannot be integrated in a binary build, hence these licenses are deemed incompatible. Note that this could also apply to other source code licenses.
 
 * Does the dependency support Linux, Mac OS X and Windows?
 
