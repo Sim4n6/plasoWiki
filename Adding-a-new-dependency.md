@@ -22,7 +22,7 @@ Once the dependency has been added to l2tdevtools it can be added to the [GIFT P
 
 **Note for PPA maintainers upload new packages always to the [testing track](https://launchpad.net/~gift/+archive/ubuntu/testing) first.**
 
-### Getting a dependency in the [Google Drive Downloads](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/)
+### Getting a dependency in [l2tbinaries](https://github.com/log2timeline/l2tbinaries)
 **TODO: describe**
 
 ## Source changes
