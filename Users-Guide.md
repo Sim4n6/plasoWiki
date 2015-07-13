@@ -15,6 +15,9 @@ If you are one of those people that liked the old perl version of log2timeline b
 **This page is work in progress.**
 
 ### Unbuntu 14.04 LTS
+**This page is work in progress.**
+You'll need to have universe
+
 First make sure your system is up to date:
 ```
 sudo apt-get update
