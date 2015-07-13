@@ -15,12 +15,14 @@ If you are one of those people that liked the old perl version of log2timeline b
 **This page is work in progress.**
 
 ### Unbuntu 14.04 LTS
-**This page is work in progress.**
-You'll need to have universe
-
-First make sure your system is up to date:
+To install plaso you'll need to have Ubuntu universe enabled:
 ```
+sudo add-apt-repository universe
 sudo apt-get update
+```
+
+Not necessary but we recommend that your installation is up to date:
+```
 sudo apt-get upgrade
 ```
 
