@@ -25,5 +25,5 @@ Add the [GIFT PPA](https://launchpad.net/~gift) and install plaso.
 ```
 sudo add-apt-repository ppa:gift/stable
 sudo apt-get update
-sudo apt-get install plaso-1.3.0-1ppa1~trusty
+sudo apt-get install python-plaso
 ```
