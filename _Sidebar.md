@@ -7,7 +7,7 @@
 # User Guide
 
 * [Start Here] (https://github.com/log2timeline/plaso/wiki/Users-Guide)
-* log2timeline
+* [log2timeline] (https://github.com/log2timeline/plaso/wiki/Using-log2timeline)
 * psort
 * pinfo
 * [preg] (https://github.com/log2timeline/plaso/wiki/Using-preg)
