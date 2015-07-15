@@ -1,4 +1,3 @@
-## Installing plaso packaged release
 **This page is work in progress.**
 
 ### Ubuntu 14.04 LTS
