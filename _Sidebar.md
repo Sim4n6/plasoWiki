@@ -7,6 +7,13 @@
 
 # Installation
 
+## Stable Release
+* Ubuntu
+* Fedora Core
+* Mac OS X
+* Windows
+
+## Development Release
 * [Ubuntu] (https://github.com/log2timeline/plaso/wiki/Development-release-Ubuntu)
 * [Fedora Core] (https://github.com/log2timeline/plaso/wiki/Development-release-Fedora-Core)
 * [Mac OS X] (https://github.com/log2timeline/plaso/wiki/Development-release-Mac-OS-X)
