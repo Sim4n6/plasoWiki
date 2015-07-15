@@ -94,14 +94,16 @@ If you're building with Visual Studio note that for some reason PyInstaller does
 ### Preparations
 If you are intending to distribute the packaged release make sure to do the following steps:
 
-`1`. Remove code that cannot be redistributed due to a license restriction, by running:
+`1`. Make sure the dependencies are up to date.
+
+`2`. Remove code that cannot be redistributed due to a license restriction, by running:
 ```
 sh utils/prep_dist.sh
 ```
 
 **Note that you'll need to run this under Cygwin or equivalent.**
 
-`2`. Distribute a copy of:
+`3`. Distribute a copy of:
 ```
 AUTHORS
 ACKNOWLEDGEMENT
