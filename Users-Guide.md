@@ -25,9 +25,13 @@ Not necessary but we recommend that your installation is up to date:
 sudo apt-get upgrade
 ```
 
-Add the [GIFT PPA](https://launchpad.net/~gift) and install plaso.
+Add the [GIFT PPA](https://launchpad.net/~gift):
 ```
 sudo add-apt-repository ppa:gift/stable
+```
+
+Update and install plaso:
+```
 sudo apt-get update
 sudo apt-get install python-plaso
 ```
