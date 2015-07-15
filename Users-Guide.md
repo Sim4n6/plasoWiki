@@ -44,6 +44,6 @@ After that, please refer to each tools specific site:
  + log2timeline
  + psort
  + pinfo
- + preg
+ + [preg] (https://github.com/log2timeline/plaso/wiki/Using-preg)
  + image_export
 
