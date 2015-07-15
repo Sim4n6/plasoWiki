@@ -68,6 +68,58 @@ Key information.
 
 The "```-q```" parameter is to indicate that the tool should not print out names of Registry keys it was unable to find and open.
 
+The same applies when running the tool against a storage media file.
+
+```
+$ preg.py -q -p userassist -i test_data/registry_test.dd 
+[INFO] [PreProcess] Set attribute: sysregistry to /Windows/System32/config
+[INFO] [PreProcess] Set attribute: systemroot to /Windows
+[INFO] [PreProcess] Set attribute: windir to /Windows
+...
+[INFO] [PreProcess] Set attribute: code_page to cp1252
+[INFO] [PreProcess] Set attribute: hostname to WKS-WIN732BITA
+[INFO] [PreProcess] Set attribute: time_zone_str to EST5EDT
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Registry File xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+  Registry File : /Users/foobar/NTUSER.DAT
+  Registry Type : NTUSER
+Registry Origin : TSK
+
+
+       Key Name : \Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{F4E57C4B-2036-45F0-A9AB-443BCFE33D9F}
+        Subkeys : 1
+         Values : 1
+
+
+----------------------------------- Plugins ------------------------------------
+
+****************************** Plugin: userassist ******************************
+[NTUSER] Parser for User Assist Registry data.
+Key information.
+             Key Path : \Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{F4E57C4B-2036-45F0-A9AB-443BCFE33D9F}\Count
+
++++++++++++++++++++++++++++++++++++++ Data +++++++++++++++++++++++++++++++++++++
+
+[1601-01-01T00:00:00+00:00]
+	UEME_CTLCUACount:ctor : [UserAssist entry: 10, Count: 0, Application focus count: 0, Focus duration: 0]
+
+[2010-11-10T07:49:37.078067+00:00]
+	{0139D44E-6AFE-49F2-8690-3DAFCAE6FFB8}\Accessories\Welcome Center.lnk : [UserAssist entry: 1, Count: 14, Application focus count: 0, Focus duration: 14]
+...
+```
+
+When running the tool against a storage media file the tool will try to locate Windows partitions. If there is only one partition discovered the tool will be run against that. If more than a single one is discovered or if there are VSS snapshots on that volume the tool will start by asking clarifying information, such as which partition to parse, what VSS stores to include, etc.
+
+Once that is done the tool will automatically discover where the Registry files are stored in the storage media file and determine based on the selected plugin which Registry file to open. In this case the *userassist* plugin was chosen, which works on NTUSER Registry files. Since there may be more than a single user on the system the tool parses each and every discovered user Registry file and displays the information from the selected plugin.
+
+It is also possible to run the tool using more than a single plugin, eg:
+
+```
+$ preg.py -p userassist -p run test_data/NTUSER.DAT 
+```
+
+Just use the "```-p PLUGIN```" parameter multiple times to include more plugins.
 
 ### Key Mode
 
@@ -117,6 +169,22 @@ Content Modification Time : 2009-08-04T15:14:42.357125+00:00
 
 --------------------------------------------------------------------------------
 ```
+
+The same applies when parsing a storage media file:
+```
+$ preg.py -q -k "\Software\Microsoft\Internet Explorer\TypedURLs" -i test_data/registry_test.dd NTUSER
+```
+
+The difference here is that you also need to specify which Registry file to parse. The options are:
+ + NTUSER: Goes through all discovered NTUSER Registry files in the storage media file.
+ + SOFTWARE:
+ + SYSTEM:
+ + SECURITY: 
+ + USRCLASS: Goes through all discovered USRCLASS Registry files (one for each user) in the storage media file.
+ + SAM: 
+
+n.b. this will most likely be changed shortly for the proper Windows behavior, eg: "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall" rather than the current approach of: "\Microsoft\Windows\CurrentVersion\Uninstall" and then specifically indicate the SOFTWARE Registry file.
+
 
 ### Registry File Mode
 
