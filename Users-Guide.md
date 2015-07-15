@@ -10,7 +10,7 @@ For the current version of the documentation see: https://sites.google.com/a/kid
 
 If you are one of those people that liked the old perl version of log2timeline but really would like to switch use all the nifty features of the Python version. Fear not, [here](https://github.com/log2timeline/plaso/wiki/Upgrading-From-0.x-Branch) is a guide to help you migrate.
 
-## Installing plaso package release
+## Installing plaso packaged release
 **This page is work in progress.**
 
 ### Unbuntu 14.04 LTS
