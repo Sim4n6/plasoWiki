@@ -10,7 +10,7 @@
 ## Stable Release
 * [Ubuntu] (https://github.com/log2timeline/plaso/wiki/Ubuntu-Packaged-Release)
 * Fedora Core
-* Mac OS X
+* [Mac OS X] (https://github.com/log2timeline/plaso/wiki/Mac-OS-X-Packaged-Release)
 * Windows
 
 ## Development Release
