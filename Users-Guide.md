@@ -10,28 +10,3 @@ For the current version of the documentation see: https://sites.google.com/a/kid
 
 If you are one of those people that liked the old perl version of log2timeline but really would like to switch use all the nifty features of the Python version. Fear not, [here](https://github.com/log2timeline/plaso/wiki/Upgrading-From-0.x-Branch) is a guide to help you migrate.
 
-## Installing plaso packaged release
-**This page is work in progress.**
-
-### Unbuntu 14.04 LTS
-To install plaso you'll need to have Ubuntu universe enabled:
-```
-sudo add-apt-repository universe
-sudo apt-get update
-```
-
-Not necessary but we recommend that your installation is up to date:
-```
-sudo apt-get upgrade
-```
-
-Add the [GIFT PPA](https://launchpad.net/~gift):
-```
-sudo add-apt-repository ppa:gift/stable
-```
-
-Update and install plaso:
-```
-sudo apt-get update
-sudo apt-get install python-plaso
-```
