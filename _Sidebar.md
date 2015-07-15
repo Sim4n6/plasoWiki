@@ -8,7 +8,7 @@
 # Installation
 
 ## Stable Release
-* Ubuntu
+* [Ubuntu] (https://github.com/log2timeline/plaso/wiki/Ubuntu-Packaged-Release)
 * Fedora Core
 * Mac OS X
 * Windows
