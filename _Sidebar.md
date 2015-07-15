@@ -7,7 +7,7 @@
 
 # Installation
 
-## Stable Release
+## Packaged Release
 * [Ubuntu] (https://github.com/log2timeline/plaso/wiki/Ubuntu-Packaged-Release)
 * Fedora Core
 * [Mac OS X] (https://github.com/log2timeline/plaso/wiki/Mac-OS-X-Packaged-Release)
