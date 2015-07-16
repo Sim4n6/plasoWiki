@@ -16,13 +16,13 @@ Plaso is still very much under development and you might notice that is changes 
 
 Though plaso initially was created in mind to replace the Perl version of log2timeline, its focus has shifted from a stand-alone tool to a set of modules that can be used in various use cases. Fear not plaso is not a developers only project is also includes several command line tools, each with its specific purpose. Currently these are:
 
-* image_export
-* log2timeline
-* pinfo
-* [preg] (https://github.com/log2timeline/plaso/wiki/Using-preg)
-* psort
+* [image_export](https://github.com/log2timeline/plaso/wiki/Users-Guide#image_export)
+* [log2timeline]9https://github.com/log2timeline/plaso/wiki/Users-Guide#log2timeline)
+* [pinfo](https://github.com/log2timeline/plaso/wiki/Users-Guide#pinfo)
+* [preg](https://github.com/log2timeline/plaso/wiki/Users-Guide#preg)
+* [psort](https://github.com/log2timeline/plaso/wiki/Users-Guide#psort)
 
-Note that each tool can be invoked with the `-h` command line flag to display basic usage and command line option information. For more detailed information about a tool follow the links above.
+Note that each tool can be invoked with the `-h` or `--help` command line flag to display basic usage and command line option information.
 
 ### image_export
 
@@ -41,6 +41,8 @@ The plaso storage file contains the extracted events and various metadata about 
 ### preg
 
 **preg** is a command line tool for Windows Registry parsing. It allows you to run Windows Registry plugins from plaso on individual Windows Registry files and to interactively analyze the content of a Windows Registry from the console.
+
+For more information see: [Using preg](https://github.com/log2timeline/plaso/wiki/Using-preg)
 
 ### psort
 
