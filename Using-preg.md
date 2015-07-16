@@ -19,7 +19,7 @@ preg.py --info
 
 ### Plugin Mode
 
-To run the tool against a specific plugin on an extracted Registry file use the "```-p```" parameter. Each Registry plugin contains a list of what Registry keys it needs to extract so there is no need to indicate key paths.
+To run the tool against a specific plugin on an extracted Registry file use the ```-p``` parameter. Each Registry plugin contains a list of what Registry keys it needs to extract so there is no need to indicate key paths.
 
 ```
 $ preg.py -q -p userassist test_data/NTUSER.DAT 
@@ -66,7 +66,7 @@ Key information.
 ...
 ```
 
-The "```-q```" parameter is to indicate that the tool should not print out names of Registry keys it was unable to find and open.
+The ```-q``` parameter is to indicate that the tool should not print out names of Registry keys it was unable to find and open.
 
 The same applies when running the tool against a storage media file.
 
@@ -119,7 +119,7 @@ It is also possible to run the tool using more than a single plugin, eg:
 $ preg.py -p userassist -p run test_data/NTUSER.DAT 
 ```
 
-Just use the "```-p PLUGIN```" parameter multiple times to include more plugins.
+Just use the ```-p PLUGIN``` parameter multiple times to include more plugins.
 
 ### Key Mode
 
@@ -281,7 +281,7 @@ Additionally before the name of the file/directory there is an additional type i
  + "[REG_SZ]" for a regular string value, 
  + "[REG_MULTI_SZ]" for a multi string value, etc.
 
-To navigate the Registry the command "```cd```" can be used. One thing to note is that directory entries are divided by a backslash and there is no need to escape the backslash, that is to get into the directory or the Registry key "Microsoft\Windows" there is no need to escape the backslash as
+To navigate the Registry the command ```cd``` can be used. One thing to note is that directory entries are divided by a backslash and there is no need to escape the backslash, that is to get into the directory or the Registry key "Microsoft\Windows" there is no need to escape the backslash as
 normally would be required, that is "Microsoft\\Windows".
 
 To open up the "*Software*" key:
@@ -291,7 +291,7 @@ To open up the "*Software*" key:
 [2] $ cd Software
 ```
 
-After navigating to a new key it is always possible to see in which key you are located by the path that is included in each line or by typing "```pwd```". And to see subkeys or subkeys alongside their values, use the "ls" command. With the verbose settings values are included (if possible).
+After navigating to a new key it is always possible to see in which key you are located by the path that is included in each line or by typing ```pwd```. And to see subkeys or subkeys alongside their values, use the "ls" command. With the verbose settings values are included (if possible).
 
 ```
 [16:04:42] /PATH/test_data/NTUSER.DAT
@@ -319,14 +319,14 @@ dr-xr-xr-x 2009-08-04 15:21:33           [KEY]  Jetico
 
 ```
 
-One thing to note is that tab completion is available. If you press "<TAB>" after the command "```cd```" it will try to auto-complete all values of subkeys.
+One thing to note is that tab completion is available. If you press "<TAB>" after the command ```cd``` it will try to auto-complete all values of subkeys.
 
-There is also the verbose settings of both the "```ls```" and "```parse```" command. What the verbose settings does is to add additional information to the dataset:
+There is also the verbose settings of both the ```ls``` and ```parse``` command. What the verbose settings does is to add additional information to the dataset:
 
  + ls -v prints out value data as well as the value names.
  + parse -v includes hexadecimal representation of binary values from the extracted event as well as including a full hexadecimal representation of the key itself.
 
-To parse a registry key, navigate to it and use the command "```parse```".
+To parse a registry key, navigate to it and use the command ```parse```.
 
 ```
 [16:09:00] /PATH/test_data/NTUSER.DAT
@@ -390,7 +390,7 @@ Content Modification Time : 2009-08-04T15:12:26.794625+00:00
 --------------------------------------------------------------------------------
 ```
 
-At any time if you want to get back to the base key type the "```cd```" command without parameters.
+At any time if you want to get back to the base key type the ```cd``` command without parameters.
 
 ```
 [16:17:38] /PATH/test_data/NTUSER.DAT
@@ -400,3 +400,64 @@ At any time if you want to get back to the base key type the "```cd```" command 
 \ [5] $ 
 ```
 
+The same applies when using the console mode against a storage media file. Except that it is possible to have more than a single Registry file available.
+
+```
+$ preg.py -c -i test_data/registry_test.dd
+...
+More than one Registry file ready for use.
+
+Index Hive [collector]
+0     /Users/smith/NTUSER.DAT [TSK]
+1     /Windows/System32/config/SAM [TSK]
+2     /Users/foobar/NTUSER.DAT [TSK]
+3     /Users/Default/NTUSER.DAT [TSK]
+4     /Windows/System32/config/SYSTEM [TSK]
+
+Use "hive open INDEX" to load a Registry file and "hive list" to see a list of available Registry files.
+
+Happy command line console fu-ing.
+[08:34:18] NO HIVE LOADED
+[1] $ 
+
+```
+
+At this point no Registry file is loaded in and thus none of the commands work until one file is opened using the ```hive open``` command.
+
+```
+[1] $ hive list
+Index Hive [collector]
+0     /Users/smith/NTUSER.DAT [TSK]
+1     /Windows/System32/config/SAM [TSK]
+2     /Users/foobar/NTUSER.DAT [TSK]
+3     /Users/Default/NTUSER.DAT [TSK]
+4     /Windows/System32/config/SYSTEM [TSK]
+
+To open a Registry file, use: hive open INDEX
+```
+
+At any time you can use the ```hive list``` to see a list of available Registry files to open.
+
+```
+[2] $ hive open 2
+Opening hive: /Users/foobar/NTUSER.DAT [TSK]
+
+[08:36:02] /Users/foobar/NTUSER.DAT
+[3] $ ls
+dr-xr-xr-x 2010-11-10 07:50:39           [KEY]  AppEvents
+dr-xr-xr-x 2010-11-10 07:50:39           [KEY]  Console
+dr-xr-xr-x 2010-11-10 07:50:39           [KEY]  EUDC
+dr-xr-xr-x 2010-11-10 07:50:39           [KEY]  Environment
+dr-xr-xr-x 2010-11-10 07:50:39           [KEY]  Printers
+dr-xr-xr-x 2010-11-10 07:50:39           [KEY]  System
+dr-xr-xr-x 2010-11-10 07:50:45           [KEY]  Keyboard Layout
+dr-xr-xr-x 2010-11-10 10:17:48           [KEY]  Control Panel
+dr-xr-xr-x 2010-11-10 10:40:50           [KEY]  Identities
+dr-xr-xr-x 2012-04-06 14:09:23           [KEY]  Software
+dr-xr-xr-x 2012-04-06 14:09:25           [KEY]  Network
+
+[08:36:04] /Users/foobar/NTUSER.DAT
+[4] $ 
+```
+
+To open up a particular Registry file use the ```hive open INDEX``` command, which loads the Registry file, at which point you'll see the prompt changing from ```NO HIVE LOADED``` to the path of the loaded Registry file. Now all the same commands can be used as before.
