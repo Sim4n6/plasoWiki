@@ -14,7 +14,7 @@ Plaso is still very much under development and you might notice that is changes 
 
 ## The tools
 
-The plaso package also comes with several command line tools, each with a specific purpose.
+Though plaso initially was created in mind to replace the Perl version of log2timeline, its focus has shifted from a stand-alone tool to a set of modules that can be used in various use cases. Fear not plaso is not a developers only project is also includes several command line tools, each with its specific purpose. Currently these are:
 
 * image_export
 * log2timeline
