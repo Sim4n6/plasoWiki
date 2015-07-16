@@ -4,13 +4,17 @@
 
 First determine which version of plaso is must suitable to your needs, for more information see [Releases and roadmap](https://github.com/log2timeline/plaso/wiki/Releases-and-roadmap)
 
+### Installing the packaged release
+
+To install the packaged release see:
+
+* [https://github.com/log2timeline/plaso/wiki/Mac-OS-X-Packaged-Release](Mac OS X)
+* [https://github.com/log2timeline/plaso/wiki/Ubuntu-Packaged-Release](Ubuntu)
+* Windows
+
 ### I know the good old Perl version
 
 If you are one of those people that liked the old perl version of log2timeline but really would like to switch use all the nifty features of the Python version. Fear not, [here](https://github.com/log2timeline/plaso/wiki/Upgrading-From-0.x-Branch) is a guide to help you migrate.
-
-### Upgrading from a previous version of plaso to 1.3
-
-Plaso is still very much under development and you might notice that is changes significantly between versions. If you're upgrading from a previous version of plaso we recommend removing the previous version first, then install the version 1.3. 
 
 ## The tools
 
