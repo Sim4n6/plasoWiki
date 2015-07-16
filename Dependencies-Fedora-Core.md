@@ -383,8 +383,24 @@ The build and install Sleuthkit and Pytsk see:
 * https://github.com/py4n6/pytsk/wiki/Building-SleuthKit
 * https://github.com/py4n6/pytsk/wiki/Building
 
-### Optional dependencies for Elastic Search
+### Optional dependencies for output modules
 #### PyElasticsearch
 Download the latest source package from: https://github.com/rhec/pyelasticsearch/releases
 
 **TODO: describe**
+
+#### XlsxWriter
+Download the latest source package from: https://github.com/jmcnamara/XlsxWriter/releases
+
+To build rpm files run the following command from the build root directory:
+```
+tar xvf XlsxWriter-RELEASE_0.7.3.tar.gz
+cd XlsxWriter-RELEASE_0.7.3/
+python setup.py bdist_rpm
+cd ..
+```
+
+To install the required rpm files run:
+```
+sudo yum install XlsxWriter-RELEASE_0.7.3.tar.gz/dist/XlsxWriter-0.7.3-1.noarch.rpm
+```
