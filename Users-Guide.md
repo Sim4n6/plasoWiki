@@ -40,10 +40,8 @@ The plaso storage file contains the extracted events and various metadata about 
 
 ### preg
 
-**preg** is a command line tool for Windows Registry parsing. It allows you to run Windows Registry plugins from plaso on individual Windows Registry files and to interactively analyze the content of a Windows Registry from the console.
-
-For more information see: [Using preg](https://github.com/log2timeline/plaso/wiki/Using-preg)
+**preg** is a command line tool to analyze Windows Registry files. It allows you to plaso's Windows Registry plugins on individual Windows Registry files and interactively analyze the results. For more information see: [Using preg](https://github.com/log2timeline/plaso/wiki/Using-preg)
 
 ### psort
 
-**psort** is the post-processing tool used to filter, sort and process the plaso storage file produced by **log2timeline**. This is the tool that can be used for all post-processing filtering, sorting and potential automatic analysis of the storage file.
+**psort** is a command line tool to post-process plaso storage files. It allows you to filter, sort and run automatic analysis on the contents of plaso storage files.
