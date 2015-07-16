@@ -6,7 +6,7 @@
 
 # User Guide
 
-* [Start Here] (https://github.com/log2timeline/plaso/wiki/Users-Guide)
+* [How to get started] (https://github.com/log2timeline/plaso/wiki/Users-Guide)
 * image_export
 * [log2timeline] (https://github.com/log2timeline/plaso/wiki/Using-log2timeline)
 * pinfo
