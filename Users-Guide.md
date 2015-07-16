@@ -12,7 +12,7 @@ If you are one of those people that liked the old perl version of log2timeline b
 
 Plaso is still very much under development and you might notice that is changes significantly between versions. If you're upgrading from a previous version of plaso we recommend removing the previous version first, then install the version 1.3. 
 
-## The Basics
+## The tools
 
 The plaso package also comes with several command line tools, each with a specific purpose.
 
@@ -40,7 +40,7 @@ The plaso storage file contains the extracted events and various metadata about 
 
 ### preg
 
-**preg** is a front-end that demonstrates different use-case for plaso. **preg** only purpose is Windows Registry parsing. The front-end uses the Windows Registry parser and plugins from plaso and prints out reports or allows you to interactively interact with the content of the Registry file using a console.
+**preg** is a command line tool for Windows Registry parsing. It allows you to run Windows Registry plugins from plaso on individual Windows Registry files and to interactively analyze the content of a Windows Registry from the console.
 
 ### psort
 
