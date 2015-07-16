@@ -48,7 +48,7 @@ git push -f
 **TODO: describe**
 
 * update: [plaso/dependencies.py] (https://github.com/log2timeline/plaso/blob/master/plaso/dependencies.py)
-* update: [appveyor.yml] (https://github.com/log2timeline/plaso/blob/master/appveyor.yml)
+* update: [appveyor.yml] (https://github.com/log2timeline/plaso/blob/master/appveyor.yml) if needed
 * update: [.travis.yml](https://github.com/log2timeline/plaso/blob/master/.travis.yml)
 * update: [config/dpkg/control](https://github.com/log2timeline/plaso/blob/master/config/dpkg/control)
 
