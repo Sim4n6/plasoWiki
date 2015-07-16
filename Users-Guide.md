@@ -8,8 +8,8 @@ First determine which version of plaso is must suitable to your needs, for more 
 
 To install the packaged release see:
 
-* [https://github.com/log2timeline/plaso/wiki/Mac-OS-X-Packaged-Release](Mac OS X)
-* [https://github.com/log2timeline/plaso/wiki/Ubuntu-Packaged-Release](Ubuntu)
+* [Mac OS X](https://github.com/log2timeline/plaso/wiki/Mac-OS-X-Packaged-Release)
+* [Ubuntu](https://github.com/log2timeline/plaso/wiki/Ubuntu-Packaged-Release)
 * Windows
 
 ### I know the good old Perl version
