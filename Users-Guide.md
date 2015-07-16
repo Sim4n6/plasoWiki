@@ -22,7 +22,7 @@ The plaso package also comes with several command line tools, each with a specif
 * [preg] (https://github.com/log2timeline/plaso/wiki/Using-preg)
 * psort
 
-Note that each tool can be invoked with a "``-h``" command line flag to display basic usage and command line option information. For more detailed information about a tool follow the links above.
+Note that each tool can be invoked with a "`-h`" command line flag to display basic usage and command line option information. For more detailed information about a tool follow the links above.
 
 ### image_export
 
