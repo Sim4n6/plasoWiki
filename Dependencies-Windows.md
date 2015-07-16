@@ -573,7 +573,7 @@ If the build is successful copy the SQLite DLL to your Python installation:
 copy C:\plaso-build\sqlite-amalgamation-3080100\msvscpp\Release\sqlite3.dll C:\Python27\DLLs\
 ```
 
-### Optional dependencies for Elastic Search
+### Optional dependencies for output modules
 #### PyElasticsearch
 To have plaso support elastic search output it needs pyelasticsearch. 
 
@@ -590,6 +590,24 @@ cd ..
 This will create a MSI in the dist sub directory e.g.:
 ```
 dist\pyelasticsearch-1.0.win32.msi
+```
+
+Install the MSI.
+
+#### XlsxWriter
+Download the latest source package from: https://github.com/jmcnamara/XlsxWriter/releases
+
+To build the MSI file run the following commands from the build root directory:
+```
+tar xfv XlsxWriter-RELEASE_0.7.3.tar.gz
+cd XlsxWriter-RELEASE_0.7.3\
+C:\Python27\python.exe setup.py bdist_msi
+cd ..
+```
+
+This will create a MSI in the dist sub directory e.g.:
+```
+dist\XlsxWriter-0.7.3.win32.msi
 ```
 
 Install the MSI.
