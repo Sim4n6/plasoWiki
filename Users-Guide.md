@@ -17,7 +17,7 @@ Plaso is still very much under development and you might notice that is changes 
 Though plaso initially was created in mind to replace the Perl version of log2timeline, its focus has shifted from a stand-alone tool to a set of modules that can be used in various use cases. Fear not plaso is not a developers only project is also includes several command line tools, each with its specific purpose. Currently these are:
 
 * [image_export](https://github.com/log2timeline/plaso/wiki/Users-Guide#image_export)
-* [log2timeline]9https://github.com/log2timeline/plaso/wiki/Users-Guide#log2timeline)
+* [log2timeline](https://github.com/log2timeline/plaso/wiki/Users-Guide#log2timeline)
 * [pinfo](https://github.com/log2timeline/plaso/wiki/Users-Guide#pinfo)
 * [preg](https://github.com/log2timeline/plaso/wiki/Users-Guide#preg)
 * [psort](https://github.com/log2timeline/plaso/wiki/Users-Guide#psort)
