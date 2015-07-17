@@ -6,12 +6,6 @@
 
 The plaso storage file contains the extracted events and various metadata about the collection process alongside information collected from the source data. It may also contain information about tags applied to events and reports from analysis plugins.
 
-# Before we start
-
-Please report all discovered bugs to https://github.com/log2timeline/plaso/issues
-
-To follow announcements from the plaso team or send in generic inquiries or discuss the tool, please subscribe to the [log2timeline-discuss] (https://groups.google.com/forum/#!forum/log2timeline-discuss) mailing list or join the [G+ community] (https://plus.google.com/communities/108570205204169790104).
-
 # Running the tool
 
 To get a complete list of all switches and parameters to the tool, use ``-h`` or ``--help``.
