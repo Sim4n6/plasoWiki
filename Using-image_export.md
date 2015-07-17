@@ -14,12 +14,19 @@ There are several ways to define how you want to find the files to extract:
 ### Path, filename or extension
 
 discuss here:
+
+```
 --names NAMES
+```
+
+```
 -f FILE_FILTER
+```
+[collection filters] (https://github.com/log2timeline/plaso/wiki/Collection-Filters)
 
-https://github.com/log2timeline/plaso/wiki/Collection-Filters
+```
 -x EXTENSIONS, --extensions EXTENSIONS
-
+```
 
 ## Time range
 
