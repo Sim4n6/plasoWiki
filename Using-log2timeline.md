@@ -214,17 +214,14 @@ More information about the collection filters can be found HERE (**MISSING PAGE*
 
 ## Running against more than a single partition
 
-**This section is a WIP**
+**Everything following this is still not written**
 
-```--use_old_preprocess```
-
-
+Here we discuss the use of ```--use_old_preprocess``` and ```--partition all```
 
 ### OTHER OPTIONS TO DISCUSS
 
-**This section is a WIP**
-
 Options:
+
 ```
 -z TIMEZONE
 --credential TYPE:DATA
