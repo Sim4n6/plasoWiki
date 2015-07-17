@@ -66,3 +66,12 @@ If you are missing any optional dependencies not all output modules may be avail
 timesketch : Create a Timesketch timeline.
 --------------------------------------------------------------------------------
 ```
+
+To change the output simply use the ``-o FORMAT``, eg:
+
+```
+$ psort.py -o l2tcsv test.plaso
+```
+
+This would use the "l2tcsv" module, or the default CSV output of the older Perl version of log2timeline.
+
