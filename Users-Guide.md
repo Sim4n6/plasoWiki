@@ -23,7 +23,7 @@ Though plaso initially was created in mind to replace the Perl version of log2ti
 * [image_export](https://github.com/log2timeline/plaso/wiki/Users-Guide#image_export)
 * [log2timeline](https://github.com/log2timeline/plaso/wiki/Using-log2timeline)
 * [pinfo](https://github.com/log2timeline/plaso/wiki/Users-Guide#pinfo)
-* [preg](https://github.com/log2timeline/plaso/wiki/Users-Guide#preg)
+* [preg](https://github.com/log2timeline/plaso/wiki/Using-preg)
 * [psort](https://github.com/log2timeline/plaso/wiki/Users-Guide#psort)
 
 Note that each tool can be invoked with the `-h` or `--help` command line flag to display basic usage and command line option information.
