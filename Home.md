@@ -149,7 +149,7 @@ File System Format support is provided by [dfvfs](https://github.com/log2timelin
 
 ### Also see
 
-* [Project documentation](http://plaso.kiddaland.net/)
+* [Project documentation](http://wiki.log2timeline.net/)
   * [Developers Guide](https://github.com/log2timeline/plaso/wiki/Developers-Guide)
   * [Users Guide](https://github.com/log2timeline/plaso/wiki/Users-Guide)
 * [Downloads](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/)
