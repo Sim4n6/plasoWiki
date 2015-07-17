@@ -20,7 +20,7 @@ And is moving to support:
 [![Build Status](https://travis-ci.org/log2timeline/plaso.svg?branch=master)](https://travis-ci.org/log2timeline/plaso) | [![Build status](https://ci.appveyor.com/api/projects/status/g3x5ylegjjo61p4m?svg=true)](https://ci.appveyor.com/project/joachimmetz/plaso) | [![Coverage Status](https://img.shields.io/coveralls/log2timeline/plaso.svg)](https://coveralls.io/r/log2timeline/plaso?branch=master)
 
 ### Supported Formats
-The information below is based of version 1.2.0
+The information below is based of version 1.3.0
 
 #### Storage Media Image File Formats
 Storage Media Image File Format support is provided by [dfvfs](https://github.com/log2timeline/dfvfs/wiki#storage-media-types).
@@ -55,9 +55,12 @@ File System Format support is provided by [dfvfs](https://github.com/log2timelin
 * [Opera Browser history](http://forensicswiki.org/wiki/Opera)
 * OpenXML
 * Pcap files
+* Portable Executable (PE) files 
 * PL SQL cache file (PL-SQL developer recall files)
 * Popularity Contest log
 * [Property list (plist) format](http://forensicswiki.org/wiki/Property_list_(plist)) using [binplist](http://forensicswiki.org/wiki/Binplist)
+* Restore Point logs (rp.log)
+* Safari Binary Cookies
 * SELinux audit logs
 * SkyDrive log and error log files
 * [SQLite database format](http://forensicswiki.org/wiki/SQLite_database_format) using [SQLite](http://forensicswiki.org/wiki/SQLite)
