@@ -12,6 +12,13 @@ To install the packaged release see:
 * [Ubuntu](https://github.com/log2timeline/plaso/wiki/Ubuntu-Packaged-Release)
 * Windows
 
+### Before we start
+
+Please report all discovered bugs to https://github.com/log2timeline/plaso/issues
+
+To follow announcements from the plaso team or send in generic inquiries or discuss the tool, please subscribe to the [log2timeline-discuss] (https://groups.google.com/forum/#!forum/log2timeline-discuss) mailing list or join the [G+ community] (https://plus.google.com/communities/108570205204169790104).
+
+
 ### I know the good old Perl version
 
 If you are one of those people that liked the old perl version of log2timeline but really would like to switch use all the nifty features of the Python version. Fear not, [here](https://github.com/log2timeline/plaso/wiki/Upgrading-From-0.x-Branch) is a guide to help you migrate.
