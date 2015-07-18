@@ -22,6 +22,8 @@ The generic options are:
 $ psort.py [-a] [-o FORMAT] [-w OUTPUTFILE] [-z TIMEZONE] STORAGE_FILE FILTER
 ```
 
+### Output
+
 To see a list of all supported output modules use the ``-o list`` switch:
 
 ```
@@ -75,3 +77,39 @@ $ psort.py -o l2tcsv test.plaso
 
 This would use the "l2tcsv" module, or the default CSV output of the older Perl version of log2timeline.
 
+
+MISSING MENTION OF ``-w FILENAME`` and ``-z TIMEZONE`` and ``-q``
+
+
+### Automatic Analysis
+
+DISCUSS
+```
+--analysis
+```
+
+### Filtering
+
+DISCUSS
+```
+--slice DATE
+--slice_size SLICE_SIZE
+--slicer
+
+FILTER
+
+
+--logfile
+
+-d
+
+```
+
+### Other options
+
+DISCUSS
+```
+--data PATH
+-a --include_all
+--language LANGUAGE
+```
