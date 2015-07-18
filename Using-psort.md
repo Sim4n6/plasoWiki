@@ -97,12 +97,6 @@ DISCUSS
 --slicer
 
 FILTER
-
-
---logfile
-
--d
-
 ```
 
 ### Other options
@@ -113,3 +107,21 @@ DISCUSS
 -a --include_all
 --language LANGUAGE
 ```
+
+#### Redirect Output
+
+To redirect the output of the output modules, those that print to a regular file, use the ``-w FILENAME`` parameter, this redirects the output from STDOUT to the provided path.
+
+```
+$ psort.py -w timeline.csv test.plaso
+```
+
+To redirect logging information to another file instead of being printed to STDERR use the ``--logfile`` parameter.
+
+```
+$ psort.py --logfile output.log -w timeline.csv test.plaso
+```
+
+#### Debug
+
+If during the runtime of **psort** the tool encounters an unexpected exception the debug mode can be used. To invoke debug mode use the ``-d`` parameter. What that will do is that instead of exiting the tool when an unexpected exception is raised it prints the traceback of the exception and drops into a [Python debug shell] (http://stackoverflow.com/questions/4228637/getting-started-with-the-python-debugger-pdb). This can be used to debug the problem and fix the issue.
