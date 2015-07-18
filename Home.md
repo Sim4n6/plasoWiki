@@ -147,6 +147,12 @@ File System Format support is provided by [dfvfs](https://github.com/log2timelin
 * WinRar
 * Windows version information
 
+#### Hashers Supported
+
+* MD5
+* SHA1
+* SHA256
+
 ### Also see
 
 * [Project documentation](http://wiki.log2timeline.net/)
