@@ -16,15 +16,14 @@
 # Installation
 
 ## Packaged Release
-* [Ubuntu] (https://github.com/log2timeline/plaso/wiki/Ubuntu-Packaged-Release)
-* Fedora Core
 * [Mac OS X] (https://github.com/log2timeline/plaso/wiki/Mac-OS-X-Packaged-Release)
-* Windows
+* [Ubuntu] (https://github.com/log2timeline/plaso/wiki/Ubuntu-Packaged-Release)
+* [Windows] (https://github.com/log2timeline/plaso/wiki/Windows-Packaged-Release)
 
 ## Development Release
-* [Ubuntu] (https://github.com/log2timeline/plaso/wiki/Development-release-Ubuntu)
 * [Fedora Core] (https://github.com/log2timeline/plaso/wiki/Development-release-Fedora-Core)
 * [Mac OS X] (https://github.com/log2timeline/plaso/wiki/Development-release-Mac-OS-X)
+* [Ubuntu] (https://github.com/log2timeline/plaso/wiki/Development-release-Ubuntu)
 * [Windows] (https://github.com/log2timeline/plaso/wiki/Development-release-Windows)
 
 # Development
