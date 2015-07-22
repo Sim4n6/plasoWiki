@@ -1,5 +1,3 @@
-**This page is work in progress.**
-
 ### Ubuntu 14.04 LTS
 
 To install plaso you'll need to have Ubuntu universe enabled:
