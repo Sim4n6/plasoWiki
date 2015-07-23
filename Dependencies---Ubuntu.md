@@ -240,6 +240,21 @@ To install libprotobuf and Python-bindings run:
 sudo apt-get install libprotobuf7 python-protobuf
 ```
 
+#### Protobuf 2.6.1
+By default Ubuntu 14.04 comes with protobuf 2.5.0. Building a dpkg of protobuf 2.6.1 for Ubuntu 14.04 is a bit involved process.
+
+* Make sure you have the following dependencies installed:
+  * dateutil (python-dateutil)
+  * google-apputils
+  * python-gflags
+  * pytz (python-tz)
+* Download the debian packaging files for protobuf 2.6.1 of a later version of Ubuntu: https://launchpad.net/ubuntu/+source/protobuf/2.6.1-1
+* Extract the protobuf source and the debian packaging files
+* make the following changes to debian/control
+  * change python-all to python
+  * change python-dev-all to python-dev
+  * add missing build dependencies: python-dateutil, python-gflags, python-tz
+
 ### libyal
 The following instructions apply to the following dependencies:
 
