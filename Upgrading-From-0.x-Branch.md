@@ -135,4 +135,6 @@ Another new thing that the older version did not have is metadata stored inside 
 
 This tool will dump out all the metadata information that is stored inside the storage file, so you can see what is exactly stored inside there. The storage may also contain additional details, such as; tags for events, analysis reports and other data.
 
-Another aspect that was not part of the older version is tagging and any other sort of automatic analysis on the data set. This has been added to the new version of the tool. ATM the tagging is done by a separate tool called **plasm**, but that functionality will soon be incorporated into the main log2timeline front-end. The same goes with the analysis plugins, they are currently part of **psort** but they will also be available in log2timeline.
+Another aspect that was not part of the older version is tagging and any other sort of automatic analysis on the data set.
+
+**TODO: describe tagging**
