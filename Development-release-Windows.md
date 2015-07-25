@@ -40,7 +40,7 @@ If you intend to do development on plaso you'll also need to install some develo
 * Sphinx
 
 ### PyLint
-We recommend PyLint 1.4.0 or later.
+Plaso development requires PyLint 1.4.0 or later. 
 
 **TODO: add description.**
 
