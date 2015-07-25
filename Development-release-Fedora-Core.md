@@ -38,6 +38,11 @@ sudo yum install pylint
 
 ### Sphinx
 **TODO: add description.**
+
+```
+sudo yum install python-sphinx-doc
+```
+
 http://sphinx-doc.org/
 
 ## Creating a packaged release
