@@ -26,6 +26,24 @@ Note that having a space between `]` and `(` breaks on readthedocs.
 Maintainers mailing list: log2timeline-maintainers@googlegroups.com
 
 ## Creating a packaged release
+### Mac OS-X
+If all dependency packages have been compiled accordingly make sure they are placed in a sub directory of the plaso source directory named:
+```
+dependencies
+```
+
+To create a distribution package run:
+```
+./config/macosx/make_dist.sh
+```
+
+This will create a file named: plaso-${PLASO_VERSION}_macosx-10.10.dmg at the same level as the plaso source directory.
+
+Note that you can pass this script an additional version suffix e.g. rc1.
+```
+./config/macosx/make_dist.sh rc1
+```
+
 ### Ubuntu source dpkg for gift PPA
 Copy the dpkg files to a debian sub directory:
 ```
