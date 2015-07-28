@@ -14,9 +14,12 @@ Various plaso specific additions/variations are:
 * Acronyms and initialisms should be preserved, eg HTMLParser, and not HtmlParser.
 * Method and function names follow the following logic (overwriting the Google Python Style Guide):
 
+
+
 Type | Public | Internal
--- | -- |
-Functions | **CapWords()** | **_CapWords()** (protected) and **__CapWords()** (private). 
+---- | ---- | ----
+Functions | **CapWords()** | **_CapWords()** (protected) and **__CapWords()** (private)
+
 
 #### Strings
 
