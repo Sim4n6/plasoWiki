@@ -7,7 +7,7 @@ The build of the [plaso-api documentation](https://readthedocs.org/projects/plas
 
 ### Markdown compatibility
 ```
-[description](URL)
+[description] (URL)
 ```
 Having a space between `]` and `(` breaks on readthedocs.
 
