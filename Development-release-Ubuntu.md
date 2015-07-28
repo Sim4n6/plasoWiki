@@ -101,35 +101,3 @@ sudo apt-get install python-mock
 ### Sphinx
 **TODO: add description.**
 http://sphinx-doc.org/
-
-## Creating a packaged release
-**TODO: add description.**
-
-### Source dpkg for gift PPA
-Copy the dpkg files to a debian sub directory:
-```
-mkdir debian && cp -r config/dpkg/* debian
-```
-
-Work around for a Unicode bug on launchpad:
-```
-mv test_data/ímynd.dd test_data/image.dd
-IFS="
-"; for FILE in `grep -r ímynd.dd | sed 's/:.*$//'`; do sed 's/ímynd.dd/image.dd/g' -i $FILE; done
-```
-Update the dpkg changelog:
-```
-export NAME="Log2Timeline";
-export EMAIL="log2timeline-dev@googlegroups.com";
-dch -v 1.2.1-dev-20150507-1ppa1~trusty --distribution trusty --urgency low "Modifications for PPA release."
-```
-
-Build a source package:
-```
-debuild -S -sa
-```
-
-Upload to the testing track of gift:
-```
-dput ppa:gift/testing plaso-python_1.2.1-dev-20150507-1ppa1~trusty_source.changes
-```
