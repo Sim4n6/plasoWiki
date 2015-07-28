@@ -44,6 +44,3 @@ sudo yum install python-sphinx-doc
 ```
 
 http://sphinx-doc.org/
-
-## Creating a packaged release
-**TODO: add description.**
