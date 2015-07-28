@@ -4,19 +4,38 @@ We primarily follow the [Google Python Style Guide](http://google-styleguide.goo
 
 Various plaso specific additions/variations are:
 
-* Indent your code blocks with 2 spaces (not 4 as in the style guide). In the case of a hanging indent, use four spaces (according to the style guide).
-* Method and function names follow the following logic: <public> **CapWords()**, <internal> **_CapWords()** (protected) and <internal> **__CapWords()** (private). Acronyms and initialisms should be preserved, eg HTMLParser, and not HtmlParser.
+#### Indentation
+
+* Indent your code blocks with 2 spaces (not 4 as in the style guide).
+* In the case of a hanging indent, use four spaces (according to the style guide).
+
+#### Naming
+
+* Acronyms and initialisms should be preserved, eg HTMLParser, and not HtmlParser.
+* Method and function names follow the following logic (overwriting the Google Python Style Guide):
+
+Type | Public | Internal
+-- | -- |
+Functions | **CapWords()** | **_CapWords()** (protected) and **__CapWords()** (private). 
+
+#### Strings
+
 * Quote strings as ' or """ instead of "
   * Quote strings in command line arguments (argparse) as "
 * Textual strings should be Unicode strings and hence defined as u'string'
 * Use the format() function instead of the %-way of formatting strings.
   * Use positional or parameter format specifiers with typing e.g. '{0:s}' or '{text:s}' instead of '{0}', '{}' or '{:s}'. If we ever want to have language specific output strings we don't need to change the entire codebase (again). It also makes is easier in determining what type every parameter is expected to be.
+
+#### Exceptions
+
+* When catching exceptions use "as exception:" not some alternative form like "as error:" or "as details:"
+
+#### Other
+
 * Use class methods in preference of static methods
   * Use "cls" as the name of the class variable in preference of "klass"
-* When catching exceptions use "as exception:" not some alternative form like "as error:" or "as details:"
 * Use textual pylint overrides e.g. "# pylint: disable=no-self-argument" instead of "# pylint: disable=E0213". For a list of overrides see: http://docs.pylint.org/features.html
-* Command line argument (argparse) help strings
-  * Since strings are quoted with ' in the Python code strings quoted in the command line argument help strings are quoted with "
+
 
 Also see: [Python 3 Guide](https://github.com/log2timeline/plaso/wiki/Python-3-Guide)
 
