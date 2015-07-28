@@ -203,7 +203,7 @@ $ psort.py -a -q test.plaso "SELECT filename" | sort -u
 filename
 ```
 
-More information about the collection filters can be found [here] (https://github.com/log2timeline/plaso/wiki/Collection-Filters)
+More information about the collection filters can be found [here](https://github.com/log2timeline/plaso/wiki/Collection-Filters)
 
 
 ## Running against more than a single partition

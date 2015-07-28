@@ -167,9 +167,9 @@ The next step is to check if the `submit.sh` script closed the Rietveld code rev
 
 There are also other things that happen once the code is submitted to the codebase, a new test run is executed on Travis-CI and code coverage is added to coveralls, see:
 
- * [Travis-CI] (https://travis-ci.org/log2timeline/plaso)
- * [AppVeyor] (https://ci.appveyor.com/project/joachimmetz/plaso)
- * [Coverage] (https://coveralls.io/r/log2timeline/plaso)
+ * [Travis-CI](https://travis-ci.org/log2timeline/plaso)
+ * [AppVeyor](https://ci.appveyor.com/project/joachimmetz/plaso)
+ * [Coverage](https://coveralls.io/r/log2timeline/plaso)
 
 If for some reasons the code breaks on Travis-CI and/or AppVeyor yet works on the developer workstation that may be an indication that some dependencies are missing or the developer made some assumptions that do not apply on other machines (such as explicit path declaration to reach out to files on their workstation, etc).
 

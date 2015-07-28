@@ -59,7 +59,7 @@ Before you start writing the code, please review the following:
 
 Good way to learn how to write some code for plaso is to start easy, with a plugin or a parser. We have prepared codelabs to make the barrier of entry easier.
 
-* [Codelabs] (https://github.com/log2timeline/codelabs/wiki)
+* [Codelabs](https://github.com/log2timeline/codelabs/wiki)
 * [How to write a parser](https://sites.google.com/a/kiddaland.net/plaso/developer/parsers)
 
 ### Larger Features Changing Core Codebase
@@ -73,7 +73,7 @@ Sometimes you need to make some change to the core of the plaso codebase. In tho
 
 The preferred way of creating these design docs is to use Google Docs and send the link to the development mailing list so that it can be discussed further **before** starting to implement the code.
 
-The current design docs are [stored here] (https://drive.google.com/folderview?id=0B3fBvzttpiiSQW16cFhNTUtXVGM&usp=sharing). You may not have access to that folder, so you may need to request access to it.
+The current design docs are [stored here](https://drive.google.com/folderview?id=0B3fBvzttpiiSQW16cFhNTUtXVGM&usp=sharing). You may not have access to that folder, so you may need to request access to it.
 
 ### Tests
 

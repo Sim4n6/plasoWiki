@@ -22,7 +22,7 @@ discuss here:
 ```
 -f FILE_FILTER
 ```
-[collection filters] (https://github.com/log2timeline/plaso/wiki/Collection-Filters)
+[collection filters](https://github.com/log2timeline/plaso/wiki/Collection-Filters)
 
 ```
 -x EXTENSIONS, --extensions EXTENSIONS

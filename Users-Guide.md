@@ -16,7 +16,7 @@ To install the packaged release see:
 
 Please report all discovered bugs to https://github.com/log2timeline/plaso/issues
 
-To follow announcements from the plaso team or send in generic inquiries or discuss the tool, please subscribe to the [log2timeline-discuss] (https://groups.google.com/forum/#!forum/log2timeline-discuss) mailing list or join the [G+ community] (https://plus.google.com/communities/108570205204169790104).
+To follow announcements from the plaso team or send in generic inquiries or discuss the tool, please subscribe to the [log2timeline-discuss](https://groups.google.com/forum/#!forum/log2timeline-discuss) mailing list or join the [G+ community](https://plus.google.com/communities/108570205204169790104).
 
 
 ### I know the good old Perl version

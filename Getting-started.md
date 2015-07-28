@@ -3,7 +3,7 @@ Getting started with log2timeline plaso can be challenging at first. This page d
 ## I just want to run plaso log2timeline
 If you just want to run plaso we recommend to use a [packaged release](https://github.com/log2timeline/plaso/wiki/Releases-and-roadmap) unless you are the adventurous type.
 
-To get started have a look at the [User Guide] (https://github.com/log2timeline/plaso/wiki/Users-Guide).
+To get started have a look at the [User Guide](https://github.com/log2timeline/plaso/wiki/Users-Guide).
 
 If you have questions, suggestions and want to discuss them join the general discussions mailing list: [log2timeline-discuss](https://groups.google.com/forum/#!forum/log2timeline-discuss)
 
@@ -15,7 +15,7 @@ For this you'll need to use a [development release](https://github.com/log2timel
 Get a github and gmail account and enable 2-factor authentication.
 
 To get started have a look at the 
-[Developers guide] (https://github.com/log2timeline/plaso/wiki/Developers-Guide) and [Codelabs](https://github.com/log2timeline/codelabs).
+[Developers guide](https://github.com/log2timeline/plaso/wiki/Developers-Guide) and [Codelabs](https://github.com/log2timeline/codelabs).
 
 **Note that the codelabs currently reflect plaso 1.2 and we are working on updating them to reflect plaso 1.3**
 
