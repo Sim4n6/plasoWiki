@@ -5,5 +5,11 @@ The plaso documentation on [readthedocs.org](https://readthedocs.org/projects/pl
 
 The build of the [plaso-api documentation](https://readthedocs.org/projects/plaso-api/) is triggered by the webhook of the plaso source git repo.
 
+### Markdown compatibility
+```
+[description](URL)
+```
+Having a space between `]` and `(` breaks on readthedocs.
+
 ## Mailing list
 Maintainers mailing list: log2timeline-maintainers@googlegroups.com
