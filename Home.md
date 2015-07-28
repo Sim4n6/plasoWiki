@@ -38,6 +38,7 @@ File System Format support is provided by [dfvfs](https://github.com/log2timelin
 * [Basic Security Module (BSM)](http://forensicswiki.org/wiki/Basic_Security_Module_(BSM)_file_format)
 * Bencode files
 * [Chrome Disk Cache Format](http://forensicswiki.org/wiki/Chrome_Disk_Cache_Format)
+* Chrome preferences
 * CUPS IPP
 * [Extensible Storage Engine (ESE) Database File (EDB) format](http://forensicswiki.org/wiki/Extensible_Storage_Engine_(ESE)_Database_File_(EDB)_format) using [libesedb](https://github.com/libyal/libesedb)
 * Firefox Cache
@@ -55,7 +56,7 @@ File System Format support is provided by [dfvfs](https://github.com/log2timelin
 * [Opera Browser history](http://forensicswiki.org/wiki/Opera)
 * OpenXML
 * Pcap files
-* Portable Executable (PE) files 
+* Portable Executable (PE) files using [pefile](https://github.com/erocarrera/pefile)
 * PL SQL cache file (PL-SQL developer recall files)
 * Popularity Contest log
 * [Property list (plist) format](http://forensicswiki.org/wiki/Property_list_(plist)) using [binplist](http://forensicswiki.org/wiki/Binplist)
@@ -86,6 +87,7 @@ File System Format support is provided by [dfvfs](https://github.com/log2timelin
 #### ESE database file formats
 
 * Internet Explorer WebCache format
+* Windows 8 File History
 
 #### OLE Compound File formats
 
@@ -140,6 +142,7 @@ File System Format support is provided by [dfvfs](https://github.com/log2timelin
 * Shutdown
 * Task Scheduler Cache (Task Cache)
 * Terminal Server MRU
+* Timezones
 * Typed URLS
 * USB
 * USBStor
