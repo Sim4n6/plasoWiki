@@ -71,8 +71,10 @@ git clone -b master git://github.com/pyinstaller/pyinstaller.git
 ##### Rebuilding the PyInstaller bootloader
 By default PyInstaller is code compatible with Windows XP SP2 (5.1). If you need to support a Windows version earlier you'll need to recompile the PyInstaller "bootloader" with Visual Studio 2008. Note that Visual Studio 2010 is not compatible with Windows 2000.
 
+```
 cd PyInstaller\bootloader
 C:\Python27\python.exe waf configure build install
+```
 
 ##### Microsoft Visual C++ 2010 Redistributable Package
 If you're building with Visual Studio note that for some reason PyInstaller does not include the Microsoft Visual C++ 2010 run-time DLLs you can find them here:
