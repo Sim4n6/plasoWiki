@@ -58,7 +58,7 @@ Also see: [PEP 0263](https://www.python.org/dev/peps/pep-0263/)
 
 Common test code should be stored in "test library" files, e.g. the parser test library:
 
-    plaso/parsers/test_lib.py
+    tests/parsers/test_lib.py
 
 We do this for various reasons:
 
