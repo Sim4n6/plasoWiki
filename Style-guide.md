@@ -36,6 +36,7 @@ Functions | **CapWords()** | **_CapWords()** (protected) and **__CapWords()** (p
 
 #### Other
 
+* Avoid the use of global variable at all cost.
 * Use class methods in preference of static methods
   * Use "cls" as the name of the class variable in preference of "klass"
 * Use textual pylint overrides e.g. "# pylint: disable=no-self-argument" instead of "# pylint: disable=E0213". For a list of overrides see: http://docs.pylint.org/features.html
