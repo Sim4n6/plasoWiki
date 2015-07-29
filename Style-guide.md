@@ -32,6 +32,7 @@ Functions | **CapWords()** | **_CapWords()** (protected) and **__CapWords()** (p
 #### Exceptions
 
 * When catching exceptions use "as exception:" not some alternative form like "as error:" or "as details:"
+* Raise exceptions like this: ```raise MyException(u'Error message')``` or ```raise MyException```.
 
 #### Other
 
