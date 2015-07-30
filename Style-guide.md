@@ -34,6 +34,9 @@ Functions | **CapWords()** | **_CapWords()** (protected) and **__CapWords()** (p
 * When catching exceptions use "as exception:" not some alternative form like "as error:" or "as details:"
 * Raise exceptions like this: ```raise MyException(u'Error message')``` or ```raise MyException```.
 
+#### Docstrings
+* We use "Google Style" docstrings. See http://sphinxcontrib-napoleon.readthedocs.org/en/latest/example_google.html to see how to write these most effectively.
+
 #### Other
 
 * Avoid the use of global variable at all cost.
