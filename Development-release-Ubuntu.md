@@ -98,6 +98,8 @@ To install Python Mock run:
 sudo apt-get install python-mock
 ```
 
-### Sphinx
-**TODO: add description.**
-http://sphinx-doc.org/
+### Sphinx-doc
+To install sphinx-doc run:
+```
+sudo apt-get install python-sphinx
+```
