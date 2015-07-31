@@ -45,7 +45,6 @@ If you intend to do development on plaso you'll also need to install some develo
 
 * PyLint
 * Python Mock
-* Sphinx
 
 ### PyLint
 Plaso development requires PyLint 1.4.0 or later. 
@@ -96,10 +95,4 @@ sudo dpkg -i python-logilab-common_0.60.0-1_all.deb python-astroid_1.0.1-1_all.d
 To install Python Mock run:
 ```
 sudo apt-get install python-mock
-```
-
-### Sphinx-doc
-To install sphinx-doc run:
-```
-sudo apt-get install python-sphinx
 ```
