@@ -69,6 +69,8 @@ timesketch : Create a Timesketch timeline.
 --------------------------------------------------------------------------------
 ```
 
+#### Changing Output Format
+
 To change the output simply use the ``-o FORMAT``, eg:
 
 ```
@@ -77,23 +79,237 @@ $ psort.py -o l2tcsv test.plaso
 
 This would use the "l2tcsv" module, or the default CSV output of the older Perl version of log2timeline.
 
+#### Redirect Output to a File
 
-MISSING MENTION OF ``-w FILENAME`` and ``-z TIMEZONE`` and ``-q``
+By default the tool redirects all output to STDOUT. To redirect it to a file use the ```-w FILENAME``` parameter.
 
+```
+$ psort.py -w output.csv test.plaso
+```
+
+n.b. this parameter only makes sense in the case of output modules that output to a file. If you are using an output module that has a database backend or something similar it will have no effects.
+
+#### Modify the Timezone
+
+**psort** uses UTC as it's default timezone when outputting events. This can be controlled using the ``-z TIMEZONE`` parameter.
+
+```
+$ psort.py -z EST5EDT test.plaso
+```
+
+To see a list of all supported timezones use the ```-z list``` parameter:
+
+```
+$ psort.py -z list
+
+************************************ Zones *************************************
+                        Timezone : UTC Offset
+                  Africa/Abidjan : +00:00
+                    Africa/Accra : +00:00
+              Africa/Addis_Ababa : +03:00
+                  Africa/Algiers : +01:00
+                   Africa/Asmara : +03:00
+                   Africa/Asmera : +03:00
+...
+```
+
+#### Quiet and More Verbose Output
+
+**psort** records the number of events it processes and how many events got filtered out due to filter settings or to duplication removals. This information is printed out at the end of each run, eg:
+
+```
+$ psort.py test.plaso "SELECT timestamp LIMIT 10"
+...
+[INFO] Output processing is done.
+
+*********************************** Counter ************************************
+            Stored Events : 143960
+          Events Included : 10
+               Limited By : 10
+```
+
+Or from a full run:
+
+```
+$ psort.py test.plaso
+...
+*********************************** Counter ************************************
+            Stored Events : 143960
+          Events Included : 143812
+       Duplicate Removals : 23157
+
+```
+
+This output provides valuable information about how many events got filtered out by for instance the duplicate entry removals. There are many reasons why there may be duplicate entries in an output:
+
++ A filesystem entry that has the same timestamp for MACB timestamps (or any combination of them)
++ Parsing a storage media file and processing a VSS store will produce a lot of duplicate entries, eg: the exact same Event Log record.
++ Metadata information extracted from a file that is stored in more than one place on the drive
+
+If you don't want duplicate entries to be removed it is possible to supply the flag ``-a`` or ``--include_all` to **psort**.
+
+```
+$ psort.py -a -w all_events.txt test.plaso
+```
+
+If you on the other hand do not want to see the overview printed at the end it is possible to silence it with the ``-q`` flag:
+
+```
+$ psort.py -q -w output.csv test.plaso
+```
 
 ### Automatic Analysis
 
-DISCUSS
+plaso defines a concept called an analysis plugin. Essentially that means that you can write a plugin that gets a copy of every event that is extracted and is not filtered out to inspect and potentially extract meaning or context out of. This information can be used to create tags and attach them back to the events or to create reports.
+
+As of now the analysis plugins are only exposed to the post-processing layer, as in exposed to **psort** although there are efforts underway to expose them to the extraction stage as well. That way you can use them to create tags that are immediately available in post processing.
+
+The syntax works by using the ``--analysis PLUGIN`` syntax, eg:
+
 ```
---analysis
+$ psort.py --analysis PLUGIN_NAME ...
 ```
+
+To get a full list of the available plugins use the ``--analysis list`` parameter:
+
+```
+$ psort.py --analysis list
+
+******************************* Analysis Plugins *******************************
+  browser_search : Analyze browser search entries from events. [Summary/Report
+                   plugin]
+chrome_extension : Convert Chrome extension IDs into names, requires Internet
+                   connection. [Summary/Report plugin]
+     file_hashes : A plugin for generating a list of file paths and
+                   corresponding hashes. [Summary/Report plugin]
+         tagging : Analysis plugin that tags events according to rules in a
+                   tag file. [Summary/Report plugin]
+           viper : An analysis plugin for looking up SHA256 hashes in Viper.
+                   [Summary/Report plugin]
+      virustotal : An analysis plugin for looking up hashes in VirusTotal.
+                   [Summary/Report plugin]
+windows_services : Provides a single list of for Windows services found in the
+                   Registry. [Summary/Report plugin]
+--------------------------------------------------------------------------------
+```
+
+Some of these plugins may provide additional parameters that may be required for each analysis plugin. To know which parameters are exposed use the ``-h`` flag in addition to the ``--analysis PLUGIN``, eg:
+
+```
+$ psort.py --analysis virustotal -h
+...
+Analysis Arguments:
+  --analysis PLUGIN_LIST
+                        A comma separated list of analysis plugin names to be
+                        loaded or "--analysis list" to see a list of available
+                        plugins.
+  --virustotal-api-key VIRUSTOTAL-API-KEY
+                        Specify the API key for use with VirusTotal.
+  --virustotal-free-rate-limit VIRUSTOTAL-RATE-LIMIT
+                        Limit Virustotal requests to the default free API key
+                        rate of 4 requests per minute. Set this to false if
+                        you have an key for the private API.
+  --windows-services-output {text,yaml}
+                        Specify how the results should be displayed. Options
+                        are text and yaml.
+  --viper-host VIPER-HOST
+                        Specify the host to query Viper on.
+  --viper-protocol {http,https}
+                        Protocol to use to query Viper.
+  --tagging-file TAGGING_FILE
+                        Specify a file to read tagging criteria from.
+...
+```
+
+An example run could therefore be:
+
+```
+$ psort.py -o null --analysis tagging --tagging-file tag_windows.txt test.plaso 
+```
+
+What this does is:
+
++ Uses the "*null*" output module, that is it does not print out any events.
++ Runs the tagging analysis plugin. This analysis plugin runs through each event, compares that to the list of tags you provide to the tool and applies the appropriate tags.
++ Uses the file "tag_windows.txt" as a source of all tags to apply.
+
+The filter file that is passed on is searched for using the provided path as an absolute, relative path or relative to the [data](https://github.com/log2timeline/plaso/tree/master/data) directory.
+
+The file [tag_windows.txt](https://github.com/log2timeline/plaso/blob/master/data/tag_windows.txt) for instance is a file that is found inside the data directory and can thus be used without creating any file.
+
+At the end of the run the tool will produce a summary or reports of the analysis plugins:
+
+```
+[INFO] All analysis plugins are now completed.
+Report generated from: tagging
+Generated on: 2015-07-31T17:38:32+00:00
+
+Report text:
+Tagging plugin produced 146 tags.
+```
+
+And in this case, since this was tagging the results of what tags were provided can be viewed using **pinfo**:
+
+```
+$ pinfo.py test.plaso
+...
+Parser counter information:
+	Counter: Total Tags = 146
+	Counter: Application Execution = 144
+	Counter: Document Printed = 2
+...
+```
+
+The tags are now included in the output:
+
+```
+$ psort.py -w output_tags.csv test.plaso 
+$ grep "Document Printed" output_tags.csv
+1999-05-15T15:39:16+00:00,Document Last Printed Time,OLECF,OLECF Summary Info,Title: Microsoft Powertoys for Windows XP  Subject: Powertoys Author: Microsoft Corporation Keywords: Powertoy Template: Intel;1033 Revision number: {1DA2A275-1387-4A40-8453-EFDF70F62811} Last saved by: InstallShield  Number of pages: 110 Number of words: 0 Number of characters: 0 Application: InstallShield® Developer 7.0 Security: 0x00000001: Password protected,olecf/olecf_summary,TSK:/WINDOWS/Downloaded Installations/Powertoys For Windows XP.msi;TSK:/WINDOWS/Installer/ac704.msi,Document Printed,1,888
+...
+```
+
+**TODO: Move this documentation to a separate analysis plugin site and include information about the rest of the plugins.**
 
 ### Filtering
 
+It is possible to filter out the results **psort** provides using few different methods:
+
++ If you have a timestamp of interest a time slice, where only events that occur X minutes before and after that timestamp are included
++ Provide a granular filter for timestamps and/or content of various attributes
++ If you've got a regular filter and want to include events that occurred just before and after the events that match the filter.
+
+#### Time Slices
+
+The simplest filter is the time slice, where if you've discovered an interesting timestamp and would like to explore what occurred just prior and after that timestamp of interest. This can be achieved using the ``--slice DATE`` parameter, eg:
+
+```
+$ psort.py -q --slice "2004-09-20 16:13:02" test.plaso 
+datetime,timestamp_desc,source,source_long,message,parser,display_name,tag,store_number,store_index
+2004-09-20T16:13:02+00:00,Expiration Time,WEBHIST,MSIE Cache File URL record,Location: Visited: Mr. Evil@http://www.microsoft.com/windows/ie/getosver/javaxp.asp Number of hits: 2 Cached file size: 0,msiecf,TSK:/Documents and Settings/Mr. Evil/Local Settings/History/History.IE5/index.dat,-,1,143661
+2004-09-20T16:13:12+00:00,Expiration Time,WEBHIST,MSIE Cache File URL record,Location: Visited: Mr. Evil@http://fosi.ural.net Number of hits: 1 Cached file size: 0,msiecf,TSK:/Documents and Settings/Mr. Evil/Local Settings/History/History.IE5/index.dat,-,1,143663
+2004-09-20T16:13:12+00:00,Expiration Time,WEBHIST,MSIE Cache File URL record,Location: :2004082520040826: Mr. Evil@http://fosi.ural.net Number of hits: 1 Cached file size: 0,msiecf,TSK:/Documents and Settings/Mr. Evil/Local Settings/History/History.IE5/MSHist012004082520040826/index.dat,-,1,143662
+```
+
+By default the tool chooses 5 minutes prior and after the timestamp in question. To configure that use the ``--slice_size SLICE_SIZE`` parameter.
+
+```
+$ psort.py -q --slice "2004-09-20 16:13:02" --slice_size 100 test.plaso
+datetime,timestamp_desc,source,source_long,message,parser,display_name,tag,store_number,store_index
+2004-09-20T15:18:38+00:00,Expiration Time,WEBHIST,MSIE Cache File URL record,Location: :2004082520040826: Mr. Evil@http://www.yahoo.com Number of hits: 1 Cached file size: 0,msiecf,TSK:/Documents and Settings/Mr. Evil/Local Settings/History/History.IE5/MSHist012004082520040826/index.dat,-,1,143624
+2004-09-20T15:18:38+00:00,Expiration Time,WEBHIST,MSIE Cache File URL record,Location: Visited: Mr. Evil@http://www.yahoo.com Number of hits: 1 Cached file size: 0,msiecf,TSK:/Documents and Settings/Mr. Evil/Local Settings/History/History.IE5/index.dat,-,1,143625
+2004-09-20T15:18:54+00:00,Expiration Time,WEBHIST,MSIE Cache File URL record,Location: Visited: Mr. Evil@http://www.yahoo.com/_ylh=X3oDMTB1M2EzYWFoBF9TAzI3MTYxNDkEdGVzdAMwBHRtcGwDaWUtYmV0YQ--/s/208739 Number of hits: 1 Cached file size: 0,msiecf,TSK:/Documents and Settings/Mr. Evil/Local Settings/History/History.IE5/index.dat,-,1,143626
+2004-09-20T15:19:00+00:00,Expiration Time,WEBHIST,MSIE Cache File URL record,Location: :2004082520040826: Mr. Evil@http://story.news.yahoo.com/news?tmpl=story&cid=564&ncid=564&e=1&u=/nm/20040825/ts_nm/iraq_usa_beheading_dc Number of hits: 1 Cached file size: 0,msiecf,TSK:/Documents and Settings/Mr. Evil/Local Settings/History/History.IE5/MSHist012004082520040826/index.dat,-,1,143627
+...
+```
+#### Filters
+
+**TODO: Move the filter documentation to a separate site.**
+
+
+
 DISCUSS
 ```
---slice DATE
---slice_size SLICE_SIZE
 --slicer
 
 FILTER
