@@ -306,7 +306,63 @@ datetime,timestamp_desc,source,source_long,message,parser,display_name,tag,store
 
 **TODO: Move the filter documentation to a separate site.**
 
+**psort** supports few different types of filters, two of which will be described here.
 
+Filters are included at the end of the command line arguments, eg:
+
+```
+$ psort.py -q test.plaso FILTER
+```
+
+An example filter that filters out all events within a certain time range:
+
+```
+$ psort.py -q  test.plaso "date < '2004-09-20 16:20:00' and date > '2004-09-20 16:10:00'"
+datetime,timestamp_desc,source,source_long,message,parser,display_name,tag,store_number,store_index
+2004-09-20T16:13:02+00:00,Expiration Time,WEBHIST,MSIE Cache File URL record,Location: Visited: Mr. Evil@http://www.microsoft.com/windows/ie/getosver/javaxp.asp Number of hits: 2 Cached file size: 0,msiecf,TSK:/Documents and Settings/Mr. Evil/Local Settings/History/History.IE5/index.dat,-,1,143661
+...
+```
+
+A query is constructed in the following way:
+
+EXPRESSION BOOLEAN_OPERATOR EXPRESSION
+
+Where each expression is:
+ATTRIBUTE [not] OPERATOR [not] VALUE
+
+Each expression can also be a collection of binary expressions and operators enclosed in a parenthesis.
+
+EXPRESSION BOOLEAN_OPERATOR (EXPRESSION BINARY_OPERATOR EXPRESSION)
+
+The following boolean operators are supported:
+and
+or
+&& (and)
+|| (or)
+
+This is the basic filter. The following keywords are available:
+
+Operator | Notes
+---- | ----
+equals | Determine if the attribute is equal to the value, meaning that both parts need to be exactly the same in order for this to match.
+is | Same as equals.
+== | Same as equals.
+!= | Negative matching of equals, that is it checks if it is not equal to the value (same as "not is") 
+contains | If the value is a string it checks if the lowercase version of the value is in the lowercase value of the attribute. That is this is a case insensitive substring match.
+> | Checks if the value is greater than the attribute. If the attribute is date or timestamp and the value is an integer it compares against the timestamp attribute. If the attribute is date and the value is a string it will convert the string value to an integer and then make the comparison.
+>= | Checks if the value is greater or equal than the attribute. If the attribute is date or timestamp the same behavior as in ">" is observed.
+< | Checks if the value is less than the attribute. If the attribute is date or timestamp the same checks are made as in ">", except the comparison is to whether or not the value is less or equal than the supplied date.
+<= | Checks if the value is less or equal than the value. If the attribute is timestamp or date same behavior as in "<" is applied.
+inset | Checks if the values are all in the set of attributes.
+regexp | A case sensitive regular expression is compiled from the value and it is compared against the attribute. The regular expression is somewhat limited, the only escaped strings that are supported are: '"rnbt.ws 
+iregexp | Same as the regexp above, except the regular expression is compiled as case-insensitive. 
+
+
+
+
+
+
+**TODO: Make sure all documentation from the [old site](https://sites.google.com/a/kiddaland.net/plaso/usage/filters) are included here.**
 
 DISCUSS
 ```
