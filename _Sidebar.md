@@ -14,6 +14,7 @@
 * [psort](https://github.com/log2timeline/plaso/wiki/Using-psort)
 * [Filters](https://github.com/log2timeline/plaso/wiki/Filters)
 * [Collection Filters](https://github.com/log2timeline/plaso/wiki/Collection-Filters)
+* [Tips and Tricks](https://github.com/log2timeline/plaso/wiki/Tips-and-Tricks)
 
 # Installation
 
