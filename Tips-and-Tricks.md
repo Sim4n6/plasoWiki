@@ -8,6 +8,7 @@ Run analyzeMFT as following:
 
 ```
 $ analyzeMFT.py -b output.bodyfile -f input.MFT
+$ log2timeline.py test.plaso output.bodyfile
 ```
 
 The mactime parser of plaso will parse the bodyfile.
