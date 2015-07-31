@@ -1,4 +1,35 @@
-## API docs with Sphinx
+## Mailing list
+Maintainers mailing list: log2timeline-maintainers@googlegroups.com
+
+## Maintainer tools
+If you intend to help maintain on plaso you'll also need to install the following tools:
+
+* Sphinx-doc
+
+### Sphinx-doc
+#### Fedora Core
+To install sphinx-doc on Fedora Core run:
+```
+sudo yum install python-sphinx-doc
+```
+
+### Mac OS -X
+To install sphinx-doc on Mac OS-X run:
+
+**TODO: add description.**
+
+### Ubuntu
+To install sphinx-doc on Ubuntu run:
+```
+sudo apt-get install python-sphinx
+```
+
+### Windows
+To install sphinx-doc on Windows run:
+
+**TODO: add description.**
+
+## Generating API docs with Sphinx-doc
 Plaso uses [sphinx](http://sphinx-doc.org/) to generate API documentation. The plaso configuration uses the [autodoc](http://sphinx-doc.org/ext/autodoc.html) plugin for automatic documentation generation, and the [napoleon](http://sphinxcontrib-napoleon.readthedocs.org/en/latest/sphinxcontrib.napoleon.html) plugin to read our “Google style” docstrings. 
 
 The configuration is stored [here](https://github.com/log2timeline/plaso/blob/master/docs/conf.py) and the actual HTML documentation is built and stored with readthedocs.org, as described below.
@@ -20,9 +51,6 @@ Define links as:
 [description](URL)
 ```
 Note that having a space between `]` and `(` breaks on readthedocs.
-
-## Mailing list
-Maintainers mailing list: log2timeline-maintainers@googlegroups.com
 
 ## Creating a packaged release
 ### Mac OS-X
@@ -144,31 +172,3 @@ config\windows\make_check.bat
 ```
 
 And finally create a zip archive of: dist\plaso
-
-## Maintainer tools
-If you intend to help maintain on plaso you'll also need to install the following tools:
-
-* Sphinx-doc
-
-### Sphinx-doc
-#### Fedora Core
-To install sphinx-doc on Fedora Core run:
-```
-sudo yum install python-sphinx-doc
-```
-
-### Mac OS -X
-To install sphinx-doc on Mac OS-X run:
-
-**TODO: add description.**
-
-### Ubuntu
-To install sphinx-doc on Ubuntu run:
-```
-sudo apt-get install python-sphinx
-```
-
-### Windows
-To install sphinx-doc on Windows run:
-
-**TODO: add description.**
