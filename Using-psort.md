@@ -81,13 +81,20 @@ This would use the "l2tcsv" module, or the default CSV output of the older Perl 
 
 #### Redirect Output to a File
 
-By default the tool redirects all output to STDOUT. To redirect it to a file use the ```-w FILENAME``` parameter.
+To redirect the output of the output modules, those that print to a regular file, use the ``-w FILENAME`` parameter, this redirects the output from STDOUT to the provided path.
 
 ```
 $ psort.py -w output.csv test.plaso
 ```
 
 n.b. this parameter only makes sense in the case of output modules that output to a file. If you are using an output module that has a database backend or something similar it will have no effects.
+
+
+To redirect logging information to another file instead of being printed to STDERR use the ``--logfile`` parameter.
+
+```
+$ psort.py --logfile output.log -w timeline.csv test.plaso
+```
 
 #### Modify the Timezone
 
@@ -357,24 +364,11 @@ $ psort.py --slice_size 15 --slicer -q test.plaso "cached_file_size is 43"
 
 ### Other options
 
+The [data](https://github.com/log2timeline/plaso/tree/master/data) folder was previously mentioned.
 DISCUSS
 ```
 --data PATH
 --language LANGUAGE
-```
-
-#### Redirect Output
-
-To redirect the output of the output modules, those that print to a regular file, use the ``-w FILENAME`` parameter, this redirects the output from STDOUT to the provided path.
-
-```
-$ psort.py -w timeline.csv test.plaso
-```
-
-To redirect logging information to another file instead of being printed to STDERR use the ``--logfile`` parameter.
-
-```
-$ psort.py --logfile output.log -w timeline.csv test.plaso
 ```
 
 #### Debug
