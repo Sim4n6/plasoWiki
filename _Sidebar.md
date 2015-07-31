@@ -11,21 +11,25 @@
 * [Filters](https://github.com/log2timeline/plaso/wiki/Filters)
 * [Tips and Tricks](https://github.com/log2timeline/plaso/wiki/Tips-and-Tricks)
 * [Upgrading from 0.X branch](https://github.com/log2timeline/plaso/wiki/Upgrading-From-0.x-Branch)
-* Tools:
-  * [image_export](https://github.com/log2timeline/plaso/wiki/Using-image_export)
-  * [log2timeline](https://github.com/log2timeline/plaso/wiki/Using-log2timeline)
-  * [pinfo](https://github.com/log2timeline/plaso/wiki/Using-pinfo)
-  * [preg](https://github.com/log2timeline/plaso/wiki/Using-preg)
-  * [psort](https://github.com/log2timeline/plaso/wiki/Using-psort)
+
+**Tools**
+
+* [image_export](https://github.com/log2timeline/plaso/wiki/Using-image_export)
+* [log2timeline](https://github.com/log2timeline/plaso/wiki/Using-log2timeline)
+* [pinfo](https://github.com/log2timeline/plaso/wiki/Using-pinfo)
+* [preg](https://github.com/log2timeline/plaso/wiki/Using-preg)
+* [psort](https://github.com/log2timeline/plaso/wiki/Using-psort)
 
 # Installation
 
-## Packaged Release
+**Packaged Release**
+
 * [Mac OS X](https://github.com/log2timeline/plaso/wiki/Mac-OS-X-Packaged-Release)
 * [Ubuntu](https://github.com/log2timeline/plaso/wiki/Ubuntu-Packaged-Release)
 * [Windows](https://github.com/log2timeline/plaso/wiki/Windows-Packaged-Release)
 
-## Development Release
+**Development Release**
+
 * [Fedora Core](https://github.com/log2timeline/plaso/wiki/Development-release-Fedora-Core)
 * [Mac OS X](https://github.com/log2timeline/plaso/wiki/Development-release-Mac-OS-X)
 * [Ubuntu](https://github.com/log2timeline/plaso/wiki/Development-release-Ubuntu)
