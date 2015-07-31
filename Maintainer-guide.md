@@ -1,3 +1,5 @@
+This page contains information relevant to plaso maintainers.
+
 ## Mailing list
 Maintainers mailing list: log2timeline-maintainers@googlegroups.com
 
