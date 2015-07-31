@@ -7,15 +7,16 @@
 # User Guide
 
 * [How to get started](https://github.com/log2timeline/plaso/wiki/Users-Guide)
-* [image_export](https://github.com/log2timeline/plaso/wiki/Using-image_export)
-* [log2timeline](https://github.com/log2timeline/plaso/wiki/Using-log2timeline)
-* [pinfo](https://github.com/log2timeline/plaso/wiki/Using-pinfo)
-* [preg](https://github.com/log2timeline/plaso/wiki/Using-preg)
-* [psort](https://github.com/log2timeline/plaso/wiki/Using-psort)
-* [Filters](https://github.com/log2timeline/plaso/wiki/Filters)
 * [Collection Filters](https://github.com/log2timeline/plaso/wiki/Collection-Filters)
+* [Filters](https://github.com/log2timeline/plaso/wiki/Filters)
 * [Tips and Tricks](https://github.com/log2timeline/plaso/wiki/Tips-and-Tricks)
 * [Upgrading from 0.X branch](https://github.com/log2timeline/plaso/wiki/Upgrading-From-0.x-Branch)
+* Tools:
+  * [image_export](https://github.com/log2timeline/plaso/wiki/Using-image_export)
+  * [log2timeline](https://github.com/log2timeline/plaso/wiki/Using-log2timeline)
+  * [pinfo](https://github.com/log2timeline/plaso/wiki/Using-pinfo)
+  * [preg](https://github.com/log2timeline/plaso/wiki/Using-preg)
+  * [psort](https://github.com/log2timeline/plaso/wiki/Using-psort)
 
 # Installation
 
