@@ -26,7 +26,6 @@ If you intend to do development on plaso you'll also need to install some develo
 
 * PyLint
 * Python Mock
-* Sphinx
 
 ### PyLint
 Plaso development requires PyLint 1.4.0 or later. 
@@ -35,7 +34,3 @@ Plaso development requires PyLint 1.4.0 or later.
 
 ### Python Mock
 **TODO: add description.**
-
-### Sphinx
-**TODO: add description.**
-http://sphinx-doc.org/
