@@ -304,11 +304,9 @@ datetime,timestamp_desc,source,source_long,message,parser,display_name,tag,store
 ```
 #### Filters
 
-**TODO: Move the filter documentation to a separate site.**
+A more comprehensive discussions of the filters can be [read here](https://github.com/log2timeline/plaso/wiki/Filters).
 
-**psort** supports few different types of filters, two of which will be described here.
-
-Filters are included at the end of the command line arguments, eg:
+For **psort** the filters are included at the end of the command line arguments, eg:
 
 ```
 $ psort.py -q test.plaso FILTER
@@ -323,52 +321,38 @@ datetime,timestamp_desc,source,source_long,message,parser,display_name,tag,store
 ...
 ```
 
-A query is constructed in the following way:
+#### Filter and Include Surrounding Events
 
-EXPRESSION BOOLEAN_OPERATOR EXPRESSION
+If you have something interesting that you want to filter but you also want to include some context surrounding those hits you can run the tool with the flag ``--slicer`` in addition to the filter.
 
-Where each expression is:
-ATTRIBUTE [not] OPERATOR [not] VALUE
-
-Each expression can also be a collection of binary expressions and operators enclosed in a parenthesis.
-
-EXPRESSION BOOLEAN_OPERATOR (EXPRESSION BINARY_OPERATOR EXPRESSION)
-
-The following boolean operators are supported:
-and
-or
-&& (and)
-|| (or)
-
-This is the basic filter. The following keywords are available:
-
-Operator | Notes
----- | ----
-equals | Determine if the attribute is equal to the value, meaning that both parts need to be exactly the same in order for this to match.
-is | Same as equals.
-== | Same as equals.
-!= | Negative matching of equals, that is it checks if it is not equal to the value (same as "not is") 
-contains | If the value is a string it checks if the lowercase version of the value is in the lowercase value of the attribute. That is this is a case insensitive substring match.
-> | Checks if the value is greater than the attribute. If the attribute is date or timestamp and the value is an integer it compares against the timestamp attribute. If the attribute is date and the value is a string it will convert the string value to an integer and then make the comparison.
->= | Checks if the value is greater or equal than the attribute. If the attribute is date or timestamp the same behavior as in ">" is observed.
-< | Checks if the value is less than the attribute. If the attribute is date or timestamp the same checks are made as in ">", except the comparison is to whether or not the value is less or equal than the supplied date.
-<= | Checks if the value is less or equal than the value. If the attribute is timestamp or date same behavior as in "<" is applied.
-inset | Checks if the values are all in the set of attributes.
-regexp | A case sensitive regular expression is compiled from the value and it is compared against the attribute. The regular expression is somewhat limited, the only escaped strings that are supported are: '"rnbt.ws 
-iregexp | Same as the regexp above, except the regular expression is compiled as case-insensitive. 
-
-
-
-
-
-
-**TODO: Make sure all documentation from the [old site](https://sites.google.com/a/kiddaland.net/plaso/usage/filters) are included here.**
-
-DISCUSS
+An example:
 ```
---slicer
+$ psort.py -q test.plaso "cached_file_size is 43"
+[INFO] Data files will be loaded from /usr/share/plaso by default.
+datetime,timestamp_desc,source,source_long,message,parser,display_name,tag,store_number,store_index
+1994-04-15T00:00:00+00:00,Content Modification Time,WEBHIST,MSIE Cache File URL record,Location: http://us.i1.yimg.com/us.yimg.com/i/us/hdr/el/uh_bk.gif Number of hits: 5 Cached file: PTV39NDQ\uh_bk[1].gif Cached file size: 43 HTTP headers: HTTP/1.0 200 OK - Content-Type: image/gif - Content-Length: 43 -  - ~U:mr. evil - ,msiecf,TSK:/Documents and Settings/Mr. Evil/Local Settings/Temporary Internet Files/Content.IE5/index.dat,-,1,370
+...
+```
 
-FILTER
+Here the filter ``cached_file_size is 43``` is applied to the output searching for all IE cache files that are 43 bytes in size. If we wanted to gather some context surrounding these events we can supply the ``--slicer`` flag, eg:
+
+```
+$ psort.py --slicer -q test.plaso "cached_file_size is 43"
+datetime,timestamp_desc,source,source_long,message,parser,display_name,tag,store_number,store_index
+...
+2001-02-23T03:15:06+00:00,Content Modification Time,WEBHIST,MSIE Cache File URL record,Location: http://www.2600.org/images/masthead2.jpg Number of hits: 1 Cached file: JIRVJY9X\masthead2[1].jpg Cached file size: 2558 HTTP headers: HTTP/1.0 200 OK - ETag: "565062-9fe-3a95d5ba" - Content-Length: 2558 - Content-Type: image/jpeg -  - ~U:mr. evil - ,msiecf,TSK:/Documents and Settings/Mr. Evil/Local Settings/Temporary Internet Files/Content.IE5/index.dat,-,1,1413
+2001-02-23T03:15:21+00:00,Content Modification Time,WEBHIST,MSIE Cache File URL record,Location: http://www.2600.org/images/sch23.gif Number of hits: 1 Cached file: PN0J7OQM\sch23[1].gif Cached file size: 11739 HTTP headers: HTTP/1.1 200 OK - ETag: "565064-2ddb-3a95d5c9" - Content-Length: 11739 - Content-Type: image/gif -  - ~U:mr. evil - ,msiecf,TSK:/Documents and Settings/Mr. Evil/Local Settings/Temporary Internet Files/Content.IE5/index.dat,-,1,1414
+2001-02-24T18:46:19+00:00,Content Modification Time,WEBHIST,MSIE Cache File URL record,Location: http://www.2600.org/images/1.gif Number of hits: 1 Cached file: HYU1BON0\1[1].gif Cached file size: 43 HTTP headers: HTTP/1.1 200 OK - ETag: "565065-2b-3a98017b" - Content-Length: 43 - Content-Type: image/gif -  - ~U:mr. evil - ,msiecf,TSK:/Documents and Settings/Mr. Evil/Local Settings/Temporary Internet Files/Content.IE5/index.dat,-,1,1415
+2001-02-24T20:51:57+00:00,Content Modification Time,WEBHIST,MSIE Cache File URL record,Location: http://www.2600.org/images/storeadmed.jpg Number of hits: 1 Cached file: HYU1BON0\storeadmed[1].jpg Cached file size: 4323 HTTP headers: HTTP/1.0 200 OK - ETag: "565066-10e3-3a981eed" - Content-Length: 4323 - Content-Type: image/jpeg -  - ~U:mr. evil - ,msiecf,TSK:/Documents and Settings/Mr. Evil/Local Settings/Temporary Internet Files/Content.IE5/index.dat,-,1,1416
+2001-02-24T22:19:38+00:00,Content Modification Time,WEBHIST,MSIE Cache File URL record,Location: http://www.2600.org/images/oldmasthead.gif Number of hits: 1 Cached file: PN0J7OQM\oldmasthead[1].gif Cached file size: 26273 HTTP headers: HTTP/1.1 200 OK - ETag: "565067-66a1-3a98337a" - Content-Length: 26273 - Content-Type: image/gif -  - ~U:mr. evil - ,msiecf,TSK:/Documents and Settings/Mr. Evil/Local Settings/Temporary Internet Files/Content.IE5/index.dat,-,1,1417
+2001-02-26T05:16:09+00:00,Content Modification Time,WEBHIST,MSIE Cache File URL record,Location: http://www.2600.org/images/725274831586.gif Number of hits: 1 Cached file: PN0J7OQM\725274831586[1].gif Cached file size: 1568 HTTP headers: HTTP/1.1 200 OK - ETag: "565068-620-3a99e699" - Content-Length: 1568 - Content-Type: image/gif -  - ~U:mr. evil - ,msiecf,TSK:/Documents and Settings/Mr. Evil/Local Settings/Temporary Internet Files/Content.IE5/index.dat,-,1,1418
+...
+```
+
+By default the tool will include five events before and after each filter hit. This can be controlled using the ``--slice_size``.
+
+```
+$ psort.py --slice_size 15 --slicer -q test.plaso "cached_file_size is 43"
 ```
 
 ### Other options
@@ -376,7 +360,6 @@ FILTER
 DISCUSS
 ```
 --data PATH
--a --include_all
 --language LANGUAGE
 ```
 
