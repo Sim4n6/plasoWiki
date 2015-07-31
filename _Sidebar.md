@@ -15,6 +15,7 @@
 * [Filters](https://github.com/log2timeline/plaso/wiki/Filters)
 * [Collection Filters](https://github.com/log2timeline/plaso/wiki/Collection-Filters)
 * [Tips and Tricks](https://github.com/log2timeline/plaso/wiki/Tips-and-Tricks)
+* [Upgrading from 0.X branch](https://github.com/log2timeline/plaso/wiki/Upgrading-From-0.x-Branch)
 
 # Installation
 
