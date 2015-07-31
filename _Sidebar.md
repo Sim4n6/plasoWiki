@@ -13,6 +13,7 @@
 * [preg](https://github.com/log2timeline/plaso/wiki/Using-preg)
 * [psort](https://github.com/log2timeline/plaso/wiki/Using-psort)
 * [Filters](https://github.com/log2timeline/plaso/wiki/Filters)
+* [Collection Filters](https://github.com/log2timeline/plaso/wiki/Collection-Filters)
 
 # Installation
 
