@@ -4,7 +4,7 @@ Tools that have filter support:
  + psort
  + log2timeline
 
-The generic documentation of the filter language can be found [here](https://sites.google.com/a/kiddaland.net/plaso/deprecated/developers-guide/libraries/objectfilter)
+The generic documentation of the filter language can be found [here](https://github.com/log2timeline/plaso/wiki/Objectfilter)
 
 The filters are evoked differently depending on the tool, consult each tool's documentation about how that is achieved.
 
