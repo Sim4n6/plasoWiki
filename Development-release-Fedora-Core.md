@@ -22,7 +22,6 @@ If you intend to do development on plaso you'll also need to install some develo
 
 * PyLint
 * Python Mock
-* Sphinx
 
 ### PyLint
 Plaso development requires PyLint 1.4.0 or later. 
@@ -35,12 +34,3 @@ sudo yum install pylint
 
 ### Python Mock
 **TODO: add description.**
-
-### Sphinx
-**TODO: add description.**
-
-```
-sudo yum install python-sphinx-doc
-```
-
-http://sphinx-doc.org/
