@@ -144,3 +144,31 @@ config\windows\make_check.bat
 ```
 
 And finally create a zip archive of: dist\plaso
+
+## Maintainer tools
+If you intend to help maintain on plaso you'll also need to install the following tools:
+
+* Sphinx-doc
+
+### Sphinx-doc
+#### Fedora Core
+To install sphinx-doc on Fedora Core run:
+```
+sudo yum install python-sphinx-doc
+```
+
+### Mac OS -X
+To install sphinx-doc on Mac OS-X run:
+
+**TODO: add description.**
+
+### Ubuntu
+To install sphinx-doc on Ubuntu run:
+```
+sudo apt-get install python-sphinx
+```
+
+### Windows
+To install sphinx-doc on Windows run:
+
+**TODO: add description.**
