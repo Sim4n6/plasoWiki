@@ -37,7 +37,6 @@ If you intend to do development on plaso you'll also need to install some develo
 
 * PyLint
 * Python Mock
-* Sphinx
 
 ### PyLint
 Plaso development requires PyLint 1.4.0 or later. 
@@ -61,7 +60,3 @@ dist\mock-1.0.1.win32.msi
 ```
 
 Install the MSI.
-
-### Sphinx
-**TODO: add description.**
-http://sphinx-doc.org/
