@@ -12,6 +12,7 @@
 * [pinfo](https://github.com/log2timeline/plaso/wiki/Using-pinfo)
 * [preg](https://github.com/log2timeline/plaso/wiki/Using-preg)
 * [psort](https://github.com/log2timeline/plaso/wiki/Using-psort)
+* [Filters](https://github.com/log2timeline/plaso/wiki/Filters)
 
 # Installation
 
