@@ -364,11 +364,12 @@ $ psort.py --slice_size 15 --slicer -q test.plaso "cached_file_size is 43"
 
 ### Other options
 
-The [data](https://github.com/log2timeline/plaso/tree/master/data) folder was previously mentioned.
-DISCUSS
+The [data](https://github.com/log2timeline/plaso/tree/master/data) folder was [previously mentioned](https://github.com/log2timeline/plaso/wiki/Using-psort#automatic-analysis). The location of this folder is automatically determined, depending on how the tool got installed on the system and the OS platform. This data path is used by **psort** to find the location of filter files, Event Log message database, etc.
+
+This data path can be changed from the default location, for instance if you have your own *winevt-rc.db* database or set of filter files. This can be achieved using the ``--data PATH`` parameter, eg:
+
 ```
---data PATH
---language LANGUAGE
+$ psort.py --data /where/my/data/is/stored test.plaso
 ```
 
 #### Debug
