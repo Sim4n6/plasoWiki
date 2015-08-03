@@ -86,30 +86,17 @@ msiexec.exe /i dist\package-1.0.0.win32.msi /q
 
 ### Python modules
 
+Various Python modules that can be [build as a MSI](https://github.com/log2timeline/plaso/wiki/Dependencies-Windows#building-a-msi).
+
 Name | Download URL | Comments | Dependencies
 --- | --- | --- | --- 
 artifacts | https://github.com/ForensicArtifacts/artifacts/releases | |
 bencode | https://pypi.python.org/pypi/bencode | |
 binplist | https://github.com/google/binplist/releases | |
 construct | https://pypi.python.org/pypi/construct#downloads | latest 2.x version | six
-
-### dateutil
-Download the latest source package from: https://github.com/dateutil/dateutil/releases
-
-To build the MSI file run the following commands from the build root directory:
-```
-tar xfv dateutil-2.4.1.tar.gz
-cd dateutil-2.4.1\
-C:\Python27\python.exe setup.py bdist_msi
-cd ..
-```
-
-This will create a MSI in the dist sub directory e.g.:
-```
-dist\dateutil-2.4.1.win32.msi
-```
-
-Install the MSI.
+dateutil | https://github.com/dateutil/dateutil/releases | |
+dpkt | https://pypi.python.org/pypi/dpkt | |
+google-apputils | https://pypi.python.org/pypi/google-apputils | |
 
 ### dfVFS
 The dfVFS build instructions can be found [here](https://github.com/log2timeline/dfvfs/wiki/Building). Note that for dfVFS to function correctly several dependencies, like pytsk, mentioned later in a section of this page, are required.
@@ -127,24 +114,6 @@ cd ..
 This will create a MSI in the dist sub directory e.g.:
 ```
 dist\dfvfs-20150129.win32.msi
-```
-
-Install the MSI.
-
-### DPKT
-Download the latest source package from: https://pypi.python.org/pypi/dpkt
-
-To build the MSI file run the following commands from the build root directory:
-```
-tar xfv dpkt-1.8.6.tar.gz
-cd dpkt\
-C:\Python27\python.exe setup.py bdist_msi
-cd ..
-```
-
-This will create a MSI in the dist sub directory e.g.:
-```
-dist\dpkt-1.8.6.win32.msi
 ```
 
 Install the MSI.
@@ -170,22 +139,6 @@ dist\ipython-1.2.1.win32.msi
 Install the MSI.
 
 For information on how to build IPython from source see: http://ipython.org/ipython-doc/stable/install/install.html
-
-#### google-apputils
-Download the latest source package from: https://pypi.python.org/pypi/google-apputils
-
-To build the MSI file run the following commands from the build root directory:
-```
-tar xfv google-apputils-0.4.0.tar.gz
-cd google-apputils-0.4.0\
-C:\Python27\python.exe setup.py bdist_msi
-cd ..
-```
-
-This will create a MSI in the dist sub directory e.g.:
-```
-dist\google-apputils-0.4.0.win32.msi
-```
 
 ### Hachoir
 Download the latest source package from: https://bitbucket.org/haypo/hachoir/wiki/Install/source
