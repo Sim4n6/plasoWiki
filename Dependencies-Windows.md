@@ -53,8 +53,20 @@ First create a build root directory:
 C:\plaso-build\
 ```
 
-### Building a MSI
+### Python modules
+The following instructions apply to the following dependencies:
 
+Name | Download URL | Comments | Dependencies
+--- | --- | --- | --- 
+artifacts | https://github.com/ForensicArtifacts/artifacts/releases | |
+bencode | https://pypi.python.org/pypi/bencode | |
+binplist | https://github.com/google/binplist/releases | |
+construct | https://pypi.python.org/pypi/construct#downloads | latest 2.x version | six
+dateutil | https://github.com/dateutil/dateutil/releases | |
+dpkt | https://pypi.python.org/pypi/dpkt | |
+google-apputils | https://pypi.python.org/pypi/google-apputils | |
+
+#### Building a MSI
 Setup.py allows you to easily build an MSI in most cases. This paragraph contains a generic description of building a MSI so we do not have to repeat this for every dependency.
 
 To build an MSI file from package-1.0.0.tar.gz run the following commands from the build root directory.
@@ -83,20 +95,6 @@ To install the MSI from the command line:
 ```
 msiexec.exe /i dist\package-1.0.0.win32.msi /q
 ```
-
-### Python modules
-
-Various Python modules that can be [build as a MSI](https://github.com/log2timeline/plaso/wiki/Dependencies-Windows#building-a-msi).
-
-Name | Download URL | Comments | Dependencies
---- | --- | --- | --- 
-artifacts | https://github.com/ForensicArtifacts/artifacts/releases | |
-bencode | https://pypi.python.org/pypi/bencode | |
-binplist | https://github.com/google/binplist/releases | |
-construct | https://pypi.python.org/pypi/construct#downloads | latest 2.x version | six
-dateutil | https://github.com/dateutil/dateutil/releases | |
-dpkt | https://pypi.python.org/pypi/dpkt | |
-google-apputils | https://pypi.python.org/pypi/google-apputils | |
 
 ### dfVFS
 The dfVFS build instructions can be found [here](https://github.com/log2timeline/dfvfs/wiki/Building). Note that for dfVFS to function correctly several dependencies, like pytsk, mentioned later in a section of this page, are required.
