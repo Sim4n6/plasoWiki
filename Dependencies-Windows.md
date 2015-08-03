@@ -207,6 +207,22 @@ Install the MSI.
 
 For information on how to build IPython from source see: http://ipython.org/ipython-doc/stable/install/install.html
 
+#### google-apputils
+Download the latest source package from: https://pypi.python.org/pypi/google-apputils
+
+To build the MSI file run the following commands from the build root directory:
+```
+tar xfv google-apputils-0.4.0.tar.gz
+cd google-apputils-0.4.0\
+C:\Python27\python.exe setup.py bdist_msi
+cd ..
+```
+
+This will create a MSI in the dist sub directory e.g.:
+```
+dist\google-apputils-0.4.0.win32.msi
+```
+
 ### Hachoir
 Download the latest source package from: https://bitbucket.org/haypo/hachoir/wiki/Install/source
 
@@ -260,7 +276,7 @@ dist\hachoir-metadata-1.3.3.win32.msi
 Install the MSI.
 
 ### Libprotobuf and Python-bindings
-Libprotobuf is dependent on python-gflags see the instructions below how to build and install python-gflags.
+Libprotobuf is dependent on google-apputils and python-gflags see elsewhere in these instructions how to build and install these.
 
 Download the latest 2.x source package from: https://github.com/google/protobuf/releases
 
