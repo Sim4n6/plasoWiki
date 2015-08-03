@@ -53,81 +53,45 @@ First create a build root directory:
 C:\plaso-build\
 ```
 
+### Building a MSI
+
+Setup.py allows you to easily build an MSI in most cases. This paragraph contains a generic description of building a MSI so we do not have to repeat this for every dependency.
+
+To build an MSI file from package-1.0.0.tar.gz run the following commands from the build root directory.
+
+First extract the package:
+```
+tar xvf package-1.0.0.tar.gz
+```
+
 If you are not familiar with extracting tar files on Windows see: [How to unpack a tar file in Windows](https://wiki.haskell.org/How_to_unpack_a_tar_file_in_Windows)
 
-### Artifacts
-Download the latest source package from: https://github.com/ForensicArtifacts/artifacts/releases
-
-To build the MSI file run the following commands from the build root directory:
+Next change into the package source directory and have setup.py build a MSI:
 ```
-tar xvf artifacts-20150409.tar.gz
-cd artifacts-20150409\
+cd package-1.0.0\
 C:\Python27\python.exe setup.py bdist_msi
-cd ..
 ```
 
 This will create a MSI in the dist sub directory e.g.:
 ```
-dist\artifacts-20150409.1.win32.msi
+dist\package-1.0.0.win32.msi
 ```
 
-Install the MSI.
+Note that the actual MSI file name can vary per package.
 
-### Bencode
-Download the latest source package from: https://pypi.python.org/pypi/bencode
-
-To build the MSI file run the following commands from the build root directory:
+To install the MSI from the command line:
 ```
-tar xvf bencode-1.0.tar.gz
-cd bencode-1.0\
-C:\Python27\python.exe setup.py bdist_msi
-cd ..
+msiexec.exe /i dist\package-1.0.0.win32.msi /q
 ```
 
-This will create a MSI in the dist sub directory e.g.:
-```
-dist\bencode-1.0.win32.msi
-```
+### Python modules
 
-Install the MSI.
-
-### Binplist
-Download the latest source package from: https://github.com/google/binplist/releases
-
-To build the MSI file run the following commands from the build root directory:
-```
-tar xvf binplist-0.1.5.tar.gz
-cd binplist-0.1.5\
-C:\Python27\python.exe setup.py bdist_msi
-cd ..
-```
-
-This will create a MSI in the dist sub directory e.g.:
-```
-dist\binplist-0.1.5.win32.msi
-```
-
-Install the MSI.
-
-### Construct
-Construct is dependent on six see the instructions below how to build and install six.
-
-Download the latest 2.x source package from: https://pypi.python.org/pypi/construct#downloads
-
-To build the MSI file run the following commands from the build root directory:
-```
-tar xfv construct-2.5.2.tar.gz
-cd construct-2.5.2\
-C:\Python27\python.exe setup.py bdist_msi
-cd ..
-```
-
-This will create a MSI in the dist sub directory e.g.:
-```
-dist\construct-2.5.2.win32.msi
-```
-
-Install the MSI.
+Name | Download URL | Comments | Dependencies
+--- | --- | --- | --- 
+artifacts | https://github.com/ForensicArtifacts/artifacts/releases | |
+bencode | https://pypi.python.org/pypi/bencode | |
+binplist | https://github.com/google/binplist/releases | |
+construct | https://pypi.python.org/pypi/construct#downloads | latest 2.x version | six
 
 ### dateutil
 Download the latest source package from: https://github.com/dateutil/dateutil/releases
