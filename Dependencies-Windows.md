@@ -73,7 +73,7 @@ To build an MSI file from package-1.0.0.tar.gz run the following commands from t
 
 First extract the package:
 ```
-tar xvf package-1.0.0.tar.gz
+tar zxvf package-1.0.0.tar.gz
 ```
 
 If you are not familiar with extracting tar files on Windows see: [How to unpack a tar file in Windows](https://wiki.haskell.org/How_to_unpack_a_tar_file_in_Windows)
