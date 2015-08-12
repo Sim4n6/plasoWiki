@@ -525,7 +525,7 @@ Download the latest source package from: https://github.com/rhec/pyelasticsearch
 
 To build pkg files run the following command from the build root directory:
 ```
-tar zxfv pyelasticsearch-1.0.tar,gz
+tar zxfv pyelasticsearch-1.0.tar.gz
 cd pyelasticsearch-1.0/
 python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
@@ -536,4 +536,22 @@ cd ..
 To install the required pkg files run:
 ```
 sudo installer -target / -pkg python-pyelasticsearch-1.0.pkg
+```
+
+#### XlsxWriter
+Download the latest source package from: https://github.com/jmcnamara/XlsxWriter/releases
+
+To build pkg files run the following command from the build root directory:
+```
+tar zxfv XlsxWriter-RELEASE_0.7.3.tar.gz
+cd XlsxWriter-RELEASE_0.7.3/
+python setup.py bdist
+mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
+pkgbuild --root dist/tmp --identifier com.github.jmcnamara.xlsxwriter --version 0.7.3 --ownership recommended ../python-xlsxwriter-0.7.3.pkg
+cd ..
+```
+
+To install the required pkg files run:
+```
+sudo installer -target / -pkg python-xlsxwriter-1.0.pkg
 ```
