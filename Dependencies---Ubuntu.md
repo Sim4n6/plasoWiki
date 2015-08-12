@@ -410,3 +410,8 @@ The build and install Sleuthkit and Pytsk see:
 Download the latest source package from: https://github.com/rhec/pyelasticsearch/releases
 
 **TODO describe**
+
+#### XlsxWriter
+Download the latest source package from: https://github.com/jmcnamara/XlsxWriter/releases
+
+**TODO describe**
