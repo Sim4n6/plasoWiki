@@ -62,9 +62,15 @@ artifacts | https://github.com/ForensicArtifacts/artifacts/releases | |
 bencode | https://pypi.python.org/pypi/bencode | |
 binplist | https://github.com/google/binplist/releases | |
 construct | https://pypi.python.org/pypi/construct#downloads | latest 2.x version | six
-dateutil | https://github.com/dateutil/dateutil/releases | |
+dateutil | https://pypi.python.org/pypi/python-dateutil | |
 dpkt | https://pypi.python.org/pypi/dpkt | |
 google-apputils | https://pypi.python.org/pypi/google-apputils | |
+PyParsing | http://sourceforge.net/projects/pyparsing/files/ | |
+python-gflags | https://github.com/google/python-gflags/releases | |
+pytz | https://pypi.python.org/pypi/pytz | |
+PyYAML | http://pyyaml.org/wiki/PyYAML | |
+requests | https://github.com/kennethreitz/requests/releases | Make sure to click on: "Show # newer tags" | 
+six | https://pypi.python.org/pypi/six#downloads | |
 
 #### Building a MSI
 Setup.py allows you to easily build an MSI in most cases. This paragraph contains a generic description of building a MSI so we do not have to repeat this for every dependency.
@@ -289,24 +295,6 @@ dist\pyevt-20131013.1.win32-py2.7.msi
 
 Install the MSI.
 
-### Libyaml and Python-bindings
-Download the latest source package from: http://pyyaml.org/wiki/PyYAML
-
-To build the MSI file run the following commands from the build root directory:
-```
-tar xfv PyYAML-3.11.tar.gz
-cd PyYAML-3.10\
-C:\Python27\python.exe setup.py bdist_msi
-cd ..
-```
-
-This will create a MSI in the dist sub directory e.g.:
-```
-dist\PyYAML-3.10.win32.msi
-```
-
-Install the MSI.
-
 ### Pefile
 **TODO describe**
 
@@ -337,24 +325,6 @@ Then set the VS90COMNTOOLS to match VS100COMNTOOLS for setup.py to detect Visual
 set VS90COMNTOOLS=%VS100COMNTOOLS%
 ```
 
-### PyParsing
-Download the latest source package from: http://sourceforge.net/projects/pyparsing/files/
-
-To build the MSI file run the following commands from the build root directory:
-```
-tar xfv pyparsing-2.0.3.tar.gz
-cd pyparsing-2.0.3\
-C:\Python27\python.exe setup.py bdist_msi
-cd ..
-```
-
-This will create a MSI in the dist sub directory e.g.:
-```
-dist\pyparsing-2.0.3.win32.msi
-```
-
-Install the MSI.
-
 ### pysqlite
 By default Python 2.7 comes with pysqlite 2.6.0 which works fine in combination with sqlite3 version 3.7.8.
 
@@ -379,99 +349,8 @@ dist\pysqlite-2.6.3.win32.msi
 
 Install the MSI.
 
-### Python-dateutil
-Download the latest source package from: https://pypi.python.org/pypi/python-dateutil/
-
-To build the MSI file run the following commands from the build root directory:
-```
-tar xfv python-dateutil-2.4.0.tar.gz
-cd python-dateutil-2.4.0\
-C:\Python27\python.exe setup.py bdist_msi
-cd ..
-```
-
-This will create a MSI in the dist sub directory e.g.:
-```
-dist\python-dateutil-2.4.0.win32.msi
-```
-
-Install the MSI.
-
-#### python-gflags
-Download the latest source package from: https://github.com/google/python-gflags/releases
-
-To build the MSI file run the following commands from the build root directory:
-```
-tar xfv python-gflags-2.0.tar.gz
-cd python-gflags-2.0\
-C:\Python27\python.exe setup.py bdist_msi
-cd ..
-```
-
-This will create a MSI in the dist sub directory e.g.:
-```
-dist\python-gflags-2.0.win32.msi
-```
-
-### pytz
-Download the latest source package from: https://pypi.python.org/pypi/pytz
-
-To build the MSI file run the following commands from the build root directory:
-```
-tar xfv pytz-2014.10.tar.gz
-cd pytz-2014.10.tar.gz\
-C:\Python27\python.exe setup.py bdist_msi
-cd ..
-```
-
-This will create a MSI in the dist sub directory e.g.:
-```
-dist\pytz-2014.10.win32.msi
-```
-
-Install the MSI.
-
 ### pywin32
 Download the latest installer from: http://sourceforge.net/projects/pywin32/files/pywin32/
-
-### requests
-Download the latest source package from: https://github.com/kennethreitz/requests/releases
-
-**Make sure to click on:** "Show # newer tags"
-
-To build the MSI file run the following commands from the build root directory:
-```
-move v2.7.0.tar.gz requests-2.7.0.tar.gz
-tar xfv requests-2.7.0.tar.gz
-cd requests-2.7.0\
-C:\Python27\python.exe setup.py bdist_msi
-cd ..
-```
-
-This will create a MSI in the dist sub directory e.g.:
-```
-dist\requests-2.7.0.win32.msi
-```
-
-Install the MSI.
-
-### Six
-Download the latest 1.x source package from: https://pypi.python.org/pypi/six#downloads
-
-To build the MSI file run the following commands from the build root directory:
-```
-tar xfv six-1.9.0.tar.gz
-cd six-1.9.0\
-C:\Python27\python.exe setup.py bdist_msi
-cd ..
-```
-
-This will create a MSI in the dist sub directory e.g.:
-```
-dist\six-1.9.0.win32.msi
-```
-
-Install the MSI.
 
 ### Sleuthkit and Pytsk
 The build and install Sleuthkit and Pytsk see:
