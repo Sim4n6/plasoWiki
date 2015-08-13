@@ -1,6 +1,6 @@
 # Ubuntu
 
-Installing the tool on Ubuntu should be a breeze if you follow the instructions [here](https://github.com/log2timeline/plaso/wiki/Ubuntu-Packaged-Release), however sometimes there can be conflicting packages installed that cause the tool not to run properly. Most often this is caused by either some older packages being installed or if for some reason some of the dependencies was installed from source at some point and those dependencies are not kept up-to-date.
+Installing the plaso on Ubuntu should be a breeze if you follow the instructions [here](https://github.com/log2timeline/plaso/wiki/Ubuntu-Packaged-Release), however sometimes there can be conflicting packages installed that cause plaso not to run properly. Most often this is caused by either some unsupported versions of packages being installed or if for some reason some of the dependencies was installed from source at some point and those dependencies are out of date.
 
 If you are having trouble getting plaso to run on your computer after following the installation instructions one of the best first steps is to check if all dependencies are met. One way of doing that is to download the check dependency script and run it.
 
@@ -20,9 +20,9 @@ Checking availability and versions of plaso dependencies.
 ...
 ```
 
-If however for some reasons there are ERRORS displayed those dependencies have to be updated. This page's purpose is to give few hints on how to fix those issues.
+An `[ERROR]` status indicates that the version of the dependency is not supported.
 
-The easiest and first  step should be to make sure all currently installed packages are up-to-date
+First make sure all currently installed packages are up-to-date by running:
 
 ```
 $ sudo apt-get update
