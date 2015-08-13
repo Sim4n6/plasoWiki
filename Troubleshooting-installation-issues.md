@@ -29,7 +29,9 @@ $ sudo apt-get update
 $ sudo apt-get upgrade
 ```
 
-Then re-run the check dependencies script. If that still hasn't fixed the issue then you need check each of the packages that are causing errors. One way of doing so is to run ipython and figure out where those files come from.
+Then re-run the check dependencies script. If that still hasn't fixed the issue then you need check each of the dependencies with an error status.
+
+One way of doing so is to use IPython to determine the location of the Python module on your system.
 
 ```
 $ ipython
@@ -46,18 +48,20 @@ In [3]: pyewf.__file__
 Out[3]: '/usr/lib/python2.7/dist-packages/pyewf.so'
 ```
 
-Load the dependency that was causing the error. Check it's version, if it is part of the [libyal](https://github.com/libyal) collection use the ``LIBRARY.get_version()`` to get the version information, other libraries store their version information differently, most often you can call ``LIBRARY.__version__``.
+Import the Python module of the dependency that was showing an error status. Check its version, if it is part of the [libyal](https://github.com/libyal) collection use the ``LIBRARY.get_version()`` to get the version information, other Python modules can store their version information differently, a commonly used convention is ``LIBRARY.__version__``.
 
-If the version is the wrong out-of-date version you can always use the built-in ``LIBRARY.__file__`` to figure out where that file came from. The file can come from another Debian package or from a source installation. If this is coming from a source installation one way of removing it is to simply delete that particular file (or .egg directory). 
+If the version is an out-of-date version you can use the ``LIBRARY.__file__`` to determine out where the Python module is located on your system.
 
-To find out which package a file belongs to, you can run:
+The Python module can originate from another Debian package or from a source installation. If this is originating from a source installation one way of removing it is to simply delete that particular file (or .egg directory), however the preferred method is to uninstall source installation properly if possible.
+
+To find out which package a Python module belongs to run:
 
 ```
 $ dpkg -S /usr/lib/python2.7/dist-packages/pyewf.so
 libewf-python: /usr/lib/python2.7/dist-packages/pyewf.so
 ```
 
-Another example is *pyparsing* that has sometimes caused issues:
+Another example here is *pyparsing*:
 
 ```
 In [1]: import pyparsing
@@ -70,14 +74,14 @@ Out[3]: '/usr/lib/python2.7/dist-packages/pyparsing.pyc'
 
 ```
 
-In this case the file returned back is the ".pyc" file, which is not included in the dpkg package:
+In this case the Python module is the ".pyc" file, which is not included in the dpkg package:
 
 ```
 $ dpkg -S /usr/lib/python2.7/dist-packages/pyparsing.pyc
 dpkg-query: no path found matching pattern /usr/lib/python2.7/dist-packages/pyparsing.pyc
 ```
 
-In order to find out which package this file belongs to remove the final "c" so it becomes ".py" instead of ".pyc", eg:
+".pyc" is a "compiled" version of the Python code ".py", these are typically not distributed by packages but generated on your system at installation or first execution time. Therefore in order to find out which package this Python module belongs to remove the final "c" so it becomes ".py" instead of ".pyc", e.g.:
 
 ```
 $ dpkg -S /usr/lib/python2.7/dist-packages/pyparsing.py
@@ -105,9 +109,9 @@ Here you can see an example of *python-construct* that has version **2.5.1-1** i
 $ sudo apt-get install python-construct=2.5.2-1
 ```
 
-### Common Issues
+### Common package conflicts
 
-**Construct**
+#### Construct
 
 ```
 $ log2timeline.py 
@@ -142,7 +146,7 @@ Check to see if there is a more up-to-date version available, you may need to sp
 $ sudo apt-get install python-construct=2.5.2-1
 ```
 
-**PyParsing**
+#### PyParsing
 
 The following traceback:
 
@@ -166,7 +170,7 @@ $ apt-cache policy python-pyparsing
 
 And install the latest version.
 
-**libewf**
+#### libewf
 
 There are some packages that declare **libewf2** as one of their dependencies. This is an out dated version of the [libewf](https://github.com/libyal/libewf) library provided by your distribution.
 
