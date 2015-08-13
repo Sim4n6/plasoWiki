@@ -134,13 +134,13 @@ Traceback (most recent call last):
 TypeError: ('name must be a string or None', u'signature')
 ```
 
-This is an indication that construct is out-of-date. Please make sure you update to the latest version.
+This indicates that an older not supported version of construct is installed on your system. Please make sure you update to the latest version.
 
 ```
 $ apt-cache policy python-construct
 ```
 
-Check to see if there is a more up-to-date version available, you may need to specifically indicate the version you would like to install, eg:
+Check to see if there is a more up-to-date version available, you may need to specifically indicate the version you would like to install, e.g.:
 
 ```
 $ sudo apt-get install python-construct=2.5.2-1
