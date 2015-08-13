@@ -168,16 +168,20 @@ And install the latest version.
 
 **libewf**
 
-There are some tools that declare **libewf2** as one of their dependencies. This is an old not-maintained version of the [libewf](https://github.com/libyal/libewf) library.
+There are some packages that declare **libewf2** as one of their dependencies. This is an out dated version of the [libewf](https://github.com/libyal/libewf) library provided by your distribution.
 
 See for instance [this issue](https://github.com/log2timeline/plaso/issues/301).
 
-The solution here is to remove the **libewf** package from the system, 
+The solution here is to remove the **libewf2** package from the system and replace it by **libewf** and **libewf2** packages from the GIFT PPA.
 
 ```
 $ sudo apt-get remove libewf2
 ```
 
-This may remove other packages as well that depend on **libewf2**.
+Note that this may remove other packages as well that depend on **libewf2**, which are likely to be out dated as well.
 
+```
+$ sudo apt-get install libewf libewf2=20140608
+```
 
+Installing **libewf2** from the GIFT PPA prevents your package manager installing its own version of the libewf2 package when it does not need to, since the files are provided by the **libewf** package.
