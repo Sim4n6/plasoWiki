@@ -185,7 +185,7 @@ $ sudo apt-get remove libewf2
 Note that this may remove other packages as well that depend on **libewf2**, which are likely to be out dated as well.
 
 ```
-$ sudo apt-get install libewf libewf2=20140608
+$ sudo apt-get install libewf libewf2=20140608-1
 ```
 
 Installing **libewf2** from the GIFT PPA prevents your package manager installing its own version of the libewf2 package when it does not need to, since the files are provided by the **libewf** package.
