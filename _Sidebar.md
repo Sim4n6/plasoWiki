@@ -47,7 +47,7 @@
 
 # Troubleshooting
 
-* [Installation](https://github.com/log2timeline/plaso/wiki/Installation-Problems)
+* [Installation](https://github.com/log2timeline/plaso/wiki/Troubleshooting-installation-issues)
 * [Profiling](https://github.com/log2timeline/plaso/wiki/Profiling)
 * [Testing](https://github.com/log2timeline/plaso/wiki/Testing)
 * [Troubleshooting](https://github.com/log2timeline/plaso/wiki/Troubleshooting)
