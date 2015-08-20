@@ -38,3 +38,8 @@ VENVDIR=`readlink -f plaso-1.2`
 ${VENVDIR}/bin/python setup.py build
 ${VENVDIR}/bin/python setup.py install
 ```
+
+To deactivate the virtualenv run:
+```
+deactivate
+```
