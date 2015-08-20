@@ -18,8 +18,7 @@ virtualenv plaso-1.2
 
 To activate the virtualenv:
 ```
-VENVDIR=`readlink -f plaso-1.2`
-source ${VENVDIR}/bin/activate
+source ./plaso-1.2/bin/activate
 ```
 
 **Note that using pip outside virtualenv is not recommended since it ignores your systems package manager.**
@@ -35,6 +34,7 @@ pip install --pre pyevt pymsiecf
 
 To install Python modules from source:
 ```
+VENVDIR=`readlink -f plaso-1.2`
 ${VENVDIR}/bin/python setup.py build
 ${VENVDIR}/bin/python setup.py install
 ```
