@@ -26,8 +26,9 @@ source ${VENVDIR}/bin/activate
 pip install PyYAML artifacts
 ```
 
+Seeing pip wants versions to be [PEP-426](https://www.python.org/dev/peps/pep-0426/) compliant the `--pre` option needs to be passed to pip to install them:
 ```
-pip install --pre pymsiecf
+pip install --pre pyevt pymsiecf
 ```
 
 To install Python modules from source:
