@@ -14,11 +14,12 @@ virtualenv plaso-1.2
 
 To activate the virtualenv:
 ```
-source ./plaso-1.2/bin/activate
+VENVDIR=`readlink -f plaso-1.2`
+source ${VENVDIR}/bin/activate
 ```
 
 To install Python modules from source:
 ```
-./plaso-1.2/bin/python setup.py build
-./plaso-1.2/bin/python setup.py install
+${VENVDIR}/bin/python setup.py build
+${VENVDIR}/bin/python setup.py install
 ```
