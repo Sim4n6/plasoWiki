@@ -26,6 +26,10 @@ source ${VENVDIR}/bin/activate
 pip install PyYAML artifacts
 ```
 
+```
+pip install --pre pymsiecf
+```
+
 To install Python modules from source:
 ```
 ${VENVDIR}/bin/python setup.py build
