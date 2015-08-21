@@ -11,9 +11,9 @@ Various plaso specific additions/variations are:
 
 #### Naming
 
+* Use full English words everywhere. For example, use Event not Evt and Description not Des.
 * Acronyms and initialisms should be preserved, eg HTMLParser, and not HtmlParser.
-* Method and function names follow the following logic (overwriting the Google Python Style Guide):
-
+* Method and function names follow the following logic (overriding the Google Python Style Guide):
 
 
 Type | Public | Internal
@@ -39,7 +39,7 @@ Functions | **CapWords()** | **_CapWords()** (protected) and **__CapWords()** (p
 
 #### Other
 
-* Avoid the use of global variable at all cost.
+* Avoid the use of global variable at all costs.
 * Use class methods in preference of static methods
   * Use "cls" as the name of the class variable in preference of "klass"
 * Use textual pylint overrides e.g. "# pylint: disable=no-self-argument" instead of "# pylint: disable=E0213". For a list of overrides see: http://docs.pylint.org/features.html
