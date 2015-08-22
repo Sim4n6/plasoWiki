@@ -27,7 +27,7 @@ source ./plaso-venv/bin/activate
 pip install PyYAML artifacts
 ```
 
-Seeing pip wants versions to be [PEP-426](https://www.python.org/dev/peps/pep-0426/) compliant the `--pre` option needs to be passed to pip to install them:
+Seeing pip wants versions to be [PEP-426](https://www.python.org/dev/peps/pep-0426/) compliant and libyal uses a different numbering schema the `--pre` option needs to be passed to pip to install libyal Python-bindings:
 ```
 pip install --pre pyevt pyevtx pymsiecf pysigscan
 ```
