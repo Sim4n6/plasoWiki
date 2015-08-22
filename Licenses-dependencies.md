@@ -11,8 +11,9 @@ Dependency | License
 [Python dateutil](https://dateutil.readthedocs.org) | [BSD 3-clause license](http://opensource.org/licenses/BSD-3-Clause)
 [pytz](http://pytz.sourceforge.net/) | [MIT license](http://opensource.org/licenses/MIT)
 [pywin32](http://pywin32.sourceforge.net/) | [Python Software Foundation License](http://opensource.org/licenses/Python-2.0) <br> **Windows only**
-[pyzmq](http://zeromq.org/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
+[pyzmq](http://zeromq.org/bindings:python) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
 [requests](https://github.com/kennethreitz/requests/) | [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+[zeromq](http://zeromq.org/) | [GNU Lesser General Public License 3](http://www.gnu.org/licenses/lgpl.html)
 
 ## dfVFS dependencies
 Dependency | License
