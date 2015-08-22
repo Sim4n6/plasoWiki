@@ -383,6 +383,10 @@ If the build is successful copy the SQLite DLL to your Python installation:
 copy C:\plaso-build\sqlite-amalgamation-3080100\msvscpp\Release\sqlite3.dll C:\Python27\DLLs\
 ```
 
+### ZeroMQ
+**TODO add description**
+http://zeromq.org/distro:microsoft-windows
+
 ### Optional dependencies for output modules
 #### PyElasticsearch
 To have plaso support elastic search output it needs pyelasticsearch. 
