@@ -69,6 +69,10 @@ The following instructions apply to the following dependencies:
 Name | Download URL | Identifier | Comments | Dependencies
 --- | --- | --- | --- | --- 
 artifacts | https://github.com/ForensicArtifacts/artifacts/releases | com.github.ForensicArtifacts.artifacts | |
+bencode | https://pypi.python.org/pypi/bencode | org.python.pypi.bencode | |
+binplist | https://github.com/google/binplist/releases | com.github.google.binplist | |
+construct | https://pypi.python.org/pypi/construct#downloads | org.python.pypi.construct | latest 2.x version | six
+pyzmq | https://pypi.python.org/pypi/pyzmq | com.github.zeromq.pyzmq | Needs Cython to build |
 
 #### Building a PKG
 To build pkg files run the following commands from the build root directory.
@@ -101,62 +105,6 @@ Where ` $IDENTIFIER` contains an unique identifier for the package e.g. com.gith
 To install the required pkg files run:
 ```
 sudo installer -target / -pkg package-1.0.0.pkg
-```
-
-### Bencode
-Download the latest source package from: https://pypi.python.org/pypi/bencode/1.0
-
-To build pkg files run the following command from the build root directory:
-```
-tar xvfz bencode-1.0.tar.gz 
-cd bencode-1.0/
-python setup.py bdist
-mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier org.python.pypi.bencode --version 1.0 --ownership recommended ../python-bencode-1.0.pkg
-cd ..
-```
-
-To install the required pkg files run:
-```
-sudo installer -target / -pkg python-bencode-1.0.pkg
-```
-
-### Binplist
-Download the latest source package from: https://github.com/google/binplist/releases
-
-To build pkg files run the following command from the build root directory:
-```
-tar -zxvf binplist-0.1.5.tar.gz 
-cd binplist-0.1.5/
-python setup.py bdist
-mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier com.github.google.binplist --version 0.1.5 --ownership recommended ../python-binplist-0.1.5.pkg
-cd ..
-```
-
-To install the required pkg files run:
-```
-sudo installer -target / -pkg python-binplist-0.1.5.pkg
-```
-
-### Construct
-Construct is dependent on six see the instructions below how to build and install six.
-
-Download the latest 2.x source package from: https://pypi.python.org/pypi/construct/2.5.2
-
-To build pkg files run the following command from the build root directory:
-```
-tar xfvz construct-2.5.2.tar.gz
-cd construct-2.5.2/
-python setup.py bdist
-mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier org.python.pypi.construct --version 2.5.2 --ownership recommended ../python-construct-2.5.2.pkg
-cd ..
-```
-
-To install the required pkg files run:
-```
-sudo installer -target / -pkg python-construct-2.5.2.pkg
 ```
 
 ### dateutil
