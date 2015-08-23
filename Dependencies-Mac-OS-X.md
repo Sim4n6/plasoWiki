@@ -63,22 +63,29 @@ To install the required pkg files run:
 sudo installer -target / -pkg cython-0.23.1.pkg
 ```
 
-### Artifacts
-Download the latest source package from: https://github.com/ForensicArtifacts/artifacts/releases
+### Python modules
+The following instructions apply to the following dependencies:
 
+Name | Download URL | Identifier | Comments | Dependencies
+--- | --- | --- | --- 
+artifacts | https://github.com/ForensicArtifacts/artifacts/releases | com.github.ForensicArtifacts.artifacts | |
+
+#### Building a PKG
 To build pkg files run the following command from the build root directory:
 ```
-tar -zxvf artifacts-20150409.tar.gz 
-cd artifacts-20150409/
+tar -zxvf package-1.0.0.tar.gz 
+cd package-1.0.0/
 python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier com.github.ForensicArtifacts.artifacts --version 20150409 --ownership recommended ../python-artifacts-20150409.pkg
+pkgbuild --root dist/tmp --identifier $IDENTIFIER --version 1.0.0 --ownership recommended ../python-package-1.0.0.pkg
 cd ..
 ```
 
+Where ` $IDENTIFIER` contains an unique identifier for the package e.g. com.github.ForensicArtifacts.artifacts for python-artifacts.
+
 To install the required pkg files run:
 ```
-sudo installer -target / -pkg python-artifacts-20150409.pkg
+sudo installer -target / -pkg python-package-1.0.0.pkg
 ```
 
 ### Bencode
