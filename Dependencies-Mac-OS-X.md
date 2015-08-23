@@ -67,7 +67,7 @@ sudo installer -target / -pkg cython-0.23.1.pkg
 The following instructions apply to the following dependencies:
 
 Name | Download URL | Identifier | Comments | Dependencies
---- | --- | --- | --- 
+--- | --- | --- | --- | --- 
 artifacts | https://github.com/ForensicArtifacts/artifacts/releases | com.github.ForensicArtifacts.artifacts | |
 
 #### Building a PKG
