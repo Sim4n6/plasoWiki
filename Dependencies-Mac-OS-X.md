@@ -43,6 +43,25 @@ Make sure the necessary building tools and development packages are installed on
 * Python setuptools or distutils
 * XCode
   * Command Line Tools
+* Cython
+
+#### Cython
+Download the latest source package from: http://cython.org/#download
+
+To build pkg files run the following command from the build root directory:
+```
+tar -zxvf Cython-0.23.1.tar.gz
+cd Cython-0.23.1
+python setup.py bdist
+mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
+pkgbuild --root dist/tmp --identifier org.cython.cython --version 0.23.1 --ownership recommended ../cython-0.23.1.pkg
+cd ..
+```
+
+To install the required pkg files run:
+```
+sudo installer -target / -pkg cython-0.23.1.pkg
+```
 
 ### Artifacts
 Download the latest source package from: https://github.com/ForensicArtifacts/artifacts/releases
