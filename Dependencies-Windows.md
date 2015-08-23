@@ -90,6 +90,7 @@ pytz | https://pypi.python.org/pypi/pytz | |
 PyYAML | http://pyyaml.org/wiki/PyYAML | |
 requests | https://github.com/kennethreitz/requests/releases | Make sure to click on: "Show # newer tags" | 
 six | https://pypi.python.org/pypi/six#downloads | |
+pyzmq | https://pypi.python.org/pypi/pyzmq | Needs Cython to build |
 
 #### Building a MSI
 Setup.py allows you to easily build an MSI in most cases. This paragraph contains a generic description of building a MSI so we do not have to repeat this for every dependency.
@@ -402,26 +403,6 @@ If the build is successful copy the SQLite DLL to your Python installation:
 ```
 copy C:\plaso-build\sqlite-amalgamation-3080100\msvscpp\Release\sqlite3.dll C:\Python27\DLLs\
 ```
-
-### ZeroMQ and Python bindings (libzmq and pyzmq)
-To build ZeroMQ and its Python bindings Cython is required.
-
-Download the latest source package from: https://pypi.python.org/pypi/pyzmq
-
-To build the MSI file run the following commands from the build root directory:
-```
-tar xfv pyzmq-14.7.0.tar.gz
-cd pyzmq-14.7.0
-C:\Python27\python.exe setup.py bdist_msi
-cd ..
-```
-
-This will create a MSI in the dist sub directory e.g.:
-```
-dist\pyzmq-14.7.0.win32-py2.7.msi
-```
-
-Install the MSI.
 
 ### Optional dependencies for output modules
 #### PyElasticsearch
