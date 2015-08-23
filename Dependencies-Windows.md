@@ -88,9 +88,9 @@ PyParsing | http://sourceforge.net/projects/pyparsing/files/ | |
 python-gflags | https://github.com/google/python-gflags/releases | |
 pytz | https://pypi.python.org/pypi/pytz | |
 PyYAML | http://pyyaml.org/wiki/PyYAML | |
+pyzmq | https://pypi.python.org/pypi/pyzmq | Needs Cython to build |
 requests | https://github.com/kennethreitz/requests/releases | Make sure to click on: "Show # newer tags" | 
 six | https://pypi.python.org/pypi/six#downloads | |
-pyzmq | https://pypi.python.org/pypi/pyzmq | Needs Cython to build |
 
 #### Building a MSI
 Setup.py allows you to easily build an MSI in most cases. This paragraph contains a generic description of building a MSI so we do not have to repeat this for every dependency.
