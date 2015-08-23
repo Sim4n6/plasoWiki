@@ -71,12 +71,27 @@ Name | Download URL | Identifier | Comments | Dependencies
 artifacts | https://github.com/ForensicArtifacts/artifacts/releases | com.github.ForensicArtifacts.artifacts | |
 
 #### Building a PKG
-To build pkg files run the following command from the build root directory:
+To build pkg files run the following commands from the build root directory.
+
+First extract the package:
 ```
 tar -zxvf package-1.0.0.tar.gz 
+```
+
+Next change into the package source directory and have setup.py build a binary distribution (bdist).
+```
 cd package-1.0.0/
 python setup.py bdist
-mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
+```
+
+This will create a tar.gz in the dist sub directory e.g.:
+```
+dist/package-1.0.0.macosx-10.10-intel.tar.gz
+```
+
+Next create a pgk
+```
+mkdir dist/tmp && cd dist/tmp && tar xfvz ../package-1.0.0*.tar.gz && cd ../..
 pkgbuild --root dist/tmp --identifier $IDENTIFIER --version 1.0.0 --ownership recommended ../python-package-1.0.0.pkg
 cd ..
 ```
