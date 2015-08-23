@@ -149,7 +149,7 @@ Download the latest 1.x source package from: https://github.com/ipython/ipython/
 
 To build the MSI file run the following commands from the build root directory:
 ```
-tar xfv ipython-1.2.1.tra.gz
+tar xfv ipython-1.2.1.tar.gz
 cd ipython-1.2.1\
 C:\Python27\python.exe setup.py bdist_msi
 cd ..
