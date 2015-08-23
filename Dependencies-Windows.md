@@ -43,6 +43,7 @@ Make sure the necessary building tools and development packages are installed on
 * [Python 2.7 Windows installation](http://python.org/download/)
 * [Python setup tools](http://pypi.python.org/pypi/setuptools/)
 * Microsoft Visual Studio 2008 or later
+* Cython
 
 **Note that plaso itself is platform independent but if you use a 64-bit version of Python all of the dependencies should be compiled as 64-bit.**
 
@@ -52,6 +53,24 @@ First create a build root directory:
 ```
 C:\plaso-build\
 ```
+
+#### Cython
+Download the latest source package from: http://cython.org/#download
+
+To build the MSI file run the following commands from the build root directory:
+```
+tar xfv Cython-0.23.1.tar.gz
+cd Cython-0.23.1
+C:\Python27\python.exe setup.py bdist_msi
+cd ..
+```
+
+This will create a MSI in the dist sub directory e.g.:
+```
+dist\Cython-0.23.1.win32-py2.7.msi
+```
+
+Install the MSI.
 
 ### Python modules
 The following instructions apply to the following dependencies:
@@ -385,9 +404,7 @@ copy C:\plaso-build\sqlite-amalgamation-3080100\msvscpp\Release\sqlite3.dll C:\P
 ```
 
 ### ZeroMQ and Python bindings (libzmq and pyzmq)
-Requires Cython: http://cython.org/#download
-
-**TODO: describe**
+To build ZeroMQ and its Python bindings Cython is required.
 
 Download the latest source package from: https://pypi.python.org/pypi/pyzmq
 
@@ -405,7 +422,7 @@ dist\pyzmq-14.7.0.win32-py2.7.msi
 ```
 
 Install the MSI.
-https://github.com/zeromq/pyzmq/releases
+
 ### Optional dependencies for output modules
 #### PyElasticsearch
 To have plaso support elastic search output it needs pyelasticsearch. 
