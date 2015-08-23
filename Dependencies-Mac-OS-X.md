@@ -92,15 +92,15 @@ dist/package-1.0.0.macosx-10.10-intel.tar.gz
 Next create a pgk
 ```
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../package-1.0.0*.tar.gz && cd ../..
-pkgbuild --root dist/tmp --identifier $IDENTIFIER --version 1.0.0 --ownership recommended ../python-package-1.0.0.pkg
+pkgbuild --root dist/tmp --identifier $IDENTIFIER --version 1.0.0 --ownership recommended ../package-1.0.0.pkg
 cd ..
 ```
 
-Where ` $IDENTIFIER` contains an unique identifier for the package e.g. com.github.ForensicArtifacts.artifacts for python-artifacts.
+Where ` $IDENTIFIER` contains an unique identifier for the package e.g. com.github.ForensicArtifacts.artifacts for artifacts.
 
 To install the required pkg files run:
 ```
-sudo installer -target / -pkg python-package-1.0.0.pkg
+sudo installer -target / -pkg package-1.0.0.pkg
 ```
 
 ### Bencode
