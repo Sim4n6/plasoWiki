@@ -53,7 +53,7 @@ To build pkg files run the following command from the build root directory:
 tar -zxvf Cython-0.23.1.tar.gz
 cd Cython-0.23.1
 python setup.py bdist
-mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
+mkdir dist/tmp && cd dist/tmp && tar xfvz ../cython-0.23.1*.tar.gz && cd ../..
 pkgbuild --root dist/tmp --identifier org.cython.cython --version 0.23.1 --ownership recommended ../cython-0.23.1.pkg
 cd ..
 ```
