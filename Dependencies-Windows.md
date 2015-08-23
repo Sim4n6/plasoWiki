@@ -304,6 +304,7 @@ Download the latest source package from: https://pypi.python.org/pypi/psutil
 To build the MSI file run the following commands from the build root directory:
 ```
 tar xfv psutil-2.2.1.tar.gz
+cd psutil-2.2.1
 C:\Python27\python.exe setup.py bdist_msi
 cd ..
 ```
@@ -383,10 +384,28 @@ If the build is successful copy the SQLite DLL to your Python installation:
 copy C:\plaso-build\sqlite-amalgamation-3080100\msvscpp\Release\sqlite3.dll C:\Python27\DLLs\
 ```
 
-### ZeroMQ
-**TODO add description**
-http://zeromq.org/distro:microsoft-windows
+### ZeroMQ and Python bindings (libzmq and pyzmq)
+Requires Cython: http://cython.org/#download
 
+**TODO: describe**
+
+Download the latest source package from: https://pypi.python.org/pypi/pyzmq
+
+To build the MSI file run the following commands from the build root directory:
+```
+tar xfv pyzmq-14.7.0.tar.gz
+cd pyzmq-14.7.0
+C:\Python27\python.exe setup.py bdist_msi
+cd ..
+```
+
+This will create a MSI in the dist sub directory e.g.:
+```
+dist\pyzmq-14.7.0.win32-py2.7.msi
+```
+
+Install the MSI.
+https://github.com/zeromq/pyzmq/releases
 ### Optional dependencies for output modules
 #### PyElasticsearch
 To have plaso support elastic search output it needs pyelasticsearch. 
