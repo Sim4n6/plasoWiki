@@ -72,7 +72,15 @@ artifacts | https://github.com/ForensicArtifacts/artifacts/releases | com.github
 bencode | https://pypi.python.org/pypi/bencode | org.python.pypi.bencode | |
 binplist | https://github.com/google/binplist/releases | com.github.google.binplist | |
 construct | https://pypi.python.org/pypi/construct#downloads | org.python.pypi.construct | latest 2.x version | six
+dateutil | https://pypi.python.org/pypi/python-dateutil | com.github.dateutil.dateutil | |
+dpkt | https://pypi.python.org/pypi/dpkt | org.python.pypi.dpkt | |
+google-apputils | https://pypi.python.org/pypi/google-apputils | com.github.google.google-apputils | |
+PyParsing | http://sourceforge.net/projects/pyparsing/files/ | net.sourceforge.pyparsing | |
+python-gflags | https://github.com/google/python-gflags/releases | com.github.google.python-gflags | |
+pytz | https://pypi.python.org/pypi/pytz | org.python.pypi.pytz | |
 pyzmq | https://pypi.python.org/pypi/pyzmq | com.github.zeromq.pyzmq | Needs Cython to build |
+requests | https://github.com/kennethreitz/requests/releases | com.github.kennethreitz.requests | Make sure to click on: "Show # newer tags" |
+six | https://pypi.python.org/pypi/six#downloads | org.python.pypi.six | |
 
 #### Building a PKG
 To build pkg files run the following commands from the build root directory.
@@ -107,24 +115,6 @@ To install the required pkg files run:
 sudo installer -target / -pkg package-1.0.0.pkg
 ```
 
-### dateutil
-Download the latest source package from: https://github.com/dateutil/dateutil/releases
-
-To build pkg files run the following command from the build root directory:
-```
-tar xfvz dateutil-2.4.1.tar.gz
-cd dateutil-2.4.1/
-python setup.py bdist
-mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier org.github.dateutil.dateutil --version 2.4.1 --ownership recommended ../python-dateutil-2.4.1.pkg
-cd ..
-```
-
-To install the required pkg files run:
-```
-sudo installer -target / -pkg python-dateutil-2.4.1.pkg
-```
-
 ### dfVFS
 The dfVFS build instructions can be found [here](https://github.com/log2timeline/dfvfs/wiki/Building). Note that for dfVFS to function correctly several dependencies, like pytsk, mentioned later in a section of this page, are required.
 
@@ -145,24 +135,6 @@ cd ..
 To install the required pkg files run:
 ```
 sudo installer -target / -pkg python-dfvfs-20140219.pkg
-```
-
-### DPKT
-Download the latest source package from: https://pypi.python.org/pypi/dpkt
-
-To build pkg files run the following command from the build root directory:
-```
-tar xfvz dpkt-1.8.6.tar.gz
-cd dpkt-1.8.6
-python setup.py bdist
-mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier com.google.code.p.dpkt --version 1.8.6 --ownership recommended ../python-dpkt-1.8.6.pkg
-cd ..
-```
-
-To install the required pkg files run:
-```
-sudo installer -target / -pkg python-dpkt-1.8.6.pkg
 ```
 
 ### IPython
@@ -401,103 +373,10 @@ To install the required pkg files run:
 sudo installer -target / -pkg python-psutil-1.2.1.pkg
 ```
 
-### Pyparsing
-Download the latest source package from: http://sourceforge.net/projects/pyparsing/files/
-
-To build pkg files run the following command from the build root directory:
-```
-tar xfvz pyparsing-2.0.3.tar.gz 
-cd pyparsing-2.0.3/
-python setup.py bdist
-mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier net.sourceforge.pyparsing --version 2.0.3 --ownership recommended ../python-pyparsing-2.0.3.pkg
-cd ..
-```
-
-To install the required pkg files run:
-```
-sudo installer -target / -pkg python-pyparsing-2.0.3.pkg
-```
-
 ### pyreadline
 Download the latest 1.x source package from: https://pypi.python.org/pypi/pyreadline/#downloads
 
 **TODO describe**
-
-#### python-gflags
-Download the latest source package from: https://github.com/google/python-gflags/releases
-
-To build pkg files run the following command from the build root directory:
-```
-tar xfvz python-gflags-2.0.tar.gz
-cd python-gflags-python-gflags-2.0/
-python setup.py bdist
-mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier com.github.google.python-gflags --version 2.0 --ownership recommended ../python-gflags-2.0.pkg
-cd ..
-```
-
-To install the required pkg files run:
-```
-sudo installer -target / -pkg python-gflags-2.0.pkg
-```
-
-### pytz
-Download the latest source package from: http://pypi.python.org/pypi/pytz/#downloads
-
-To build pkg files run the following command from the build root directory:
-```
-tar xfvz pytz-2014.10.tar.gz
-cd pytz-2014.10/
-python setup.py bdist
-mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier org.python.pypi.pytz --version 2014.10 --ownership recommended ../python-pytz-2014.10.pkg
-cd ..
-```
-
-To install the required pkg files run:
-```
-sudo installer -target / -pkg python-pytz-2014.10.pkg
-```
-
-### requests
-Download the latest source package from: https://github.com/kennethreitz/requests/releases
-
-**Make sure to click on:** "Show # newer tags"
-
-To build pkg files run the following command from the build root directory:
-```
-mv v2.7.0.tar.gz requests-2.7.0.tar.gz
-tar xfvz requests-2.7.0.tar.gz
-cd requests-2.7.0/
-python setup.py bdist
-mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier com.github.kennethreitz.requests --version 2.7.0 --ownership recommended ../python-requests-2.7.0.pkg
-cd ..
-```
-
-To install the required pkg files run:
-```
-sudo installer -target / -pkg python-requests-2.7.0.pkg
-```
-
-### six
-Download the latest 1.x source package from: https://pypi.python.org/pypi/six#downloads
-
-To build pkg files run the following command from the build root directory:
-```
-tar xfvz six-1.6.1.tar.gz
-cd six-1.6.1/
-python setup.py bdist
-mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
-pkgbuild --root dist/tmp --identifier org.python.pypi.six --version 1.6.1 --ownership recommended ../python-six-1.6.1.pkg
-cd ..
-```
-
-To install the required pkg files run:
-```
-sudo installer -target / -pkg python-six-1.6.1.pkg
-```
 
 ### Sleuthkit and Pytsk
 The build and install Sleuthkit and Pytsk see:
