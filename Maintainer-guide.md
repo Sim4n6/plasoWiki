@@ -3,6 +3,10 @@ This page contains information relevant to plaso maintainers.
 ## Mailing list
 Maintainers mailing list: log2timeline-maintainers@googlegroups.com
 
+## Maintainer guidelines
+
+* [Feature requests and bug reports](https://github.com/log2timeline/plaso/wiki/Feature-requests-and-bug-reports)
+
 ## Maintainer tools
 If you intend to help maintain on plaso you'll also need to install the following tools:
 
