@@ -52,6 +52,7 @@ The following sections contain a rough outline of the larger items on the roadma
 ## Changes in development release
 Changes in the version 1.3.1 development release:
 
+* zeromq support
 * data stream support
   * NTFS ADS
   * HFS forks
