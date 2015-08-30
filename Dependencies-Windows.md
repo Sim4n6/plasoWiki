@@ -254,23 +254,25 @@ Install the MSI.
 ### libyal
 The following instructions apply to the following dependencies:
 
-* [libbde](https://github.com/libyal/libbde)
-* [libesedb](https://github.com/libyal/libesedb)
-* [libevt](https://github.com/libyal/libevt)
-* [libevtx](https://github.com/libyal/libevtx)
-* [libewf](https://github.com/libyal/libewf)
-* [libfwsi](https://github.com/libyal/libfwsi)
-* [liblnk](https://github.com/libyal/liblnk)
-* [libmsiecf](https://github.com/libyal/libmsiecf)
-* [libolecf](https://github.com/libyal/libolecf)
-* [libqcow](https://github.com/libyal/libqcow)
-* [libregf](https://github.com/libyal/libregf)
-* [libsigscan](https://github.com/libyal/libsigscan)
-* [libsmdev](https://github.com/libyal/libsmdev)
-* [libsmraw](https://github.com/libyal/libsmraw)
-* [libvhdi](https://github.com/libyal/libvhdi)
-* [libvmdk](https://github.com/libyal/libvmdk)
-* [libvshadow](https://github.com/libyal/libvshadow)
+Name | Download URL | Comments | Dependencies
+--- | --- | --- | --- 
+libbde | https://github.com/libyal/libbde | | dokan
+libesedb | https://github.com/libyal/libesedb | |
+libevt | https://github.com/libyal/libevt | |
+libevtx | https://github.com/libyal/libevtx | |
+libewf | https://github.com/libyal/libewf | | dokan, zlib
+libfwsi | https://github.com/libyal/libfwsi | |
+liblnk | https://github.com/libyal/liblnk | |
+libmsiecf | https://github.com/libyal/libmsiecf | |
+libolecf | https://github.com/libyal/libolecf | | dokan
+libqcow | https://github.com/libyal/libqcow | | dokan, zlib
+libregf | https://github.com/libyal/libregf | | dokan
+libsigscan | https://github.com/libyal/libsigscan | |
+libsmdev | https://github.com/libyal/libsmdev | |
+libsmraw | https://github.com/libyal/libsmraw | | dokan
+libvhdi | https://github.com/libyal/libvhdi | | dokan
+libvmdk | https://github.com/libyal/libvmdk | | dokan, zlib
+libvshadow | https://github.com/libyal/libvshadow | | dokan
 
 Install the following dependencies for building libyal:
 
