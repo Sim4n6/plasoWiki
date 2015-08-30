@@ -47,7 +47,7 @@ Make sure the necessary building tools and development packages are installed on
 
 **Note that plaso itself is platform independent but if you use a 64-bit version of Python all of the dependencies should be compiled as 64-bit.**
 
-To build plaso with Microsoft Visual Studio you'll need to install Microsoft Visual Studio 2008 (or later). The express version is sufficient. Note that if you want to build a 64-bit version with the express version you'll need at least 2010.
+To build plaso with Microsoft Visual Studio you'll need to install Microsoft Visual Studio 2008 (or later). The express version or [Microsoft Visual C++ Compiler for Python 2.7](http://www.microsoft.com/en-us/download/details.aspx?id=44266) is sufficient. Note that if you want to build a 64-bit version with the express version you'll need at least 2010.
 
 First create a build root directory:
 ```
