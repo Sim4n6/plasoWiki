@@ -52,7 +52,10 @@ The following sections contain a rough outline of the larger items on the roadma
 ## Changes in development release
 Changes in the version 1.3.1 development release:
 
-**TODO**
+* data stream support
+  * NTFS ADS
+  * HFS forks
+* winlnk parser added distributed link tracking support
 
 ## Packaged release history
 Version | Name | Release date | Comments
