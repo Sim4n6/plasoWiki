@@ -149,6 +149,16 @@ To install the required rpm files run:
 sudo yum install dpkt-1.8.6/dist/dpkt-1.8.6-1.noarch.rpm
 ```
 
+#### Troubleshooting
+```
+ImportError: cannot import name pystone
+```
+
+pystone can be found in python-test
+```
+sudo dnf install python-test
+```
+
 ### IPython
 By default Fedora 20 comes with IPython 0.13.2. Plaso requires version 1.2.1 or later.
 
