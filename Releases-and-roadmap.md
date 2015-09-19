@@ -52,11 +52,16 @@ The following sections contain a rough outline of the larger items on the roadma
 ## Changes in development release
 Changes in the version 1.3.1 development release:
 
+* clean up of Windows Registry related code (winreg, plugins, preg)
 * zeromq support
 * data stream support
   * NTFS ADS
   * HFS forks
 * winlnk parser added distributed link tracking support
+* parsers
+  * $MFT
+* Windows Registry plugins
+  * ProgamsCache
 
 ## Packaged release history
 Version | Name | Release date | Comments
