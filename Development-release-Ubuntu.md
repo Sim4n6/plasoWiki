@@ -35,7 +35,7 @@ origin	https://github.com/log2timeline/plaso (push)
 Add an upstream remote that you can use to sync your fork:
 ```
 git remote add upstream https://github.com/log2timeline/plaso.git
-git pull upstream master
+git pull --rebase upstream master
 ```
 
 We provide packaged versions of the dependencies via the [l2tbinary project](https://github.com/log2timeline/l2tbinaries/blob/master/README.md). However it is possible that the dependencies are not fully up to date therefore we also provide a build script as part of [l2tdevtools project](https://github.com/log2timeline/l2tdevtools) to do unattended bulk builds.
