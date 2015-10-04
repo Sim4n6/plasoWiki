@@ -18,8 +18,10 @@ See: https://docs.python.org/3/howto/pyporting.html
 dict.iteritems() => iter(dict.items())
 ```
 
-#### Integer division
-The result of `\` is a floating point, use divmod() instead (or `\\`)
+#### Integers
+
+* The result of `\` is a floating point, use divmod() instead (or `\\`)
+* long() no longer works
 
 #### Strings
 
