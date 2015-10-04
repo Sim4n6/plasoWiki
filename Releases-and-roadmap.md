@@ -60,6 +60,7 @@ Changes in the version 1.3.1 development release:
 * winlnk parser added distributed link tracking support
 * parsers
   * $MFT
+  * SCCM (with thanks to Christian Buia)
 * Windows Registry plugins
   * ProgamsCache
 
