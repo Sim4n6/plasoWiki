@@ -35,6 +35,19 @@ To install sphinx-doc on Windows run:
 
 **TODO: add description.**
 
+## Generating plaso wiki pages
+Checkout the plaso wiki pages:
+```
+git clone https://github.com/log2timeline/plaso.wiki.git
+```
+
+To generate the [parser and plugins](https://github.com/log2timeline/plaso/wiki/Parsers-and-plugins) page:
+```
+PYTHONPATH=plaso plaso/tools/log2timeline.py --use-markdown --parsers list > plaso.wiki/Parsers-and-plugins.md
+```
+
+Commit and push the changes to the wiki pages.
+
 ## Generating API docs with Sphinx-doc
 Plaso uses [sphinx](http://sphinx-doc.org/) to generate API documentation. The plaso configuration uses the [autodoc](http://sphinx-doc.org/ext/autodoc.html) plugin for automatic documentation generation, and the [napoleon](http://sphinxcontrib-napoleon.readthedocs.org/en/latest/sphinxcontrib.napoleon.html) plugin to read our “Google style” docstrings. 
 
