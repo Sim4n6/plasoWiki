@@ -93,9 +93,9 @@ requests | https://github.com/kennethreitz/requests/releases | Make sure to clic
 six | https://pypi.python.org/pypi/six#downloads | |
 
 #### Building a MSI
-Setup.py allows you to easily build an MSI in most cases. This paragraph contains a generic description of building a MSI so we do not have to repeat this for every dependency.
+Setup.py allows you to easily build a MSI in most cases. This paragraph contains a generic description of building a MSI so we do not have to repeat this for every dependency.
 
-To build an MSI file from package-1.0.0.tar.gz run the following commands from the build root directory.
+To build a MSI file from package-1.0.0.tar.gz run the following commands from the build root directory.
 
 First extract the package:
 ```
