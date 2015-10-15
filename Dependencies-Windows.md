@@ -80,11 +80,11 @@ Name | Download URL | Comments | Dependencies
 artifacts | https://github.com/ForensicArtifacts/artifacts/releases | |
 bencode | https://pypi.python.org/pypi/bencode | |
 binplist | https://github.com/google/binplist/releases | |
-construct | https://pypi.python.org/pypi/construct#downloads | latest 2.x version | six
+construct | https://pypi.python.org/pypi/construct#downloads | 2.5.2 or later 2.x version | six
 dateutil | https://pypi.python.org/pypi/python-dateutil | |
 dpkt | https://pypi.python.org/pypi/dpkt | |
 google-apputils | https://pypi.python.org/pypi/google-apputils | |
-PyParsing | http://sourceforge.net/projects/pyparsing/files/ | |
+PyParsing | http://sourceforge.net/projects/pyparsing/files/ | 2.0.3 or later 2.x version |
 python-gflags | https://github.com/google/python-gflags/releases | |
 pytz | https://pypi.python.org/pypi/pytz | |
 PyYAML | http://pyyaml.org/wiki/PyYAML | |
