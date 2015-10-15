@@ -102,14 +102,14 @@ C:\Python27\python.exe setup.py bdist_rpm
 
 This will create a RPM in the dist sub directory e.g.:
 ```
-dist/package-1.0.0.noarch.rpm
+dist/package-1.0.0-1.noarch.rpm
 ```
 
 Note that the actual RPM file name can vary per package.
 
 To install the RPM from the command line:
 ```
-sudo dnf install /package-1.0.0/dist/package-1.0.0.noarch.rpm
+sudo dnf install /package-1.0.0/dist/package-1.0.0-1.noarch.rpm
 ```
 
 ### dfVFS
