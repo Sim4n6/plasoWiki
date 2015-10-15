@@ -27,21 +27,21 @@ mkdir plaso-build/
 
 Next make sure your installation is up to date:
 ```
-sudo yum update
+sudo dnf update
 ```
 
 ### Build essentials
 Make sure the necessary building tools and development packages are installed on the system:
 ```
-sudo yum groupinstall "Development Tools"
-sudo yum install gcc-c++ python-devel python-setuptools rpm-build git mercurial
+sudo dnf groupinstall "Development Tools"
+sudo dnf install gcc-c++ python-devel python-setuptools rpm-build git mercurial
 ```
 
 **TODO: move to libyal section.**
 
 For some of the dependent packages you also require:
 ```
-sudo yum install flex byacc zlib-devel bzip2-devel openssl-devel fuse-devel
+sudo dnf install flex byacc zlib-devel bzip2-devel openssl-devel fuse-devel
 ```
 
 ### Python modules
@@ -185,12 +185,12 @@ sudo rpm -ivh hachoir-metadata-1.3.3/dist/hachoir-metadata-1.3.3-1.noarch.rpm
 ### Libprotobuf and Python-bindings
 To install libprotobuf and Python-bindings run:
 ```
-sudo yum install protobuf-python
+sudo dnf install protobuf-python
 ```
 
 If you intend to do development on plaso and change the protobuf definitions, you'll also need to install the protobuf compiler (protoc).
 ```
-sudo yum install protobuf-compiler
+sudo dnf install protobuf-compiler
 ```
 
 #### Manual
@@ -222,7 +222,7 @@ cd ../..
 
 To install the required rpm files run:
 ```
-sudo yum install protobuf-2.6.1/python/dist/protobuf-2.6.1.x86_64.rpm
+sudo dnf install protobuf-2.6.1/python/dist/protobuf-2.6.1.x86_64.rpm
 ```
 
 ### libyal
@@ -292,7 +292,7 @@ cd ..
 
 To install the required rpm files run:
 ```
-sudo yum install psutil-1.2.1/dist/psutil-1.2.1.x86_64.rpm
+sudo dnf install psutil-1.2.1/dist/psutil-1.2.1.x86_64.rpm
 ```
 
 #### python-gflags
@@ -308,7 +308,7 @@ cd ..
 
 To install the required rpm files run:
 ```
-sudo yum install python-gflags-python-gflags-2.0/dist/python-gflags-2.0-1.noarch.rpm
+sudo dnf install python-gflags-python-gflags-2.0/dist/python-gflags-2.0-1.noarch.rpm
 ```
 
 ### Sleuthkit and Pytsk
@@ -336,5 +336,5 @@ cd ..
 
 To install the required rpm files run:
 ```
-sudo yum install XlsxWriter-RELEASE_0.7.3.tar.gz/dist/XlsxWriter-0.7.3-1.noarch.rpm
+sudo dnf install XlsxWriter-RELEASE_0.7.3.tar.gz/dist/XlsxWriter-0.7.3-1.noarch.rpm
 ```
