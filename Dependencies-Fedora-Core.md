@@ -44,76 +44,73 @@ For some of the dependent packages you also require:
 sudo yum install flex byacc zlib-devel bzip2-devel openssl-devel fuse-devel
 ```
 
-### Artifacts
-Download the latest source package from: https://github.com/ForensicArtifacts/artifacts/releases
+### Python modules
+The following instructions apply to the following dependencies:
 
-To build rpm files run the following command from the build root directory:
-```
-tar xvf artifacts-20150409.tar.gz 
-cd artifacts-20150409/
-python setup.py bdist_rpm
-cd ..
-```
+Name | Download URL | Comments | Dependencies
+--- | --- | --- | --- 
+artifacts | https://github.com/ForensicArtifacts/artifacts/releases | |
+bencode | https://pypi.python.org/pypi/bencode | |
+binplist | https://github.com/google/binplist/releases | |
+construct | https://pypi.python.org/pypi/construct#downloads | 2.5.2 or later 2.x version | six
+dateutil | https://pypi.python.org/pypi/python-dateutil | |
+dpkt | https://pypi.python.org/pypi/dpkt | |
+google-apputils | https://pypi.python.org/pypi/google-apputils | |
+PyParsing | http://sourceforge.net/projects/pyparsing/files/ | 2.0.3 or later 2.x version |
+python-gflags | https://github.com/google/python-gflags/releases | |
+pytz | https://pypi.python.org/pypi/pytz | |
+PyYAML | http://pyyaml.org/wiki/PyYAML | |
+pyzmq | https://pypi.python.org/pypi/pyzmq | Needs Cython to build |
+requests | https://github.com/kennethreitz/requests/releases | Make sure to click on: "Show # newer tags" | 
+six | https://pypi.python.org/pypi/six#downloads | |
 
-To install the required rpm files run:
+Some of these Python modules can be directly installed via dnf:
 ```
-sudo yum install artifacts-20150409/dist/artifacts-20150409-1.noarch.rpm
-```
-
-### Bencode
-Download the latest source package from: https://pypi.python.org/pypi/bencode
-
-To build rpm files run the following command from the build root directory:
-```
-tar xvf bencode-1.0.tar.gz 
-cd bencode-1.0/
-python setup.py bdist_rpm
-cd ..
+sudo dnf install libyaml pyparsing python-dateutil python-requests python-six PyYAML pytz
 ```
 
-To install the required rpm files run:
+#### construct - Troubleshooting
+
+**Note the construct package could conflict with Fedora distribute version of construct: python-construct.**
+
+#### DPKT - Troubleshooting
+
 ```
-sudo yum install bencode-1.0/dist/bencode-1.0-1.noarch.rpm
+ImportError: cannot import name pystone
 ```
 
-### Binplist
-Download the latest source package from: https://github.com/google/binplist/releases
-
-To build rpm files run the following command from the build root directory:
+pystone can be found in python-test
 ```
-tar xvf binplist-0.1.5.tar.gz 
-cd binplist-0.1.5/
-python setup.py bdist_rpm
-cd ..
+sudo dnf install python-test
 ```
 
-To install the required rpm files run:
+#### Building a RPM
+Setup.py allows you to easily build a RPM in most cases. This paragraph contains a generic description of building a RPM so we do not have to repeat this for every dependency.
+
+To build a RPM file from package-1.0.0.tar.gz run the following commands from the build root directory.
+
+First extract the package:
 ```
-sudo yum install binplist-0.1.5/dist/binplist-0.1.5-1.noarch.rpm
+tar zxvf package-1.0.0.tar.gz
 ```
 
-### Construct
-Install the following dependencies for building construct:
+Next change into the package source directory and have setup.py build a RPM:
 ```
-sudo yum install python-six
-```
-
-Download the latest 2.x source package from: http://construct.readthedocs.org/en/latest
-
-To build rpm files run the following command from the build root directory:
-```
-tar xvf construct-2.5.2.tar.gz 
-cd construct-2.5.2/
-python setup.py bdist_rpm
-cd ..
+cd package-1.0.0\
+C:\Python27\python.exe setup.py bdist_rpm
 ```
 
-To install the required rpm files run:
+This will create a RPM in the dist sub directory e.g.:
 ```
-sudo yum install construct-2.5.2/dist/construct-2.5.2-1.noarch.rpm
+dist/package-1.0.0.noarch.rpm
 ```
 
-**Note if this package could conflict with Fedora distribute version of construct.**
+Note that the actual RPM file name can vary per package.
+
+To install the RPM from the command line:
+```
+sudo dnf install /package-1.0.0/dist/package-1.0.0.noarch.rpm
+```
 
 ### dfVFS
 The dfVFS build instructions can be found [here](https://github.com/log2timeline/dfvfs/wiki/Building). Note that for dfVFS to function correctly several dependencies, like pytsk, mentioned later in a section of this page, are required.
@@ -131,32 +128,6 @@ cd ..
 To install the required rpm files run:
 ```
 sudo rpm -ivh dfvfs-20140219/dist/dfvfs-20140219-1.noarch.rpm
-```
-
-### DPKT
-Download the latest source package from: https://pypi.python.org/pypi/dpkt
-
-To build rpm files run the following command from the build root directory:
-```
-tar xvf dpkt-1.8.6.tar.gz
-cd dpkt-1.8.6/
-python setup.py bdist_rpm
-cd ..
-```
-
-To install the required rpm files run:
-```
-sudo yum install dpkt-1.8.6/dist/dpkt-1.8.6-1.noarch.rpm
-```
-
-#### Troubleshooting
-```
-ImportError: cannot import name pystone
-```
-
-pystone can be found in python-test
-```
-sudo dnf install python-test
 ```
 
 ### IPython
@@ -305,12 +276,6 @@ To install the required rpm files run:
 sudo rpm -ivh ~/rpmbuild/RPMS/x86_64/libevt-20130923-1.x86_64.rpm ~/rpmbuild/RPMS/x86_64/libevt-python-20130923-1.x86_64.rpm
 ```
 
-### Libyaml and Python-bindings
-To install libyaml and Python-bindings run:
-```
-sudo yum install libyaml PyYAML
-```
-
 ### Pefile
 **TODO describe**
 
@@ -330,20 +295,6 @@ To install the required rpm files run:
 sudo yum install psutil-1.2.1/dist/psutil-1.2.1.x86_64.rpm
 ```
 
-### PyParsing
-To install the necessary Python-modules run:
-```
-sudo yum install pyparsing
-```
-
-**TODO: describe manual installation**
-
-### python-dateutil
-To install python-dateutil run:
-```
-sudo yum install python-dateutil
-```
-
 #### python-gflags
 Download the latest source package from: https://github.com/google/python-gflags/releases
 
@@ -358,33 +309,6 @@ cd ..
 To install the required rpm files run:
 ```
 sudo yum install python-gflags-python-gflags-2.0/dist/python-gflags-2.0-1.noarch.rpm
-```
-
-### pytz
-To install the necessary Python-modules run:
-```
-sudo yum install pytz
-```
-
-**TODO: describe manual installation**
-
-### requests
-Download the latest source package from: https://github.com/kennethreitz/requests/releases
-
-**Make sure to click on:** "Show # newer tags"
-
-To build rpm files run the following command from the build root directory:
-```
-mv v2.7.0.tar.gz requests-2.7.0.tar.gz
-tar xvf requests-2.7.0.tar.gz 
-cd requests-2.7.0/
-python setup.py bdist_rpm
-cd ..
-```
-
-To install the required rpm files run:
-```
-sudo yum install requests-2.7.0/dist/requests-2.7.0-1.noarch.rpm
 ```
 
 ### Sleuthkit and Pytsk
