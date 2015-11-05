@@ -24,6 +24,10 @@ source ./plasoenv/bin/activate
 **Note that using pip outside virtualenv is not recommended since it ignores your systems package manager.**
 
 ```
+pip install --upgrade pip
+```
+
+```
 pip install PyYAML artifacts
 ```
 
