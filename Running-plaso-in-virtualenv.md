@@ -33,7 +33,7 @@ pip install PyYAML artifacts
 
 Seeing pip wants versions to be [PEP-426](https://www.python.org/dev/peps/pep-0426/) compliant and libyal uses a different numbering schema the `--pre` option needs to be passed to pip to install libyal Python-bindings:
 ```
-pip install --pre libevt-python libevtx-python libfwsi-python libfsntfs-python liblnk-python libmsiecf-python libolecf-python libsigscan-python libvhdi-python
+pip install --pre libevt-python libevtx-python libfwsi-python libfsntfs-python liblnk-python libmsiecf-python libolecf-python libsigscan-python libvhdi-python libvshadow-python
 ```
 
 To install Python modules from source:
