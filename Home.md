@@ -166,4 +166,3 @@ File System Format support is provided by [dfvfs](https://github.com/log2timelin
 * Mailing lists:
   * For general discussions: [log2timeline-discuss](https://groups.google.com/forum/#!forum/log2timeline-discuss)
   * For development: [log2timeline-dev](https://groups.google.com/forum/#!forum/log2timeline-dev)
-* [log2timeline](http://plaso.kiddaland.net/usage/log2timeline/)
