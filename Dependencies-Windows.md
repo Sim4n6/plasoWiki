@@ -370,7 +370,19 @@ This will create a MSI in the dist sub directory e.g.:
 dist\pysqlite-2.6.3.win32.msi
 ```
 
+Remove:
+```
+C:\Python27\DLL\sqlite3.dll
+C:\Python27\DLL\sqlite3.pyd
+C:\Python27\Lib\sqlite3\
+```
+
 Install the MSI.
+
+Copy sqlite3.dll to:
+```
+C:\Python27\Lib\site-package\pysqlite2\
+```
 
 ### pywin32
 Download the latest installer from: http://sourceforge.net/projects/pywin32/files/pywin32/
