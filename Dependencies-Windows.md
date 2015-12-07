@@ -361,6 +361,9 @@ To build the MSI file run the following commands from the build root directory:
 ```
 tar xfv pysqlite-2.6.3.tar.gz
 cd pysqlite-2.6.3\
+cp ..\sqlite3\sqlite3.h src\
+cp ..\sqlite3\msvscpp\Release\sqlite3.dll .
+cp ..\sqlite3\msvscpp\Release\sqlite3.lib .
 C:\Python27\python.exe setup.py bdist_msi
 cd ..
 ```
