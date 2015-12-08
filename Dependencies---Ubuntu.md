@@ -414,4 +414,23 @@ Download the latest source package from: https://github.com/rhec/pyelasticsearch
 #### XlsxWriter
 Download the latest source package from: https://github.com/jmcnamara/XlsxWriter/releases
 
-**TODO describe**
+**TODO describe obtaining packing files**
+
+To build deb files run the following command from the build root directory:
+```
+tar xvf XlsxWriter-RELEASE_0.7.7.tar.gz
+cd XlsxWriter-RELEASE_0.7.7
+cp -rf config/dpkg debian
+dpkg-buildpackage -rfakeroot
+cd ..
+```
+
+This will create the following files in the build root directory:
+```
+python-xlsxwriter-0.7.7-1_all.deb
+```
+
+To install the required deb files run:
+```
+sudo dpkg -i python-xlsxwriter-0.7.7-1_all.deb
+```
