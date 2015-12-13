@@ -216,11 +216,13 @@ Libprotobuf is dependent on python-gflags see the instructions below how to buil
 
 Download the latest 2.x source package from: https://github.com/google/protobuf/releases
 
+**Note that Mac OS X 10.11 (El Capitan) disallows installation in /usr by default, hence we use /usr/local**
+
 To build pkg files run the following command from the build root directory:
 ```
 tar xfvz protobuf-2.6.1.tar.gz
 cd protobuf-2.6.1
-./configure --prefix=/usr
+./configure --prefix=/usr/local
 make
 make install DESTDIR=$PWD/osx-pkg
 pkgbuild --root osx-pkg --identifier com.github.google.protobuf --version 2.6.1 --ownership recommended ../protobuf-2.6.1.pkg
@@ -282,11 +284,13 @@ Note that there is also a script to batch build the libyal dependencies more inf
 #### Example: libevt and Python-bindings
 Download the latest source package from: https://github.com/libyal/libevt/releases
 
+**Note that Mac OS X 10.11 (El Capitan) disallows installation in /usr by default, hence we use /usr/local**
+
 To build pkg files run the following command from the build root directory:
 ```
 tar xfvz libevt-alpha-20130415.tar.gz
 cd libevt-alpha-20130415
-./configure --disable-dependency-tracking --prefix=/usr/ --enable-python --with-pyprefix
+./configure --disable-dependency-tracking --prefix=/usr/local --enable-python --with-pyprefix
 make && make install DESTDIR=$PWD/osx-pkg
 mkdir -p $PWD/osx-pkg/usr/share/doc/libevt
 cp LICENSE $PWD/osx-pkg/usr/share/doc/libevt
@@ -301,11 +305,13 @@ sudo installer -target / -pkg libevt-20130415.pkg
 ### Libyaml and Python-bindings
 Download the latest source package from: http://pyyaml.org/download/libyaml/ (or http://pyyaml.org/wiki/LibYAML)
 
+**Note that Mac OS X 10.11 (El Capitan) disallows installation in /usr by default, hence we use /usr/local**
+
 To build pkg files run the following command from the build root directory:
 ```
 tar xfvz yaml-0.1.6.tar.gz
 cd yaml-0.1.6
-./configure --prefix=/usr
+./configure --prefix=/usr/local
 make
 make install DESTDIR=$PWD/osx-pkg
 pkgbuild --root osx-pkg --identifier org.pyyaml.yaml --version 0.1.6 --ownership recommended ../libyaml-0.1.6.pkg
