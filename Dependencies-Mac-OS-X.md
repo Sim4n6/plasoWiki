@@ -237,7 +237,7 @@ sudo installer -target / -pkg protobuf-2.6.1.pkg
 To build pkg files run the following command from the build root directory:
 ```
 cd protobuf-2.6.1/python
-python setup.py --install-data=/usr/local bdist
+python setup.py bdist
 mkdir dist/tmp && cd dist/tmp && tar xfvz ../*gz && cd ../..
 pkgbuild --root dist/tmp --identifier com.github.google.python-protobuf --version 2.6.1 --ownership recommended ../../python-protobuf-2.6.1.pkg
 cd ../../
