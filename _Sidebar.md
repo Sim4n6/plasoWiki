@@ -38,7 +38,7 @@
 # Development
 
 * [Developers guide](https://github.com/log2timeline/plaso/wiki/Developers-Guide)
-* [Maintainer guide](https://github.com/log2timeline/plaso/wiki/Maintainer-guide)
+* [Maintainers guide](https://github.com/log2timeline/plaso/wiki/Maintainers-guide)
 * [Style guide](https://github.com/log2timeline/plaso/wiki/Style-guide)
 * [Python 3 guide](https://github.com/log2timeline/plaso/wiki/Python-3-Guide)
 * [Code review](https://github.com/log2timeline/plaso/wiki/Codereview)
