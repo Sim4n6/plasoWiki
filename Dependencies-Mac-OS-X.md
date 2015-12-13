@@ -352,6 +352,20 @@ Remove an outdated version of pyparsing distributed by Max OS X:
 sudo rm /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pyparsing*
 ```
 
+**Note that Mac OS X 10.11 (El Capitan) disallows removing these files.**
+
+On El Capitan we recommend overriding PYTHONPATH:
+```
+PYTHONPATH=/Library/Python/2.7/site-packages/ log2timeline.py
+```
+
+Which you can alias e.g.
+```
+alias log2timeline.py="PYTHONPATH=/Library/Python/2.7/site-packages/ log2timeline.py"
+```
+
+To be able to remove the files you'll have to disable System Integrity Protection (SIP or rootless).
+
 ### Psutil
 Download the latest source package from: https://pypi.python.org/pypi/psutil/#downloads
 
