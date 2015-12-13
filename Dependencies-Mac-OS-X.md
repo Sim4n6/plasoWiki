@@ -52,8 +52,8 @@ To build pkg files run the following command from the build root directory:
 ```
 tar -zxvf Cython-0.23.1.tar.gz
 cd Cython-0.23.1
-python setup.py install --root=$PWD/dist/tmp --install-data=/usr/local 
-pkgbuild --root dist/tmp --identifier org.cython.cython --version 0.23.1 --ownership recommended ../cython-0.23.1.pkg
+python setup.py install --root=$PWD/tmp --install-data=/usr/local 
+pkgbuild --root tmp --identifier org.cython.cython --version 0.23.1 --ownership recommended ../cython-0.23.1.pkg
 cd ..
 ```
 
@@ -92,17 +92,17 @@ tar -zxvf package-1.0.0.tar.gz
 Next change into the package source directory and have setup.py build and install the package:
 ```
 cd package-1.0.0/
-python setup.py install --root=$PWD/dist/tmp --install-data=/usr/local 
+python setup.py install --root=$PWD/tmp --install-data=/usr/local 
 ```
 
 This will install package in:
 ```
-dist/tmp
+tmp
 ```
 
 Next create a pgk
 ```
-pkgbuild --root dist/tmp --identifier $IDENTIFIER --version 1.0.0 --ownership recommended ../package-1.0.0.pkg
+pkgbuild --root tmp --identifier $IDENTIFIER --version 1.0.0 --ownership recommended ../package-1.0.0.pkg
 cd ..
 ```
 
@@ -122,8 +122,8 @@ To build pkg files run the following command from the build root directory:
 ```
 tar xfvz dfvfs-20140219.tar.gz
 cd dfvfs-20140219/
-python setup.py install --root=$PWD/dist/tmp --install-data=/usr/local
-pkgbuild --root dist/tmp --identifier com.github.log2timeline.dfvfs --version 20140219 --ownership recommended python-dfvfs-20140219.pkg
+python setup.py install --root=$PWD/tmp --install-data=/usr/local
+pkgbuild --root tmp --identifier com.github.log2timeline.dfvfs --version 20140219 --ownership recommended python-dfvfs-20140219.pkg
 cd ..
 ```
 
@@ -139,8 +139,8 @@ To build pkg files run the following command from the build root directory:
 ```
 tar xfvz ipython-1.2.1.tar.gz
 cd ipython-1.2.1
-python setup.py install --root=$PWD/dist/tmp --install-data=/usr/local 
-pkgbuild --root dist/tmp --identifier org.github.ipython.ipython --version 1.2.1 --ownership recommended ../ipython-1.2.1.pkg
+python setup.py install --root=$PWD/tmp --install-data=/usr/local 
+pkgbuild --root tmp --identifier org.github.ipython.ipython --version 1.2.1 --ownership recommended ../ipython-1.2.1.pkg
 cd ..
 ```
 
@@ -162,8 +162,8 @@ To build pkg files run the following command from the build root directory:
 ```
 tar xfvz hachoir-core-1.3.3.tar.gz
 cd hachoir-core-1.3.3
-python setup.py install --root=$PWD/dist/tmp --install-data=/usr/local 
-pkgbuild --root dist/tmp --identifier org.bitbucket.hachoir.core --version 1.3.3 --ownership recommended ../python-hachoir-core-1.3.3.pkg
+python setup.py install --root=$PWD/tmp --install-data=/usr/local 
+pkgbuild --root tmp --identifier org.bitbucket.hachoir.core --version 1.3.3 --ownership recommended ../python-hachoir-core-1.3.3.pkg
 cd ..
 ```
 
@@ -176,8 +176,8 @@ To build pkg files run the following command from the build root directory:
 ```
 tar xfvz hachoir-parser-1.3.4.tar.gz
 cd hachoir-parser-1.3.4
-python setup.py install --root=$PWD/dist/tmp --install-data=/usr/local 
-pkgbuild --root dist/tmp --identifier org.bitbucket.hachoir.parser --version 1.3.4 --ownership recommended ../python-hachoir-parser-1.3.4.pkg
+python setup.py install --root=$PWD/tmp --install-data=/usr/local 
+pkgbuild --root tmp --identifier org.bitbucket.hachoir.parser --version 1.3.4 --ownership recommended ../python-hachoir-parser-1.3.4.pkg
 cd ..
 ```
 
@@ -190,8 +190,8 @@ To build pkg files run the following command from the build root directory:
 ```
 tar xfvz hachoir-metadata-1.3.3.tar.gz
 cd hachoir-metadata-1.3.3
-python setup.py install --root=$PWD/dist/tmp --install-data=/usr/local 
-pkgbuild --root dist/tmp --identifier org.bitbucket.hachoir.metadata --version 1.3.3 --ownership recommended ../python-hachoir-metadata-1.3.3.pkg
+python setup.py install --root=$PWD/tmp --install-data=/usr/local 
+pkgbuild --root tmp --identifier org.bitbucket.hachoir.metadata --version 1.3.3 --ownership recommended ../python-hachoir-metadata-1.3.3.pkg
 cd ..
 ```
 
@@ -226,8 +226,8 @@ sudo installer -target / -pkg protobuf-2.6.1.pkg
 To build pkg files run the following command from the build root directory:
 ```
 cd protobuf-2.6.1/python
-python setup.py install --root=$PWD/dist/tmp --install-data=/usr/local 
-pkgbuild --root dist/tmp --identifier com.github.google.python-protobuf --version 2.6.1 --ownership recommended ../../python-protobuf-2.6.1.pkg
+python setup.py install --root=$PWD/tmp --install-data=/usr/local 
+pkgbuild --root tmp --identifier com.github.google.python-protobuf --version 2.6.1 --ownership recommended ../../python-protobuf-2.6.1.pkg
 cd ../../
 ```
 
@@ -317,8 +317,8 @@ To build pkg files run the following command from the build root directory:
 ```
 tar xfvz PyYAML-3.11.tar.gz
 cd PyYAML-3.11/
-python setup.py install --root=$PWD/dist/tmp --install-data=/usr/local 
-pkgbuild --root dist/tmp --identifier org.pyyaml.yaml.python --version 3.11 --ownership recommended ../python-yaml-3.11.pkg
+python setup.py install --root=$PWD/tmp --install-data=/usr/local 
+pkgbuild --root tmp --identifier org.pyyaml.yaml.python --version 3.11 --ownership recommended ../python-yaml-3.11.pkg
 ```
 
 To install the required pkg files run:
@@ -335,8 +335,8 @@ To build pkg files run the following command from the build root directory:
 ```
 tar -zxvf pefile-1.2.10-139.tar.gz
 cd pefile-pefile-1.2.10-139/
-python setup.py install --root=$PWD/dist/tmp --install-data=/usr/local 
-pkgbuild --root dist/tmp --identifier com.github.erocarrer.pefile --version 1.2.10-139 --ownership recommended ../python-pefile-1.2.10-139.pkg
+python setup.py install --root=$PWD/tmp --install-data=/usr/local 
+pkgbuild --root tmp --identifier com.github.erocarrer.pefile --version 1.2.10-139 --ownership recommended ../python-pefile-1.2.10-139.pkg
 cd ..
 ```
 
@@ -373,8 +373,8 @@ To build pkg files run the following command from the build root directory:
 ```
 tar xvfz psutil-1.2.1.tar.gz
 cd psutil-1.2.1/
-python setup.py install --root=$PWD/dist/tmp --install-data=/usr/local 
-pkgbuild --root dist/tmp --identifier org.python.pypi.psutil --version 1.0 --ownership recommended ../python-psutil-1.2.1.pkg
+python setup.py install --root=$PWD/tmp --install-data=/usr/local 
+pkgbuild --root tmp --identifier org.python.pypi.psutil --version 1.0 --ownership recommended ../python-psutil-1.2.1.pkg
 cd ..
 ```
 
@@ -405,8 +405,8 @@ To build pkg files run the following command from the build root directory:
 ```
 tar zxfv pyelasticsearch-1.0.tar.gz
 cd pyelasticsearch-1.0/
-python setup.py install --root=$PWD/dist/tmp --install-data=/usr/local 
-pkgbuild --root dist/tmp --identifier com.github.pyelasticsearch.pyelasticsearch --version 1.0 --ownership recommended ../python-pyelasticsearch-1.0.pkg
+python setup.py install --root=$PWD/tmp --install-data=/usr/local 
+pkgbuild --root tmp --identifier com.github.pyelasticsearch.pyelasticsearch --version 1.0 --ownership recommended ../python-pyelasticsearch-1.0.pkg
 cd ..
 ```
 
@@ -422,8 +422,8 @@ To build pkg files run the following command from the build root directory:
 ```
 tar zxfv XlsxWriter-RELEASE_0.7.3.tar.gz
 cd XlsxWriter-RELEASE_0.7.3/
-python setup.py install --root=$PWD/dist/tmp --install-data=/usr/local 
-pkgbuild --root dist/tmp --identifier com.github.jmcnamara.xlsxwriter --version 0.7.3 --ownership recommended ../python-xlsxwriter-0.7.3.pkg
+python setup.py install --root=$PWD/tmp --install-data=/usr/local 
+pkgbuild --root tmp --identifier com.github.jmcnamara.xlsxwriter --version 0.7.3 --ownership recommended ../python-xlsxwriter-0.7.3.pkg
 cd ..
 ```
 
