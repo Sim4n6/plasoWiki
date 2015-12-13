@@ -345,6 +345,13 @@ To install the required pkg files run:
 sudo installer -target / -pkg python-pefile-1.2.10-139.pkg
 ```
 
+### Pyparsing
+Remove an outdated version of pyparsing distributed by Max OS X:
+
+```
+sudo rm /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pyparsing*
+```
+
 ### Psutil
 Download the latest source package from: https://pypi.python.org/pypi/psutil/#downloads
 
