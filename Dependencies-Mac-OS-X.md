@@ -399,11 +399,6 @@ To install the required pkg files run:
 sudo installer -target / -pkg python-psutil-1.2.1.pkg
 ```
 
-### pyreadline
-Download the latest 1.x source package from: https://pypi.python.org/pypi/pyreadline/#downloads
-
-**TODO describe**
-
 ### Sleuthkit and Pytsk
 The build and install Sleuthkit and Pytsk see:
 
