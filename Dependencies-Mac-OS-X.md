@@ -149,6 +149,9 @@ To install the required pkg files run:
 sudo installer -target / -pkg ipython-1.2.1.pkg
 ```
 
+**TODO: install gnureadline**
+https://pypi.python.org/pypi/gnureadline
+
 ### Hachoir
 Download the latest source package from: https://bitbucket.org/haypo/hachoir/wiki/Install/source
 
