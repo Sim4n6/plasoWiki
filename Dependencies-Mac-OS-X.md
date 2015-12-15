@@ -149,8 +149,21 @@ To install the required pkg files run:
 sudo installer -target / -pkg ipython-1.2.1.pkg
 ```
 
-**TODO: install gnureadline**
-https://pypi.python.org/pypi/gnureadline
+#### gnureadline
+Download the latest source package from: https://pypi.python.org/pypi/gnureadline
+
+To build pkg files run the following command from the build root directory:
+```
+tar xfv gnureadline-6.3.3.tar.gz 
+cd gnureadline-6.3.3
+python setup.py install --root=$PWD/tmp --install-data=/usr/local 
+pkgbuild --root tmp --identifier org.python.pypi.gnureadline --version 6.3.3 --ownership recommended ../gnureadline-6.3.3.pkg
+```
+
+To install the required pkg files run:
+```
+sudo installer -target / -pkg gnureadline-6.3.3.pkg
+```
 
 ### Hachoir
 Download the latest source package from: https://bitbucket.org/haypo/hachoir/wiki/Install/source
