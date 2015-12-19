@@ -73,12 +73,13 @@ Note that having a space between `]` and `(` breaks on readthedocs.
 
 ## Creating a packaged release
 ### Mac OS-X
-If all dependency packages have been compiled accordingly make sure they are placed in a sub directory of the plaso source directory named:
+Use l2tdevtools to download the .dmg files:
 ```
-dependencies
+PYTHONPATH=. ./tools/update.py --download-only
+rm -f build/hachoir*.dmg
 ```
 
-To create a distribution package run:
+Change to the plaso source directory and create a distribution package by running:
 ```
 ./config/macosx/make_dist.sh
 ```
