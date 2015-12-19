@@ -116,7 +116,7 @@ debuild -S -sa
 
 Upload to the testing track of gift:
 ```
-dput ppa:gift/testing plaso-python_1.2.1-dev-20150507-1ppa1~trusty_source.changes
+dput ppa:gift/testing python-plaso_1.2.1-dev-20150507-1ppa1~trusty_source.changes
 ```
 
 ### Windows
