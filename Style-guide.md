@@ -37,6 +37,11 @@ Functions | **CapWords()** | **_CapWords()** (protected) and **__CapWords()** (p
 #### Docstrings
 * We use "Google Style" docstrings. See http://sphinxcontrib-napoleon.readthedocs.org/en/latest/example_google.html to see how to write these most effectively.
 
+#### Unit tests
+
+* use ```self.assertEqual``` instead of ```self.assertEquals```, same applies to ```self.assertNotEquals```
+* use ```self.assertIsNone(variable)``` instead of ```self.assertEqual(variable, None)```, same applies to ```self.assertNotEqual```
+
 #### Other
 
 * Avoid the use of global variable at all costs.
