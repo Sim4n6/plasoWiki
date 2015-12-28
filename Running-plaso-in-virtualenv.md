@@ -1,12 +1,23 @@
 **TODO: add more text**
 
+# Setting up plaso in virtualenv - Fedora Core
 # Setting up virtualenv
+To install virtualenv on Fedora Core (or equivalent) run:
+```
+sudo dnf install python-virtualenv
+```
+
+## Setting up plaso in virtualenv
+**TODO: add more text**
+
+# Setting up plaso in virtualenv - Ubuntu
+## Setting up virtualenv
 To install virtualenv on Ubuntu (or equivalent) run:
 ```
 sudo apt-get install python-virtualenv
 ```
 
-# Setting up plaso in virtualenv
+## Setting up plaso in virtualenv
 ```
 sudo apt-get install libyaml-dev
 ```
