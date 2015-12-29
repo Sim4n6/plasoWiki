@@ -47,7 +47,7 @@ If you intend to do development on plaso you'll also need to install some develo
 * Python Mock
 
 ### PyLint
-Plaso development requires PyLint 1.4.0 or later. 
+Currently plaso development uses PyLint version 1.4.x. 
 
 Remove any older version of PyLint.
 ```
@@ -58,6 +58,10 @@ Install the necessary dependencies for building PyLint:
 ```
 sudo aptitude install python-epydoc graphviz python-unittest2 mercurial
 ```
+
+For pylint 1.5.x the following additional dependencies are required:
+* https://pypi.python.org/pypi/lazy-object-proxy
+* https://pypi.python.org/pypi/wrapt
 
 Download and build the python-logilab-common Debian package:
 ```
