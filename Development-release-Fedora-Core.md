@@ -24,13 +24,17 @@ If you intend to do development on plaso you'll also need to install some develo
 * Python Mock
 
 ### PyLint
-Plaso development requires PyLint 1.4.0 or later. 
+At the moment Plaso development requires PyLint 1.4.x.
 
 ```
 sudo yum install pylint
 ```
 
 **TODO: check distributed version**
+
+For pylint 1.5.x the following additional dependencies are required:
+* https://pypi.python.org/pypi/lazy-object-proxy
+* https://pypi.python.org/pypi/wrapt
 
 ### Python Mock
 **TODO: add description.**
