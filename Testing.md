@@ -16,7 +16,10 @@ python run_tests.py
 
 The unit tests are also run automatically on [Travis-CI](https://travis-ci.org/) and [AppVeyor](https://ci.appveyor.com) after every commit (code submit) to detect cross platform issues. 
 
-## End-to-end tests
+## End-to-end tests - new
+**TODO describe**
+
+## End-to-end tests - deprecated
 The end-to-end tests are intended to detect issues in how the various parts of plaso work together, e.g. can pinfo.py or psort.py read the plaso storage file created by log2timeline.py.
 
 The end-to-end tests are divided in multiple parts:
