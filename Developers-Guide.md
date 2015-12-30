@@ -3,7 +3,7 @@
 ## Design
 Overview of the general architecture of plaso:
 
-* [Architecture](https://sites.google.com/a/kiddaland.net/plaso/developer/architecture)
+* [Architecture](https://github.com/log2timeline/plaso/wiki/Internals)
 * [Source code and API documentation](http://plaso-api.readthedocs.org/en/latest/modules.html)
 
 ## Roadmap
