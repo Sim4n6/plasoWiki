@@ -100,7 +100,7 @@ Projects/test_data/.extract_and_output/test_set1/
 
 **TODO: describe ignore file**
 
-# Helpful commands
+### Helpful commands
 Setting up the end-to-end test directories can be a bit tedious, some helpful commands:
 
 ```
