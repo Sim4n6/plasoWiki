@@ -156,32 +156,6 @@ To install the required deb files run:
 sudo dpkg -i python-dfvfs_20140219-1_all.deb
 ```
 
-### DPKT
-**Note that Unbuntu 14.04 provides DPKT 1.6 which contains known issues hence we recommend upgrading to version 1.8.**
-
-Download the latest source package from: https://pypi.python.org/pypi/dpkt
-
-**TODO describe obtaining packing files**
-
-To build deb files run the following command from the build root directory:
-```
-tar xvf dpkt-1.8.6.tar.gz
-cd dpkt-1.8.6
-cp -rf config/dpkg debian
-dpkg-buildpackage -rfakeroot
-cd ..
-```
-
-This will create the following files in the build root directory:
-```
-python-dpkt-1.8.6-1_all.deb
-```
-
-To install the required deb files run:
-```
-sudo dpkg -i python-dpkt-1.8.6-1_all.deb
-```
-
 ### Hachoir
 To install hachoir run:
 ```
@@ -225,12 +199,14 @@ The following instructions apply to the following dependencies:
 * [libevt](https://github.com/libyal/libevt)
 * [libevtx](https://github.com/libyal/libevtx)
 * [libewf](https://github.com/libyal/libewf)
+* [libfsntfs](https://github.com/libyal/libfsntfs)
 * [libfwsi](https://github.com/libyal/libfwsi)
 * [liblnk](https://github.com/libyal/liblnk)
 * [libmsiecf](https://github.com/libyal/libmsiecf)
 * [libolecf](https://github.com/libyal/libolecf)
 * [libqcow](https://github.com/libyal/libqcow)
 * [libregf](https://github.com/libyal/libregf)
+* [libscca](https://github.com/libyal/libscca)
 * [libsigscan](https://github.com/libyal/libsigscan)
 * [libsmdev](https://github.com/libyal/libsmdev)
 * [libsmraw](https://github.com/libyal/libsmraw)
