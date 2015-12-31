@@ -286,7 +286,7 @@ Install the following dependencies for building libyal:
 
 Since the build process for the libyal libraries is very similar, the following paragraph provides building libevt as an example. For more details see the build instructions of the individual projects e.g. https://github.com/libyal/libevt/wiki/Building.
 
-Note that there is also a script to batch build the libyal dependencies more information here: https://code.google.com/p/libyal/wiki/LibyalBuild
+Note that there is also a script to batch build the libyal dependencies more information here: https://github.com/log2timeline/l2tdevtools/wiki/Build-script
 
 #### Example: libevt and Python-bindings
 Download the latest source package from: https://github.com/libyal/libevt/releases
