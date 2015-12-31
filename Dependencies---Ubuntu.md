@@ -104,19 +104,15 @@ Next change into the package source directory:
 cd package-1.0.0\
 ```
 
-Some of the Python modules come with dpkg files stored in:
-```
-config/dpkg
-```
-
-For those Python modules copy the dpkg files to a debian sub directory:
+Some of the Python modules come with dpkg files stored in ```config/dpkg```. For those Python modules copy the dpkg files to a debian sub directory:
 ```
 cp -rf config/dpkg debian
 ```
 
-For those that don't you can use [dpkg-generate.py](https://github.com/log2timeline/l2tdevtools/blob/master/tools/dpkg-generate.py) to generate them:
+For those that don't come with dpkg files you can use [dpkg-generate.py](https://github.com/log2timeline/l2tdevtools/blob/master/tools/dpkg-generate.py) to generate them e.g.:
 ```
-l2tdevtools/tools/dpkg-generate.py 
+PYTHONPATH=l2tdevtools l2tdevtools/tools/dpkg-generate.py --source-directory=. package
+mv dpkg debian
 ```
 
 Have dpkg-buildpackage build the deb file:
@@ -135,6 +131,7 @@ To install the required deb files run:
 ```
 sudo dpkg -i python-package-1.0.0-1_all.deb
 ```
+
 ### dfVFS
 The dfVFS build instructions can be found [here](https://github.com/log2timeline/dfvfs/wiki/Building). Note that for dfVFS to function correctly several dependencies, like pytsk, mentioned later in a section of this page, are required.
 
