@@ -67,109 +67,74 @@ Make sure the necessary building tools and development packages are installed on
 sudo apt-get install build-essential autotools-dev libsqlite3-dev python-dev debhelper devscripts fakeroot quilt git mercurial python-setuptools libtool automake
 ```
 
-### artifacts
-Download the latest source package from: https://github.com/ForensicArtifacts/artifacts/releases
 
-To build deb files run the following command from the build root directory:
+### Python modules
+The following instructions apply to the following dependencies:
+
+Name | Download URL | Comments | Dependencies
+--- | --- | --- | --- 
+artifacts | https://github.com/ForensicArtifacts/artifacts/releases | Comes with dpkg files |
+bencode | https://pypi.python.org/pypi/bencode | |
+binplist | https://github.com/google/binplist/releases | Comes with dpkg files |
+construct | https://pypi.python.org/pypi/construct#downloads | 2.5.2 or later 2.x version | six
+dateutil | https://pypi.python.org/pypi/python-dateutil | |
+dpkt | https://pypi.python.org/pypi/dpkt | |
+google-apputils | https://pypi.python.org/pypi/google-apputils | |
+PyParsing | http://sourceforge.net/projects/pyparsing/files/ | 2.0.3 or later 2.x version |
+python-gflags | https://github.com/google/python-gflags/releases | |
+pytz | https://pypi.python.org/pypi/pytz | |
+PyYAML | http://pyyaml.org/wiki/PyYAML | |
+pyzmq | https://pypi.python.org/pypi/pyzmq | Needs Cython to build |
+requests | https://github.com/kennethreitz/requests/releases | Make sure to click on: "Show # newer tags" | 
+six | https://pypi.python.org/pypi/six#downloads | |
+
+Some of these Python modules can be directly installed via apt-get:
 ```
-tar xvf artifacts-20150409.tar.gz 
-cd artifacts-20150409/
+sudo apt-get install python-yaml
+```
+
+#### Building a deb
+First extract the package:
+```
+tar zxvf package-1.0.0.tar.gz
+```
+
+Next change into the package source directory:
+```
+cd package-1.0.0\
+```
+
+Some of the Python modules come with dpkg files stored in:
+```
+config/dpkg
+```
+
+For those Python modules copy the dpkg files to a debian sub directory:
+```
 cp -rf config/dpkg debian
+```
+
+For those that don't you can use [dpkg-generate.py](https://github.com/log2timeline/l2tdevtools/blob/master/tools/dpkg-generate.py) to generate them:
+```
+l2tdevtools/tools/dpkg-generate.py 
+```
+
+Have dpkg-buildpackage build the deb file:
+```
 dpkg-buildpackage -rfakeroot
-cd ..
 ```
 
 This will create the following files in the build root directory:
 ```
-python-artifacts-20150409-1_all.deb
+python-package-1.0.0-1_all.deb
 ```
+
+Note that the actual deb file name can vary per package.
 
 To install the required deb files run:
 ```
-sudo dpkg -i python-artifacts-20150409-1_all.deb
+sudo dpkg -i python-package-1.0.0-1_all.deb
 ```
-
-### Bencode
-Download the 1.0 version from Download the latest source package from: https://pypi.python.org/pypi/bencode and the [Debian packaging files](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/3rd%20party/build-files/deprecated/bencode-1.0-dpkg.tar.gz).
-
-To build deb files run the following command from the build root directory:
-```
-tar zxfv bencode-1.0.tar.gz
-cd bencode-1.0/
-tar zxfv ../bencode-1.0-dpkg.tar.gz
-cp -rf dpkg debian
-dpkg-buildpackage -rfakeroot
-cd ..
-```
-
-This will create the following files in the build root directory:
-```
-python-bencode_1.0-1_all.deb
-```
-
-To install the required deb files run:
-```
-sudo dpkg -i python-bencode_1.0-1_all.deb
-```
-
-### binplist
-Download the latest source package from: https://github.com/google/binplist/releases
-
-To build deb files run the following command from the build root directory:
-```
-tar xvf binplist-0.1.5.tar.gz 
-cd binplist-0.1.5/
-cp -rf config/dpkg debian
-dpkg-buildpackage -rfakeroot
-cd ..
-```
-
-This will create the following files in the build root directory:
-```
-python-binplist_0.1.5-1_all.deb
-```
-
-To install the required deb files run:
-```
-sudo dpkg -i python-binplist_0.1.5-1_all.deb
-```
-
-### Construct
-**Note that Unbuntu 14.04 provides construct 2.5.1 which contains known issues hence we recommend upgrading to version 2.5.2.**
-
-Install the following dependencies for building construct:
-```
-sudo apt-get install python-six
-```
-
-Download the 2.5.2 version from http://construct.readthedocs.org/en/latest/ and the [Debian packaging files](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/3rd%20party/build-files/deprecated/construct-2.5.2-dpkg.tar.gz).
-
-To build deb files run the following command from the build root directory:
-```
-tar zxfv construct-2.5.2.tar.gz
-cd construct-2.5.2/
-tar zxfv ../construct-2.5.2-dpkg.tar.gz
-cp -rf dpkg debian
-dpkg-buildpackage -rfakeroot
-cd ..
-```
-
-This will create the following files in the build root directory:
-```
-python-construct_2.5.2-1_all.deb
-```
-
-To install the required deb files run:
-```
-sudo dpkg -i python-construct_2.5.2-1_all.deb
-```
-
-### dateutil
-To install dateutil run:
-```
-sudo apt-get install python-dateutil
-```
-
 ### dfVFS
 The dfVFS build instructions can be found [here](https://github.com/log2timeline/dfvfs/wiki/Building). Note that for dfVFS to function correctly several dependencies, like pytsk, mentioned later in a section of this page, are required.
 
@@ -255,12 +220,6 @@ By default Ubuntu 14.04 comes with protobuf 2.5.0. Building a dpkg of protobuf 2
   * change python-dev-all to python-dev
   * add missing build dependencies: python-dateutil, python-gflags, python-tz
 
-#### google-apputils
-**TODO describe**
-
-#### python-gflags
-**TODO describe**
-
 ### libyal
 The following instructions apply to the following dependencies:
 
@@ -333,31 +292,6 @@ To install psutil run:
 sudo apt-get install python-psutil
 ```
 
-### PyParsing
-**Note that Unbuntu 14.04 provides python-pyparsing 2.0.1 which contains known issues hence we recommend upgrading to version 2.0.3.**
-
-Download the 2.0.3 version from http://sourceforge.net/projects/pyparsing/files/pyparsing/pyparsing-2.0.3/ and the [Debian packaging files](https://googledrive.com/host/0B30H7z4S52FleW5vUHBnblJfcjg/3rd%20party/build-files/deprecated/python-pyparsing-2.0.3-dpkg.tar.gz).
-
-To build deb files run the following command from the build root directory:
-```
-tar zxfv pyparsing-2.0.3.tar.gz
-cd pyparsing-2.0.3/
-tar zxfv ../python-pyparsing-2.0.3-dpkg.tar.gz
-cp -rf dpkg debian
-dpkg-buildpackage -rfakeroot
-cd ..
-```
-
-This will create the following files in the build root directory:
-```
-python-pyparsing-2.0.3-1_all.deb
-```
-
-To install the required deb files run:
-```
-sudo dpkg -i python-pyparsing-2.0.3-1_all.deb
-```
-
 ### PySQLite
 Install the following dependencies for building PySQLite:
 ```
@@ -365,39 +299,6 @@ sudo apt-get install libsqlite3-dev
 ```
 
 **TODO describe**
-
-### pytz
-To install pytz run:
-```
-sudo apt-get install python-tz
-```
-
-### requests
-Download the latest source package from: https://github.com/kennethreitz/requests/releases
-
-**Make sure to click on:** "Show # newer tags"
-
-**TODO describe obtaining packing files**
-
-To build deb files run the following command from the build root directory:
-```
-mv v2.7.0.tar.gz requests-2.7.0.tar.gz
-tar xvf requests-2.7.0.tar.gz 
-cd requests-2.7.0
-cp -rf config/dpkg debian
-dpkg-buildpackage -rfakeroot
-cd ..
-```
-
-This will create the following files in the build root directory:
-```
-python-requests-2.7.0-1_all.deb
-```
-
-To install the required deb files run:
-```
-sudo dpkg -i python-requests-2.7.0-1_all.deb
-```
 
 ### Sleuthkit and Pytsk
 The build and install Sleuthkit and Pytsk see:
