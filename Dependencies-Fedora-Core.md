@@ -228,31 +228,34 @@ sudo dnf install protobuf-2.6.1/python/dist/protobuf-2.6.1.x86_64.rpm
 ### libyal
 The following instructions apply to the following dependencies:
 
-* [libbde](https://github.com/libyal/libbde)
-* [libesedb](https://github.com/libyal/libesedb)
-* [libevt](https://github.com/libyal/libevt)
-* [libevtx](https://github.com/libyal/libevtx)
-* [libewf](https://github.com/libyal/libewf)
-* [libfsntfs](https://github.com/libyal/libfsntfs)
-* [libfwsi](https://github.com/libyal/libfwsi)
-* [liblnk](https://github.com/libyal/liblnk)
-* [libmsiecf](https://github.com/libyal/libmsiecf)
-* [libolecf](https://github.com/libyal/libolecf)
-* [libqcow](https://github.com/libyal/libqcow)
-* [libregf](https://github.com/libyal/libregf)
-* [libscca](https://github.com/libyal/libscca)
-* [libsigscan](https://github.com/libyal/libsigscan)
-* [libsmdev](https://github.com/libyal/libsmdev)
-* [libsmraw](https://github.com/libyal/libsmraw)
-* [libvhdi](https://github.com/libyal/libvhdi)
-* [libvmdk](https://github.com/libyal/libvmdk)
-* [libvshadow](https://github.com/libyal/libvshadow)
+Name | Download URL | Comments | Dependencies
+--- | --- | --- | --- 
+libbde | https://github.com/libyal/libbde | | libfuse, libcrypto
+libesedb | https://github.com/libyal/libesedb | |
+libevt | https://github.com/libyal/libevt | |
+libevtx | https://github.com/libyal/libevtx | |
+libewf | https://github.com/libyal/libewf | | libfuse, libcrypto, zlib
+libfsntfs | https://github.com/libyal/libfsntfs | |
+libfwsi | https://github.com/libyal/libfwsi | |
+liblnk | https://github.com/libyal/liblnk | |
+libmsiecf | https://github.com/libyal/libmsiecf | |
+libolecf | https://github.com/libyal/libolecf | | libfuse
+libqcow | https://github.com/libyal/libqcow | | libfuse, zlib
+libregf | https://github.com/libyal/libregf | | libfuse
+libscca | https://github.com/libyal/libscca | |
+libsigscan | https://github.com/libyal/libsigscan | |
+libsmdev | https://github.com/libyal/libsmdev | |
+libsmraw | https://github.com/libyal/libsmraw | | libfuse, libcrypto
+libvhdi | https://github.com/libyal/libvhdi | | libfuse
+libvmdk | https://github.com/libyal/libvmdk | | libfuse, zlib
+libvshadow | https://github.com/libyal/libvshadow | | libfuse
 
 Install the following dependencies for building libyal:
 
-* zlib
-* bzip2
-* dokan
+* zlib-devel
+* bzip2-devel
+* libfuse-devel
+* openssl-devel (libcrypto)
 
 **TODO: describe building dependencies.**
 
