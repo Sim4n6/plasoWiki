@@ -261,12 +261,14 @@ libesedb | https://github.com/libyal/libesedb | |
 libevt | https://github.com/libyal/libevt | |
 libevtx | https://github.com/libyal/libevtx | |
 libewf | https://github.com/libyal/libewf | | dokan, zlib
+libfsntfs | https://github.com/libyal/libfsntfs | |
 libfwsi | https://github.com/libyal/libfwsi | |
 liblnk | https://github.com/libyal/liblnk | |
 libmsiecf | https://github.com/libyal/libmsiecf | |
 libolecf | https://github.com/libyal/libolecf | | dokan
 libqcow | https://github.com/libyal/libqcow | | dokan, zlib
 libregf | https://github.com/libyal/libregf | | dokan
+libscca | https://github.com/libyal/libscca | |
 libsigscan | https://github.com/libyal/libsigscan | |
 libsmdev | https://github.com/libyal/libsmdev | |
 libsmraw | https://github.com/libyal/libsmraw | | dokan
