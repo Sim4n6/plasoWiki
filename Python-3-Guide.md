@@ -6,7 +6,6 @@ See: https://docs.python.org/3/howto/pyporting.html
 
 * exception.message no longer accessible
 * dict.sort() no longer works
-* str is Unicode not bytes so str.decode fails
 * more picky about string conversion in format e.g. printing a set as {0:s}
 * open() must be passed binary mode
 * next() replaced by `__next__()`
@@ -27,8 +26,10 @@ dict.iteritems() => iter(dict.items())
 
 * % format notation on longer supported, replaced by format and {} notation
 * explicitly mark byte strings (b'')
+* str is Unicode not bytes so str.decode fails
 * Use `__unicode__` in preference of `__str__`
-* unicode() no longer works
+* unicode() is no longer supported
+* basestring is no longer supported
 
 Make the default string type Unicode.
 ```
