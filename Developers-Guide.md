@@ -8,9 +8,7 @@ Overview of the general architecture of plaso:
 
 ## Roadmap
 
-The roadmap is currently tracked in the github issue list and labeled as "enhancement". The list can be found [here](https://github.com/log2timeline/plaso/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement).
-
-A read-only version of the older roadmap document can be found here: [Plaso - Roadmap and Assignment](http://goo.gl/cRjA7y). The roadmap document displays the current status, who's working on the parser, etc. Keep in mind though that this roadmap is no longer maintained and is therefore not up-to-date, however there may still be things in the old roadmap that have not yet been transferred over to the github site.
+A high level roadmap can be found [here](https://github.com/log2timeline/plaso/wiki/Releases-and-roadmap). Individual features are tracked as a github issue and labeled as "enhancement". A list of features can be found [here](https://github.com/log2timeline/plaso/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement).
 
 ## Setting up and maintaining your development environment
 The first challenge you will encounter is setting up and maintaining your development environment.
