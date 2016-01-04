@@ -80,8 +80,26 @@ from __future__ import absolute_import
 from __future__ import division
 ```
 
+#### map()
 ```
 TypeError: 'map' object is not subscriptable
+```
+
+E.g.
+```
+map(int, [1])[0]
+```
+
+In Python 3 map() return an instance of "map" where in Python 2 this was a "list" e.g.
+```
+type(map(int, [1]))
+```
+
+A solution is to wrap "map" in a "list".
+
+Other similar errors are:
+```
+TypeError: unorderable types: map() < map()
 ```
 
 ### C extensions
