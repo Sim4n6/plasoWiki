@@ -51,6 +51,20 @@ The following sections contain a rough outline of the larger items on the roadma
 
 ## Ideas
 
+### Analysis plugins
+The following information was taken from: [Plaso - Roadmap and Assignment](http://goo.gl/cRjA7y)
+
+Name | Description
+--- | ---
+extract_metadata | extracts delimited files for manual analysis, e.g. for LNK files, usb devices, user-assist, Internet history for file:// entries, parsed recycle bin entries, etc.
+time_changing | finds event logs for time changing as well as comparing log file times to file offsets (should be sequential)
+top_website_domains | show top ten accessed domains from web history for computer overall and possibly also from each user.
+win_system_user_anomaly | Detects abnormal activity for windows system accounts (sids from S-1-5-18 to 20) e.g. link files,internet history
+file_ext_stats | counts extensions, initially from LNK files and files. some proposed purposes are : detect interesting file types , categorize ext's, 
+usb_devices | Tracks USB key insertion in multiple locations (setupapi/registry/eventlog) and creates a report
+ | lnk with different path and target link identifier (shell item list)
+Windows services | detect anomaly in Windows services
+
 ### Output modules
 The following information was taken from: [Plaso - Roadmap and Assignment](http://goo.gl/cRjA7y)
 
