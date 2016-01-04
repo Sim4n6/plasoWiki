@@ -49,20 +49,18 @@ The following sections contain a rough outline of the larger items on the roadma
 * [Windows Registry support improvements](https://github.com/log2timeline/plaso/issues/145)
 * Handling recovered (deleted) data
 
-## Changes in development release
-Changes in the version 1.3.1 development release:
+## Ideas
 
-* clean up of Windows Registry related code (winreg, plugins, preg)
-* zeromq support
-* data stream support
-  * NTFS ADS
-  * HFS forks
-* winlnk parser added distributed link tracking support
-* parsers
-  * $MFT
-  * SCCM (with thanks to Christian Buia)
-* Windows Registry plugins
-  * ProgamsCache
+### Output modules
+The following information was taken from: [Plaso - Roadmap and Assignment](http://goo.gl/cRjA7y)
+
+Name | Description
+--- | ---
+beedocs | Supported by Perl log2timeline
+cef | Supported by Perl log2timeline
+cftl | Supported by Perl log2timeline
+mactime | Supported by Perl log2timeline
+simile | Supported by Perl log2timeline
 
 ## Packaged release history
 Version | Name | Release date | Comments
