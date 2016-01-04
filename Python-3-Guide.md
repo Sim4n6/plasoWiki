@@ -50,6 +50,21 @@ from __future__ import print_function
 #### StringIO.StringIO
 StringIO.StringIO is replaced by io.StringIO and io.BytesIO
 
+#### urllib2
+From: https://docs.python.org/2/library/urllib2.html
+```
+The urllib2 module has been split across several modules in Python 3 named urllib.request and urllib.error.
+```
+
+```
+if sys.version_info[0] < 3:
+  import urllib2 as urllib_error
+  from urllib2 import urlopen
+else:
+  import urllib.error as urllib_error
+  from urllib.request import urlopen
+```
+
 #### xrange()
 xrange() is no longer supported by Python 3 use range() instead:
 ```
@@ -65,11 +80,8 @@ from __future__ import absolute_import
 from __future__ import division
 ```
 
-urllib2 
-
-https://docs.python.org/2/library/urllib2.html
 ```
-The urllib2 module has been split across several modules in Python 3 named urllib.request and urllib.error.
+TypeError: 'map' object is not subscriptable
 ```
 
 ### C extensions
