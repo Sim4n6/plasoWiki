@@ -53,3 +53,4 @@ Version | Name | Release date | Comments
 1.1.0 | SuperBark edition | June 2014 | [Blog post](http://blog.kiddaland.net/2014/06/what-is-one-to-say-about-june-time-of.html)
 1.2.0 | Griswold edition | December 2014 | [Blog post](http://blog.kiddaland.net/2014/12/hey-kids-i-heard-on-news-that-airline.html)
 1.3.0 | Eir edition | July 2015 | [Blog post](http://blog.kiddaland.net/2015/07/bringing-end-to-sorrow-new-plaso-release.html)
+1.4.0 | | pending | 
