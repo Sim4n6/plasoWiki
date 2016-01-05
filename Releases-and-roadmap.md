@@ -24,9 +24,7 @@ The following sections contain a rough outline of the larger items on the roadma
   * [dfVFS](https://github.com/log2timeline/dfvfs/wiki/Roadmap)
   * $MFT, $UsnJrnl parsing
 * Multi volume support
-* Migration to Python 3
-  * requires other dependencies being Python 3 compatible
-  * Migration to construct 3
+* [Add Python 3 support](https://github.com/log2timeline/plaso/issues/511)
 * Parsers
   * [add more parsers](http://goo.gl/cRjA7y)
   * improve existing parsers
