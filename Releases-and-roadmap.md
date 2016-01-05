@@ -22,17 +22,14 @@ The following sections contain a rough outline of the larger items on the roadma
   * text parser rewrite/optimization
 * Improve file system support
   * [dfVFS](https://github.com/log2timeline/dfvfs/wiki/Roadmap)
-  * $MFT, $UsnJrnl parsing
 * Multi volume support
 * [Add Python 3 support](https://github.com/log2timeline/plaso/issues/511)
 * Parsers
-  * [add more parsers](http://goo.gl/cRjA7y)
   * improve existing parsers
     * job file parser - add format improvements
   * deprecate stat object in favour of file entry attributes
-  * Add Windows 10 Prefetch support (pyscca)
-* Add analysis plugins
-  * NSRL Server
+* [Add more parsers](https://github.com/log2timeline/plaso/issues/518)
+* [Add more analysis plugins](https://github.com/log2timeline/plaso/issues/521)
 * Collection
   * Improve collection filters
 * Hashing
