@@ -20,7 +20,7 @@ dict.iteritems() => iter(dict.items())
 #### Integers
 
 * The result of `\` is a floating point, use divmod() instead (or `\\`)
-* long() no longer works
+* `long()` and `1L` no longer work
 
 #### Strings
 
