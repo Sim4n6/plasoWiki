@@ -90,17 +90,25 @@ E.g.
 map(int, [1])[0]
 ```
 
-In Python 3 map() return an instance of "map" where in Python 2 this was a "list" e.g.
+In Python 3 `map()` returns a `map` where in Python 2 this was a `list` e.g.
 ```
 type(map(int, [1]))
 ```
 
-A solution is to wrap "map" in a "list".
+A solution is to wrap `map` in a `list`.
 
 Other similar errors are:
 ```
 TypeError: unorderable types: map() < map()
 ```
+
+#### filter
+In Python 3 `filter()` returns a `filter` where in Python 2 this was a `list` e.g.
+```
+type(filter(None, []))
+```
+
+A solution is to wrap `filter` in a `list`.
 
 ### C extensions
 See: http://python3porting.com/cextensions.html
