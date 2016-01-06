@@ -71,15 +71,6 @@ xrange() is no longer supported by Python 3 use range() instead:
 xrange(10) => range(0, 10)
 ```
 
-#### To do
-```
-from __future__ import absolute_import
-```
-
-```
-from __future__ import division
-```
-
 #### map()
 ```
 TypeError: 'map' object is not subscriptable
@@ -110,6 +101,15 @@ type(filter(None, []))
 
 A solution is to wrap `filter` in a `list`.
 
+#### To do
+```
+from __future__ import absolute_import
+```
+
+```
+from __future__ import division
+```
+
 ### C extensions
 See: http://python3porting.com/cextensions.html
 
@@ -119,9 +119,9 @@ Dependency | Python 3 compatible
 artifacts | yes
 bencode | unknown
 binplist | unknown
-construct | unknown (version 3?) 
+construct | yes
 dateutil.parser | unknown
-pefile | no
+pefile | no (PR with Python 3 support pending)
 dpkt | unknown
 hachoir_core | unknown
 hachoir_parser | unknown
