@@ -8,7 +8,7 @@ Plaso comes in 2 different forms of releases:
 If you do not plan to develop or live on the edge, regarding plaso, we highly recommend sticking with the packaged release. We will try to provide two packaged releases per year, a "summer" and "winter" release (depending on your location), but occasionally we will also do preview and release candidate packaged releases.
 
 ## Roadmap
-The following sections contain a rough outline of the larger items on the roadmap. For more detailed information see: [Plaso - Roadmap and Assignment](http://goo.gl/cRjA7y)
+The following sections contain a rough outline of the larger items on the roadmap. For more detailed information see: [enhancements](https://github.com/log2timeline/plaso/labels/enhancement)
 
 * [Artifact support](https://github.com/log2timeline/plaso/issues/155)
 * Refactors
