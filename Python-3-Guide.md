@@ -121,13 +121,12 @@ bencode | unknown
 binplist | no
 construct | yes
 dateutil.parser | unknown
-pefile | no (PR with Python 3 support pending)
 dpkt | unknown
 hachoir_core | unknown
 hachoir_parser | unknown
 hachoir_metadata | unknown
 IPython | yes
-pefile | no
+pefile | no (PR with Python 3 support pending)
 protobuf | yes (as of 2.6.0)
 psutil | yes
 pybde | yes (as of 20141222)
