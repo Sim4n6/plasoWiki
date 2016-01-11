@@ -118,7 +118,7 @@ Dependency | Python 3 compatible
 --- | ---
 artifacts | yes
 bencode | unknown
-binplist | unknown
+binplist | no
 construct | yes
 dateutil.parser | unknown
 pefile | no (PR with Python 3 support pending)
