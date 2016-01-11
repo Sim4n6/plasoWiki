@@ -122,6 +122,7 @@ binplist | no
 construct | yes
 dateutil.parser | unknown
 dpkt | unknown
+google-apputils | not 0.4.0 maybe 0.4.2
 hachoir_core | unknown
 hachoir_parser | unknown
 hachoir_metadata | unknown
