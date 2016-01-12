@@ -117,15 +117,15 @@ See: http://python3porting.com/cextensions.html
 Dependency | Python 3 compatible
 --- | ---
 artifacts | yes
-bencode | unknown
+bencode | yes
 binplist | no
 construct | yes
-dateutil.parser | unknown
-dpkt | unknown
+dateutil.parser | yes
+dpkt | no (maybe the migrate_py3 branch)
 google-apputils | no (tested with 0.4.2)
-hachoir_core | unknown
-hachoir_parser | unknown
-hachoir_metadata | unknown
+hachoir_core | no
+hachoir_parser | no
+hachoir_metadata | no
 IPython | yes
 pefile | no (PR with Python 3 support pending)
 protobuf | yes (as of 2.6.0)
