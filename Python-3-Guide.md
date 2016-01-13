@@ -110,6 +110,8 @@ from __future__ import absolute_import
 from __future__ import division
 ```
 
+Octal integers are written in a different form e.g. instead of 0666 now 0o666
+
 ### C extensions
 See: http://python3porting.com/cextensions.html
 
