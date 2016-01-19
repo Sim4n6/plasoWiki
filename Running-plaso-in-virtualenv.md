@@ -8,6 +8,9 @@ To install virtualenv on Fedora Core (or equivalent) run:
 sudo dnf install python-virtualenv
 ```
 
+### Installing build dependencies
+**TODO add more text**
+
 ## Ubuntu
 ### Installing virtualenv
 To install virtualenv on Ubuntu (or equivalent) run:
@@ -15,11 +18,13 @@ To install virtualenv on Ubuntu (or equivalent) run:
 sudo apt-get install python-virtualenv
 ```
 
-## Setting up plaso in virtualenv
+### Installing build dependencies
+**TODO add more text**
 ```
 sudo apt-get install libyaml-dev
 ```
 
+## Setting up plaso in virtualenv
 To create a virtualenv:
 ```
 virtualenv plasoenv
