@@ -132,7 +132,7 @@ File System Format support is provided by [dfvfs](https://github.com/log2timelin
 * AppCompatCache
 * BagMRU (or ShellBags)
 * CCleaner
-* [https://github.com/libyal/winreg-kb/blob/master/documentation/Programs%20Cache%20values.asciidoc](Explorer ProgramsCache)
+* [Explorer ProgramsCache](https://github.com/libyal/winreg-kb/blob/master/documentation/Programs%20Cache%20values.asciidoc)
 * Less Frequently Used (LFU)
 * MountPoints2
 * Most Recently Used (MRU) MRUList and MRUListEx (including shell item support)
