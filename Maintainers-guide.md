@@ -81,6 +81,7 @@ rm -f build/hachoir*.dmg
 
 Change to the plaso source directory and create a distribution package by running:
 ```
+./utils/prep_dist.sh
 ./config/macosx/make_dist.sh
 ```
 
