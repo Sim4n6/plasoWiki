@@ -378,7 +378,7 @@ dist\pysqlite-2.6.3.win32.msi
 Remove:
 ```
 C:\Python27\DLL\sqlite3.dll
-C:\Python27\DLL\sqlite3.pyd
+C:\Python27\DLL\_sqlite3.pyd
 C:\Python27\Lib\sqlite3\
 ```
 
