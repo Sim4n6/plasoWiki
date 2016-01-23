@@ -1,4 +1,5 @@
 ## log2timeline failing dependencies check
+
 When I run log2timeline it warns that certain dependencies are missing e.g.
 ```
 Checking availability and versions of plaso dependencies.
@@ -7,7 +8,12 @@ Checking availability and versions of plaso dependencies.
 
 **TODO: add more text**
 
-## Mac OS-X I get strange errors that mention pyparsing
-This is common on Mac OS-X, as that platforms bundles its own version of pyparsing, that is usually older than the version required by Plaso. Fix this by using the special wrapper scripts (log2timeline**.sh**, et. al.), or if you don't want to do that, manipulate PYTHONPATH so that the newer version is loaded. This is detailed on the Mac OS-X development page: https://github.com/log2timeline/plaso/wiki/Development-release-Mac-OS-X
+## On Mac OS-X I get strange errors that mention pyparsing
+
+Mac OS-X bundles its own version of pyparsing that is older than the version required by Plaso. Fix this by using the special wrapper scripts (log2timeline**.sh**, et. al.), or if you don't want to do that, manipulate PYTHONPATH so that the newer version is loaded. This is detailed on the Mac OS-X development page: https://github.com/log2timeline/plaso/wiki/Development-release-Mac-OS-X
 
 **TODO: add more text**
+
+## On Windows Plaso keeps telling me SQLite3 is too old
+
+The Python installation bundles its own version of SQLite that is older than the version required by Plaso. Fix this by following [these instructions](https://github.com/log2timeline/plaso/wiki/Dependencies-Windows#pysqlite).
