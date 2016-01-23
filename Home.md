@@ -20,7 +20,7 @@ And is moving to support:
 [![Build Status](https://travis-ci.org/log2timeline/plaso.svg?branch=master)](https://travis-ci.org/log2timeline/plaso) | [![Build status](https://ci.appveyor.com/api/projects/status/g3x5ylegjjo61p4m?svg=true)](https://ci.appveyor.com/project/joachimmetz/plaso) | [![Coverage Status](https://img.shields.io/coveralls/log2timeline/plaso.svg)](https://coveralls.io/r/log2timeline/plaso?branch=master)
 
 ### Supported Formats
-The information below is based of version 1.3.0
+The information below is based of version 1.4.0
 
 #### Storage Media Image File Formats
 Storage Media Image File Format support is provided by [dfvfs](https://github.com/log2timeline/dfvfs/wiki#storage-media-types).
@@ -52,6 +52,7 @@ File System Format support is provided by [dfvfs](https://github.com/log2timelin
 * McAfee Anti-Virus Logs
 * Microsoft [Internet Explorer History File Format](http://forensicswiki.org/wiki/Internet_Explorer_History_File_Format) (also known as MSIE 4 - 9 Cache Files or index.dat) using [libmsiecf](https://github.com/libyal/libmsiecf)
 * Microsoft IIS log files
+* NTFS $MFT and $UsnJrnl:$J using [libfsntfs](https://github.com/libyal/libfsntfs)
 * [OLE Compound File](http://forensicswiki.org/wiki/OLE_Compound_File) using [libolecf](https://github.com/libyal/libolecf)
 * [Opera Browser history](http://forensicswiki.org/wiki/Opera)
 * OpenXML
@@ -62,6 +63,7 @@ File System Format support is provided by [dfvfs](https://github.com/log2timelin
 * [Property list (plist) format](http://forensicswiki.org/wiki/Property_list_(plist)) using [binplist](http://forensicswiki.org/wiki/Binplist)
 * Restore Point logs (rp.log)
 * Safari Binary Cookies
+* SCCM client logs
 * SELinux audit logs
 * SkyDrive log and error log files
 * [SQLite database format](http://forensicswiki.org/wiki/SQLite_database_format) using [SQLite](http://forensicswiki.org/wiki/SQLite)
@@ -130,6 +132,7 @@ File System Format support is provided by [dfvfs](https://github.com/log2timelin
 * AppCompatCache
 * BagMRU (or ShellBags)
 * CCleaner
+* [https://github.com/libyal/winreg-kb/blob/master/documentation/Programs%20Cache%20values.asciidoc](Explorer ProgramsCache)
 * Less Frequently Used (LFU)
 * MountPoints2
 * Most Recently Used (MRU) MRUList and MRUListEx (including shell item support)
