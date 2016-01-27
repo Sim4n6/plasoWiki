@@ -45,15 +45,7 @@ We have looked at [reviewable.io](https://reviewable.io) and our current assessm
 ### How it Works
 The code review workflow predates plaso's move to github. We are in the process of adding support for a more github aligned workflow. To be able to use the advantages github offers without having to fight against its limitations.
 
-#### How it works - pre github
-**Disclaimer**: this process is geared towards those that do their development on a platform that supports bash scripts (as in *NIX and Mac OS X). For those that do not have that luxury, you may need to use alternative methods (as in more manual approach).
-
-* From your local checkout make your changes, do **not** do a `git commit`
-* Write both the code and accompanying unit tests
-* Test your code, preferably running both the unit tests and test it against real data
-* Once you think your changes are ready for review start the code review as described below
-
-#### How it works - github
+#### How it works
 **Note that this workflow is still work in progress**
 
 * Within github create a fork of the plaso project
@@ -75,10 +67,8 @@ git checkout -b feature
 #### Starting the code review
 To start the code review run the `review.sh` script:
 ```
-./utils/review.sh [--nobrowser] email_of_a_reviewer
+./utils/review.sh [--nobrowser] 
 ```
-
-Where the "*email_of_a_reviewer*" can be anyone from the plaso [owners](https://github.com/orgs/log2timeline/teams/owners).
 
 Under the hood the `review.sh` script uses Rietveld's upload script (utils/upload.py) which uses OAuth to authenticate. You'll need to have a browser that is logged-in using the developers account and give the codereview application permissions to your account (needs to be a Google account).
 
