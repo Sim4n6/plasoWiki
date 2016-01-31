@@ -191,8 +191,8 @@ By default Ubuntu 14.04 comes with protobuf 2.5.0. Building a dpkg of protobuf 2
   * change python-dev-all to python-dev
   * add missing build dependencies: python-dateutil, python-gflags, python-tz
 
-##### Notes
-Notes on updating Ubuntu build instructions
+##### Maintainers notes
+Maintainters notes on updating Ubuntu build instructions
 
 * reuse 2.6.1 debian files of a later Ubuntu version
   * change python-all to python
