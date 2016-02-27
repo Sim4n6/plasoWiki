@@ -43,41 +43,14 @@ Another downside of using github pull requests are that they convolute the commi
 We have looked at [reviewable.io](https://reviewable.io) and our current assessment is that it looks very nice but does not make for a very functional User Interface/Experience. It also convolutes the git commit history.
 
 ### How it Works
+
 The code review workflow predates plaso's move to github. We are in the process of adding support for a more github aligned workflow. To be able to use the advantages github offers without having to fight against its limitations.
 
-#### How it works
-**Note that this workflow is still work in progress**
+See: [Code review process](https://github.com/log2timeline/l2tdocs/blob/master/process/Code%20review%20process.asciidoc)
 
-* Within github create a fork of the plaso project
-* Checkout (or clone) your fork and add the plaso repository as upstream e.g.
+#### Referencing github issues
 
-```
-git remote add upstream https://github.com/log2timeline/plaso.git
-```
-
-* Create a feature branch per change
-
-```
-git checkout -b feature
-```
-
-* Make your changes on the feature branch and commit and push them to your personal fork
-* Once you think your changes are ready for review start the code review as described below
-
-#### Starting the code review
-To start the code review run the `review.sh` script:
-```
-./utils/review.sh [--nobrowser] 
-```
-
-Under the hood the `review.sh` script uses Rietveld's upload script (utils/upload.py) which uses OAuth to authenticate. You'll need to have a browser that is logged-in using the developers account and give the codereview application permissions to your account (needs to be a Google account).
-
-The `review.sh` script will:
-
-* will run pylint to catch obvious style guide issues. You can also do this manually by running `./utils/run_linter.sh`.
-* run all unit tests. You can also do this manually by running `./run_tests.py`.
-
-If both the lint check and tests ran successful the `review.sh` script will prompt you for a description of the change. If your changes relate to a specific [github issue](https://github.com/log2timeline/plaso/issues) add the issue number as following:
+If your changes relate to a specific [github issue](https://github.com/log2timeline/plaso/issues) add the issue number as following:
 
 ```
 Added serializers profiler #120
@@ -85,11 +58,13 @@ Added serializers profiler #120
 
 Where the "#120" is a reference to issue number 120.
 
-After the description has been entered in the code will be uploaded to rietveld for review.
+#### Nobrowser
 
 If you are developing the code from a computer that does not have a browser installed, or you are accessing the development machine remotely you need to supply the `--nobrowser` command line argument and then visit the [following site](https://codereview.appspot.com/get-access-token) on a computer with a browser.
 
 This will create an OAuth token that you can copy paste to the terminal window.
+
+#### Starting a code review
 
 If everything goes well the script will report the code review (or change list (CL)) created on Rietveld e.g.:
 ```
@@ -100,13 +75,8 @@ The details of the code review can be changed at a later point in time via that 
 
 The creation of the code review will also send an email the [developer mailing list](https://groups.google.com/forum/#!forum/log2timeline-dev), notifying people that there is a code review pending and it will show up in the reviewers queue on the Rietveld site.
 
-After the code is uploaded to Rietveld, please go back into github and update the issue indicating that you've submitted code for review. That makes it simpler to track the status of the various issues.
-
-If you are running the `review.sh` script off a github fork the script will also create a github pull requests. For this the script needs to be able to read `~/.netrc`.
-
-Creating a pull request makes sure github invokes additional services like Travis-CI and AppVeyor for automated testing.
-
 #### Updating the code review
+
 During the code review process you'll be asked to change few things, that is the reviewer will add comments. Please follow the following guideline during the code review process:
 
 * Answer **ALL** comments made in the code review, even if it is only an ACK or "Done".
@@ -126,82 +96,8 @@ The `update.sh` script will also run the linter and the unit tests.
 
 The update process continues until the reviewer thinks the code is good enough to be submitted into the project. Then a "**LGTM**" (Looks Good To Me) is given and you can submit the code.
 
-**DO NOT SUBMIT** code to the project before a LGTM has been sent in the code review site. All code submitted without an explicit LGTM will be revoked and rolled back.
-
-#### Submitting code
-At this point the code is ready, has been approved for submission and everything should be good to go.
-
-At this point it is good to double check that there hasn't been any code submitted into the project again that may break your code. A good rule of thumb is to:
-```
-git stash && git pull && git stash pop
-```
-
-If there are changes applied during the `git pull` command you may want to re-run all of your tests to make sure things are still working as intended.
-
-In the case where there are merge conflicts git will warn you and you need to manually fix them before continuing.
-
-Given that everything is still working you can now submit the code:
-```
-./utils/submit.sh [--nobrowser]
-```
-
-The `submit.sh` script will also run the linter and the unit tests.
-
-If you're not using a github fork the `submit.sh` script runs `git commit` and a `git push` to push out the changes to the plaso repository. There should be no need to do anything else on the git side.
-
-If you're using a github fork the `submit.sh` script the reviewer has to run the `merge_submit.sh` script.
-
-**TODO: revisit role of submit script in new workflow in combination with create clean up script**
-
-The next step is to check if the `submit.sh` script closed the Rietveld code review. If not please close it manually (a picture of a X in the upper left corner). If the code review is not closed it will stay in the reviewer queue.
-
-There are also other things that happen once the code is submitted to the codebase, a new test run is executed on Travis-CI and code coverage is added to coveralls, see:
-
- * [Travis-CI](https://travis-ci.org/log2timeline/plaso)
- * [AppVeyor](https://ci.appveyor.com/project/joachimmetz/plaso)
- * [Coverage](https://coveralls.io/r/log2timeline/plaso)
-
-If for some reasons the code breaks on Travis-CI and/or AppVeyor yet works on the developer workstation that may be an indication that some dependencies are missing or the developer made some assumptions that do not apply on other machines (such as explicit path declaration to reach out to files on their workstation, etc).
-
-If the code submitted breaks Travis-CI and/or AppVeyor, please create another CL (change list) that fixes the issue. All the fixes need to go through code review, so don't push out a change without having someone review the change. Fixes that break Travis-CI and/or AppVeyor should go through code review pretty quickly.
-
-#### Merging submitting code
-**Note** that the `merge_submit.sh` is intended to be only used by the project maintainers.
-```
-./utils/merge_submit.sh CL_NUMBER USERNAME BRANCH
-```
-
-##### Manual
-**TODO: notes on a manual clean merge**
-```
-git pull origin master
-git pull --squash https://github.com/joachimmetz/plaso.git scripts
-git commit -a -m "Code review: 1234567890: Changes to code."
-git push
-```
-
-#### Clean up script
-**TODO: create clean up script**
-
-**TODO: build in some safe guards to prevent accidental clean up**
-**TODO: close code review**
-**TODO: close pull request**
-
-```
-git checkout master
-git fetch upstream
-git pull upstream master
-```
-
-**TODO: handle commit message**
-
-```
-git push origin --delete branch
-git branch -D branch
-rm -f .reviews/branch
-```
-
 #### Code freeze period
+
 Shortly before we make a new release a code freeze period will be announced on the development mailing list. During that code freeze no new features will be allowed to be submitted into the project codebase. During that time the focus is on testing and bug fixes.
 
 In such a freeze, new features will added to the codebase after the release. The project owners should typically warn you that we are in a code freeze if there is any chance of you needing to submit a new feature during code freeze.
