@@ -47,21 +47,24 @@ If you intend to do development on plaso you'll also need to install some develo
 * Python Mock
 
 ### PyLint
-Currently plaso development uses PyLint version 1.4.x. 
+Currently plaso development uses PyLint version 1.5.x. 
 
 Remove any older version of PyLint.
 ```
 sudo apt-get remove pylint
 ```
 
-Install the necessary dependencies for building PyLint:
-```
-sudo aptitude install python-epydoc graphviz python-unittest2 mercurial
-```
-
 For pylint 1.5.x the following additional dependencies are required:
+* https://pypi.python.org/pypi/astroid
 * https://pypi.python.org/pypi/lazy-object-proxy
+* https://pypi.python.org/pypi/logilab-common
 * https://pypi.python.org/pypi/wrapt
+
+Download and build the python-wrapt Debian package:
+**TODO describe**
+
+Download and build the python-lazy-object-proxy Debian package:
+**TODO describe**
 
 Download and build the python-logilab-common Debian package:
 ```
@@ -90,9 +93,9 @@ dpkg-buildpackage -rfakeroot
 cd ..
 ```
 
-Install the python-logilab-common, python-astroid and pylint Debian packages:
+Install the python-wrapt, python-lazy-object-proxy, python-logilab-common, python-astroid and pylint Debian packages:
 ```
-sudo dpkg -i python-logilab-common_0.60.0-1_all.deb python-astroid_1.0.1-1_all.deb pylint_1.0.0-1_all.deb
+sudo dpkg -i python-wrapt python-lazy-object-proxy python-logilab-common_0.60.0-1_all.deb python-astroid_1.0.1-1_all.deb pylint_1.0.0-1_all.deb
 ```
 
 ### Python Mock
