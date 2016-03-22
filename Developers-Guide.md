@@ -22,7 +22,7 @@ The first challenge you will encounter is setting up and maintaining your develo
 * [Running the development release on Mac OS X](https://github.com/log2timeline/plaso/wiki/Development-release-Mac-OS-X)
   * [Building and installing dependencies on Mac OS X](https://github.com/log2timeline/plaso/wiki/Dependencies-Mac-OS-X)
 * [Running the development release on Windows](https://github.com/log2timeline/plaso/wiki/Development-release-Windows)
-  * [Building and installing dependencies on Windows](https://github.com/log2timeline/plaso/wiki/Dependencies---Ubuntu)
+  * [Building and installing dependencies on Windows](https://github.com/log2timeline/plaso/wiki/Dependencies-Windows)
 
 ### Prerequisites
 
