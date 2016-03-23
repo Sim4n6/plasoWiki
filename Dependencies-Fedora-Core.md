@@ -6,6 +6,7 @@ There are multiple ways to install the dependencies on Fedora Core:
 * Manual build of the dependencies.
 
 ## Batch build
+
 Set up the [l2tdevtools build script](https://github.com/log2timeline/l2tdevtools/wiki/Build-script) and run:
 ```
 PYTHONPATH=. python tools/build.py rpm
@@ -14,6 +15,7 @@ PYTHONPATH=. python tools/build.py rpm
 **Note that the build script is currently still work in progress, but it will build most of the dependencies.**
 
 ## Manual build
+
 It is impossible for us to support all flavors of Fedora Core out there, so if you want smooth sailing, we recommend sticking with the supported version or live with the fact that a manual build of the dependencies can be a tedious task.
 
 For ease of maintenance the following instructions use as much rpm package files as possible. Note that the resulting rpm files are not intended for public redistribution.
@@ -31,6 +33,7 @@ sudo dnf update
 ```
 
 ### Build essentials
+
 Make sure the necessary building tools and development packages are installed on the system:
 ```
 sudo dnf groupinstall "Development Tools"
@@ -45,6 +48,7 @@ sudo dnf install flex byacc zlib-devel bzip2-devel openssl-devel fuse-devel
 ```
 
 ### Python modules
+
 The following instructions apply to the following dependencies:
 
 Name | Download URL | Comments | Dependencies
@@ -113,6 +117,7 @@ sudo dnf install /package-1.0.0/dist/package-1.0.0-1.noarch.rpm
 ```
 
 ### dfVFS
+
 The dfVFS build instructions can be found [here](https://github.com/log2timeline/dfvfs/wiki/Building). Note that for dfVFS to function correctly several dependencies, like pytsk, mentioned later in a section of this page, are required.
 
 Download the latest source package from: https://github.com/log2timeline/dfvfs/releases
@@ -312,10 +317,10 @@ To install the required rpm files run:
 sudo dnf install python-gflags-python-gflags-2.0/dist/python-gflags-2.0-1.noarch.rpm
 ```
 
-### Sleuthkit and Pytsk
-The build and install Sleuthkit and Pytsk see:
+### Pytsk
 
-* https://github.com/py4n6/pytsk/wiki/Building-SleuthKit
+The build and install Pytsk see:
+
 * https://github.com/py4n6/pytsk/wiki/Building
 
 ### Optional dependencies for output modules
