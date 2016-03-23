@@ -402,10 +402,9 @@ To install the required pkg files run:
 sudo installer -target / -pkg python-psutil-1.2.1.pkg
 ```
 
-### Sleuthkit and Pytsk
-The build and install Sleuthkit and Pytsk see:
+### Pytsk
+The build and install Pytsk see:
 
-* https://github.com/py4n6/pytsk/wiki/Building-SleuthKit#using-mac-os-x-pkgbuild
 * https://github.com/py4n6/pytsk/wiki/Building#using-mac-os-x-pkgbuild
 
 ### SQLite
