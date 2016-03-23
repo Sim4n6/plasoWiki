@@ -123,6 +123,7 @@ msiexec.exe /i dist\package-1.0.0.win32.msi /q
 ```
 
 ### dfVFS
+
 The dfVFS build instructions can be found [here](https://github.com/log2timeline/dfvfs/wiki/Building). Note that for dfVFS to function correctly several dependencies, like pytsk, mentioned later in a section of this page, are required.
 
 Download the latest source package from: https://github.com/log2timeline/dfvfs/releases
@@ -392,10 +393,10 @@ C:\Python27\Lib\site-package\pysqlite2\
 ### pywin32
 Download the latest installer from: http://sourceforge.net/projects/pywin32/files/pywin32/
 
-### Sleuthkit and Pytsk
+### Pytsk
+
 The build and install Sleuthkit and Pytsk see:
 
-* https://github.com/py4n6/pytsk/wiki/Building-SleuthKit
 * https://github.com/py4n6/pytsk/wiki/Building
 
 ### SQLite
