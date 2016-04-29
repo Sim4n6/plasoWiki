@@ -7,6 +7,7 @@ There are multiple ways to install the dependencies on Windows:
 * Manual build of the dependencies.
 
 ## Prepackaged dependencies
+
 Prepackaged versions of the dependencies can be found here: https://github.com/log2timeline/l2tbinaries
 
 The l2tdevtools project provides [an update script](https://github.com/log2timeline/l2tdevtools/wiki/Update-script) to ease the process of keeping the dependencies up to date.
@@ -20,6 +21,7 @@ C:\Python27\python.exe tools\update.py
 ```
 
 ## Batch build
+
 Set up the [l2tdevtools build script](https://github.com/log2timeline/l2tdevtools/wiki/Build-script) and run:
 ```
 set PYTHONPATH=.
@@ -29,6 +31,7 @@ C:\Python27\python.exe tools\build.py msi
 **Note that the build script is currently still work in progress, but it will build most of the dependencies.**
 
 ## Manual build
+
 For ease of maintenance the following instructions use as much MSI package files as possible via "Programs and Features". Note that the resulting MSI files are not intended for public redistribution.
 
 **Note that when making MSI packages, make sure the remove the previous versions before installing the newer version.**
@@ -38,6 +41,7 @@ Alternative installation methods like installing directly from source, using eas
 If you run into problems building, installing or running the dependencies first check: [Troubleshooting](https://github.com/log2timeline/plaso/wiki/Troubleshooting-Windows).
 
 ### Build essentials
+
 Make sure the necessary building tools and development packages are installed on the system:
 
 * [Python 2.7 Windows installation](http://python.org/download/)
@@ -55,6 +59,7 @@ C:\plaso-build\
 ```
 
 #### Cython
+
 Download the latest source package from: http://cython.org/#download
 
 To build the MSI file run the following commands from the build root directory:
@@ -73,6 +78,7 @@ dist\Cython-0.23.1.win32-py2.7.msi
 Install the MSI.
 
 ### Python modules
+
 The following instructions apply to the following dependencies:
 
 Name | Download URL | Comments | Dependencies
@@ -93,6 +99,7 @@ requests | https://github.com/kennethreitz/requests/releases | Make sure to clic
 six | https://pypi.python.org/pypi/six#downloads | |
 
 #### Building a MSI
+
 Setup.py allows you to easily build a MSI in most cases. This paragraph contains a generic description of building a MSI so we do not have to repeat this for every dependency.
 
 To build a MSI file from package-1.0.0.tar.gz run the following commands from the build root directory.
@@ -144,6 +151,7 @@ dist\dfvfs-20150129.win32.msi
 Install the MSI.
 
 ### IPython
+
 **Note the MSI packaging for IPython seems to be broken! E.g. the files in scripts/ directory are missing .py extensions.**
 
 Download the latest 1.x source package from: https://github.com/ipython/ipython/releases
@@ -166,6 +174,7 @@ Install the MSI.
 For information on how to build IPython from source see: http://ipython.org/ipython-doc/stable/install/install.html
 
 ### Hachoir
+
 Download the latest source package from: https://bitbucket.org/haypo/hachoir/wiki/Install/source
 
 You'll need:
@@ -218,6 +227,7 @@ dist\hachoir-metadata-1.3.3.win32.msi
 Install the MSI.
 
 ### Libprotobuf and Python-bindings
+
 Libprotobuf is dependent on google-apputils and python-gflags see elsewhere in these instructions how to build and install these.
 
 Download the latest 2.x source package from: https://github.com/google/protobuf/releases
@@ -253,6 +263,7 @@ dist\protobuf-2.6.1.win32.msi
 Install the MSI.
 
 ### libyal
+
 The following instructions apply to the following dependencies:
 
 Name | Download URL | Comments | Dependencies
@@ -263,6 +274,7 @@ libevt | https://github.com/libyal/libevt | |
 libevtx | https://github.com/libyal/libevtx | |
 libewf | https://github.com/libyal/libewf | | dokan, zlib
 libfsntfs | https://github.com/libyal/libfsntfs | |
+libfwnt | https://github.com/libyal/libfwnt | |
 libfwsi | https://github.com/libyal/libfwsi | |
 liblnk | https://github.com/libyal/liblnk | |
 libmsiecf | https://github.com/libyal/libmsiecf | |
@@ -290,6 +302,7 @@ Since the build process for the libyal libraries is very similar, the following 
 Note that there is also a script to batch build the libyal dependencies more information here: https://github.com/log2timeline/l2tdevtools/wiki/Build-script
 
 #### Example: libevt and Python-bindings
+
 Download the latest source package from: https://github.com/libyal/libevt/releases
 
 Extract the source package:
@@ -321,9 +334,11 @@ dist\pyevt-20131013.1.win32-py2.7.msi
 Install the MSI.
 
 ### Pefile
+
 **TODO describe**
 
 ### Psutils
+
 Download the latest source package from: https://pypi.python.org/pypi/psutil
 
 To build the MSI file run the following commands from the build root directory:
@@ -352,6 +367,7 @@ set VS90COMNTOOLS=%VS100COMNTOOLS%
 ```
 
 ### pysqlite
+
 By default Python 2.7 comes with pysqlite 2.6.0 which works fine in combination with sqlite3 version 3.7.8.
 
 Follow the instructions below if you wish to update pysqlite to a newer version.
@@ -391,6 +407,7 @@ C:\Python27\Lib\site-package\pysqlite2\
 ```
 
 ### pywin32
+
 Download the latest installer from: http://sourceforge.net/projects/pywin32/files/pywin32/
 
 ### Pytsk
@@ -400,6 +417,7 @@ The build and install Sleuthkit and Pytsk see:
 * https://github.com/py4n6/pytsk/wiki/Building
 
 ### SQLite
+
 Plaso requires at least sqlite3 version 3.7.8. By default Python 2.7 comes with a far older version that cannot handle newer FireFox sqlite3 database files.
 
 Download the latest source package from: http://www.sqlite.org/download.html
@@ -426,6 +444,7 @@ copy C:\plaso-build\sqlite-amalgamation-3080100\msvscpp\Release\sqlite3.dll C:\P
 
 ### Optional dependencies for output modules
 #### PyElasticsearch
+
 To have plaso support elastic search output it needs pyelasticsearch. 
 
 Download the latest source package from: https://github.com/rhec/pyelasticsearch/releases
@@ -446,6 +465,7 @@ dist\pyelasticsearch-1.0.win32.msi
 Install the MSI.
 
 #### XlsxWriter
+
 Download the latest source package from: https://github.com/jmcnamara/XlsxWriter/releases
 
 To build the MSI file run the following commands from the build root directory:
