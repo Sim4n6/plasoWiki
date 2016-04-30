@@ -1,6 +1,7 @@
 This page contains information relevant to plaso maintainers.
 
 ## Mailing list
+
 Maintainers mailing list: log2timeline-maintainers@googlegroups.com
 
 ## Maintainer guidelines
@@ -8,32 +9,44 @@ Maintainers mailing list: log2timeline-maintainers@googlegroups.com
 * [Feature requests and bug reports](https://github.com/log2timeline/plaso/wiki/Feature-requests-and-bug-reports)
 
 ## Maintainer tools
+
 If you intend to help maintain on plaso you'll also need to install the following tools:
 
 * Sphinx-doc
 
 ### Sphinx-doc
 #### Fedora Core
+
 To install sphinx-doc on Fedora Core run:
 ```
 sudo yum install python-sphinx-doc
 ```
 
 ### Mac OS -X
+
 To install sphinx-doc on Mac OS-X run:
 
 **TODO: add description.**
 
 ### Ubuntu
+
 To install sphinx-doc on Ubuntu run:
 ```
 sudo apt-get install python-sphinx
 ```
 
 ### Windows
+
 To install sphinx-doc on Windows run:
 
 **TODO: add description.**
+
+## Generating plaso test files
+
+To generate `pinfo_test.json.plaso` and `psort_test.json.plaso` run the following script:
+```
+./config/tests/generate_test_files.sh
+```
 
 ## Generating plaso wiki pages
 Checkout the plaso wiki pages:
@@ -49,6 +62,7 @@ PYTHONPATH=plaso plaso/tools/log2timeline.py --use-markdown --parsers list > pla
 Commit and push the changes to the wiki pages.
 
 ## Generating API docs with Sphinx-doc
+
 Plaso uses [sphinx](http://sphinx-doc.org/) to generate API documentation. The plaso configuration uses the [autodoc](http://sphinx-doc.org/ext/autodoc.html) plugin for automatic documentation generation, and the [napoleon](http://sphinxcontrib-napoleon.readthedocs.org/en/latest/sphinxcontrib.napoleon.html) plugin to read our “Google style” docstrings. 
 
 The configuration is stored [here](https://github.com/log2timeline/plaso/blob/master/docs/conf.py) and the actual HTML documentation is built and stored with readthedocs.org, as described below.
@@ -59,6 +73,7 @@ One little wrinkle in this pipeline is that to generate the API docs, readthedoc
 If you'd like to test the full HTML documentation build locally, not on readthedocs, cd to the ```docs``` directory and run ```make html```.
 
 ## Readthedocs.org
+
 The plaso documentation on [readthedocs.org](https://readthedocs.org/projects/plaso/) is mirrored off the [plaso wiki](https://github.com/log2timeline/plaso/wiki). The wiki git repo does not have the same webhooks as the plaso source git repo and thus we rely on a manual build trigger in the [merge_submit script](https://github.com/log2timeline/plaso/blob/master/utils/merge_submit.sh) to refresh the documentation.
 
 The build of the [plaso-api documentation](https://readthedocs.org/projects/plaso-api/) is triggered by github service integration with readthedocs.
@@ -73,6 +88,7 @@ Note that having a space between `]` and `(` breaks on readthedocs.
 
 ## Creating a packaged release
 ### Mac OS-X
+
 Use l2tdevtools to download the .dmg files:
 ```
 PYTHONPATH=. ./tools/update.py --download-only
@@ -93,6 +109,7 @@ Note that you can pass this script an additional version suffix e.g. rc1.
 ```
 
 ### Ubuntu source dpkg for gift PPA
+
 Copy the dpkg files to a debian sub directory:
 ```
 mkdir debian && cp -r config/dpkg/* debian
@@ -122,11 +139,13 @@ dput ppa:gift/testing python-plaso_1.2.1-dev-20150507-1ppa1~trusty_source.change
 ```
 
 ### Windows
+
 To create a Windows packaged release from the development release you also need:
 
 * PyInstaller
 
 #### PyInstaller
+
 Download the latest source from:
 ```
 git clone -b master git://github.com/pyinstaller/pyinstaller.git
@@ -135,6 +154,7 @@ git clone -b master git://github.com/pyinstaller/pyinstaller.git
 **Note that setup.py build and install is currently disabled, so we need to run PyInstaller from its download directory.**
 
 ##### Rebuilding the PyInstaller bootloader
+
 By default PyInstaller is code compatible with Windows XP SP2 (5.1). If you need to support a Windows version earlier you'll need to recompile the PyInstaller "bootloader" with Visual Studio 2008. Note that Visual Studio 2010 is not compatible with Windows 2000.
 
 ```
@@ -143,12 +163,14 @@ C:\Python27\python.exe waf configure build install
 ```
 
 ##### Microsoft Visual C++ 2010 Redistributable Package
+
 If you're building with Visual Studio note that for some reason PyInstaller does not include the Microsoft Visual C++ 2010 run-time DLLs you can find them here:
 
 * [Microsoft Visual C++ 2010 Redistributable Package (x86)](http://www.microsoft.com/en-us/download/details.aspx?id=5555)
 * [Microsoft Visual C++ 2010 Redistributable Package (x64)](http://www.microsoft.com/en-us/download/details.aspx?id=14632)
 
 #### Preparations
+
 If you are intending to distribute the packaged release make sure to do the following steps:
 
 `1`. Make sure the dependencies are up to date.
@@ -169,6 +191,7 @@ config\licenses\*
 ```
 
 #### Packaging
+
 First check if the PyInstaller build script: config\windows\make.bat is configured correctly for your build environment.
 
 From the plaso source directory run the following commands:
