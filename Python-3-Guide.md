@@ -123,14 +123,15 @@ bencode | yes
 binplist | no
 construct | yes
 dateutil.parser | yes
+dfvfs | yes (as of version 20160504)
 dpkt | no (maybe the migrate_py3 branch)
-google-apputils | no (tested with 0.4.2)
+google-apputils | no (tested with 0.4.2) (pending removal as a dependency)
 hachoir_core | no
 hachoir_parser | no
 hachoir_metadata | no
 IPython | yes
 pefile | no (PR with Python 3 support pending)
-protobuf | yes (as of 2.6.0)
+protobuf | no (pending removal as a dependency)
 psutil | yes
 pybde | yes (as of 20141222)
 pyesedb | yes (as of 20141224)
