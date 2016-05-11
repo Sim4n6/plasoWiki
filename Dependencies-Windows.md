@@ -226,42 +226,6 @@ dist\hachoir-metadata-1.3.3.win32.msi
 
 Install the MSI.
 
-### Libprotobuf and Python-bindings
-
-Libprotobuf is dependent on google-apputils and python-gflags see elsewhere in these instructions how to build and install these.
-
-Download the latest 2.x source package from: https://github.com/google/protobuf/releases
-
-Extract the source package:
-```
-tar xfv protobuf-2.6.1.tar.gz
-```
-
-To build the proto compiler (protoc) open the Microsoft Visual Studio solution file:
-```
-protobuf-2.6.1\vsprojects\protobuf.sln
-```
-
-Change the solution configuration to "Release".
-
-Build the entire solution or at minimum the protoc project.
-
-For information on how to create a 64-bit build on Visual Studio 2010 express also see the section about [Microsoft Visual Studio 2010 express and 64-bit compilation](https://github.com/log2timeline/plaso/wiki/Dependencies-Windows#microsoft-visual-studio-2010-express-and-64-bit-compilation).
-
-To build the MSI file run the following commands from the build root directory:
-```
-cd protobuf-2.6.1\python\
-C:\Python27\python.exe setup.py bdist_msi
-cd ..\..
-```
-
-This will create a MSI in the dist sub directory e.g.:
-```
-dist\protobuf-2.6.1.win32.msi
-```
-
-Install the MSI.
-
 ### libyal
 
 The following instructions apply to the following dependencies:
