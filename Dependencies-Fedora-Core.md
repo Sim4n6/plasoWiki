@@ -187,49 +187,6 @@ To install the required rpm files run:
 sudo rpm -ivh hachoir-metadata-1.3.3/dist/hachoir-metadata-1.3.3-1.noarch.rpm
 ```
 
-### Libprotobuf and Python-bindings
-To install libprotobuf and Python-bindings run:
-```
-sudo dnf install protobuf-python
-```
-
-If you intend to do development on plaso and change the protobuf definitions, you'll also need to install the protobuf compiler (protoc).
-```
-sudo dnf install protobuf-compiler
-```
-
-#### Manual
-**TODO: complete this section**
-
-Libprotobuf is dependent on python-gflags see the instructions below how to build and install python-gflags.
-
-Download the latest 2.x source package from: https://github.com/google/protobuf/releases
-
-Extract the source package:
-```
-tar xfv protobuf-2.6.1.tar.gz
-```
-
-To build the proto compiler (protoc):
-```
-cd protobuf-2.6.1
-./configure
-make
-```
-
-**TODO: make install works but ideally we create RPMs**
-
-```
-cd python/
-python setup.py bdist_rpm
-cd ../..
-```
-
-To install the required rpm files run:
-```
-sudo dnf install protobuf-2.6.1/python/dist/protobuf-2.6.1.x86_64.rpm
-```
-
 ### libyal
 The following instructions apply to the following dependencies:
 
