@@ -23,7 +23,7 @@ sudo add-apt-repository ppa:gift/dev
 To install the dependencies run:
 ```
 sudo apt-get update
-sudo apt-get install ipython libbde-python libesedb-python libevt-python libevtx-python libewf-python libfwsi-python liblnk-python libmsiecf-python libolecf-python libqcow-python libregf-python libsigscan-python libsmdev-python libsmraw-python libvhdi-python libvmdk-python libvshadow-python python-artifacts python-bencode python-binplist python-coveralls python-construct python-dateutil python-dfvfs python-dpkt python-hachoir-core python-hachoir-metadata python-hachoir-parser python-pefile python-protobuf python-psutil python-pyparsing python-six python-yaml python-tz pytsk3
+sudo apt-get install ipython libbde-python libesedb-python libevt-python libevtx-python libewf-python libfwsi-python liblnk-python libmsiecf-python libolecf-python libqcow-python libregf-python libsigscan-python libsmdev-python libsmraw-python libvhdi-python libvmdk-python libvshadow-python python-artifacts python-bencode python-binplist python-coveralls python-construct python-dateutil python-dfvfs python-dpkt python-hachoir-core python-hachoir-metadata python-hachoir-parser python-pefile python-psutil python-pyparsing python-six python-yaml python-tz pytsk3
 ```
 
 **Note for the most up to date list of dependencies see: [.travis.yml](https://github.com/log2timeline/plaso/blob/master/.travis.yml)**
@@ -169,51 +169,6 @@ sudo apt-get install ipython
 ```
 
 For information on how to build IPython from source see: http://ipython.org/ipython-doc/stable/install/install.html
-
-### Libprotobuf and Python-bindings
-To install libprotobuf and Python-bindings run:
-```
-sudo apt-get install libprotobuf7 python-protobuf
-```
-
-#### Protobuf 2.6.1
-By default Ubuntu 14.04 comes with protobuf 2.5.0. Building a dpkg of protobuf 2.6.1 for Ubuntu 14.04 is a bit involved process.
-
-* Make sure you have the following dependencies installed:
-  * dateutil (python-dateutil)
-  * google-apputils
-  * python-gflags
-  * pytz (python-tz)
-* Download the debian packaging files for protobuf 2.6.1 of a later version of Ubuntu: https://launchpad.net/ubuntu/+source/protobuf/2.6.1-1
-* Extract the protobuf source and the debian packaging files
-* make the following changes to debian/control
-  * change python-all to python
-  * change python-dev-all to python-dev
-  * add missing build dependencies: python-dateutil, python-gflags, python-tz
-
-##### Maintainers notes
-Maintainters notes on updating Ubuntu build instructions
-
-* reuse 2.6.1 debian files of a later Ubuntu version
-  * change python-all to python
-  * change python-dev-all to python-dev
-  * fix build dependencies missing: python-dateutil, python-gflags, python-tz
-
-Make sure to install up2date dependencies otherwise setup.py will download the packages and break the dpkg build
-
-Trusty:
-
-* python-gflags
-* google-apputils
-* dateutil
-* pytz
-
-Precise:
-
-* python-dev instead of libpython-dev
-* gcc 4.7 (does downgrade to 4.6 work?)
-* dh-python (package already in ubuntu/precise but not visible? removing it)
-* ant (move Build-Depends-Indep to Build-Depends?)
 
 ### libyal
 The following instructions apply to the following dependencies:
