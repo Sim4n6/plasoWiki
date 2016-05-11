@@ -216,42 +216,6 @@ To install the required pkg files run:
 sudo installer -target / -pkg python-hachoir-metadata-1.3.3.pkg
 ```
 
-### Libprotobuf and Python-bindings
-Libprotobuf is dependent on python-gflags see the instructions below how to build and install python-gflags.
-
-Download the latest 2.x source package from: https://github.com/google/protobuf/releases
-
-**Note that Mac OS X 10.11 (El Capitan) disallows installation in /usr by default, hence we use /usr/local**
-
-To build pkg files run the following command from the build root directory:
-```
-tar xfvz protobuf-2.6.1.tar.gz
-cd protobuf-2.6.1
-./configure --prefix=/usr/local
-make
-make install DESTDIR=$PWD/osx-pkg
-pkgbuild --root osx-pkg --identifier com.github.google.protobuf --version 2.6.1 --ownership recommended ../protobuf-2.6.1.pkg
-cd ..
-```
-
-To install the required pkg files run:
-```
-sudo installer -target / -pkg protobuf-2.6.1.pkg
-```
-
-To build pkg files run the following command from the build root directory:
-```
-cd protobuf-2.6.1/python
-python setup.py install --root=$PWD/tmp --install-data=/usr/local 
-pkgbuild --root tmp --identifier com.github.google.python-protobuf --version 2.6.1 --ownership recommended ../../python-protobuf-2.6.1.pkg
-cd ../../
-```
-
-To install the required pkg files run:
-```
-sudo installer -target / -pkg python-protobuf-2.6.1.pkg
-```
-
 ### libyal
 The following instructions apply to the following dependencies:
 
