@@ -75,6 +75,9 @@ We do this for various reasons:
 * improve test coverage;
 * isolate core functionality from tests to prevent some future core changes affecting the parsers and plugins too much.
 
+## Miscellaneous
+* Don't use pass keyword arguments as positional arguments. For example, if there's a method ```def DoThing(self, target=None)``` don't call it as ```object.DoThing(myTarget)``, use ```object.DoThing(target=myTarget)```
+
 ## Rationale
 
 To keep the code base maintainable and readable all code is developed using a similar coding style. It ensures:
