@@ -131,7 +131,6 @@ hachoir_parser | no
 hachoir_metadata | no
 IPython | yes
 pefile | no (PR with Python 3 support pending)
-protobuf | no (pending removal as a dependency)
 psutil | yes
 pybde | yes (as of 20141222)
 pyesedb | yes (as of 20141224)
