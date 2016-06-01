@@ -11,7 +11,7 @@ Various plaso specific additions/variations are:
 
 #### Naming
 
-* Use full English words everywhere. For example, use Event not Evt and Description not Des.
+* Use full English words everywhere. For example, use Event not Evt and Description not Desc.
 * Acronyms and initialisms should be preserved, eg HTMLParser, and not HtmlParser.
 * Method and function names follow the following logic (overriding the Google Python Style Guide):
 
@@ -26,7 +26,7 @@ Functions | **CapWords()** | **_CapWords()** (protected) and **__CapWords()** (p
 * Quote strings as ' or """ instead of "
   * Quote strings in command line arguments (argparse) as "
 * Textual strings should be Unicode strings and hence defined as u'string'
-* Use the format() function instead of the %-way of formatting strings.
+* Use the format() function instead of the %-style of formatting strings.
   * Use positional or parameter format specifiers with typing e.g. '{0:s}' or '{text:s}' instead of '{0}', '{}' or '{:s}'. If we ever want to have language specific output strings we don't need to change the entire codebase (again). It also makes is easier in determining what type every parameter is expected to be.
 
 #### Exceptions
@@ -44,9 +44,9 @@ Functions | **CapWords()** | **_CapWords()** (protected) and **__CapWords()** (p
 
 #### Other
 
-* Avoid the use of global variable at all costs.
-* Use class methods in preference of static methods
-  * Use "cls" as the name of the class variable in preference of "klass"
+* Avoid the use of global variables.
+* Use class methods in preference to static methods
+  * Use "cls" as the name of the class variable in preference to "klass"
 * Use textual pylint overrides e.g. "# pylint: disable=no-self-argument" instead of "# pylint: disable=E0213". For a list of overrides see: http://docs.pylint.org/features.html
 * Tags for events need to be strings containing only alphanumberic characters or underscores. One of the reasons for this is better compatibility with other tools e.g. TimeSketch.
 
@@ -61,7 +61,7 @@ Also see: [PEP 0263](https://www.python.org/dev/peps/pep-0263/)
 
 ## Tests
 
-* Use as much as possible the test functions available in the local test_lib.py instead of writing your own test functions. If you think a test function is missing please mail the developer list.
+* Use as much as possible the test functions available in the local test_lib.py instead of writing your own test functions. If you think a test function is missing please add it, or mail the developer list to see if you can someone else to do it.
 * Use timelib.Timestamp.CopyFromString() for calculating expected timestamp values.
 
 Common test code should be stored in "test library" files, e.g. the parser test library:
@@ -76,7 +76,7 @@ We do this for various reasons:
 * isolate core functionality from tests to prevent some future core changes affecting the parsers and plugins too much.
 
 ## Miscellaneous
-* Don't use pass keyword arguments as positional arguments. For example, if there's a method ```def DoThing(self, target=None)``` don't call it as ```object.DoThing(myTarget)``, use ```object.DoThing(target=myTarget)```
+* Don't use pass keyword arguments as positional arguments. For example, if there's a method ```def DoThing(self, target=None)``` don't call it as ```object.DoThing(myTarget)```, use ```object.DoThing(target=myTarget)```
 
 ## Rationale
 
