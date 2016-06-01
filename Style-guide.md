@@ -1,6 +1,6 @@
 # Style Guide
 
-We primarily follow the [Google Python Style Guide](http://google-styleguide.googlecode.com/svn/trunk/pyguide.html). 
+We primarily follow the [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html). 
 
 Various plaso specific additions/variations are:
 
