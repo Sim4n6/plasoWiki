@@ -58,7 +58,7 @@ Args:
   analysis_report: an analysis report object (instance of AnalysisReport)
 """
 ```
-This is overly verbose, as is harder to parse.
+This is overly verbose, and is hard to parse.
 
 Instead do:
 
