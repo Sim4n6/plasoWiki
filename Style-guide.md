@@ -46,6 +46,7 @@ def AddAnalysisReport(self, analysis_report):
 
 Args:
   analysis_report: a report.
+"""
 ```
 
 An important detail is missing from this docstring namely the argument type.
@@ -58,6 +59,7 @@ def AddAnalysisReport(self, analysis_report):
 
 Args:
   analysis_report: an analysis report object (instance of AnalysisReport)
+"""
 ```
 
 Which was overly verbose and lead to more confusion.
@@ -70,6 +72,7 @@ def AddAnalysisReport(self, analysis_report):
 
 Args:
   analysis_report (AnalysisReport): analysis report.
+"""
 ```
 
 Make sure your arguments descriptions include:
