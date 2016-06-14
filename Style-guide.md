@@ -35,7 +35,37 @@ Functions | **CapWords()** | **_CapWords()** (protected) and **__CapWords()** (p
 * Raise exceptions like this: ```raise MyException(u'Error message')``` or ```raise MyException```.
 
 #### Docstrings
-* We use "Google Style" docstrings. See http://sphinxcontrib-napoleon.readthedocs.org/en/latest/example_google.html to see how to write these most effectively.
+* We use "Google Style" docstrings. See [this page](http://sphinxcontrib-napoleon.readthedocs.org/en/latest/example_google.html) for extensive examples of how to write these most effectively. Note that the [main style guide](https://google.github.io/styleguide/pyguide.html) 
+
+There are still a lot of legacy docstrings in the codebase, here are some examples you might see. Don't write new code that looks like this:
+```
+def AddAnalysisReport(self, analysis_report):
+"""Adds an analysis report.
+
+Args:
+  analysis_report: a report.
+```
+or this:
+```
+def AddAnalysisReport(self, analysis_report):
+"""Adds an analysis report.
+
+Args:
+  analysis_report: an analysis report object (instance of AnalysisReport)
+```
+
+```
+Instead do:
+```
+def AddAnalysisReport(self, analysis_report):
+"""Adds an analysis report.
+
+Args:
+  analysis_report (AnalysisReport): the report to add.
+```
+Make sure your arguments descriptions include:
+1. What type(s) the argument(s) are.
+2. What the arguments mean.
 
 #### Unit tests
 
