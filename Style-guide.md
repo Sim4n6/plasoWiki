@@ -48,10 +48,7 @@ Args:
   analysis_report: a report.
 """
 ```
-
-An important detail is missing from this docstring namely the argument type.
-
-or this:
+This is missing an important detail, the argument type. Is it a string? Some other sort of object? How about this:
 
 ```
 def AddAnalysisReport(self, analysis_report):
@@ -61,8 +58,7 @@ Args:
   analysis_report: an analysis report object (instance of AnalysisReport)
 """
 ```
-
-Which was overly verbose and lead to more confusion.
+This is overly verbose, as is harder to parse.
 
 Instead do:
 
@@ -71,7 +67,7 @@ def AddAnalysisReport(self, analysis_report):
 """Adds an analysis report.
 
 Args:
-  analysis_report (AnalysisReport): analysis report.
+  analysis_report (AnalysisReport): a report.
 """
 ```
 
