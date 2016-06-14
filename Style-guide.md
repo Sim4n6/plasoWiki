@@ -35,9 +35,11 @@ Functions | **CapWords()** | **_CapWords()** (protected) and **__CapWords()** (p
 * Raise exceptions like this: ```raise MyException(u'Error message')``` or ```raise MyException```.
 
 #### Docstrings
+
 * We use "Google Style" docstrings. See [this page](http://sphinxcontrib-napoleon.readthedocs.org/en/latest/example_google.html) for extensive examples of how to write these most effectively. Note that the [main style guide](https://google.github.io/styleguide/pyguide.html) 
 
-There are still a lot of legacy docstrings in the codebase, here are some examples you might see. Don't write new code that looks like this:
+As of June 14, 2016, there are still a lot of legacy docstrings in the codebase, here are some examples you might see. Please don't write new code that looks like this:
+
 ```
 def AddAnalysisReport(self, analysis_report):
 """Adds an analysis report.
@@ -45,7 +47,11 @@ def AddAnalysisReport(self, analysis_report):
 Args:
   analysis_report: a report.
 ```
+
+An important detail is missing from this docstring namely the argument type.
+
 or this:
+
 ```
 def AddAnalysisReport(self, analysis_report):
 """Adds an analysis report.
@@ -54,18 +60,41 @@ Args:
   analysis_report: an analysis report object (instance of AnalysisReport)
 ```
 
+Which was overly verbose and lead to more confusion.
+
 Instead do:
+
 ```
 def AddAnalysisReport(self, analysis_report):
 """Adds an analysis report.
 
 Args:
-  analysis_report (AnalysisReport): the report to add.
+  analysis_report (AnalysisReport): analysis report.
 ```
+
 Make sure your arguments descriptions include:
 
-1. What type(s) the argument(s) are.
-1. What the arguments mean.
+1. They argument(s) type(s);
+2. In case of [standard types](https://docs.python.org/3.3/library/stdtypes.html) a description of their format. Note that we use the Python 3 standard types;
+3. Description of the meaning of the argument. In other words how the argument is used by the function (or method).
+
+The meaning can be left out if the functions has a few arguments and how the argument is used is obvious from the description as in the example of `AddAnalysisReport`.
+
+Arguments like `cls`, `self`, `*args`, `**kwargs` are not expected to be explicitly named in the `Args:` section.
+
+```
+  def CopyToIsoFormat(cls, timestamp, timezone=pytz.UTC, raise_error=False):
+    """Copies the timestamp to an ISO 8601 formatted string.
+
+    Args:
+      timestamp (int): number of micro seconds since January 1, 1970, 00:00:00 UTC.
+      timezone (Optional[pytz.timezone]): time zone.
+      raise_error (Optional[bool]): False if OverflowError should be caught when timestamp is out of bounds.
+
+    Returns:
+      str: ISO 8601 formatted date and time.
+    """
+```
 
 #### Unit tests
 
