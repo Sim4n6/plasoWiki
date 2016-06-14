@@ -63,8 +63,9 @@ Args:
   analysis_report (AnalysisReport): the report to add.
 ```
 Make sure your arguments descriptions include:
+
 1. What type(s) the argument(s) are.
-2. What the arguments mean.
+1. What the arguments mean.
 
 #### Unit tests
 
