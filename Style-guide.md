@@ -36,7 +36,7 @@ Functions | **CapWords()** | **_CapWords()** (protected) and **__CapWords()** (p
 
 #### Docstrings
 
-* We use "Google Style" docstrings. See [this page](http://sphinxcontrib-napoleon.readthedocs.org/en/latest/example_google.html) for extensive examples of how to write these most effectively. Note that the [main style guide](https://google.github.io/styleguide/pyguide.html) 
+* We use "Google Style" docstrings the [Google style guide](https://google.github.io/styleguide/pyguide.html) has some slightly ambiguous example code, so instead, follow the examples from [this page](http://sphinxcontrib-napoleon.readthedocs.org/en/latest/example_google.html) as well as the notes below. 
 
 As of June 14, 2016, there are still a lot of legacy docstrings in the codebase, here are some examples you might see. Please don't write new code that looks like this:
 
