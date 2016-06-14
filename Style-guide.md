@@ -54,7 +54,6 @@ Args:
   analysis_report: an analysis report object (instance of AnalysisReport)
 ```
 
-```
 Instead do:
 ```
 def AddAnalysisReport(self, analysis_report):
