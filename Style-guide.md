@@ -79,6 +79,39 @@ Make sure your arguments descriptions include:
 
 The meaning can be left out if the functions has a few arguments and how the argument is used is obvious from the description as in the example of `AddAnalysisReport`.
 
+A few other tips:
+
+**Compound types**
+
+If a function deals with a compound type (list, dict), document it like so:
+```
+Args:
+  constraints (dict[str, Filter]): map of constraint name to filter that implements the constraint.
+
+Returns:
+  list[BaseParser]: all relevant parsers.
+``` 
+**Multiple acceptable types**
+
+If you need to specify multiple types, use a pipe to separate them. For example:
+```
+Args:
+  path (str|Path): path to tag file.
+```
+**Multiple return types**
+
+Python simulates multiple arguments being returned by implicitly returning a tuple. Document like so:
+```
+...
+Returns:
+  tuple: containing:
+     
+    str: parser name
+    BaseParser: next parser parser
+""""
+return name, parser
+```
+
 Arguments like `cls`, `self`, `*args`, `**kwargs` are not expected to be explicitly named in the `Args:` section.
 
 ```
