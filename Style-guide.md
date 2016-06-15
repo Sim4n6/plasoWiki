@@ -112,6 +112,8 @@ Returns:
 return name, parser
 ```
 
+**Special arguments**
+
 Arguments like `cls`, `self`, `*args`, `**kwargs` are not expected to be explicitly named in the `Args:` section.
 
 ```
