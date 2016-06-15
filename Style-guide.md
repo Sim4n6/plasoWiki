@@ -86,7 +86,7 @@ A few other tips:
 If a function deals with a compound type (list, dict), document it like so:
 ```
 Args:
-  constraints (dict[str, Filter]): map of constraint name to filter that implements the constraint.
+  constraints (dict[str, Filter]): constraint name mapped to the filter that implements the constraint.
 
 Returns:
   list[BaseParser]: all relevant parsers.
