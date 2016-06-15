@@ -122,7 +122,7 @@ Arguments like `cls`, `self`, `*args`, `**kwargs` are not expected to be explici
 
     Args:
       timestamp (int): number of micro seconds since January 1, 1970, 00:00:00 UTC.
-      timezone (Optional[pytz.timezone]): time zone.
+      timezone (Optional[pytz.timezone]): the result string will be expressed in this timezone.
       raise_error (Optional[bool]): False if OverflowError should be caught when timestamp is out of bounds.
 
     Returns:
