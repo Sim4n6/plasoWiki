@@ -63,11 +63,13 @@ This is overly verbose, and is hard to parse.
 Instead do:
 
 ```
-def AddAnalysisReport(self, analysis_report):
+def AddAnalysisReport(self, analysis_report, storage_writer=None):
 """Adds an analysis report.
 
 Args:
   analysis_report (AnalysisReport): a report.
+  storage_writer (Optional[StorageWriter]): the storage writer must be open, and cannot be closed. If 
+      no storage_writer is provided, a new writer will be opened.
 """
 ```
 
@@ -75,7 +77,7 @@ Make sure your arguments descriptions include:
 
 1. They argument(s) type(s);
 2. In case of [standard types](https://docs.python.org/3.3/library/stdtypes.html) a description of their format. Note that we use the Python 3 standard types;
-3. Description of the meaning of the argument. In other words how the argument is used by the function (or method).
+3. Description of the meaning of the argument. In other words how the argument is used by the function (or method). If the description exceeds the line limit, indent the next line with 4 spaces.
 
 The meaning can be left out if the functions has a few arguments and how the argument is used is obvious from the description as in the example of `AddAnalysisReport`.
 
