@@ -68,8 +68,9 @@ def AddAnalysisReport(self, analysis_report, storage_writer=None):
 
 Args:
   analysis_report (AnalysisReport): a report.
-  storage_writer (Optional[StorageWriter]): the storage writer must be open, and cannot be closed. If 
-      no storage_writer is provided, a new writer will be opened.
+  storage_writer (Optional[StorageWriter]): the storage writer must be open, 
+      and cannot be closed. If no storage_writer is provided, a new writer 
+      will be created.
 """
 ```
 
