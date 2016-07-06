@@ -33,7 +33,7 @@ Functions | **CapWords()** | **_CapWords()** (protected) and **__CapWords()** (p
 
 * When catching exceptions use "as exception:" not some alternative form like "as error:" or "as details:"
 * Raise exceptions like this: ```raise MyException(u'Error message')``` or ```raise MyException```.
-* Although Python allows for ```try ... except ... else``` we prefer ```try ... except ... finally``
+* Although Python allows for ```try ... except ... else``` we prefer not to use it.
 
 #### Docstrings
 
