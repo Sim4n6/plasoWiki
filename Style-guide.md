@@ -36,7 +36,7 @@ Functions | **CapWords()** | **_CapWords()** (protected) and **__CapWords()** (p
 * Although Python allows for ```try ... except ... else``` we prefer not to use it.
 
 #### Docstrings
-
+* Use English, and avoid abbreviations. Use "for example" or "such as" instead of Latin abbreviations like "e.g.".
 * We use "Google Style" docstrings the [Google style guide](https://google.github.io/styleguide/pyguide.html) has some slightly ambiguous example code, so instead, follow the examples from [this page](http://sphinxcontrib-napoleon.readthedocs.org/en/latest/example_google.html) as well as the notes below. 
 
 As of June 14, 2016, there are still a lot of legacy docstrings in the codebase, here are some examples you might see. Please don't write new code that looks like this:
