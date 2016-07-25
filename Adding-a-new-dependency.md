@@ -47,10 +47,16 @@ git push -f
 ## Source changes
 **TODO: describe**
 
-* update: [plaso/dependencies.py](https://github.com/log2timeline/plaso/blob/master/plaso/dependencies.py)
-* update: [appveyor.yml](https://github.com/log2timeline/plaso/blob/master/appveyor.yml) if needed
-* update: [.travis.yml](https://github.com/log2timeline/plaso/blob/master/.travis.yml)
-* update: [config/dpkg/control](https://github.com/log2timeline/plaso/blob/master/config/dpkg/control)
+Update: [plaso/dependencies.py](https://github.com/log2timeline/plaso/blob/master/plaso/dependencies.py) and run ./utils/update_dependencies.py
+
+Files no longer needed to update manually:
+
+* update: [.tox.ini](https://github.com/log2timeline/plaso/blob/master/.tox.ini); update [plaso/dependencies.py](https://github.com/log2timeline/plaso/blob/master/plaso/dependencies.py) and run ./utils/update_dependencies.py
+* update: [.travis.yml](https://github.com/log2timeline/plaso/blob/master/.travis.yml); update [config/linux/install_gift_and_dependencies.sh](https://github.com/log2timeline/plaso/blob/master/config/linux/install_gift_and_dependencies.sh) instead
+* update: [appveyor.yml](https://github.com/log2timeline/plaso/blob/master/appveyor.yml); if the dependency is available via [l2tbinaries](https://github.com/log2timeline/l2tbinaries) and part of the l2tdevtools [plaso dependencies preset](https://github.com/log2timeline/l2tdevtools/blob/master/data/presets.ini)
+* update: [config/dpkg/control](https://github.com/log2timeline/plaso/blob/master/config/dpkg/control); update [plaso/dependencies.py](https://github.com/log2timeline/plaso/blob/master/plaso/dependencies.py) and run ./utils/update_dependencies.py
+* update: [config/linux/install_gift_and_dependencies.sh](https://github.com/log2timeline/plaso/blob/master/config/linux/install_gift_and_dependencies.sh); update [plaso/dependencies.py](https://github.com/log2timeline/plaso/blob/master/plaso/dependencies.py) and run ./utils/update_dependencies.py
+* update: [setup.cfg](https://github.com/log2timeline/plaso/blob/master/setup.cfg); update [plaso/dependencies.py](https://github.com/log2timeline/plaso/blob/master/plaso/dependencies.py) and run ./utils/update_dependencies.py
 
 ## Documentation
 **TODO: describe**
