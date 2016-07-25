@@ -95,17 +95,21 @@ Args:
 
 Returns:
   list[BaseParser]: all relevant parsers.
-``` 
-**Multiple acceptable types**
+```
+
+##### Multiple acceptable types
 
 If you need to specify multiple types, use a pipe to separate them. For example:
+
 ```
 Args:
   path (str|Path): path to tag file.
 ```
-**Multiple return types**
+
+##### Multiple return types
 
 Python simulates multiple arguments being returned by implicitly returning a tuple. Document like so:
+
 ```
 ...
 Returns:
