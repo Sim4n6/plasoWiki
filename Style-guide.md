@@ -36,6 +36,7 @@ Functions | **CapWords()** | **_CapWords()** (protected) and **__CapWords()** (p
 * Although Python allows for ```try ... except ... else``` we prefer not to use it.
 
 #### Docstrings
+
 * Use English, and avoid abbreviations. Use "for example" or "such as" instead of Latin abbreviations like "e.g.".
 * We use "Google Style" docstrings the [Google style guide](https://google.github.io/styleguide/pyguide.html) has some slightly ambiguous example code, so instead, follow the examples from [this page](http://sphinxcontrib-napoleon.readthedocs.org/en/latest/example_google.html) as well as the notes below. 
 
@@ -85,7 +86,7 @@ The meaning can be left out if the functions has a few arguments and how the arg
 
 A few other tips:
 
-**Compound types**
+##### Compound types
 
 If a function deals with a compound type (list, dict), document it like so:
 ```
@@ -116,7 +117,7 @@ Returns:
 return name, parser
 ```
 
-**Special arguments**
+##### Special arguments
 
 Arguments like `cls`, `self`, `*args`, `**kwargs` are not expected to be explicitly named in the `Args:` section.
 
@@ -131,6 +132,20 @@ Arguments like `cls`, `self`, `*args`, `**kwargs` are not expected to be explici
 
     Returns:
       str: ISO 8601 formatted date and time.
+    """
+```
+
+##### Class attributes
+
+In addition to the [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html#Comments) please sort class attribute alphabetically by name.
+
+```
+class SampleClass(object):
+    """Summary of class here.
+
+    Attributes:
+        eggs (int): number of eggs we have laid.
+        likes_spam (bool): whether we like SPAM or not.
     """
 ```
 
