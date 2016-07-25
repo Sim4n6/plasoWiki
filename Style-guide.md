@@ -145,12 +145,29 @@ In addition to the [Google Python Style Guide](https://google.github.io/stylegui
 
 ```
 class SampleClass(object):
-    """Summary of class here.
+  """Summary of class here.
 
-    Attributes:
-        eggs (int): number of eggs we have laid.
-        likes_spam (bool): whether we like SPAM or not.
-    """
+  Attributes:
+      eggs (int): number of eggs we have laid.
+      likes_spam (bool): whether we like SPAM or not.
+  """
+```
+
+##### Constructor
+
+In addition to the [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html#Comments) please instance attribute alphabetically by name inside the constructor (`__init__`).
+
+```
+class SampleClass(object):
+  """Summary of class here."""
+
+  def __init__(self):
+    """Summary of method here."""
+    self.__private_attribute = None
+    self._another_protected_attribute = None
+    self._protected_attribute = None
+    self.another_public_attribute = None
+    self.public_attribute = None
 ```
 
 ##### Keyword arguments
@@ -159,12 +176,12 @@ In addition to the [Google Python Style Guide](https://google.github.io/stylegui
 
 ```
 def SampleFunction(alternate=None, keyword=None):
-    """Summary of function here.
+  """Summary of function here.
 
-    Args:
-        alternate (Optional[str]): alternate keyword argument.
-        keyword (Optional[str]): keyword argument.
-    """
+  Args:
+      alternate (Optional[str]): alternate keyword argument.
+      keyword (Optional[str]): keyword argument.
+  """
 ```
 
 **Make sure to call keyword argument with their keyword prefix.**
