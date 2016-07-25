@@ -153,6 +153,26 @@ class SampleClass(object):
     """
 ```
 
+##### Keyword arguments
+
+In addition to the [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html#Comments) please sort keyword arguments alphabetically by name.
+
+```
+def SampleFunction(alternate=None, keyword=None):
+    """Summary of function here.
+
+    Args:
+        alternate (Optional[str]): alternate keyword argument.
+        keyword (Optional[str]): keyword argument.
+    """
+```
+
+**Make sure to call keyword argument with their keyword prefix.**
+
+```
+SampleFunction(keyword='THEKEY')
+```
+
 #### Unit tests
 
 * use ```self.assertEqual``` instead of ```self.assertEquals```, same applies to ```self.assertNotEquals```
