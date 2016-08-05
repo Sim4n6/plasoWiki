@@ -80,6 +80,7 @@ pytz | https://pypi.python.org/pypi/pytz | org.python.pypi.pytz | |
 pyzmq | https://pypi.python.org/pypi/pyzmq | com.github.zeromq.pyzmq | Needs Cython to build |
 requests | https://github.com/kennethreitz/requests/releases | com.github.kennethreitz.requests | Make sure to click on: "Show # newer tags" |
 six | https://pypi.python.org/pypi/six#downloads | org.python.pypi.six | |
+yara-python | https://github.com/VirusTotal/yara-python | | 
 
 #### Building a PKG
 To build pkg files run the following commands from the build root directory.
@@ -227,6 +228,7 @@ libevt | https://github.com/libyal/libevt | |
 libevtx | https://github.com/libyal/libevtx | |
 libewf | https://github.com/libyal/libewf | | libfuse, zlib
 libfsntfs | https://github.com/libyal/libfsntfs | |
+libfvde | https://github.com/libyal/libfvde | | libfuse, zlib
 libfwsi | https://github.com/libyal/libfwsi | |
 liblnk | https://github.com/libyal/liblnk | |
 libmsiecf | https://github.com/libyal/libmsiecf | |
