@@ -97,6 +97,7 @@ PyYAML | http://pyyaml.org/wiki/PyYAML | |
 pyzmq | https://pypi.python.org/pypi/pyzmq | Needs Cython to build |
 requests | https://github.com/kennethreitz/requests/releases | Make sure to click on: "Show # newer tags" | 
 six | https://pypi.python.org/pypi/six#downloads | |
+yara-python | https://github.com/VirusTotal/yara-python | | 
 
 #### Building a MSI
 
@@ -238,6 +239,7 @@ libevt | https://github.com/libyal/libevt | |
 libevtx | https://github.com/libyal/libevtx | |
 libewf | https://github.com/libyal/libewf | | dokan, zlib
 libfsntfs | https://github.com/libyal/libfsntfs | |
+libfvde | https://github.com/libyal/libfvde | | dokan, zlib
 libfwnt | https://github.com/libyal/libfwnt | |
 libfwsi | https://github.com/libyal/libfwsi | |
 liblnk | https://github.com/libyal/liblnk | |
