@@ -67,6 +67,7 @@ PyYAML | http://pyyaml.org/wiki/PyYAML | |
 pyzmq | https://pypi.python.org/pypi/pyzmq | Needs Cython to build |
 requests | https://github.com/kennethreitz/requests/releases | Make sure to click on: "Show # newer tags" | 
 six | https://pypi.python.org/pypi/six#downloads | |
+yara-python | https://github.com/VirusTotal/yara-python | | 
 
 Some of these Python modules can be directly installed via dnf:
 ```
@@ -198,6 +199,7 @@ libevt | https://github.com/libyal/libevt | |
 libevtx | https://github.com/libyal/libevtx | |
 libewf | https://github.com/libyal/libewf | | libfuse, libcrypto, zlib
 libfsntfs | https://github.com/libyal/libfsntfs | |
+libfvde | https://github.com/libyal/libfvde | | libfuse, libcrypto, zlib
 libfwsi | https://github.com/libyal/libfwsi | |
 liblnk | https://github.com/libyal/liblnk | |
 libmsiecf | https://github.com/libyal/libmsiecf | |
