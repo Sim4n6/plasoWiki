@@ -22,15 +22,14 @@ sudo add-apt-repository ppa:gift/dev
 
 To install the dependencies run:
 ```
-sudo apt-get update
-sudo apt-get install ipython libbde-python libesedb-python libevt-python libevtx-python libewf-python libfwsi-python liblnk-python libmsiecf-python libolecf-python libqcow-python libregf-python libsigscan-python libsmdev-python libsmraw-python libvhdi-python libvmdk-python libvshadow-python python-artifacts python-bencode python-binplist python-coveralls python-construct python-dateutil python-dfvfs python-dpkt python-hachoir-core python-hachoir-metadata python-hachoir-parser python-pefile python-psutil python-pyparsing python-six python-yaml python-tz pytsk3
+sh config/linux/install_gift_and_dependencies.sh include-development include-test
 ```
 
 **Note for the most up to date list of dependencies see: [.travis.yml](https://github.com/log2timeline/plaso/blob/master/.travis.yml)**
 
 For troubleshooting crashes it is recommended to install the following debug symbol packages as well:
 ```
-sudo apt-get install libbde-dbg libbde-python-dbg libesedb-dbg libesedb-python-dbg libevt-dbg libevt-python-dbg libevtx-dbg libevtx-python-dbg libewf-dbg libewf-python-dbg libfwsi-dbg libfwsi-python-dbg liblnk-dbg liblnk-python-dbg libmsiecf-dbg libmsiecf-python-dbg libolecf-dbg libolecf-python-dbg libqcow-dbg libqcow-python-dbg libregf-dbg libregf-python-dbg libsigscan-dbg libsigscan-python-dbg libsmdev-dbg libsmdev-python-dbg libsmraw-dbg libsmraw-python-dbg libvhdi-dbg libvhdi-python-dbg libvmdk-dbg libvmdk-python-dbg libvshadow-dbg libvshadow-python-dbg
+sudo apt-get install libbde-dbg libbde-python-dbg libesedb-dbg libesedb-python-dbg libevt-dbg libevt-python-dbg libevtx-dbg libevtx-python-dbg libewf-dbg libewf-python-dbg libfve-dbg libfve-python-dbg libfwsi-dbg libfwsi-python-dbg liblnk-dbg liblnk-python-dbg libmsiecf-dbg libmsiecf-python-dbg libolecf-dbg libolecf-python-dbg libqcow-dbg libqcow-python-dbg libregf-dbg libregf-python-dbg libsigscan-dbg libsigscan-python-dbg libsmdev-dbg libsmdev-python-dbg libsmraw-dbg libsmraw-python-dbg libvhdi-dbg libvhdi-python-dbg libvmdk-dbg libvmdk-python-dbg libvshadow-dbg libvshadow-python-dbg
 ```
 
 **TODO complete list of dependencies.**
@@ -87,6 +86,7 @@ PyYAML | http://pyyaml.org/wiki/PyYAML | |
 pyzmq | https://pypi.python.org/pypi/pyzmq | Needs Cython to build |
 requests | https://github.com/kennethreitz/requests/releases | Make sure to click on: "Show # newer tags" | 
 six | https://pypi.python.org/pypi/six#downloads | |
+yara-python | https://github.com/VirusTotal/yara-python | | 
 
 Some of these Python modules can be directly installed via apt-get:
 ```
@@ -181,6 +181,7 @@ libevt | https://github.com/libyal/libevt | |
 libevtx | https://github.com/libyal/libevtx | |
 libewf | https://github.com/libyal/libewf | | libfuse, libcrypto, zlib
 libfsntfs | https://github.com/libyal/libfsntfs | |
+libfvde | https://github.com/libyal/libfvde | | libfuse, libcrypto, zlib
 libfwsi | https://github.com/libyal/libfwsi | |
 liblnk | https://github.com/libyal/liblnk | |
 libmsiecf | https://github.com/libyal/libmsiecf | |
