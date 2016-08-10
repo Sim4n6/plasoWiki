@@ -1,6 +1,6 @@
 To install the Windows Packaged Release plaso you need to download the latest version from http://download.log2timeline.net
 
-Find the highest version number (as of this time version 1.3) and inside the folder called ```release``` is a ZIP file.
+Find the highest version number (as of this time version 1.4) and inside the folder called ```release``` is a ZIP file.
 
 The name of the ZIP file contains:
 
