@@ -51,4 +51,5 @@
 * [Profiling](https://github.com/log2timeline/plaso/wiki/Profiling)
 * [Testing](https://github.com/log2timeline/plaso/wiki/Testing)
 * [Troubleshooting](https://github.com/log2timeline/plaso/wiki/Troubleshooting)
+* [Troubleshooting on Mac OS X](https://github.com/log2timeline/plaso/wiki/Troubleshooting-Mac-OS-X)
 * [Troubleshooting on Windows](https://github.com/log2timeline/plaso/wiki/Troubleshooting-Windows)
