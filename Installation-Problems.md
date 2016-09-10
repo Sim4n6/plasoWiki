@@ -8,11 +8,10 @@ Checking availability and versions of plaso dependencies.
 
 **TODO: add more text**
 
-## On Mac OS-X I get strange errors that mention pyparsing
+# Mac OS-X 
 
-Mac OS-X bundles its own version of pyparsing that is older than the version required by Plaso. Fix this by using the special wrapper scripts (log2timeline**.sh**, et. al.), or if you don't want to do that, manipulate PYTHONPATH so that the newer version is loaded. This is detailed on the Mac OS-X development page: https://github.com/log2timeline/plaso/wiki/Development-release-Mac-OS-X
-
-**TODO: add more text**
+See: [Troubleshooting Mac OS X
+](https://github.com/log2timeline/plaso/wiki/Troubleshooting-Mac-OS-X)
 
 ## On Windows Plaso keeps telling me SQLite3 is too old
 
