@@ -1,30 +1,36 @@
-**TODO: add more text**
-
 # Setting up plaso in virtualenv
+
 ## Fedora Core
+
 ### Install virtualenv
+
 To install virtualenv on Fedora Core (or equivalent) run:
 ```
 sudo dnf install python-virtualenv
 ```
 
 ### Installing build dependencies
+
 **TODO add more text**
 
 ## Ubuntu
+
 ### Installing virtualenv
+
 To install virtualenv on Ubuntu (or equivalent) run:
 ```
 sudo apt-get install python-virtualenv
 ```
 
 ### Installing build dependencies
+
 **TODO add more text**
 ```
 sudo apt-get install libyaml-dev
 ```
 
 ## Setting up plaso in virtualenv
+
 To create a virtualenv:
 ```
 virtualenv plasoenv
@@ -42,7 +48,7 @@ pip install --upgrade pip
 ```
 
 ```
-curl -O https://github.com/log2timeline/plaso/blob/master/requirements.txt
+curl -O https://raw.githubusercontent.com/log2timeline/plaso/master/requirements.txt
 pip install -r requirements.txt
 ```
 
