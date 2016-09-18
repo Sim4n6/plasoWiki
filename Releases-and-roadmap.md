@@ -54,4 +54,6 @@ Version | Name | Release date | Comments
 1.2.0 | Griswold | December 2014 | [Blog post](http://blog.kiddaland.net/2014/12/hey-kids-i-heard-on-news-that-airline.html)
 1.3.0 | Eir | July 2015 | [Blog post](http://blog.kiddaland.net/2015/07/bringing-end-to-sorrow-new-plaso-release.html)
 1.4.0 | Freyja | January 2016 | [Blog post](http://blog.kiddaland.net/2016/01/sprinkling-morning-dew-and-summer.html)
-1.5.0 | Gná | September 2016 |
+1.5.0 | Gná | September 2016 | [Blog post](http://blog.kiddaland.net/2016/09/what-flies-there-what-fares-there-or.html)
+1.6.0 | | Beginning of 2017
+
