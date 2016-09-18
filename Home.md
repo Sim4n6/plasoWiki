@@ -80,6 +80,7 @@ File System Format support is provided by [dfvfs](https://github.com/log2timelin
 * [Windows Shortcut File (LNK) format](http://forensicswiki.org/wiki/LNK) using [liblnk](https://github.com/libyal/liblnk) (including shell item support)
 * [Windows XML Event Log (EVTX)](http://forensicswiki.org/wiki/Windows_XML_Event_Log_(EVTX)) using [libevtx](https://github.com/libyal/libevtx)
 * Xchat and Xchat scrollback files
+* Zsh history files
 
 #### Bencode file formats
 
@@ -121,10 +122,13 @@ File System Format support is provided by [dfvfs](https://github.com/log2timelin
 * Firefox cookies
 * Firefox browsing and downloads history
 * Google Drive
+* iMessage (iOS and Mac OS X)
+* Kik (iOS)
 * Launch services quarantine events
 * MacKeeper cache
 * Mac OS X document versions
 * Skype text conversations
+* Twitter (iOS)
 * Zeitgeist activity database
 
 #### Windows Registry formats
