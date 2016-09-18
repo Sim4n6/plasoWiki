@@ -1,23 +1,23 @@
 To install the Mac OS X Packaged Release of plaso you need to download the latest version from https://github.com/log2timeline/plaso/releases
 
-Find the highest version number (as of this time version 1.4.0) and inside the folder called ```release``` is a DMG file.
+Find the highest version number (as of this time version 1.5.0) and inside the folder called ```release``` is a DMG file.
 
 The DMG file can be either opened by double clicking it or by using the command line.
 
 ```
-hdiutil attach plaso-1.4.0_macosx-10.11.dmg
+hdiutil attach plaso-1.5.0_macosx-10.11.dmg
 ```
 
 The terminal has to be used to install the tool itself.
 
 ```
-cd /Volumes/plaso-1.4.0
+cd /Volumes/plaso-1.5.0
 sudo ./install.sh
 ```
 
 Then the DMG can be unmounted either via the GUI or the command line:
 ```
-hdiutil detach /Volumes/plaso-1.4.0
+hdiutil detach /Volumes/plaso-1.5.0
 ```
 
 ## Mac OS X 10.11 (El Capitan)
