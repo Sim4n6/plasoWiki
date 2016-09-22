@@ -2,6 +2,8 @@
 
 **psort** is a command line tool to post-process plaso storage files. It allows you to filter, sort and run automatic analysis on the contents of plaso storage files.
 
+Looking for [tips and tricks](https://github.com/log2timeline/plaso/wiki/Using-psort#how-do-i)
+
 ## Usage
 
 To see a list of all available parameters you can pass to psort use ``-h`` or ``--help``.
@@ -374,4 +376,9 @@ $ psort.py --data /where/my/data/is/stored test.plaso
 
 If during the runtime of **psort** the tool encounters an unexpected exception the debug mode can be used. To invoke debug mode use the ``-d`` parameter. What that will do is that instead of exiting the tool when an unexpected exception is raised it prints the traceback of the exception and drops into a [Python debug shell](http://stackoverflow.com/questions/4228637/getting-started-with-the-python-debugger-pdb). This can be used to debug the problem and fix the issue.
 
-# How do I?
+## How do I?
+### How do I filter on tags?
+```
+psort.py -w timeline.log timeline.plaso "tag contains 'browser_search'"
+```
+
