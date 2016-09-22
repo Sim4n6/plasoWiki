@@ -71,30 +71,15 @@ timesketch : Create a Timesketch timeline.
 
 #### Changing Output Format
 
-To change the output simply use the ``-o FORMAT``, eg:
+To change the output simply use the ``-o FORMAT`` for example:
 
 ```
-$ psort.py -o l2tcsv test.plaso
+$ psort.py -o l2tcsv -w test.l2tcsv test.plaso
 ```
 
 This would use the "l2tcsv" module, or the default CSV output of the older Perl version of log2timeline.
 
-#### Redirect Output to a File
-
-To redirect the output of the output modules, those that print to a regular file, use the ``-w FILENAME`` parameter, this redirects the output from STDOUT to the provided path.
-
-```
-$ psort.py -w output.csv test.plaso
-```
-
-n.b. this parameter only makes sense in the case of output modules that output to a file. If you are using an output module that has a database backend or something similar it will have no effects.
-
-
-To redirect logging information to another file instead of being printed to STDERR use the ``--logfile`` parameter.
-
-```
-$ psort.py --logfile output.log -w timeline.csv test.plaso
-```
+**Note that psort 1.5.0 no longer supports output to stdout.**
 
 #### Modify the Timezone
 
@@ -122,7 +107,7 @@ $ psort.py -z list
 
 #### Quiet and More Verbose Output
 
-**psort** records the number of events it processes and how many events got filtered out due to filter settings or to duplication removals. This information is printed out at the end of each run, eg:
+**psort** records the number of events it processes and how many events got filtered out due to filter settings or to duplication removals. This information is printed out at the end of each run, for example:
 
 ```
 $ psort.py test.plaso "SELECT timestamp LIMIT 10"
@@ -150,7 +135,7 @@ $ psort.py test.plaso
 This output provides valuable information about how many events got filtered out by for instance the duplicate entry removals. There are many reasons why there may be duplicate entries in an output:
 
 + A filesystem entry that has the same timestamp for MACB timestamps (or any combination of them)
-+ Parsing a storage media file and processing a VSS store will produce a lot of duplicate entries, eg: the exact same Event Log record.
++ Parsing a storage media file and processing a VSS store will produce a lot of duplicate entries, for example: the exact same Event Log record.
 + Metadata information extracted from a file that is stored in more than one place on the drive
 
 If you don't want duplicate entries to be removed it is possible to supply the flag ``-a`` or ``--include_all` to **psort**.
@@ -171,7 +156,7 @@ plaso defines a concept called an analysis plugin. Essentially that means that y
 
 As of now the analysis plugins are only exposed to the post-processing layer, as in exposed to **psort** although there are efforts underway to expose them to the extraction stage as well. That way you can use them to create tags that are immediately available in post processing.
 
-The syntax works by using the ``--analysis PLUGIN`` syntax, eg:
+The syntax works by using the ``--analysis PLUGIN`` syntax, for example:
 
 ```
 $ psort.py --analysis PLUGIN_NAME ...
@@ -200,7 +185,7 @@ windows_services : Provides a single list of for Windows services found in the
 --------------------------------------------------------------------------------
 ```
 
-Some of these plugins may provide additional parameters that may be required for each analysis plugin. To know which parameters are exposed use the ``-h`` flag in addition to the ``--analysis PLUGIN``, eg:
+Some of these plugins may provide additional parameters that may be required for each analysis plugin. To know which parameters are exposed use the ``-h`` flag in addition to the ``--analysis PLUGIN``, for example:
 
 ```
 $ psort.py --analysis virustotal -h
@@ -288,7 +273,7 @@ It is possible to filter out the results **psort** provides using few different 
 
 #### Time Slices
 
-The simplest filter is the time slice, where if you've discovered an interesting timestamp and would like to explore what occurred just prior and after that timestamp of interest. This can be achieved using the ``--slice DATE`` parameter, eg:
+The simplest filter is the time slice, where if you've discovered an interesting timestamp and would like to explore what occurred just prior and after that timestamp of interest. This can be achieved using the ``--slice DATE`` parameter, for example:
 
 ```
 $ psort.py -q --slice "2004-09-20 16:13:02" test.plaso 
@@ -313,7 +298,7 @@ datetime,timestamp_desc,source,source_long,message,parser,display_name,tag,store
 
 A more comprehensive discussions of the filters can be [read here](https://github.com/log2timeline/plaso/wiki/Filters).
 
-For **psort** the filters are included at the end of the command line arguments, eg:
+For **psort** the filters are included at the end of the command line arguments, for example:
 
 ```
 $ psort.py -q test.plaso FILTER
@@ -341,7 +326,7 @@ datetime,timestamp_desc,source,source_long,message,parser,display_name,tag,store
 ...
 ```
 
-Here the filter ``cached_file_size is 43``` is applied to the output searching for all IE cache files that are 43 bytes in size. If we wanted to gather some context surrounding these events we can supply the ``--slicer`` flag, eg:
+Here the filter ``cached_file_size is 43``` is applied to the output searching for all IE cache files that are 43 bytes in size. If we wanted to gather some context surrounding these events we can supply the ``--slicer`` flag, for example:
 
 ```
 $ psort.py --slicer -q test.plaso "cached_file_size is 43"
@@ -366,7 +351,7 @@ $ psort.py --slice_size 15 --slicer -q test.plaso "cached_file_size is 43"
 
 The [data](https://github.com/log2timeline/plaso/tree/master/data) folder was [previously mentioned](https://github.com/log2timeline/plaso/wiki/Using-psort#automatic-analysis). The location of this folder is automatically determined, depending on how the tool got installed on the system and the OS platform. This data path is used by **psort** to find the location of filter files, Event Log message database, etc.
 
-This data path can be changed from the default location, for instance if you have your own *winevt-rc.db* database or set of filter files. This can be achieved using the ``--data PATH`` parameter, eg:
+This data path can be changed from the default location, for instance if you have your own *winevt-rc.db* database or set of filter files. This can be achieved using the ``--data PATH`` parameter, for example:
 
 ```
 $ psort.py --data /where/my/data/is/stored test.plaso
