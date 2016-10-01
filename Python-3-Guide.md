@@ -124,7 +124,7 @@ binplist | no
 construct | yes
 dateutil.parser | yes
 dfvfs | yes (as of version 20160504)
-dpkt | no (maybe the migrate_py3 branch)
+dpkt | no (pending [migrate_py3 branch](https://github.com/kbandla/dpkt/issues/243))
 hachoir_core | no
 hachoir_parser | no
 hachoir_metadata | no
