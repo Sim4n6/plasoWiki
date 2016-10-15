@@ -24,7 +24,12 @@ Which will return $MD5 if present in NSRLFile.txt and nothing when $MD5 does not
 
 ## Running plaso
 
-First run `log2timeline.py` next run:
+First run log2timeline to calculate the hashes, make sure to include hash types supported by nsrlsvr:
 ```
-psort.py --analysis nsrlsvr --nsrlsvr-host localhost --nsrlsvr-port 9120 -w timeline.log timeline.plaso
+log2timeline.py --hashers md5 timeline.plaso image.raw
+```
+
+Next run psort to tag event:
+```
+psort.py --analysis nsrlsvr --nsrlsvr-hash md5 --nsrlsvr-host localhost --nsrlsvr-port 9120 -w timeline.log timeline.plaso
 ```
