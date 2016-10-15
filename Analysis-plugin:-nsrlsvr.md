@@ -1,0 +1,30 @@
+Notes on how to use the nsrlsvr analysis plugin.
+
+## Setting up nsrlsvr
+
+The source of nsrlsvr can be found [here](https://github.com/rjhansen/nsrlsvr)
+
+Follow the [installation instructions](https://github.com/rjhansen/nsrlsvr/blob/master/INSTALL).
+
+## Running nsrlsvr
+
+To run nsrlsvr:
+```
+nsrlsvr -f /fullpath/NSRLFile.txt
+```
+
+To test if nsrlsvr is working you'll need [nsrllookup](https://github.com/rjhansen/nsrllookup)
+
+To run nsrllookup against your instance of nsrlsvr:
+```
+echo $MD5 | nsrllookup -s localhost -p 9120 -k 
+```
+
+Which will return $MD5 if present in NSRLFile.txt and nothing when $MD5 does not present.
+
+## Running plaso
+
+First run `log2timeline.py` next run:
+```
+psort.py --analysis nsrlsvr --nsrlsvr-host localhost --nsrlsvr-port 9120 -w timeline.log timeline.plaso
+```
