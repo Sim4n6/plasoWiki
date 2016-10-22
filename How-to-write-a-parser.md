@@ -23,7 +23,7 @@ test_data/Cookies.binarycookies
 # Parsers, events and formatters
 
 * parser; subclass of plaso.parsers.interface.FileObjectParser, that extracts events from the content of a file.
-* event; subclass of plaso.containers.events.EventObject, that represent an [event](https://github.com/log2timeline/plaso/wiki/Scribbles-about-events#what-is-an-event)
+* event; subclass of plaso.containers.events.EventObject, that represent [an event](https://github.com/log2timeline/plaso/wiki/Scribbles-about-events#what-is-an-event)
 * formatter (or event formatter); subclass of plaso.formatters.interface.EventFormatter, that generates a human readable description of the event data. 
 
 ## The parser
@@ -40,6 +40,8 @@ from plaso.parsers import safari_cookies
 ```
 
 When plaso.parsers is imported this will load the safari_cookies module (safari_cookies.py).
+
+The parser class `BinaryCookieParser` is registered using `manager.ParsersManager.RegisterParser(BinaryCookieParser)`.
 
 ```
 plaso/parsers/safari_cookies.py
