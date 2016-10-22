@@ -22,7 +22,24 @@ test_data/Cookies.binarycookies
 
 # Parsers, events and formatters
 
+* parser; subclass of plaso.parsers.interface.FileObjectParser, that extracts events from the content of a file.
+* event; subclass of plaso.containers.events.EventObject, that represent an [event](https://github.com/log2timeline/plaso/wiki/Scribbles-about-events#what-is-an-event)
+* formatter (or event formatter); subclass of plaso.formatters.interface.EventFormatter, that generates a human readable description of the event data. 
+
 ## The parser
+
+### Parser registration
+
+Add an import for the parser to:
+```
+plaso/parsers/__init__.py
+```
+
+```
+from plaso.parsers import safari_cookies
+```
+
+When plaso.parsers is imported this will load the safari_cookies module (safari_cookies.py).
 
 ```
 plaso/parsers/safari_cookies.py
@@ -32,21 +49,36 @@ plaso/parsers/safari_cookies.py
 # -*- coding: utf-8 -*-
 """Parser for Safari Binary Cookie files."""
 
-from plaso.containers import time_events
 from plaso.parsers import interface
 from plaso.parsers import manager
 
-class BinaryCookieEvent(time_events.CocoaTimeEvent):
-  """A convenience class for a binary cookie event."""
-  ...
 
 class BinaryCookieParser(interface.FileObjectParser):
   """Parser for Safari Binary Cookie files."""
-  ...
+
+  NAME = u'binary_cookies'
+  DESCRIPTION = u'Parser for Safari Binary Cookie files.'
+
+  def ParseFileObject(self, parser_mediator, file_object, **kwargs):
+    """Parses a Safari binary cookie file-like object.
+
+    Args:
+      parser_mediator (ParserMediator): parser mediator.
+      file_object (dfvfs.FileIO): file-like object to be parsed.
+
+    Raises:
+      UnableToParseFile: when the file cannot be parsed, this will signal
+          the event extractor to apply other parsers.
+    """
+    ...
 
 
 manager.ParsersManager.RegisterParser(BinaryCookieParser)
 ```
+
+## Registering the parser
+
+
 
 ## The event formatter
 
