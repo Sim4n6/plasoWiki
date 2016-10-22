@@ -47,7 +47,7 @@ The parser class `BinaryCookieParser` is registered using `manager.ParsersManage
 plaso/parsers/safari_cookies.py
 ```
 
-```
+~~~~
 # -*- coding: utf-8 -*-
 """Parser for Safari Binary Cookie files."""
 
@@ -76,7 +76,7 @@ class BinaryCookieParser(interface.FileObjectParser):
 
 
 manager.ParsersManager.RegisterParser(BinaryCookieParser)
-```
+~~~~
 
 * `NAME`
 * `DESCRIPTION`
