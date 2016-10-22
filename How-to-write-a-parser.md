@@ -26,9 +26,9 @@ test_data/Cookies.binarycookies
 * event; subclass of plaso.containers.events.EventObject, that represent [an event](https://github.com/log2timeline/plaso/wiki/Scribbles-about-events#what-is-an-event)
 * formatter (or event formatter); subclass of plaso.formatters.interface.EventFormatter, that generates a human readable description of the event data. 
 
-## The parser
+## Writing the parser
 
-### Parser registration
+### Registering the parser
 
 Add an import for the parser to:
 ```
@@ -78,11 +78,13 @@ class BinaryCookieParser(interface.FileObjectParser):
 manager.ParsersManager.RegisterParser(BinaryCookieParser)
 ```
 
-## Registering the parser
+* `NAME`
+* `DESCRIPTION`
 
 
 
-## The event formatter
+
+## Writing the event formatter
 
 ```
 plaso/formatters/safari_cookies.py
