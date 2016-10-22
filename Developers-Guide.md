@@ -3,6 +3,32 @@
 * [Setting up and maintaining your development environment](https://github.com/log2timeline/plaso/wiki/Developers-Guide#setting-up-and-maintaining-your-development-environment)
 * [Contributing Code](https://github.com/log2timeline/plaso/wiki/Developers-Guide#contributing-code)
 
+## Getting Started
+
+Good way to learn how to write some code for plaso is to start easy, with a plugin or a parser. We have prepared codelabs to make the barrier of entry easier.
+
+* [Codelabs](https://github.com/log2timeline/codelabs/wiki)
+* [How to write a parser](https://sites.google.com/a/kiddaland.net/plaso/developer/parsers)
+
+### Larger Features Changing Core Codebase
+
+Sometimes you need to make some change to the core of the plaso codebase. In those cases we ask that contributors first create a short design doc explaining the rationale behind the change. The design doc needs to contain:
+
+1. Describe the problem you are facing
+2. List the objectives of this change
+3. Mention what is in scope and what's not
+4. Describe the solution/proposal
+
+The preferred way of creating these design docs is to use Google Docs and send the link to the development mailing list so that it can be discussed further **before** starting to implement the code.
+
+The current design docs are [stored here](https://drive.google.com/folderview?id=0B3fBvzttpiiSQW16cFhNTUtXVGM&usp=sharing). You may not have access to that folder, so you may need to request access to it.
+
+### Tests
+
+Tests are part of a maintainable code base. Code without sufficient test is very likely to be broken by a large rewrite/refactor.
+
+Some guidelines for writing tests: [Style guide - tests](https://github.com/log2timeline/plaso/wiki/Style-guide#tests)
+
 ## Design
 Overview of the general architecture of plaso:
 
@@ -55,28 +81,3 @@ Before you start writing the code, please review the following:
 * [Code review](https://github.com/log2timeline/plaso/wiki/Codereview). All code that is submitted into the project needs to be reviewed by at least one other person.
 * [Adding a new dependency](https://github.com/log2timeline/plaso/wiki/Adding-a-new-dependency). If your code requires adding a new dependency please check out these instructions.
 
-## Getting Started
-
-Good way to learn how to write some code for plaso is to start easy, with a plugin or a parser. We have prepared codelabs to make the barrier of entry easier.
-
-* [Codelabs](https://github.com/log2timeline/codelabs/wiki)
-* [How to write a parser](https://sites.google.com/a/kiddaland.net/plaso/developer/parsers)
-
-### Larger Features Changing Core Codebase
-
-Sometimes you need to make some change to the core of the plaso codebase. In those cases we ask that contributors first create a short design doc explaining the rationale behind the change. The design doc needs to contain:
-
-1. Describe the problem you are facing
-2. List the objectives of this change
-3. Mention what is in scope and what's not
-4. Describe the solution/proposal
-
-The preferred way of creating these design docs is to use Google Docs and send the link to the development mailing list so that it can be discussed further **before** starting to implement the code.
-
-The current design docs are [stored here](https://drive.google.com/folderview?id=0B3fBvzttpiiSQW16cFhNTUtXVGM&usp=sharing). You may not have access to that folder, so you may need to request access to it.
-
-### Tests
-
-Tests are part of a maintainable code base. Code without sufficient test is very likely to be broken by a large rewrite/refactor.
-
-Some guidelines for writing tests: [Style guide - tests](https://github.com/log2timeline/plaso/wiki/Style-guide#tests)
