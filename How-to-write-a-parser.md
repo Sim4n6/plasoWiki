@@ -25,7 +25,7 @@ test_data/Cookies.binarycookies
 ## The parser
 
 ```
-plaso/formatters/safari_cookies.py
+plaso/parsers/safari_cookies.py
 ```
 
 ```
@@ -48,6 +48,8 @@ class BinaryCookieParser(interface.FileObjectParser):
 manager.ParsersManager.RegisterParser(BinaryCookieParser)
 ```
 
+## The event formatter
+
 ```
-plaso/parsers/safari_cookies.py
+plaso/formatters/safari_cookies.py
 ```
