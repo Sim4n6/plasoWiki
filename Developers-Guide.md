@@ -18,22 +18,6 @@ The first challenge you will encounter is setting up and maintaining your develo
 * [Running the development release on Windows](https://github.com/log2timeline/plaso/wiki/Development-release-Windows)
   * [Building and installing dependencies on Windows](https://github.com/log2timeline/plaso/wiki/Dependencies-Windows)
 
-### Prerequisites
-
-1. Go to https://codereview.appspot.com to setup your account, you'll need a Google account for this.
-2. Join the development mailing list: [log2timeline-dev@googlegroups.com](https://groups.google.com/forum/?fromgroups#!forum/log2timeline-dev), we recommend using the same account as step 1
-2. Install the required development tools like pylint, python-mock, sphinx
-3. Make sure to run all the tests inside the plaso and the dfVFS codebase, and that they successfully complete on your development system
-4. Make sure your development system is set up correctly so that you can develop and test correctly.
-5. Make sure your email address and name are correctly set in git e.g.:
-```
-git config --global user.name "Full Name"
-git config --global user.email name@example.com
-git config --global push.default matching
-```
-
-Use `git config -l` to determine the current configuration.
-
 ## Getting Started
 
 Good way to learn how to write some code for plaso is to start easy, with a plugin or a parser. We have prepared codelabs to make the barrier of entry easier.
@@ -82,3 +66,18 @@ Before you start writing the code, please review the following:
 * [Code review](https://github.com/log2timeline/plaso/wiki/Codereview). All code that is submitted into the project needs to be reviewed by at least one other person.
 * [Adding a new dependency](https://github.com/log2timeline/plaso/wiki/Adding-a-new-dependency). If your code requires adding a new dependency please check out these instructions.
 
+### Before you submit your first code review
+
+1. Go to https://codereview.appspot.com to setup your account, you'll need a Google account for this.
+2. Join the development mailing list: [log2timeline-dev@googlegroups.com](https://groups.google.com/forum/?fromgroups#!forum/log2timeline-dev), we recommend using the same account as step 1
+2. Install the required development tools like pylint, python-mock, sphinx
+3. Make sure to run all the tests inside the plaso and the dfVFS codebase, and that they successfully complete on your development system
+4. Make sure your development system is set up correctly so that you can develop and test correctly.
+5. Make sure your email address and name are correctly set in git e.g.:
+```
+git config --global user.name "Full Name"
+git config --global user.email name@example.com
+git config --global push.default matching
+```
+
+Use `git config -l` to determine the current configuration.
