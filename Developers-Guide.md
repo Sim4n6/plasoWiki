@@ -1,7 +1,38 @@
+* [Setting up and maintaining your development environment](https://github.com/log2timeline/plaso/wiki/Developers-Guide#setting-up-and-maintaining-your-development-environment)
+* [Getting Started](https://github.com/log2timeline/plaso/wiki/Developers-Guide#getting-started)
 * [Design](https://github.com/log2timeline/plaso/wiki/Developers-Guide#design)
 * [Roadmap](https://github.com/log2timeline/plaso/wiki/Developers-Guide#roadmap)
-* [Setting up and maintaining your development environment](https://github.com/log2timeline/plaso/wiki/Developers-Guide#setting-up-and-maintaining-your-development-environment)
 * [Contributing Code](https://github.com/log2timeline/plaso/wiki/Developers-Guide#contributing-code)
+
+## Setting up and maintaining your development environment
+The first challenge you will encounter is setting up and maintaining your development environment.
+
+**Note that plaso and some dependencies are currently actively under development keeping up with the development release is not for "the faint of heart".**
+
+* [Running the development release on Ubuntu Linux](https://github.com/log2timeline/plaso/wiki/Development-release-Ubuntu)
+  * [Building and installing dependencies on Ubuntu Linux](https://github.com/log2timeline/plaso/wiki/Dependencies---Ubuntu)
+* [Running the development release on Fedora Core Linux](https://github.com/log2timeline/plaso/wiki/Development-release-Fedora-Core)
+  * [Building and installing dependencies on Fedora Core Linux](https://github.com/log2timeline/plaso/wiki/Dependencies-Fedora-Core)
+* [Running the development release on Mac OS X](https://github.com/log2timeline/plaso/wiki/Development-release-Mac-OS-X)
+  * [Building and installing dependencies on Mac OS X](https://github.com/log2timeline/plaso/wiki/Dependencies-Mac-OS-X)
+* [Running the development release on Windows](https://github.com/log2timeline/plaso/wiki/Development-release-Windows)
+  * [Building and installing dependencies on Windows](https://github.com/log2timeline/plaso/wiki/Dependencies-Windows)
+
+### Prerequisites
+
+1. Go to https://codereview.appspot.com to setup your account, you'll need a Google account for this.
+2. Join the development mailing list: [log2timeline-dev@googlegroups.com](https://groups.google.com/forum/?fromgroups#!forum/log2timeline-dev), we recommend using the same account as step 1
+2. Install the required development tools like pylint, python-mock, sphinx
+3. Make sure to run all the tests inside the plaso and the dfVFS codebase, and that they successfully complete on your development system
+4. Make sure your development system is set up correctly so that you can develop and test correctly.
+5. Make sure your email address and name are correctly set in git e.g.:
+```
+git config --global user.name "Full Name"
+git config --global user.email name@example.com
+git config --global push.default matching
+```
+
+Use `git config -l` to determine the current configuration.
 
 ## Getting Started
 
@@ -38,36 +69,6 @@ Overview of the general architecture of plaso:
 ## Roadmap
 
 A high level roadmap can be found [here](https://github.com/log2timeline/plaso/wiki/Releases-and-roadmap). Individual features are tracked as a github issue and labeled as "enhancement". A list of features can be found [here](https://github.com/log2timeline/plaso/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement).
-
-## Setting up and maintaining your development environment
-The first challenge you will encounter is setting up and maintaining your development environment.
-
-**Note that plaso and some dependencies are currently actively under development keeping up with the development release is not for "the faint of heart".**
-
-* [Running the development release on Ubuntu Linux](https://github.com/log2timeline/plaso/wiki/Development-release-Ubuntu)
-  * [Building and installing dependencies on Ubuntu Linux](https://github.com/log2timeline/plaso/wiki/Dependencies---Ubuntu)
-* [Running the development release on Fedora Core Linux](https://github.com/log2timeline/plaso/wiki/Development-release-Fedora-Core)
-  * [Building and installing dependencies on Fedora Core Linux](https://github.com/log2timeline/plaso/wiki/Dependencies-Fedora-Core)
-* [Running the development release on Mac OS X](https://github.com/log2timeline/plaso/wiki/Development-release-Mac-OS-X)
-  * [Building and installing dependencies on Mac OS X](https://github.com/log2timeline/plaso/wiki/Dependencies-Mac-OS-X)
-* [Running the development release on Windows](https://github.com/log2timeline/plaso/wiki/Development-release-Windows)
-  * [Building and installing dependencies on Windows](https://github.com/log2timeline/plaso/wiki/Dependencies-Windows)
-
-### Prerequisites
-
-1. Go to https://codereview.appspot.com to setup your account, you'll need a Google account for this.
-2. Join the development mailing list: [log2timeline-dev@googlegroups.com](https://groups.google.com/forum/?fromgroups#!forum/log2timeline-dev), we recommend using the same account as step 1
-2. Install the required development tools like pylint, python-mock, sphinx
-3. Make sure to run all the tests inside the plaso and the dfVFS codebase, and that they successfully complete on your development system
-4. Make sure your development system is set up correctly so that you can develop and test correctly.
-5. Make sure your email address and name are correctly set in git e.g.:
-```
-git config --global user.name "Full Name"
-git config --global user.email name@example.com
-git config --global push.default matching
-```
-
-Use `git config -l` to determine the current configuration.
 
 ## Contributing Code
 
