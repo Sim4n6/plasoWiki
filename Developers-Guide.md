@@ -1,6 +1,7 @@
 * [Design](https://github.com/log2timeline/plaso/wiki/Developers-Guide#design)
 * [Roadmap](https://github.com/log2timeline/plaso/wiki/Developers-Guide#roadmap)
-* [Setting up and maintaining your development environment](https://github.com/log2timeline/plaso/wiki/Developers-Guide#roadmap)
+* [Setting up and maintaining your development environment](https://github.com/log2timeline/plaso/wiki/Developers-Guide#setting-up-and-maintaining-your-development-environment)
+* [Contributing Code](https://github.com/log2timeline/plaso/wiki/Developers-Guide#contributing-code)
 
 ## Design
 Overview of the general architecture of plaso:
@@ -54,7 +55,7 @@ Before you start writing the code, please review the following:
 * [Code review](https://github.com/log2timeline/plaso/wiki/Codereview). All code that is submitted into the project needs to be reviewed by at least one other person.
 * [Adding a new dependency](https://github.com/log2timeline/plaso/wiki/Adding-a-new-dependency). If your code requires adding a new dependency please check out these instructions.
 
-### Getting Started
+## Getting Started
 
 Good way to learn how to write some code for plaso is to start easy, with a plugin or a parser. We have prepared codelabs to make the barrier of entry easier.
 
