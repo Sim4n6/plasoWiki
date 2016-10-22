@@ -1,4 +1,6 @@
-**This page is work in progress.**
+* [Design](https://github.com/log2timeline/plaso/wiki/Developers-Guide#design)
+* [Roadmap](https://github.com/log2timeline/plaso/wiki/Developers-Guide#roadmap)
+* [Setting up and maintaining your development environment](https://github.com/log2timeline/plaso/wiki/Developers-Guide#roadmap)
 
 ## Design
 Overview of the general architecture of plaso:
