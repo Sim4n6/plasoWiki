@@ -227,6 +227,7 @@ config\windows\make_check.bat
 And finally create a zip archive of: dist\plaso
 
 ### PyPI
+
 Set up `.pypirc` to have both `pypitest` and `pypi`. Also see: [How to submit a package to PyPI](http://peterdowns.com/posts/first-time-with-pypi.html)
 
 Always first test changes on `pypitest` before making changes to `pypi`.
