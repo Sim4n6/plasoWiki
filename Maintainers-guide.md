@@ -6,7 +6,7 @@ This page contains information relevant to plaso maintainers.
 * Generating plaso test files
 * Generating API docs with Sphinx-doc
 * [Generating plaso wiki pages](https://github.com/log2timeline/plaso/wiki/Maintainers-guide#generating-plaso-wiki-pages)
-* Creating a packaged release
+* [Creating a packaged release](https://github.com/log2timeline/plaso/wiki/Maintainers-guide#creating-a-packaged-release)
 
 ## Mailing list
 
@@ -225,3 +225,18 @@ config\windows\make_check.bat
 ```
 
 And finally create a zip archive of: dist\plaso
+
+### PyPI
+Set up `.pypirc` to have both `pypitest` and `pypi`. Also see: [How to submit a package to PyPI](http://peterdowns.com/posts/first-time-with-pypi.html)
+
+Always first test changes on `pypitest` before making changes to `pypi`.
+
+To register a project or update its metadata run:
+```
+python setup.py register -r pypitest
+```
+
+To upload a new release:
+```
+python setup.py sdist upload -r pypitest
+```
