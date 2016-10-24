@@ -7,10 +7,10 @@ This page contains information relevant to plaso maintainers.
 * Generating API docs with Sphinx-doc
 * [Generating plaso wiki pages](https://github.com/log2timeline/plaso/wiki/Maintainers-guide#generating-plaso-wiki-pages)
 * [Creating a packaged release](https://github.com/log2timeline/plaso/wiki/Maintainers-guide#creating-a-packaged-release)
-** Mac OS-X packaged release
-** Ubuntu source dpkg for gift PPA
-** Windows packaged release
-** PyPI
+  * Mac OS-X packaged release
+  * Ubuntu source dpkg for gift PPA
+  * Windows packaged release
+  * PyPI
 
 ## Mailing list
 
