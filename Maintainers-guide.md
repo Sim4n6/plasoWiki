@@ -7,6 +7,10 @@ This page contains information relevant to plaso maintainers.
 * Generating API docs with Sphinx-doc
 * [Generating plaso wiki pages](https://github.com/log2timeline/plaso/wiki/Maintainers-guide#generating-plaso-wiki-pages)
 * [Creating a packaged release](https://github.com/log2timeline/plaso/wiki/Maintainers-guide#creating-a-packaged-release)
+** Mac OS-X packaged release
+** Ubuntu source dpkg for gift PPA
+** Windows packaged release
+** PyPI
 
 ## Mailing list
 
@@ -96,7 +100,7 @@ PYTHONPATH=plaso plaso/tools/log2timeline.py --use-markdown --parsers list > pla
 Commit and push the changes to the wiki pages.
 
 ## Creating a packaged release
-### Mac OS-X
+### Mac OS-X packaged release
 
 Use l2tdevtools to download the .dmg files:
 ```
@@ -147,7 +151,7 @@ Upload to the testing track of gift:
 dput ppa:gift/testing python-plaso_1.2.1-dev-20150507-1ppa1~trusty_source.changes
 ```
 
-### Windows
+### Windows packaged release
 
 To create a Windows packaged release from the development release you also need:
 
