@@ -241,3 +241,10 @@ To upload a new release:
 ```
 python setup.py sdist upload -r pypitest
 ```
+
+The package on PyPI does not contain the test files due to size limitations.
+
+To create a release package with test data for release on github.
+```
+python setup.py sdist_test_data
+```
