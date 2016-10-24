@@ -1,5 +1,10 @@
 This page contains information relevant to plaso maintainers.
 
+* [Mailing list](https://github.com/log2timeline/plaso/wiki/Maintainers-guide#mailing-list)
+* [Maintainer guidelines](https://github.com/log2timeline/plaso/wiki/Maintainers-guide#maintainer-guidelines)
+* [Maintainer tools](https://github.com/log2timeline/plaso/wiki/Maintainers-guide#maintainer-tools)
+* [Generating plaso wiki pages]()
+
 ## Mailing list
 
 Maintainers mailing list: log2timeline-maintainers@googlegroups.com
@@ -49,6 +54,7 @@ To generate `pinfo_test.json.plaso` and `psort_test.json.plaso` run the followin
 ```
 
 ## Generating plaso wiki pages
+
 Checkout the plaso wiki pages:
 ```
 git clone https://github.com/log2timeline/plaso.wiki.git
