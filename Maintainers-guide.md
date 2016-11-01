@@ -10,7 +10,7 @@ This page contains information relevant to plaso maintainers.
   * Mac OS-X packaged release
   * Ubuntu source dpkg for gift PPA
   * Windows packaged release
-  * PyPI
+  * [PyPI](https://github.com/log2timeline/plaso/wiki/Maintainers-guide#pypi)
 
 ## Mailing list
 
