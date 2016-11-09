@@ -164,5 +164,6 @@ Plaso consists of various components. It can happen that one of these components
 ## Also see
 
 * [Troubleshooting Mac OS X specific issues](https://github.com/log2timeline/plaso/wiki/Troubleshooting-Mac-OS-X)
+* [Troubleshooting Ubuntu specific issues](https://github.com/log2timeline/plaso/wiki/Troubleshooting-Ubuntu)
 * [Troubleshooting Windows specific issues](https://github.com/log2timeline/plaso/wiki/Troubleshooting-Windows)
 * [Troubleshooting Plaso Issues - Memory Edition](http://blog.kiddaland.net/2014/11/troubleshooting-plaso-issues-memory.html)
