@@ -11,7 +11,7 @@ This page contains information relevant to plaso maintainers.
   * Ubuntu source dpkg for gift PPA
   * Windows packaged release
   * [PyPI](https://github.com/log2timeline/plaso/wiki/Maintainers-guide#pypi)
-* [Updating plaso's docker image](https://github.com/log2timeline/plaso/wiki/Maintainers-guide#generating-plaso-wiki-pages)
+* [Updating plaso's docker image](https://github.com/log2timeline/plaso/wiki/Maintainers-guide#updating-the-plasos-image-on-dockers-hub-to-the-latest-version-in-ppa)
 
 ## Mailing list
 
@@ -258,16 +258,26 @@ python setup.py sdist_test_data
 
 We have a repository on Docker's hub : [https://hub.docker.com/r/log2timeline/plaso](https://hub.docker.com/r/log2timeline/plaso).
 
-To update the image to the version X.Y.Z:
-
 ```
 cd config/docker/
 docker build -f plaso-from-ppa.dockerfile .
 <... wait ... wait ...>
 Successfully built f0edcb57611b
-docker tag d4c356705bd9 log2timeline/plaso:X.Y.Z   # Makes a new plaso image
-docker tag d4c356705bd9 log2timeline/plaso:latest  # Points the "latest" (default) version to this one
-docker login   # Asks the maintainers mailing list for the credentials
-docker push log2timeline/plaso:1.5.1     # Push the new versions
+```
+Your new image is `f0edcb57611b`. Make sure you've installed the version you want.
+```
+$ docker run -t -i  --entrypoint /bin/bash f0edcb57611b
+root@a730e03d8386:/home/plaso# log2timeline.py --version
+plaso - log2timeline version 1.5.1
+```
+Mark your new image with this version, and set it as being the latest.
+```
+docker tag d4c356705bd9 log2timeline/plaso:1.5.1
+docker tag d4c356705bd9 log2timeline/plaso:latest
+```
+Then push the updates to Docker Hub.
+```
+docker login   # Ask log2timeline-maintainers@googlegroups.com for the credentials
+docker push log2timeline/plaso:1.5.1
 docker push log2timeline/plaso:latest
 ```
