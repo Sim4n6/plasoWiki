@@ -11,6 +11,7 @@ This page contains information relevant to plaso maintainers.
   * Ubuntu source dpkg for gift PPA
   * Windows packaged release
   * [PyPI](https://github.com/log2timeline/plaso/wiki/Maintainers-guide#pypi)
+* [Updating plaso's docker image](https://github.com/log2timeline/plaso/wiki/Maintainers-guide#generating-plaso-wiki-pages)
 
 ## Mailing list
 
@@ -251,4 +252,22 @@ The package on PyPI does not contain the test files due to size limitations.
 To create a release package with test data for release on github.
 ```
 python setup.py sdist_test_data
+```
+
+## Updating the plaso's image on Docker's Hub to the latest version in PPA
+
+We have a repository on Docker's hub : [https://hub.docker.com/r/log2timeline/plaso](https://hub.docker.com/r/log2timeline/plaso).
+
+To update the image to the version X.Y.Z:
+
+```
+cd config/docker/
+docker build -f plaso-from-ppa.dockerfile .
+<... wait ... wait ...>
+Successfully built f0edcb57611b
+docker tag d4c356705bd9 log2timeline/plaso:X.Y.Z   # Makes a new plaso image
+docker tag d4c356705bd9 log2timeline/plaso:latest  # Points the "latest" (default) version to this one
+docker login   # Asks the maintainers mailing list for the credentials
+docker push log2timeline/plaso:1.5.1     # Push the new versions
+docker push log2timeline/plaso:latest
 ```
