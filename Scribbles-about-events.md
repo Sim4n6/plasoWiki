@@ -12,7 +12,7 @@ From [Wikipedia - Event (computing)](http://en.wikipedia.org/wiki/Event_%28compu
 ## How can an event be defined?
 An event consists of the following types of information:
 
-* date and time or duration of the event (event time);
+* date and time or duration of the event (event time), which can be unknown if we know the event happened but not when;
 * an indication of what the event time represents e.g. Creation Time, Program Execution Duration, etc.
 * the source of the event e.g. the Windows Application Event Log C:\Windows\System32\config\AppEvent.evt or specific lines in the /var/log/messages
 * data specific to the event e.g. in case of process execution this could be the path of the executable file and arguments
