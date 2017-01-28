@@ -11,7 +11,7 @@
 * [Filters](https://github.com/log2timeline/plaso/wiki/Filters)
 * [Analysis plugins](https://github.com/log2timeline/plaso/wiki/Analysis-plugins)
 * [Tips and Tricks](https://github.com/log2timeline/plaso/wiki/Tips-and-Tricks)
-* [Upgrading from 0.X branch](https://github.com/log2timeline/plaso/wiki/Upgrading-From-0.x-Branch)
+* [Log2Timeline Perl (Legacy)](https://github.com/log2timeline/plaso/wiki/Log2Timeline-Perl-(Legacy))
 
 **Tools**
 
