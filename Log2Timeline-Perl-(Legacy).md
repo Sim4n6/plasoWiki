@@ -1,6 +1,6 @@
-# Upgrading From 0.X Branch
+# Switching from Log2Timeline Perl (Legacy) to plaso
 
-This is a site that should contain information for those that are used to the 0.X branch of log2timeline, that is the older Log2Timeline Perl backend.
+This is a site that should contain information for those that are used to the 0.X branch of log2timeline, also known as Log2Timeline Perl or Log2Timeline legacy.
 
 The syntax has changed somewhat from the older version, the largest user facing differences may be:
 
