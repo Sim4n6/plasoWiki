@@ -1,4 +1,4 @@
-#Upgrading From 0.X Branch
+# Upgrading From 0.X Branch
 
 This is a site that should contain information for those that are used to the 0.X branch of log2timeline, that is the older Log2Timeline Perl backend.
 
