@@ -39,7 +39,6 @@ $ psort.py -o list
     l2tcsv : CSV format used by legacy log2timeline, with 17 fixed fields.
     l2ttln : Extended TLN 7 field | delimited output.
       null : An output module that doesn't output anything.
-  pstorage : Dumps event objects to a plaso storage file.
      rawpy : "raw" (or native) Python output.
 timesketch : Create a Timesketch timeline.
        tln : TLN 5 field | delimited output.
@@ -57,7 +56,6 @@ If you are missing any optional dependencies not all output modules may be avail
     l2tcsv : CSV format used by legacy log2timeline, with 17 fixed fields.
     l2ttln : Extended TLN 7 field | delimited output.
       null : An output module that doesn't output anything.
-  pstorage : Dumps event objects to a plaso storage file.
      rawpy : "raw" (or native) Python output.
        tln : TLN 5 field | delimited output.
 --------------------------------------------------------------------------------
