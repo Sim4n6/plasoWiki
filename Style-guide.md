@@ -12,7 +12,7 @@ Various plaso specific additions/variations are:
 #### Naming
 
 * Use full English words everywhere. For example, use Event not Evt and Description not Desc.
-* Acronyms and initialisms should be preserved, eg HTMLParser, and not HtmlParser.
+* Acronyms and initialisms should be preserved, such as HTMLParser and not HtmlParser.
 * Method and function names follow the following logic (overriding the Google Python Style Guide):
 
 
@@ -20,6 +20,9 @@ Type | Public | Internal
 ---- | ---- | ----
 Functions | **CapWords()** | **_CapWords()** (protected) and **__CapWords()** (private)
 
+#### Unused function or method arguments
+
+Prefix unused function or method arguments with `unused_`. 
 
 #### Strings
 
