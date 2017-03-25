@@ -311,6 +311,27 @@ To install the required pkg files run:
 sudo installer -target / -pkg python-yaml-3.11.pkg
 ```
 
+### Liblzma and Python-bindings
+Download the latest source package from: http://tukaani.org/xz/
+
+**Note that Mac OS X 10.11 (El Capitan) disallows installation in /usr by default, hence we use /usr/local**
+
+To build pkg files run the following command from the build root directory:
+```
+tar xfvz xz-5.2.3.tar.gz
+cd xz-5.2.3
+./configure --prefix=/usr/local
+make
+make install DESTDIR=$PWD/osx-pkg
+pkgbuild --root osx-pkg --identifier org.tukaani.xz --version 5.2.3 --ownership recommended ../xz-5.2.3.pkg
+cd ..
+```
+
+To install the required pkg files run:
+```
+sudo installer -target / -pkg xz-5.2.3.pkg
+```
+
 ### Pefile
 Download the latest source package from: https://github.com/erocarrera/pefile/releases
 
