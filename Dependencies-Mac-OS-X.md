@@ -332,6 +332,21 @@ To install the required pkg files run:
 sudo installer -target / -pkg xz-5.2.3.pkg
 ```
 
+Download the latest source package from: https://pypi.python.org/pypi/pyliblzma
+
+To build pkg files run the following command from the build root directory:
+```
+tar xfvz pyliblzma-0.5.3.tar.gz
+cd pyliblzma-0.5.3/
+python setup.py install --root=$PWD/tmp --install-data=/usr/local 
+pkgbuild --root tmp --identifier org.python.pypi.pyliblzma --version 0.5.3 --ownership recommended ../python-lzma-0.5.3.pkg
+```
+
+To install the required pkg files run:
+```
+sudo installer -target / -pkg python-lzma-0.5.3.pkg
+```
+
 ### Pefile
 Download the latest source package from: https://github.com/erocarrera/pefile/releases
 
