@@ -20,11 +20,12 @@ test_data/Cookies.binarycookies
 
 **Make sure that the test file does not contain sensitive or copyrighted material.**
 
-# Parsers, events and formatters
+# Parsers, formatters, events and event data
 
 * parser; subclass of plaso.parsers.interface.FileObjectParser, that extracts events from the content of a file.
-* event; subclass of plaso.containers.events.EventObject, that represent [an event](https://github.com/log2timeline/plaso/wiki/Scribbles-about-events#what-is-an-event)
 * formatter (or event formatter); subclass of plaso.formatters.interface.EventFormatter, that generates a human readable description of the event data. 
+* event; subclass of plaso.containers.events.EventObject, that represents [an event](https://github.com/log2timeline/plaso/wiki/Scribbles-about-events#what-is-an-event)
+* event data; subclass of plaso.containers.events.EventData, that represents data related to the event.
 
 ## Writing the parser
 
