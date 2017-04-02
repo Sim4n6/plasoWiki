@@ -7,6 +7,7 @@ There are multiple ways to install the dependencies on Ubuntu:
 * Manual build of the dependencies.
 
 ## Prepackaged dependencies
+
 **Note that the instructions in this page assume you are running on Ubuntu 14.04 or 16.04. Installing packages from the PPA on other versions and/or distributions is not recommended.**
 
 The [GIFT PPA](https://launchpad.net/~gift), pun intended, contains the necessary packages for running plaso. The GIFT PPA provides the following tracks:
@@ -25,16 +26,13 @@ To install the dependencies run:
 sh config/linux/install_gift_and_dependencies.sh include-development include-test
 ```
 
-**Note for the most up to date list of dependencies see: [.travis.yml](https://github.com/log2timeline/plaso/blob/master/.travis.yml)**
-
 For troubleshooting crashes it is recommended to install the following debug symbol packages as well:
 ```
-sudo apt-get install libbde-dbg libbde-python-dbg libesedb-dbg libesedb-python-dbg libevt-dbg libevt-python-dbg libevtx-dbg libevtx-python-dbg libewf-dbg libewf-python-dbg libfve-dbg libfve-python-dbg libfwsi-dbg libfwsi-python-dbg liblnk-dbg liblnk-python-dbg libmsiecf-dbg libmsiecf-python-dbg libolecf-dbg libolecf-python-dbg libqcow-dbg libqcow-python-dbg libregf-dbg libregf-python-dbg libsigscan-dbg libsigscan-python-dbg libsmdev-dbg libsmdev-python-dbg libsmraw-dbg libsmraw-python-dbg libvhdi-dbg libvhdi-python-dbg libvmdk-dbg libvmdk-python-dbg libvshadow-dbg libvshadow-python-dbg
+sh config/linux/install_gift_and_dependencies.sh include-debug
 ```
 
-**TODO complete list of dependencies.**
-
 ## Batch build
+
 Set up the [l2tdevtools build script](https://github.com/log2timeline/l2tdevtools/wiki/Build-script) and run:
 ```
 PYTHONPATH=. python tools/build.py dpkg
