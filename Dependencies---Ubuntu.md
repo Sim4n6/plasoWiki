@@ -7,7 +7,7 @@ There are multiple ways to install the dependencies on Ubuntu:
 * Manual build of the dependencies.
 
 ## Prepackaged dependencies
-**Note that the instructions in this page assume you are running on Ubuntu 12.04 or 14.04. Installing packages from the PPA on other versions and/or distributions is not recommended.**
+**Note that the instructions in this page assume you are running on Ubuntu 14.04 or 16.04. Installing packages from the PPA on other versions and/or distributions is not recommended.**
 
 The [GIFT PPA](https://launchpad.net/~gift), pun intended, contains the necessary packages for running plaso. The GIFT PPA provides the following tracks:
 
