@@ -39,11 +39,11 @@ If you intend to do development on plaso you'll also need to install some develo
 * Python Mock
 
 ### PyLint
-At the moment Plaso development requires PyLint 1.5.x.
+At the moment Plaso development requires PyLint 1.6.x.
 
-**TODO: describe building pylint 1.5.x**
+**TODO: describe building pylint 1.6.x**
 
-For pylint 1.5.x the following additional dependencies are required:
+For pylint 1.6.x the following additional dependencies are required:
 * https://pypi.python.org/pypi/astroid
 * https://pypi.python.org/pypi/lazy-object-proxy
 * https://pypi.python.org/pypi/logilab-common
