@@ -19,7 +19,7 @@ The [GIFT copr](https://copr.fedorainfracloud.org/groups/g/gift/coprs/), contain
 For development we recommend using the dev track. To add it to your apt configuration run:
 ```
 sudo dnf install dnf-plugins-core
-sudo dnf copr enable gift/dev
+sudo dnf copr enable @gift/dev
 ```
 
 To install the dependencies run:
