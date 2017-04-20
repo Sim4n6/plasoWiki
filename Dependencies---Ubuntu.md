@@ -23,12 +23,12 @@ sudo add-apt-repository ppa:gift/dev
 
 To install the dependencies run:
 ```
-sh config/linux/install_gift_and_dependencies.sh include-development include-test
+sh config/linux/gift_ppa_install.sh include-development include-test
 ```
 
 For troubleshooting crashes it is recommended to install the following debug symbol packages as well:
 ```
-sh config/linux/install_gift_and_dependencies.sh include-debug
+sh config/linux/gift_ppa_install.sh include-debug
 ```
 
 ## Batch build
