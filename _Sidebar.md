@@ -19,7 +19,6 @@
 * [image_export](https://github.com/log2timeline/plaso/wiki/Using-image_export)
 * [log2timeline](https://github.com/log2timeline/plaso/wiki/Using-log2timeline)
 * [pinfo](https://github.com/log2timeline/plaso/wiki/Using-pinfo)
-* [preg](https://github.com/log2timeline/plaso/wiki/Using-preg)
 * [psort](https://github.com/log2timeline/plaso/wiki/Using-psort)
 
 # Installation
