@@ -15,20 +15,25 @@ And is moving to support:
 * allowing more targeted approach to the collection/parsing.
 
 ### Project status
-[Travis-CI](https://travis-ci.org/) | [AppVeyor](https://ci.appveyor.com) | [Coveralls](https://coveralls.io/)
---- | --- | --- 
-[![Build Status](https://travis-ci.org/log2timeline/plaso.svg?branch=master)](https://travis-ci.org/log2timeline/plaso) | [![Build status](https://ci.appveyor.com/api/projects/status/g3x5ylegjjo61p4m?svg=true)](https://ci.appveyor.com/project/joachimmetz/plaso) | [![Coverage Status](https://img.shields.io/coveralls/log2timeline/plaso.svg)](https://coveralls.io/r/log2timeline/plaso?branch=master)
+
+[Travis-CI](https://travis-ci.org/) | [AppVeyor](https://ci.appveyor.com) | [Coveralls](https://coveralls.io/) | [PyPI](https://pypi.python.org/pypi)
+--- | --- | --- | --- 
+[![Build Status](https://travis-ci.org/log2timeline/plaso.svg?branch=master)](https://travis-ci.org/log2timeline/plaso) | [![Build status](https://ci.appveyor.com/api/projects/status/g3x5ylegjjo61p4m?svg=true)](https://ci.appveyor.com/project/joachimmetz/plaso) | [![Coverage Status](https://img.shields.io/coveralls/log2timeline/plaso.svg)](https://coveralls.io/r/log2timeline/plaso?branch=master) | [![PyPI version](https://badge.fury.io/py/plaso.svg)](https://badge.fury.io/py/plaso)
 
 ### Supported Formats
+
 The information below is based of version 1.5.0
 
 #### Storage Media Image File Formats
+
 Storage Media Image File Format support is provided by [dfvfs](https://github.com/log2timeline/dfvfs/wiki#storage-media-types).
 
 #### Volume System Formats
+
 Volume System Format support is provided by [dfvfs](https://github.com/log2timeline/dfvfs/wiki#volume-systems).
 
 #### File System Formats
+
 File System Format support is provided by [dfvfs](https://github.com/log2timeline/dfvfs/wiki#file-systems).
 
 #### File formats
