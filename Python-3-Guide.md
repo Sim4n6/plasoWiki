@@ -126,9 +126,9 @@ dateutil.parser | yes
 dfvfs | yes (as of version 20160504)
 dpkt | yes
 efilter | yes
-hachoir_core | no
-hachoir_parser | no
-hachoir_metadata | no
+hachoir_core | **no**
+hachoir_parser | **no**
+hachoir_metadata | **no**
 IPython | yes
 pefile | yes
 psutil | yes
