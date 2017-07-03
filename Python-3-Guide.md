@@ -120,12 +120,12 @@ Dependency | Python 3 compatible
 --- | ---
 artifacts | yes
 bencode | yes
-binplist | no
+binplist | yes
 construct | yes
 dateutil.parser | yes
 dfvfs | yes (as of version 20160504)
-dpkt | no (pending [migrate_py3 branch](https://github.com/kbandla/dpkt/issues/243))
-efilter | yes (currently [broken](https://github.com/google/dotty/issues/23))
+dpkt | yes
+efilter | yes
 hachoir_core | no
 hachoir_parser | no
 hachoir_metadata | no
@@ -152,5 +152,5 @@ pyvhdi | yes (as of 20141221)
 pyvmdk | yes (as of 20141221)
 pyvshadow | yes (as of 20141223)
 six | yes
-sqlite3 (pysqlite) | unknown
+sqlite3 (pysqlite) | yes
 yaml | yes
