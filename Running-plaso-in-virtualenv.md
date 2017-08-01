@@ -30,7 +30,7 @@ sudo apt-get install python-virtualenv
 
 **TODO add more text**
 ```
-sudo apt-get install libyaml-dev
+sudo apt-get install libyaml-dev liblzma-dev
 ```
 
 ## Setting up plaso in virtualenv
