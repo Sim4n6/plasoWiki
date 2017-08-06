@@ -1,8 +1,9 @@
 ### SANS Investigative Forensic Toolkit (SIFT) Workstation
+
 SIFT workstation version 3 adds the [GIFT PPA](https://launchpad.net/~gift) stable track. All you need to do get the most recent stable release of Plaso is:
 ```
 sudo apt-get update
-sudo apt-get install python-plaso
+sudo apt-get install python-plaso plaso-tools
 ```
 
 ### Ubuntu 14.04 LTS
@@ -28,7 +29,7 @@ sudo add-apt-repository ppa:gift/stable
 Update and install plaso:
 ```
 sudo apt-get update
-sudo apt-get install plaso-tools python-plaso
+sudo apt-get install python-plaso plaso-tools
 ```
 
 ### Upgrading from version 1.2 to 1.3
