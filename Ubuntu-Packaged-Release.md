@@ -7,7 +7,7 @@ sudo apt-get install python-plaso
 
 ### Ubuntu 14.04 LTS
 
-To install plaso you'll need to have Ubuntu universe enabled:
+To install plaso from the GIFT PPA you'll need to have Ubuntu universe enabled:
 
 ```
 sudo add-apt-repository universe
