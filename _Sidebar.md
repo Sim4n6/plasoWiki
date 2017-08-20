@@ -33,7 +33,7 @@
 **Development Release**
 
 * [Fedora Core](https://github.com/log2timeline/plaso/wiki/Development-release-Fedora-Core)
-* [MacOS](https://github.com/log2timeline/plaso/wiki/Development-release-Mac-OS-X)
+* [MacOS](https://github.com/log2timeline/plaso/wiki/Development-release-MacOS)
 * [Ubuntu](https://github.com/log2timeline/plaso/wiki/Development-release-Ubuntu)
 * [Windows](https://github.com/log2timeline/plaso/wiki/Development-release-Windows)
 
