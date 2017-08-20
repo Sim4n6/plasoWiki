@@ -14,7 +14,7 @@ The first challenge you will encounter is setting up and maintaining your develo
   * [Building and installing dependencies on Ubuntu Linux](https://github.com/log2timeline/plaso/wiki/Dependencies---Ubuntu)
 * [Running the development release on Fedora Core Linux](https://github.com/log2timeline/plaso/wiki/Development-release-Fedora-Core)
   * [Building and installing dependencies on Fedora Core Linux](https://github.com/log2timeline/plaso/wiki/Dependencies-Fedora-Core)
-* [Running the development release on Mac OS X](https://github.com/log2timeline/plaso/wiki/Development-release-Mac-OS-X)
+* [Running the development release on Mac OS X](https://github.com/log2timeline/plaso/wiki/Development-release-MacOS)
   * [Building and installing dependencies on Mac OS X](https://github.com/log2timeline/plaso/wiki/Dependencies-Mac-OS-X)
 * [Running the development release on Windows](https://github.com/log2timeline/plaso/wiki/Development-release-Windows)
   * [Building and installing dependencies on Windows](https://github.com/log2timeline/plaso/wiki/Dependencies-Windows)
