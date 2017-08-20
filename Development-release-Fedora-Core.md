@@ -1,6 +1,6 @@
 To download the latest version of Plaso you'll need to install the git tools:
 ```
-sudo yum install git
+sudo dnf install git
 ```
 
 Checkout the plaso source from the git repo:
@@ -20,19 +20,5 @@ python utils/check_dependencies.py
 ## Development tools
 If you intend to do development on plaso you'll also need to install some development tools:
 
-* PyLint
+* PyLint 1.7.x
 * Python Mock
-
-### PyLint
-At the moment Plaso development requires PyLint 1.6.x.
-
-**TODO: describe building pylint 1.6.x**
-
-For pylint 1.6.x the following additional dependencies are required:
-* https://pypi.python.org/pypi/astroid
-* https://pypi.python.org/pypi/lazy-object-proxy
-* https://pypi.python.org/pypi/logilab-common
-* https://pypi.python.org/pypi/wrapt
-
-### Python Mock
-**TODO: add description.**
