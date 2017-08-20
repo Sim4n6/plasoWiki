@@ -25,7 +25,7 @@
 
 **Packaged Release**
 
-* [Mac OS X](https://github.com/log2timeline/plaso/wiki/Mac-OS-X-Packaged-Release)
+* [MacOS](https://github.com/log2timeline/plaso/wiki/Mac-OS-X-Packaged-Release)
 * [Ubuntu](https://github.com/log2timeline/plaso/wiki/Ubuntu-Packaged-Release)
 * [Windows](https://github.com/log2timeline/plaso/wiki/Windows-Packaged-Release)
 * [Docker](https://github.com/log2timeline/plaso/wiki/Installing-with-docker)
@@ -33,7 +33,7 @@
 **Development Release**
 
 * [Fedora Core](https://github.com/log2timeline/plaso/wiki/Development-release-Fedora-Core)
-* [Mac OS X](https://github.com/log2timeline/plaso/wiki/Development-release-Mac-OS-X)
+* [MacOS](https://github.com/log2timeline/plaso/wiki/Development-release-Mac-OS-X)
 * [Ubuntu](https://github.com/log2timeline/plaso/wiki/Development-release-Ubuntu)
 * [Windows](https://github.com/log2timeline/plaso/wiki/Development-release-Windows)
 
@@ -53,6 +53,6 @@
 * [Profiling](https://github.com/log2timeline/plaso/wiki/Profiling)
 * [Testing](https://github.com/log2timeline/plaso/wiki/Testing)
 * [Troubleshooting](https://github.com/log2timeline/plaso/wiki/Troubleshooting)
-* [Troubleshooting on Mac OS X](https://github.com/log2timeline/plaso/wiki/Troubleshooting-Mac-OS-X)
+* [Troubleshooting on MacOS](https://github.com/log2timeline/plaso/wiki/Troubleshooting-Mac-OS-X)
 * [Troubleshooting on Ubuntu](https://github.com/log2timeline/plaso/wiki/Troubleshooting-Ubuntu)
 * [Troubleshooting on Windows](https://github.com/log2timeline/plaso/wiki/Troubleshooting-Windows)
