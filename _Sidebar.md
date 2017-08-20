@@ -25,7 +25,7 @@
 
 **Packaged Release**
 
-* [MacOS](https://github.com/log2timeline/plaso/wiki/Mac-OS-X-Packaged-Release)
+* [MacOS](https://github.com/log2timeline/plaso/wiki/MacOS-Packaged-Release)
 * [Ubuntu](https://github.com/log2timeline/plaso/wiki/Ubuntu-Packaged-Release)
 * [Windows](https://github.com/log2timeline/plaso/wiki/Windows-Packaged-Release)
 * [Docker](https://github.com/log2timeline/plaso/wiki/Installing-with-docker)
