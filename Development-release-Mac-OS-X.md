@@ -5,7 +5,7 @@ Checkout the plaso source from the git repo:
 git clone https://github.com/log2timeline/plaso.git
 ```
 
-To be able to run the plaso [development release](https://github.com/log2timeline/plaso/wiki/Releases-and-roadmap) on Mac OS X you'll have to have installed the [dependencies](https://github.com/log2timeline/plaso/wiki/Dependencies-Mac-OS-X).
+To be able to run the plaso [development release](https://github.com/log2timeline/plaso/wiki/Releases-and-roadmap) on MacOS you'll have to have installed the [dependencies](https://github.com/log2timeline/plaso/wiki/Dependencies-Mac-OS-X).
 
 Check if you have all the dependencies installed and have the right minimum version:
 ```
@@ -24,19 +24,5 @@ Apple also ships version 2.0.1 of pyparsing under ```/System/Library/Frameworks/
 ## Development tools
 If you intend to do development on plaso you'll also need to install some development tools:
 
-* PyLint
+* PyLint 1.7.x
 * Python Mock
-
-### PyLint
-At the moment Plaso development requires PyLint 1.6.x.
-
-**TODO: describe building pylint 1.6.x**
-
-For pylint 1.6.x the following additional dependencies are required:
-* https://pypi.python.org/pypi/astroid
-* https://pypi.python.org/pypi/lazy-object-proxy
-* https://pypi.python.org/pypi/logilab-common
-* https://pypi.python.org/pypi/wrapt
-
-### Python Mock
-**TODO: add description.**
