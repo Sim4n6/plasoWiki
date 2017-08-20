@@ -8,7 +8,7 @@ First determine which version of plaso is must suitable to your needs, for more 
 
 To install the packaged release see:
 
-* [Mac OS X](https://github.com/log2timeline/plaso/wiki/Mac-OS-X-Packaged-Release)
+* [MacOS](https://github.com/log2timeline/plaso/wiki/MacOS-Packaged-Release)
 * [Ubuntu](https://github.com/log2timeline/plaso/wiki/Ubuntu-Packaged-Release)
 * [Windows](https://github.com/log2timeline/plaso/wiki/Windows-Packaged-Release)
 
