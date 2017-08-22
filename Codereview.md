@@ -87,12 +87,12 @@ During the code review process you'll be asked to change few things, that is the
 
 When all code changes have been completed and you are ready for another round execute:
 ```
-./utils/update.sh [--nobrowser]
+./utils/review.py [--nobrowser] update
 ```
 
-If you are running the `update.sh` script off a github fork make sure all changes have been committed and pushed to your fork before running `update.sh`.
+If you are running the `review.py` script off a github fork make sure all changes have been committed and pushed to your fork before running `review.py`.
 
-The `update.sh` script will also run the linter and the unit tests.
+The `review.py` script will also run the linter and the unit tests.
 
 The update process continues until the reviewer thinks the code is good enough to be submitted into the project. Then a "**LGTM**" (Looks Good To Me) is given and you can submit the code.
 
