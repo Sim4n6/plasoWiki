@@ -1,6 +1,6 @@
 To install the Windows Packaged Release plaso you need to download the latest version from https://github.com/log2timeline/plaso/releases
 
-Find the highest version number (as of this time version 1.5.0) and inside the folder called ```release``` is a ZIP file.
+Attached to the most recent release (as of this time version 20170930) is a ZIP file.
 
 The name of the ZIP file contains:
 
