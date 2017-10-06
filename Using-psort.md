@@ -11,7 +11,7 @@ To see a list of all available parameters you can pass to psort use ``-h`` or ``
 The simplest way to run the tool is simply provide it with a storage file.
 
 ```
-$ psort.py test.plaso
+$ psort.py -w test.log test.plaso
 ```
 
 This will use the default output module and print out to STDOUT a list of all extracted events, merging detected duplicate events. All timestamps on the output will be in UTC.
