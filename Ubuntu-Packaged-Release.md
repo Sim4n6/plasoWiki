@@ -31,13 +31,3 @@ Update and install plaso:
 sudo apt-get update
 sudo apt-get install python-plaso plaso-tools
 ```
-
-### Upgrading from version 1.2 to 1.3
-
-One of the dependencies was renamed causing conflicts when upgrading from stable version 1.2 to version 1.3. In order to fix that conflict the following commands need to be run:
-```
-sudo apt-get update
-sudo apt-get remove binplist python-plaso
-sudo apt-get install python-plaso
-```
-
