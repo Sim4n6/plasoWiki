@@ -21,7 +21,7 @@ Not necessary but we recommend that your installation is up to date:
 sudo apt-get upgrade
 ```
 
-Add the [GIFT PPA](https://launchpad.net/~gift):
+Add the [GIFT Personal Package Archive (PPA)](https://launchpad.net/~gift):
 ```
 sudo add-apt-repository ppa:gift/stable
 ```
