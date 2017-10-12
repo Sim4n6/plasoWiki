@@ -28,7 +28,9 @@ Prefix unused function or method arguments with `unused_`.
 
 * Quote strings as ' or """ instead of "
   * Quote strings in command line arguments (argparse) as "
-* Textual strings should be Unicode strings and hence defined as u'string'
+* Textual strings should be Unicode strings.
+  * As of October 2017, the Plaso codebase is migrating to using the [unicode_literals](http://python-future.org/unicode_literals.html) functionality to support Python3
+  * Please use this module in any new code. You may still see explicitly declared unicode strings (u'string') in the codebase for now.
 * Use the format() function instead of the %-style of formatting strings.
   * Use positional or parameter format specifiers with typing e.g. '{0:s}' or '{text:s}' instead of '{0}', '{}' or '{:s}'. If we ever want to have language specific output strings we don't need to change the entire codebase (again). It also makes is easier in determining what type every parameter is expected to be.
 
