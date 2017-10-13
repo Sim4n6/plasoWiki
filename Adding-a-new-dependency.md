@@ -25,24 +25,7 @@ Once the dependency has been added to l2tdevtools it can be added to the [GIFT P
 ### Getting a dependency in l2tbinaries
 Once the dependency has been added to l2tdevtools it can be added to [l2tbinaries](https://github.com/log2timeline/l2tbinaries). Ask one of the maintainers to upload your package.
 
-**Notes for maintainers**
-
-Create a fresh clone of the l2tbinaries repository:
-```
-git clone https://github.com/log2timeline/l2tbinaries.git
-```
-Commit the new packages:
-```
-git commit -a -m "Updated ... builds of dependencies."
-```
-Since there is no need for a commit history and to save space, squash the changes with the previous changes. The changes are grouped per platform.
-```
-git rebase -i HEAD~4
-```
-Force an update of the l2tbinaries repository:
-```
-git push -f
-```
+**Notes for maintainers:** https://github.com/log2timeline/l2tdocs/blob/master/process/l2tbinaries.md
 
 ## Source changes
 **TODO: describe**
