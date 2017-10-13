@@ -17,7 +17,12 @@ Plaso uses [l2tdevtools](https://github.com/log2timeline/l2tdevtools) to limit t
 
 If the build process of the dependency is similar enough what is currently supported then adding a new dependency should be relative straight forward by adding it to [data/projects.ini](https://github.com/log2timeline/l2tdevtools/blob/master/data/projects.ini). If not reach out to discuss how we can get support into l2tdevtools for the specific dependency.
 
-### Getting a dependency in GIFT
+### Getting a dependency in GIFT COPR
+Once the dependency has been added to l2tdevtools it can be added to the [GIFT COPR](https://copr.fedorainfracloud.org/groups/g/gift/coprs/). Ask one of the [log2timeline maintainers](https://github.com/orgs/log2timeline/teams/log2timeline-maintainers/members) to upload your package.
+
+**Notes for maintainers:** https://github.com/log2timeline/l2tdocs/blob/master/process/GIFT%20COPR.md
+
+### Getting a dependency in GIFT PPA
 Once the dependency has been added to l2tdevtools it can be added to the [GIFT PPA](https://launchpad.net/~gift). Ask one of the [log2timeline maintainers](https://github.com/orgs/log2timeline/teams/log2timeline-maintainers/members) to upload your package.
 
 **Notes for maintainers:** https://github.com/log2timeline/l2tdocs/blob/master/process/GIFT%20PPA.md
