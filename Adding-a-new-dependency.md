@@ -42,7 +42,7 @@ Once the dependency has been added to l2tdevtools it can be added to [l2tbinarie
 
 ## Source changes
 
-Dependencies are defined in multiple different configuration files and scripts in the plaso source tree. To keep them consistent plaso uses l2tdevtools update-dependencies.py to generate these configuration files and scripts based on [dependency.ini](https://github.com/log2timeline/plaso/blob/master/dependency.ini).
+Dependencies are defined in multiple different configuration files and scripts in the plaso source tree. To keep them consistent plaso uses l2tdevtools update-dependencies.py to generate these configuration files and scripts based on [dependencies.ini](https://github.com/log2timeline/plaso/blob/master/dependencies.ini).
 
 ```
 PYTHONPATH=../l2tdevtools ../l2tdevtools/utils/update_dependencies.py
