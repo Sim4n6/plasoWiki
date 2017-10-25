@@ -146,32 +146,31 @@ The following instructions apply to the following dependencies:
 
 Name | Download URL | Comments | Dependencies
 --- | --- | --- | --- 
-libbde | https://github.com/libyal/libbde | | dokan
+libbde | https://github.com/libyal/libbde | | 
 libesedb | https://github.com/libyal/libesedb | |
 libevt | https://github.com/libyal/libevt | |
 libevtx | https://github.com/libyal/libevtx | |
-libewf | https://github.com/libyal/libewf-legacy | | dokan, zlib
+libewf | https://github.com/libyal/libewf-legacy | | zlib
 libfsntfs | https://github.com/libyal/libfsntfs | |
-libfvde | https://github.com/libyal/libfvde | | dokan, zlib
+libfvde | https://github.com/libyal/libfvde | | 
 libfwnt | https://github.com/libyal/libfwnt | |
 libfwsi | https://github.com/libyal/libfwsi | |
 liblnk | https://github.com/libyal/liblnk | |
 libmsiecf | https://github.com/libyal/libmsiecf | |
-libolecf | https://github.com/libyal/libolecf | | dokan
-libqcow | https://github.com/libyal/libqcow | | dokan, zlib
-libregf | https://github.com/libyal/libregf | | dokan
+libolecf | https://github.com/libyal/libolecf | | 
+libqcow | https://github.com/libyal/libqcow | | 
+libregf | https://github.com/libyal/libregf | | 
 libscca | https://github.com/libyal/libscca | |
 libsigscan | https://github.com/libyal/libsigscan | |
 libsmdev | https://github.com/libyal/libsmdev | |
-libsmraw | https://github.com/libyal/libsmraw | | dokan
-libvhdi | https://github.com/libyal/libvhdi | | dokan
-libvmdk | https://github.com/libyal/libvmdk | | dokan, zlib
-libvshadow | https://github.com/libyal/libvshadow | | dokan
+libsmraw | https://github.com/libyal/libsmraw | | 
+libvhdi | https://github.com/libyal/libvhdi | | 
+libvmdk | https://github.com/libyal/libvmdk | | 
+libvshadow | https://github.com/libyal/libvshadow | | 
 
 Install the following dependencies for building libyal:
 
 * zlib
-* dokan
 
 **TODO: describe building dependencies.**
 
@@ -188,20 +187,10 @@ Extract the source package:
 tar xfv libevt-alpha-20131013.tar.gz
 ```
 
-Open the Microsoft Visual Studio 2008 solution file:
+Next change into the package source directory and have setup.py build a MSI:
 ```
-C:\plaso-build\libevt-20131013\msvcspp\libevt.sln
-```
-
-Build the solution.
-
-For information on how to create a 64-bit build on Visual Studio 2010 express also see the section about [Microsoft Visual Studio 2010 express and 64-bit compilation](https://github.com/log2timeline/plaso/wiki/Dependencies-Windows#microsoft-visual-studio-2010-express-and-64-bit-compilation).
-
-To build the MSI file run the following commands from the build root directory:
-```
-cd libevt-20131013\pyevt\
+cd libevt-20131013
 C:\Python27\python.exe setup.py bdist_msi
-cd ..\..
 ```
 
 This will create a MSI in the dist sub directory e.g.:
