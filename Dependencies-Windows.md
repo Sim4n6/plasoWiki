@@ -46,7 +46,7 @@ Make sure the necessary building tools and development packages are installed on
 
 * [Python 2.7 Windows installation](http://python.org/download/)
 * [Python setup tools](http://pypi.python.org/pypi/setuptools/)
-* Microsoft Visual Studio 2008 or later
+* [Microsoft Visual Studio C++ Compiler](https://wiki.python.org/moin/WindowsCompilers)
 * Cython
 
 **Note that plaso itself is platform independent but if you use a 64-bit version of Python all of the dependencies should be compiled as 64-bit.**
@@ -88,16 +88,26 @@ bencode | https://pypi.python.org/pypi/bencode | |
 binplist | https://github.com/google/binplist/releases | |
 construct | https://pypi.python.org/pypi/construct#downloads | 2.5.2 or later 2.x version | six
 dateutil | https://pypi.python.org/pypi/python-dateutil | |
+dfdatetime | https://github.com/log2timeline/dfdatetime/releases | |
+dfvfs | https://github.com/log2timeline/dfvfs/releases | |
+dfwinreg | https://github.com/log2timeline/dfwinreg/releases | |
 dpkt | https://pypi.python.org/pypi/dpkt | |
 google-apputils | https://pypi.python.org/pypi/google-apputils | |
+hachoir-core | https://bitbucket.org/haypo/hachoir/wiki/Install/source | |
+hachoir-parser | https://bitbucket.org/haypo/hachoir/wiki/Install/source | |
+hachoir-metadata | https://bitbucket.org/haypo/hachoir/wiki/Install/source | |
+pefile | https://github.com/erocarrera/pefile/releases | |
+psutil | https://pypi.python.org/pypi/psutil | |
 PyParsing | http://sourceforge.net/projects/pyparsing/files/ | 2.0.3 or later 2.x version |
 python-gflags | https://github.com/google/python-gflags/releases | |
+pytsk | https://github.com/py4n6/pytsk/releases | |
 pytz | https://pypi.python.org/pypi/pytz | |
 PyYAML | http://pyyaml.org/wiki/PyYAML | |
 pyzmq | https://pypi.python.org/pypi/pyzmq | Needs Cython to build |
 requests | https://github.com/kennethreitz/requests/releases | Make sure to click on: "Show # newer tags" | 
 six | https://pypi.python.org/pypi/six#downloads | |
 yara-python | https://github.com/VirusTotal/yara-python | | 
+XlsxWriter | https://github.com/jmcnamara/XlsxWriter/releases | |
 
 #### Building a MSI
 
@@ -130,103 +140,6 @@ To install the MSI from the command line:
 msiexec.exe /i dist\package-1.0.0.win32.msi /q
 ```
 
-### dfVFS
-
-The dfVFS build instructions can be found [here](https://github.com/log2timeline/dfvfs/wiki/Building). Note that for dfVFS to function correctly several dependencies, like pytsk, mentioned later in a section of this page, are required.
-
-Download the latest source package from: https://github.com/log2timeline/dfvfs/releases
-
-To build the MSI file run the following commands from the build root directory:
-```
-tar xfv dfvfs-20150129.tar.gz
-cd dfvfs\
-C:\Python27\python.exe setup.py bdist_msi
-cd ..
-```
-
-This will create a MSI in the dist sub directory e.g.:
-```
-dist\dfvfs-20150129.win32.msi
-```
-
-Install the MSI.
-
-### IPython
-
-**Note the MSI packaging for IPython seems to be broken! E.g. the files in scripts/ directory are missing .py extensions.**
-
-Download the latest 1.x source package from: https://github.com/ipython/ipython/releases
-
-To build the MSI file run the following commands from the build root directory:
-```
-tar xfv ipython-1.2.1.tar.gz
-cd ipython-1.2.1\
-C:\Python27\python.exe setup.py bdist_msi
-cd ..
-```
-
-This will create a MSI in the dist sub directory e.g.:
-```
-dist\ipython-1.2.1.win32.msi
-```
-
-Install the MSI.
-
-For information on how to build IPython from source see: http://ipython.org/ipython-doc/stable/install/install.html
-
-### Hachoir
-
-Download the latest source package from: https://bitbucket.org/haypo/hachoir/wiki/Install/source
-
-You'll need:
-
-* hachoir-core-1.3.3.tar.gz
-* hachoir-parser-1.3.4.tar.gz
-* hachoir-metadata-1.3.3.tar.gz
-
-To build the MSI files run the following commands from the build root directory:
-```
-tar xfv hachoir-core-1.3.3.tar.gz
-cd hachoir-core-1.3.3\
-C:\Python27\python.exe setup.py bdist_msi
-cd ..
-```
-
-This will create a MSI in the dist sub directory e.g.:
-```
-dist\hachoir-core-1.3.3.win32.msi
-```
-
-Install the MSI.
-
-```
-tar xfv hachoir-parser-1.3.4.tar.gz
-cd hachoir-parser-1.3.4\
-C:\Python27\python.exe setup.py bdist_msi
-cd ..
-```
-
-This will create a MSI in the dist sub directory e.g.:
-```
-dist\hachoir-parser-1.3.4.win32.msi
-```
-
-Install the MSI.
-
-```
-tar xfv hachoir-metadata-1.3.3.tar.gz
-cd hachoir-metadata-1.3.3\
-C:\Python27\python.exe setup.py bdist_msi
-cd ...
-```
-
-This will create a MSI in the dist sub directory e.g.:
-```
-dist\hachoir-metadata-1.3.3.win32.msi
-```
-
-Install the MSI.
-
 ### libyal
 
 The following instructions apply to the following dependencies:
@@ -237,7 +150,7 @@ libbde | https://github.com/libyal/libbde | | dokan
 libesedb | https://github.com/libyal/libesedb | |
 libevt | https://github.com/libyal/libevt | |
 libevtx | https://github.com/libyal/libevtx | |
-libewf | https://github.com/libyal/libewf | | dokan, zlib
+libewf | https://github.com/libyal/libewf-legacy | | dokan, zlib
 libfsntfs | https://github.com/libyal/libfsntfs | |
 libfvde | https://github.com/libyal/libfvde | | dokan, zlib
 libfwnt | https://github.com/libyal/libfwnt | |
@@ -258,7 +171,6 @@ libvshadow | https://github.com/libyal/libvshadow | | dokan
 Install the following dependencies for building libyal:
 
 * zlib
-* bzip2
 * dokan
 
 **TODO: describe building dependencies.**
@@ -298,39 +210,6 @@ dist\pyevt-20131013.1.win32-py2.7.msi
 ```
 
 Install the MSI.
-
-### Pefile
-
-**TODO describe**
-
-### Psutils
-
-Download the latest source package from: https://pypi.python.org/pypi/psutil
-
-To build the MSI file run the following commands from the build root directory:
-```
-tar xfv psutil-2.2.1.tar.gz
-cd psutil-2.2.1
-C:\Python27\python.exe setup.py bdist_msi
-cd ..
-```
-
-This will create a MSI in the dist sub directory e.g.:
-```
-dist\psutil-2.2.1.win32-py2.7.msi
-```
-
-Install the MSI.
-
-To build psutil with Visual Studio 2010 we need to run the previous commands from either the "Visual Studio Command Prompt (2010)" or "Windows SDK 7.1 Command Prompt" (or equivalent). Check if the VS100COMNTOOLS environment variable is set:
-```
-echo %VS100COMNTOOLS%
-```
-
-Then set the VS90COMNTOOLS to match VS100COMNTOOLS for setup.py to detect Visual Studio 2010 correctly:
-```
-set VS90COMNTOOLS=%VS100COMNTOOLS%
-```
 
 ### pysqlite
 
@@ -375,12 +254,6 @@ C:\Python27\Lib\site-package\pysqlite2\
 ### pywin32
 
 Download the latest installer from: http://sourceforge.net/projects/pywin32/files/pywin32/
-
-### Pytsk
-
-The build and install Sleuthkit and Pytsk see:
-
-* https://github.com/py4n6/pytsk/wiki/Building
 
 ### SQLite
 
@@ -429,42 +302,3 @@ dist\pyelasticsearch-1.0.win32.msi
 ```
 
 Install the MSI.
-
-#### XlsxWriter
-
-Download the latest source package from: https://github.com/jmcnamara/XlsxWriter/releases
-
-To build the MSI file run the following commands from the build root directory:
-```
-tar xfv XlsxWriter-RELEASE_0.7.3.tar.gz
-cd XlsxWriter-RELEASE_0.7.3\
-C:\Python27\python.exe setup.py bdist_msi
-cd ..
-```
-
-This will create a MSI in the dist sub directory e.g.:
-```
-dist\XlsxWriter-0.7.3.win32.msi
-```
-
-Install the MSI.
-
-## Additional information
-### Microsoft Visual Studio 2010 express and 64-bit compilation
-
-Enabling 64-bit compilation support on the express version of Microsoft Visual Studio 2010 can be a tedious process. Below are some related links:
-
-* http://msdn.microsoft.com/en-us/library/vstudio/9yb4317s(v=vs.100).aspx
-* http://support.microsoft.com/kb/2519277
-
-If you have set it up correctly the following should work:
-```
-Go to: "Configuration manager -> Active solution platform"
-Select "<New>"
-
-Type or select the new platform: "x64"
-Copy settings from: "Win32"
-Create new project platforms: enabled
-
-For every project "Configuration Properties -> General -> Platform Toolset" = "Windows7.1SDK"
-```
