@@ -14,10 +14,16 @@ The l2tdevtools project provides [an update script](https://github.com/log2timel
 
 The script requires [Python WMI](https://pypi.python.org/pypi/WMI/).
 
-To run:
+To install the plaso release versions of the dependencies run:
 ```
 set PYTHONPATH=.
 C:\Python27\python.exe tools\update.py
+```
+
+To install the development versions of the dependencies run:
+```
+set PYTHONPATH=.
+C:\Python27\python.exe tools\update.py --track=dev
 ```
 
 ## Batch build
