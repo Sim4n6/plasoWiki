@@ -1,6 +1,6 @@
 ## Code Review
 
-All code submitted into the plaso project goes through code review. We use the tool Rietveld available on [codereview.appspot.com](https://codereview.appspot.com), which may not be perfect but we consider it good enough for our purposes.
+All code submitted into the plaso project goes through code review. We use the GitHub codereview process, which while not perfect, is good enough for our purposes.
 
 One helpful hint is while you have a code in code review monitor the development mailing list for large changes or new dependencies that may potentially affect your code. Such changes may include code re-factors that change plugin interface while you have a plugin in review. These should be rare but they do happen every now and then.
 
@@ -32,21 +32,9 @@ Therefore we would like to ask people to hang on, to get through the code review
 
 And if things are unclear, don't hesitate to ask. The developer mailing list is: log2timeline-dev@googlegroups.com
 
-### Why not use github pull requests?
-
-Although github pull requests are convenient for small code reviews they are not very well suited for larger ones. It is also not a very efficient User Interface/Experience on the reviewer side.
-
-Another downside of using github pull requests are that they convolute the commit history and we really don't want to have contributors have to extensively study git first before being able to commit to the project. [More discussion on the matter.](http://blog.spreedly.com/2014/06/24/merge-pull-request-considered-harmful/)
-
 ### Why not use reviewable.io?
 
 We have looked at [reviewable.io](https://reviewable.io) and our current assessment is that it looks very nice but does not make for a very functional User Interface/Experience. It also convolutes the git commit history.
-
-### How it Works
-
-The code review workflow predates plaso's move to github. We are in the process of adding support for a more github aligned workflow. To be able to use the advantages github offers without having to fight against its limitations.
-
-See: [Code review process](https://github.com/log2timeline/l2tdocs/blob/master/process/Code%20review%20process.asciidoc)
 
 #### Referencing github issues
 
@@ -58,23 +46,6 @@ Added serializers profiler #120
 
 Where the "#120" is a reference to issue number 120.
 
-#### Nobrowser
-
-If you are developing the code from a computer that does not have a browser installed, or you are accessing the development machine remotely you need to supply the `--nobrowser` command line argument and then visit the [following site](https://codereview.appspot.com/get-access-token) on a computer with a browser.
-
-This will create an OAuth token that you can copy paste to the terminal window.
-
-#### Starting a code review
-
-If everything goes well the script will report the code review (or change list (CL)) created on Rietveld e.g.:
-```
-Issue created: URL: http://codereview.appspot.com/6811077
-```
-
-The details of the code review can be changed at a later point in time via that URL.
-
-The creation of the code review will also send an email the [developer mailing list](https://groups.google.com/forum/#!forum/log2timeline-dev), notifying people that there is a code review pending and it will show up in the reviewers queue on the Rietveld site.
-
 #### Updating the code review
 
 During the code review process you'll be asked to change few things, that is the reviewer will add comments. Please follow the following guideline during the code review process:
@@ -83,21 +54,5 @@ During the code review process you'll be asked to change few things, that is the
   * It is also necessary to publish the comments, otherwise the reviewer doesn't see the answers.
   * On the codereview site hit "m" for "Publish+Mail Comments" so that the review gets updated alongside the newly updated code.
 * Make the necessary changes to the code, as suggested by the reviewer.
-* Make sure you have not checked in the changes locally (as in not executed `git commit`").
 
-When all code changes have been completed and you are ready for another round execute:
-```
-./utils/review.py [--nobrowser] update
-```
-
-If you are running the `review.py` script off a github fork make sure all changes have been committed and pushed to your fork before running `review.py`.
-
-The `review.py` script will also run the linter and the unit tests.
-
-The update process continues until the reviewer thinks the code is good enough to be submitted into the project. Then a "**LGTM**" (Looks Good To Me) is given and you can submit the code.
-
-#### Code freeze period
-
-Shortly before we make a new release a code freeze period will be announced on the development mailing list. During that code freeze no new features will be allowed to be submitted into the project codebase. During that time the focus is on testing and bug fixes.
-
-In such a freeze, new features will added to the codebase after the release. The project owners should typically warn you that we are in a code freeze if there is any chance of you needing to submit a new feature during code freeze.
+The update process continues until the reviewer thinks the code is good enough to be submitted into the project. 
