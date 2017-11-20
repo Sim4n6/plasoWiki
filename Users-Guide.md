@@ -11,6 +11,7 @@ To install the packaged release see:
 * [MacOS](https://github.com/log2timeline/plaso/wiki/MacOS-Packaged-Release)
 * [Ubuntu](https://github.com/log2timeline/plaso/wiki/Ubuntu-Packaged-Release)
 * [Windows](https://github.com/log2timeline/plaso/wiki/Windows-Packaged-Release)
+* [Docker](https://github.com/log2timeline/plaso/wiki/Installing-with-docker)
 
 ### Before we start
 
