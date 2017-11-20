@@ -52,8 +52,7 @@ Before you start writing the code, please review the following:
 
 ### Before you submit your first code review
 
-1. Go to https://codereview.appspot.com to setup your account, you'll need a Google account for this.
-2. Join the development mailing list: [log2timeline-dev@googlegroups.com](https://groups.google.com/forum/?fromgroups#!forum/log2timeline-dev), we recommend using the same account as step 1
+1. Join the development mailing list: [log2timeline-dev@googlegroups.com](https://groups.google.com/forum/?fromgroups#!forum/log2timeline-dev), we recommend using the same account as step 1
 2. Install the required development tools like pylint, python-mock, sphinx
 3. Make sure to run all the tests inside the plaso and the dfVFS codebase, and that they successfully complete on your development system
 4. Make sure your development system is set up correctly so that you can develop and test correctly.
