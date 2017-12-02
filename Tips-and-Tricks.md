@@ -13,7 +13,7 @@ $ log2timeline.py test.plaso output.bodyfile
 
 The mactime parser of plaso will parse the bodyfile.
 
-Also see: [http://wiki.sleuthkit.org/index.php?title=Mactime]
+Also see: [Mactime](http://wiki.sleuthkit.org/index.php?title=Mactime)
 
 ## Split the output of psort
 
