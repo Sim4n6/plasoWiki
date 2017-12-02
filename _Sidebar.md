@@ -9,7 +9,7 @@
 * [How to get started](https://github.com/log2timeline/plaso/wiki/Users-Guide)
 * [Creating a timeline](https://github.com/log2timeline/plaso/wiki/Creating-a-timeline)
 * [Using collection Filters](https://github.com/log2timeline/plaso/wiki/Collection-Filters)
-* [Filters](https://github.com/log2timeline/plaso/wiki/Filters)
+* [Event filters](https://github.com/log2timeline/plaso/wiki/Event-Filters)
 * [Analysis plugins](https://github.com/log2timeline/plaso/wiki/Analysis-plugins)
 * [Tips and Tricks](https://github.com/log2timeline/plaso/wiki/Tips-and-Tricks)
 * [Log2Timeline Perl (Legacy)](https://github.com/log2timeline/plaso/wiki/Log2Timeline-Perl-(Legacy))
