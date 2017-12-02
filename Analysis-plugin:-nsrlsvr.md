@@ -31,7 +31,7 @@ log2timeline.py --hashers md5 timeline.plaso image.raw
 
 **Make sure to enable hashers supported by nsrlsvr, which is md5 in this example.**
 
-Next run psort to tag event:
+Next run psort to tag events:
 ```
 psort.py --analysis nsrlsvr --nsrlsvr-hash md5 --nsrlsvr-host localhost --nsrlsvr-port 9120 -o null timeline.plaso
 ```
