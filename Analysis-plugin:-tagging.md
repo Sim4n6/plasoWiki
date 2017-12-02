@@ -28,3 +28,7 @@ Next run psort to tag events:
 ```
 psort.py --analysis tagging --tagging-file tagging-file.txt timeline.plaso
 ```
+
+## Also see
+
+* [Event filters](https://github.com/log2timeline/plaso/wiki/Filters)
