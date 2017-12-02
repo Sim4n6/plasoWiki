@@ -2,7 +2,20 @@ Notes on how to use the tagging analysis plugin.
 
 ## Creating the tagging file
 
-A tagging-file.txt is an UTF-8 encoded text file that contains tagging expressions.
+A tagging-file.txt is an UTF-8 encoded text file that contains tagging definitions.
+
+A tagging definition consists of:
+```
+TAG LABEL
+  EVENT FILTER EXPRESSION
+```
+
+For example:
+```
+task_schedule
+  data_type is 'windows:evt:record' and source_name is 'Security' and event_identifier is 602
+  data_type is 'windows:evtx:record' and source_name is 'Microsoft-Windows-Security-Auditing' and event_identifier is 4698
+```
 
 ## Running plaso
 
