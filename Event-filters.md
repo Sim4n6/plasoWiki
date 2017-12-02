@@ -1,4 +1,4 @@
-Filters can be used both during the extraction phase and in the post-processing stage of the tool.
+Event filters can be used both during the extraction phase and in the post-processing stage of the tool.
 
 Tools that have filter support:
  + [psort](https://github.com/log2timeline/plaso/wiki/Using-psort#filtering)
