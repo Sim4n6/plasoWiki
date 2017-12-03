@@ -7,7 +7,7 @@ A tagging-file.txt is an UTF-8 encoded text file that contains tagging definitio
 A tagging definition consists of:
 ```
 TAG LABEL
-  EVENT FILTER EXPRESSION
+  EVENT TAGGING EXPRESSION
 ```
 
 For example:
