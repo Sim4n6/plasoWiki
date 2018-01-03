@@ -1,8 +1,8 @@
 # Style Guide
 
-We primarily follow the [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html). 
+We primarily follow the [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html).
 
-Various plaso specific additions/variations are:
+Various Plaso specific additions/variations are:
 
 #### Indentation
 
@@ -26,11 +26,10 @@ Prefix unused function or method arguments with `unused_`.
 
 #### Strings
 
-* Quote strings as ' or """ instead of "
+* Quote strings as ' or """ and not "
   * Quote strings in command line arguments (argparse) as "
 * Textual strings should be Unicode strings.
-  * As of October 2017, the Plaso codebase is migrating to using the [unicode_literals](http://python-future.org/unicode_literals.html) functionality to support Python3
-  * Please use this module in any new code. You may still see explicitly declared unicode strings (u'string') in the codebase for now.
+  * Use the use the [unicode_literals](http://python-future.org/unicode_literals.html) module to make all strings unicode by default.
 * Use the format() function instead of the %-style of formatting strings.
   * Use positional or parameter format specifiers with typing e.g. '{0:s}' or '{text:s}' instead of '{0}', '{}' or '{:s}'. If we ever want to have language specific output strings we don't need to change the entire codebase (again). It also makes is easier in determining what type every parameter is expected to be.
 
@@ -43,9 +42,9 @@ Prefix unused function or method arguments with `unused_`.
 #### Docstrings
 
 * Use English, and avoid abbreviations. Use "for example" or "such as" instead of Latin abbreviations like "e.g.".
-* We use "Google Style" docstrings the [Google style guide](https://google.github.io/styleguide/pyguide.html) has some slightly ambiguous example code, so instead, follow the examples from [this page](http://sphinxcontrib-napoleon.readthedocs.org/en/latest/example_google.html) as well as the notes below. 
+* We use "Google Style" docstrings see the examples at [this page](http://sphinxcontrib-napoleon.readthedocs.org/en/latest/example_google.html) as well as the notes below. 
 
-As of June 14, 2016, there are still a lot of legacy docstrings in the codebase, here are some examples you might see. Please don't write new code that looks like this:
+There are still a few legacy docstrings in the codebase, here are some examples you might see. Please don't write new code that looks like this:
 
 ```
 def AddAnalysisReport(self, analysis_report):
@@ -160,7 +159,7 @@ class SampleClass(object):
 
 ##### Constructor
 
-In addition to the [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html#Comments) please instance attribute alphabetically by name inside the constructor (`__init__`).
+In addition to the [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html#Comments) please sort instance attribute alphabetically by name inside the constructor (`__init__`).
 
 ```
 class SampleClass(object):
@@ -206,9 +205,8 @@ SampleFunction(keyword='THEKEY')
 * Use class methods in preference to static methods
   * Use "cls" as the name of the class variable in preference to "klass"
 * Use textual pylint overrides e.g. "# pylint: disable=no-self-argument" instead of "# pylint: disable=E0213". For a list of overrides see: http://docs.pylint.org/features.html
-* Tags for events need to be strings containing only alphanumberic characters or underscores. One of the reasons for this is better compatibility with other tools e.g. TimeSketch.
-
-Also see: [Python 3 Guide](https://github.com/log2timeline/plaso/wiki/Python-3-Guide)
+* Tags for events need to be strings containing only alphanumeric characters or underscores. One of the reasons for this is better compatibility with other tool, such as TimeSketch.
+* All new Plaso code needs to be compatible with both Python 3.4+ and Python 2.7+. Plaso's [Python 3 Guide](https://github.com/log2timeline/plaso/wiki/Python-3-Guide) has some more detail about compatibility issues, and the pylint configuration will also flag some issues.
 
 ## Source files
 At the start your source files define the encoding, which should be UTF-8, e.g.:
@@ -232,9 +230,6 @@ We do this for various reasons:
 * to make the tests more uniform in both look-and-feel but also what is tested;
 * improve test coverage;
 * isolate core functionality from tests to prevent some future core changes affecting the parsers and plugins too much.
-
-## Miscellaneous
-* Don't use pass keyword arguments as positional arguments. For example, if there's a method ```def DoThing(self, target=None)``` don't call it as ```object.DoThing(myTarget)```, use ```object.DoThing(target=myTarget)```
 
 ## Rationale
 
