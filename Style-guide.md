@@ -209,11 +209,18 @@ SampleFunction(keyword='THEKEY')
 * All new Plaso code needs to be compatible with both Python 3.4+ and Python 2.7+. Plaso's [Python 3 Guide](https://github.com/log2timeline/plaso/wiki/Python-3-Guide) has some more detail about compatibility issues, and the pylint configuration will also flag some issues.
 
 ## Source files
+
 At the start your source files define the encoding, which should be UTF-8, e.g.:
 ```
 # -*- coding: utf-8 -*-
 ```
 Also see: [PEP 0263](https://www.python.org/dev/peps/pep-0263/)
+
+## Linting
+
+Plaso uses pylint 1.7.x to enforce some additional best practices to keep the source code more readable. These are:
+
+* Limit the maximum number of arguments for function or method to 10
 
 ## Tests
 
