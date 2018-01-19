@@ -11,6 +11,21 @@ This page assumes you have at least a basic understanding of programming in Pyth
 
 Before you can write a binary file parser you will need to have a good understanding of the file format. A description of the Safari Cookies.binarycookies format can be found [here](https://github.com/libyal/assorted/blob/master/documentation/Safari%20Cookies.asciidoc).
 
+# Parsers vs. Plugins
+Before starting work on a parser, check if Plaso already has a parser that handles the underlying format of the file you're parsing. Plaso currently supports plugins for the following file formats:
+* Bencode
+* Web Browser Cookies
+* ESEDB
+* OLECF
+* Plist
+* SQLite
+* Syslog
+* Windows Registry
+
+If the artifact you're trying to parse is in one of these formats, you need to write a plugin of the appropriate type, rather than a parser.
+
+For our example, however, the Safari Cookies.binarycookies file is in its own binary format, so a separate parser is appropriate.
+
 # Test data
 
 First we make a representative test file and add it to the test_data/ directory, in our example:
