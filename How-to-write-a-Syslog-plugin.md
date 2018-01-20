@@ -1,4 +1,3 @@
-# Follow the usual steps for parsing a new artifact:
 ## Locate/create test data
 * Add a test file to the test_data directory
 
