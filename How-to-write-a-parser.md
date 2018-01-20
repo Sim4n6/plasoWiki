@@ -19,7 +19,7 @@ Before starting work on a parser, check if Plaso already has a parser that handl
 * OLECF
 * Plist
 * SQLite
-* Syslog
+* [Syslog](https://github.com/log2timeline/plaso/wiki/How-to-write-a-Syslog-plugin)
 * Windows Registry
 
 If the artifact you're trying to parse is in one of these formats, you need to write a plugin of the appropriate type, rather than a parser.
