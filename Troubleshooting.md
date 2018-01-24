@@ -53,6 +53,11 @@ Try:
 * mounting the file system as well to bypass libraries (modules) supporting the file system, e.g. the SleuthKit and pytsk;
 * running in single process and debug mode, see section below.
 
+## Producing debug logs
+To produce debugging logs, run log2timeline like so: `log2timeline.py --log-file=log2timeline_problem.log.gz --debug`. This will create multiple, gzip-compressed log files. There will be one called log2timeline_problem.log.gz containing logs from the main log2timeline process, and one log file for each worker process.
+
+Note that the .gz file suffix is important, as it triggers Plaso to compress the log output. In an uncompressed form, the logs are very large.
+
 ## Import errors
 It sometimes happen that the tests fail with an import error e.g.
 ```
