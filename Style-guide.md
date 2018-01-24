@@ -36,8 +36,9 @@ Prefix unused function or method arguments with `unused_`.
 #### Exceptions
 
 * When catching exceptions use "as exception:" not some alternative form like "as error:" or "as details:"
-* Raise exceptions like this: ```raise MyException(u'Error message')``` or ```raise MyException```.
+* Raise exceptions like this: ```raise MyException('Error message')``` or ```raise MyException```.
 * Although Python allows for ```try ... except ... else``` we prefer not to use it.
+* Make exception messages as useful and descriptive and possible. For example, if the an argument is out of an acceptable range, print the invalid value to speed-up debugging.
 
 #### Docstrings
 
