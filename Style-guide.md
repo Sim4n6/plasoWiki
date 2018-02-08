@@ -226,7 +226,7 @@ Plaso uses pylint 1.7.x to enforce some additional best practices to keep the so
 ## Tests
 
 * Use as much as possible the test functions available in the local test_lib.py instead of writing your own test functions. If you think a test function is missing please add it, or mail the developer list to see if you can someone else to do it.
-* Use timelib.Timestamp.CopyFromString() for calculating expected timestamp values.
+* Use `self.CheckTimestamp` for testing timestamp values.
 
 Common test code should be stored in "test library" files, e.g. the parser test library:
 
