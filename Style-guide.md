@@ -40,8 +40,11 @@ Prefix unused function or method arguments with `unused_`.
 * Although Python allows for ```try ... except ... else``` we prefer not to use it.
 * Make exception messages as useful and descriptive and possible. For example, if the an argument is out of an acceptable range, print the invalid value to speed-up debugging.
 
-#### Returning
+#### Return statements
+
 Per [PEP8](https://pep8.org/#programming-recommendations): "Be consistent in return statements. Either all return statements in a function should return an expression, or none of them should. If any return statement returns an expression, any return statements where no value is returned should explicitly state this as return None, and an explicit return statement should be present at the end of the function (if reachable)."
+
+* Use `return None` instead of `return` when your function or method is expected to return a value.
 
 #### Docstrings
 
