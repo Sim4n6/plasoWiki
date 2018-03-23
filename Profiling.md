@@ -21,10 +21,10 @@ log2timeline.py --profile --profiling-type=serializers plaso.db image.raw
 ## Profiling memory usage
 The memory usage of the worker processes used by log2timeline.py can be profiled with guppy.
 
-### Profiling with guppy
-To enable profiling you'll need to install [guppy](https://pypi.python.org/pypi/guppy), version 0.1.10 or later is recommended.
+### Profiling Python memory usage with guppy
+To profile Python memory usage with guppy you'll need to install [guppy](https://pypi.python.org/pypi/guppy), version 0.1.10 or later is recommended. If plaso detects that guppy is available it will enable the `guppy` profiling option.
 
-If plaso detects that guppy is available it will enable the memory profiling option. To profile the memory usage of the parsers and workers run log2timeline.py with the following options:
+Run log2timeline.py with the following options:
 ```
 log2timeline.py --profilers=guppy --profiling_directory=profile --profiling-sample-rate=5000 plaso.dump image.raw
 ```
