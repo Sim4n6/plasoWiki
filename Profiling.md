@@ -26,7 +26,7 @@ To enable profiling you'll need to install [guppy](https://pypi.python.org/pypi/
 
 If plaso detects that guppy is available it will enable the memory profiling option. To profile the memory usage of the parsers and workers run log2timeline.py with the following options:
 ```
-log2timeline.py --profile --profiling-sample-rate=5000 --profiling-type=memory plaso.dump image.raw
+log2timeline.py --profilers=guppy --profiling_directory=profile --profiling-sample-rate=5000 plaso.dump image.raw
 ```
 
 This will create a #.hpy file per worker, where # is the number of the worker.
