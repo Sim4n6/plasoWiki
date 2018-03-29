@@ -43,17 +43,3 @@ The following sections contain a rough outline of the larger items on the roadma
   * [storage redesign](https://github.com/log2timeline/plaso/issues/102)
 * [Windows Registry support improvements](https://github.com/log2timeline/plaso/issues/145)
 * Handling recovered (deleted) data
-
-## Packaged release history
-Version | Name | Release date | Comments
---- | --- | --- | ---
-1.0.0 | | December 2012 | [Blog post](http://blog.kiddaland.net/2012/12/first-alpha-release-of-log2timeline.html)
-1.0.1 | | April 2013 | [Blog post](http://blog.kiddaland.net/2013/04/flowers-blossoming-trees-and-new-plaso.html)
-1.0.2 | Spooky | October 2013 | [Blog post](http://blog.kiddaland.net/2013/10/halloween-brings-with-it-riding-witches.html)
-1.1.0 | SuperBark | June 2014 | [Blog post](http://blog.kiddaland.net/2014/06/what-is-one-to-say-about-june-time-of.html)
-1.2.0 | Griswold | December 2014 | [Blog post](http://blog.kiddaland.net/2014/12/hey-kids-i-heard-on-news-that-airline.html)
-1.3.0 | Eir | July 2015 | [Blog post](http://blog.kiddaland.net/2015/07/bringing-end-to-sorrow-new-plaso-release.html)
-1.4.0 | Freyja | January 2016 | [Blog post](http://blog.kiddaland.net/2016/01/sprinkling-morning-dew-and-summer.html)
-1.5.0 | Gná | September 2016 | [Blog post](http://blog.kiddaland.net/2016/09/what-flies-there-what-fares-there-or.html)
-1.6.0 | | Beginning of 2017
-
