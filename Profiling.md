@@ -37,3 +37,7 @@ from guppy import hpy
 heapy = hpy()
 heapy.pb('0.hpy')
 ```
+
+### Also see
+
+* [Troubleshooting Plaso Issues - Memory Edition](http://blog.kiddaland.net/2014/11/troubleshooting-plaso-issues-memory.html)
