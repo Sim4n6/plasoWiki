@@ -38,6 +38,43 @@ heapy = hpy()
 heapy.pb('0.hpy')
 ```
 
+### Graphing profiles
+
+Requires matplotlib and numpy
+
+```
+import glob
+import gzip
+import os
+
+from matplotlib import pyplot
+from matplotlib import style
+
+from numpy import genfromtxt
+
+path = os.path.join('profile', 'memory-*.csv.gz')
+
+
+for csv_file in glob.glob(path):
+  with gzip.open(csv_file, 'rb') as file_object:
+    data = genfromtxt(
+        file_object, delimiter='\t', skip_header=1,
+        names=['time', 'memory'])
+
+  x = data['time']
+  y = data['memory']
+
+  pyplot.plot(x, y)
+
+pyplot.title('Memory usage over time')
+pyplot.xlabel('Time')
+pyplot.xscale('linear')
+pyplot.ylabel('Used memory')
+pyplot.yscale('linear')
+
+pyplot.show()
+```
+
 ### Also see
 
 * [Troubleshooting Plaso Issues - Memory Edition](http://blog.kiddaland.net/2014/11/troubleshooting-plaso-issues-memory.html)
