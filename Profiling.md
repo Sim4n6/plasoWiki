@@ -16,9 +16,11 @@ To profile the CPU usage of the serialization run log2timeline.py with the follo
 log2timeline.py --profilers=serializers --profiling-directory=profile plaso.db image.raw
 ```
 
-### Profiling storage
+## Profiling storage
 
-To profile the amount of data read and/or written of the storage run log2timeline.py with the following options:
+### Profiling read and write size of attribute containers
+
+To profile the amount of data of attribute containers read and / or written to the storage run log2timeline.py with the following options:
 ```
 log2timeline.py --profilers=storage --profiling-directory=profile plaso.db image.raw
 ```
