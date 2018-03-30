@@ -16,8 +16,6 @@ To profile the CPU usage of the serialization run log2timeline.py with the follo
 log2timeline.py --profilers=serializers --profiling-directory=profile plaso.db image.raw
 ```
 
-**TODO: add serialization profiling to psort as well**
-
 ### Profiling storage
 
 To profile the amount of data read and/or written of the storage run log2timeline.py with the following options:
