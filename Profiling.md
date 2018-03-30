@@ -47,13 +47,6 @@ log2timeline.py --profilers=guppy --profiling_directory=profile --profiling-samp
 
 This will create a #.hpy file per worker, where # is the number of the worker.
 
-Guppy has a built-in profile browser to view the .hpy files e.g.
-```
-from guppy import hpy
-heapy = hpy()
-heapy.pb('0.hpy')
-```
-
 ## Graphing profiles
 
 Requires matplotlib and numpy
@@ -91,6 +84,15 @@ pyplot.ylabel('Used memory')
 pyplot.yscale('linear')
 
 pyplot.show()
+```
+
+### Guppy
+
+Guppy has a built-in profile browser to view the .hpy files e.g.
+```
+from guppy import hpy
+heapy = hpy()
+heapy.pb('0.hpy')
 ```
 
 ### Also see
