@@ -18,11 +18,28 @@ log2timeline.py --profilers=serializers --profiling-directory=profile plaso.db i
 
 ## Profiling storage
 
-### Profiling read and write size of attribute containers
+The storage profiler tracks:
 
-To profile the amount of data of attribute containers read and / or written to the storage run log2timeline.py with the following options:
+* the amount of data of serialized attribute containers read and / or written
+
+To profile the storage run log2timeline.py with the following options:
 ```
 log2timeline.py --profilers=storage --profiling-directory=profile plaso.db image.raw
+```
+
+## Profiling task queue
+
+The task queue profiler tracks:
+
+* number of tasks queued for processing or to be merged
+* number of tasks processing
+* number of tasks pending to be merged
+* number of tasks abandoned
+* total number of tasks, included completed tasks
+
+To profile the task queue statue run log2timeline.py with the following options:
+```
+log2timeline.py --profilers=task_queue --profiling-directory=profile plaso.db image.raw
 ```
 
 ## Profiling memory usage
