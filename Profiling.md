@@ -68,40 +68,13 @@ This will create a #.hpy file per worker, where # is the number of the worker.
 
 Requires matplotlib and numpy
 
-### Graphing memory profiles
+### Graphing memory usage over time
 
-```
-import glob
-import gzip
-import os
+`./utils/plot-memory-usage.py profile`
 
-from matplotlib import pyplot
-from matplotlib import style
+### Graphing task queue over time
 
-from numpy import genfromtxt
-
-path = os.path.join('profile', 'memory-*.csv.gz')
-
-
-for csv_file in glob.glob(path):
-  with gzip.open(csv_file, 'rb') as file_object:
-    data = genfromtxt(
-        file_object, delimiter='\t', skip_header=1,
-        names=['time', 'memory'])
-
-  x = data['time']
-  y = data['memory']
-
-  pyplot.plot(x, y)
-
-pyplot.title('Memory usage over time')
-pyplot.xlabel('Time')
-pyplot.xscale('linear')
-pyplot.ylabel('Used memory')
-pyplot.yscale('linear')
-
-pyplot.show()
-```
+`./utils/plot-task-queue.py profile`
 
 ### Guppy
 
