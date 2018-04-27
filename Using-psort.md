@@ -294,7 +294,7 @@ datetime,timestamp_desc,source,source_long,message,parser,display_name,tag,store
 ```
 #### Filters
 
-A more comprehensive discussions of the filters can be [read here](https://github.com/log2timeline/plaso/wiki/Event filters).
+A more comprehensive discussions of the filters can be [read here](https://github.com/log2timeline/plaso/wiki/Event-filters).
 
 For **psort** the filters are included at the end of the command line arguments, for example:
 
