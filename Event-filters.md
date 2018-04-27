@@ -1,6 +1,6 @@
 Event filters can be used both during the extraction phase and in the post-processing stage of the tool.
 
-Tools that have filter support:
+Tools that have event filter support:
  + [psort](https://github.com/log2timeline/plaso/wiki/Using-psort#filtering)
 
 The generic documentation of the filter language can be found [here](https://github.com/log2timeline/plaso/wiki/Objectfilter)
