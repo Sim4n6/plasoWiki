@@ -267,10 +267,10 @@ The build and install Pytsk see:
 * https://github.com/py4n6/pytsk/wiki/Building
 
 ### Optional dependencies for Elastic Search
-#### PyElasticsearch
-Download the latest source package from: https://github.com/rhec/pyelasticsearch/releases
+#### elasticsearch-py
+Download the latest source package from: https://github.com/elastic/elasticsearch-py
 
-**TODO describe**
+**TODO: describe**
 
 #### XlsxWriter
 Download the latest source package from: https://github.com/jmcnamara/XlsxWriter/releases
