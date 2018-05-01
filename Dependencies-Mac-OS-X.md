@@ -413,22 +413,10 @@ The build and install Pytsk see:
 **TODO describe**
 
 ### Optional dependencies for Elastic Search
-#### PyElasticsearch
-Download the latest source package from: https://github.com/rhec/pyelasticsearch/releases
+#### elasticsearch-py
+Download the latest source package from: https://github.com/elastic/elasticsearch-py
 
-To build pkg files run the following command from the build root directory:
-```
-tar zxfv pyelasticsearch-1.0.tar.gz
-cd pyelasticsearch-1.0/
-python setup.py install --root=$PWD/tmp --install-data=/usr/local 
-pkgbuild --root tmp --identifier com.github.pyelasticsearch.pyelasticsearch --version 1.0 --ownership recommended ../python-pyelasticsearch-1.0.pkg
-cd ..
-```
-
-To install the required pkg files run:
-```
-sudo installer -target / -pkg python-pyelasticsearch-1.0.pkg
-```
+**TODO: describe**
 
 #### XlsxWriter
 Download the latest source package from: https://github.com/jmcnamara/XlsxWriter/releases
