@@ -275,23 +275,7 @@ copy C:\plaso-build\sqlite-amalgamation-3080100\msvscpp\Release\sqlite3.dll C:\P
 ```
 
 ### Optional dependencies for output modules
-#### PyElasticsearch
+#### elasticsearch-py
+Download the latest source package from: https://github.com/elastic/elasticsearch-py
 
-To have plaso support elastic search output it needs pyelasticsearch. 
-
-Download the latest source package from: https://github.com/rhec/pyelasticsearch/releases
-
-To build the MSI file run the following commands from the build root directory:
-```
-tar xfv pyelasticsearch-1.0.tar.gz
-cd pyelasticsearch-1.0\
-C:\Python27\python.exe setup.py bdist_msi
-cd ..
-```
-
-This will create a MSI in the dist sub directory e.g.:
-```
-dist\pyelasticsearch-1.0.win32.msi
-```
-
-Install the MSI.
+**TODO: describe**
