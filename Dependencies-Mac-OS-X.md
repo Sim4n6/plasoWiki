@@ -412,7 +412,7 @@ The build and install Pytsk see:
 ### SQLite
 **TODO describe**
 
-### Optional dependencies for Elastic Search
+### Optional dependencies for output modules
 #### elasticsearch-py
 Download the latest source package from: https://github.com/elastic/elasticsearch-py
 
