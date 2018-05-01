@@ -266,7 +266,7 @@ The build and install Pytsk see:
 
 * https://github.com/py4n6/pytsk/wiki/Building
 
-### Optional dependencies for Elastic Search
+### Optional dependencies for output modules
 #### elasticsearch-py
 Download the latest source package from: https://github.com/elastic/elasticsearch-py
 
