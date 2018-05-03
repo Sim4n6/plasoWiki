@@ -167,7 +167,17 @@ C:\Python27\python.exe tools\update.py --preset plaso --track=dev
 
 **Note that the batch build script is currently still work in progress, but it will build most of the dependencies.**
 
-Set up the [l2tdevtools build script](https://github.com/log2timeline/l2tdevtools/wiki/Build-script) and run:
+Set up the [l2tdevtools build script](https://github.com/log2timeline/l2tdevtools/wiki/Build-script).
+
+On Windows run:
+
+```
+set PYTHONPATH=.
+
+C:\Python27\python.exe tools\build.py ${BUILD_TARGET}
+```
+
+On other platforms run:
 
 ```
 PYTHONPATH=. python tools/build.py ${BUILD_TARGET}
@@ -178,3 +188,8 @@ Where `${BUILD_TARGET}` is the build target for your configuration. If you are u
 Successfully built packages will be stored in the build directory, which is `build` by default. You can use your preferred installation method to install them.
 
 ## Manual build
+
+* https://github.com/log2timeline/plaso/wiki/Dependencies-Fedora-Core
+* https://github.com/log2timeline/plaso/wiki/Dependencies-Mac-OS-X
+* https://github.com/log2timeline/plaso/wiki/Dependencies---Ubuntu
+* https://github.com/log2timeline/plaso/wiki/Dependencies-Windows
