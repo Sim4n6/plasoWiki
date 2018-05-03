@@ -8,44 +8,11 @@ There are multiple ways to install the dependencies on Ubuntu:
 
 ## Prepackaged dependencies
 
-To install plaso from the GIFT PPA you'll need to have Ubuntu universe enabled:
-
-```
-sudo add-apt-repository universe
-sudo apt-get update
-```
-
-**Note that the instructions in this page assume you are running on Ubuntu 14.04 or 16.04. Installing packages from the PPA on other versions and/or distributions is not recommended.**
-
-The [GIFT PPA](https://launchpad.net/~gift), pun intended, contains the necessary packages for running plaso. The GIFT PPA provides the following tracks:
-
-* Release; track intended for the "packaged release" of plaso and dependencies;
-* Bleeding Edge (or Development); track intended for the "development release" of plaso;
-* Testing; track intended for testing newly created packages.
-
-For development we recommend using the "Bleeding Edge" track. To add it to your apt configuration run:
-```
-sudo add-apt-repository ppa:gift/dev
-```
-
-To install the dependencies run:
-```
-sh config/linux/gift_ppa_install.sh include-development include-test
-```
-
-For troubleshooting crashes it is recommended to install the following debug symbol packages as well:
-```
-sh config/linux/gift_ppa_install.sh include-debug
-```
+Moved to https://github.com/log2timeline/plaso/wiki/Dependencies#ubuntu
 
 ## Batch build
 
-Set up the [l2tdevtools build script](https://github.com/log2timeline/l2tdevtools/wiki/Build-script) and run:
-```
-PYTHONPATH=. python tools/build.py dpkg
-```
-
-**Note that the build script is currently still work in progress, but it will build most of the dependencies.**
+Moved to https://github.com/log2timeline/plaso/wiki/Dependencies#batch-build
 
 ## Manual build
 It is impossible for us to support all flavors of Ubuntu out there, so if you want smooth sailing, we recommend sticking with the supported version or live with the fact that a manual build of the dependencies can be a tedious task.
