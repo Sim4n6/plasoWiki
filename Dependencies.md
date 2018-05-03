@@ -38,3 +38,12 @@ sh config/linux/gift_copr_install.sh include-debug
 ```
 
 ## Batch build
+
+**Note that the batch build script is currently still work in progress, but it will build most of the dependencies.**
+
+Set up the [l2tdevtools build script](https://github.com/log2timeline/l2tdevtools/wiki/Build-script) and run:
+```
+PYTHONPATH=. python tools/build.py ${BUILD_TARGET}
+```
+
+Where `${BUILD_TARGET}` is the build target for your configuration. If you are unable to find the proper build target we do not recommend using this method.
