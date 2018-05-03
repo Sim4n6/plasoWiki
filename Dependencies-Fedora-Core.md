@@ -8,38 +8,11 @@ There are multiple ways to install the dependencies on Fedora Core:
 
 ## Prepackaged dependencies
 
-**Note that the instructions in this page assume you are running on Fedora Core 25. Installing packages from the copr on other versions and/or distributions is not recommended.**
-
-The [GIFT copr](https://copr.fedorainfracloud.org/groups/g/gift/coprs/), contains the necessary packages for running plaso. The GIFT copr provides the following tracks:
-
-* stable; track intended for the "packaged release" of plaso and dependencies;
-* dev; track intended for the "development release" of plaso;
-* testing; track intended for testing newly created packages.
-
-For development we recommend using the dev track. To add it to your apt configuration run:
-```
-sudo dnf install dnf-plugins-core
-sudo dnf copr enable @gift/dev
-```
-
-To install the dependencies run:
-```
-sh config/linux/gift_copr_install.sh include-development include-test
-```
-
-For troubleshooting crashes it is recommended to install the following debug symbol packages as well:
-```
-sh config/linux/gift_copr_install.sh include-debug
-```
+Moved to https://github.com/log2timeline/plaso/wiki/Dependencies#fedora-core
 
 ## Batch build
 
-Set up the [l2tdevtools build script](https://github.com/log2timeline/l2tdevtools/wiki/Build-script) and run:
-```
-PYTHONPATH=. python tools/build.py rpm
-```
-
-**Note that the build script is currently still work in progress, but it will build most of the dependencies.**
+Moved to https://github.com/log2timeline/plaso/wiki/Dependencies#batch-build
 
 ## Manual build
 
