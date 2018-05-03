@@ -9,20 +9,12 @@ There are multiple ways to install the dependencies on Ubuntu:
 **Note that if you have a non-Apple version of Python installed e.g. downloaded from Python.org, MacPorts or equivalent. You may very likely will have issues with version mismatches between the Apple versions and the non-Apple version of Python. It is therefore recommended to stick with the Apple versions of Python.**
 
 ## Prepackaged dependencies
-Prepackaged versions of the dependencies can be found here: https://github.com/log2timeline/l2tbinaries
 
-The l2tdevtools project provides [an update script](https://github.com/log2timeline/l2tdevtools/wiki/Update-script) to ease the process of keeping the dependencies up to date. To run:
-```
-PYTHONPATH=. python tools/update.py
-```
+Moved to https://github.com/log2timeline/plaso/wiki/Dependencies#macos-and-windows
 
 ## Batch build
-Set up the [l2tdevtools build script](https://github.com/log2timeline/l2tdevtools/wiki/Build-script) and run:
-```
-PYTHONPATH=. python tools/build.py pkg
-```
 
-**Note that the build script is currently still work in progress, but it will build most of the dependencies.**
+Moved to https://github.com/log2timeline/plaso/wiki/Dependencies#batch-build
 
 ## Manual build
 It is impossible for us to support all flavors of Mac OS X out there, so if you want smooth sailing, we recommend sticking with the supported version or live with the fact that a manual build of the dependencies can be a tedious task.
