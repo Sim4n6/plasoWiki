@@ -12,7 +12,7 @@ We recommend to configure your editor of choice to use linefeed only and turn of
 git config --global core.autocrlf false
 ```
 
-To be able to run the plaso [development release](https://github.com/log2timeline/plaso/wiki/Releases-and-roadmap) on Windows you'll have to have installed the [dependencies](https://github.com/log2timeline/plaso/wiki/Dependencies-Windows).
+To be able to run the plaso [development release](https://github.com/log2timeline/plaso/wiki/Releases-and-roadmap) on Windows you'll have to have installed the [dependencies](https://github.com/log2timeline/plaso/wiki/Dependencies).
 
 Check if you have all the dependencies installed and have the right minimum version:
 ```
