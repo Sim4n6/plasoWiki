@@ -12,7 +12,7 @@ There are multiple ways to install the dependencies:
 
 **Note that the instructions in this page assume you are running on Fedora Core 25. Installing packages from the copr on other versions and/or distributions is not recommended.**
 
-The [GIFT copr](https://copr.fedorainfracloud.org/groups/g/gift/coprs/) contains the necessary packages for running plaso. The GIFT copr provides the following tracks:
+The [GIFT copr](https://copr.fedorainfracloud.org/groups/g/gift/coprs/) contains the necessary packages for running plaso. GIFT copr provides the following tracks:
 
 * stable; track intended for the "packaged release" of plaso and dependencies;
 * dev; track intended for the "development release" of plaso;
@@ -37,15 +37,29 @@ For troubleshooting crashes it is recommended to install the following debug sym
 sh config/linux/gift_copr_install.sh include-debug
 ```
 
-### Ubunutu
+### MacOS and Windows
+
+The [l2tbinaries](https://github.com/log2timeline/l2tbinaries) contains the necessary packages for running plaso. l2tbinaries provides the following branches:
+
+* master; branch intended for the "packaged release" of plaso and dependencies;
+* dev; branch intended for the "development release" of plaso;
+* testing; branch intended for testing newly created packages.
+
+The l2tdevtools project provides [an update script](https://github.com/log2timeline/l2tdevtools/wiki/Update-script) to ease the process of keeping the dependencies up to date. To run:
+
+```
+PYTHONPATH=. python tools/update.py
+```
+
+### Ubuntu
 
 **Note that the instructions in this page assume you are running on Ubuntu 14.04 or 16.04. Installing packages from the PPA on other versions and/or distributions is not recommended.**
 
-The [GIFT PPA](https://launchpad.net/~gift) contains the necessary packages for running plaso. The GIFT PPA provides the following tracks:
+The [GIFT PPA](https://launchpad.net/~gift) contains the necessary packages for running plaso. GIFT PPA provides the following tracks:
 
-* Release; track intended for the "packaged release" of plaso and dependencies;
-* Bleeding Edge (or Development); track intended for the "development release" of plaso;
-* Testing; track intended for testing newly created packages.
+* Release (stable); track intended for the "packaged release" of plaso and dependencies;
+* Bleeding Edge (dev); track intended for the "development release" of plaso;
+* Testing (testing); track intended for testing newly created packages.
 
 To install plaso from the GIFT PPA you'll need to have Ubuntu universe enabled:
 
@@ -54,7 +68,7 @@ sudo add-apt-repository universe
 sudo apt-get update
 ```
 
-For development we recommend using the "Bleeding Edge" track. To add it to your apt configuration run:
+For development we recommend using the "Bleeding Edge" (dev) track. To add it to your apt configuration run:
 
 ```
 sudo add-apt-repository ppa:gift/dev
