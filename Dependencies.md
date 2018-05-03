@@ -10,7 +10,7 @@ There are multiple ways to install the dependencies:
 
 ### Fedora Core
 
-**Note that the instructions in this page assume you are running on Fedora Core 25. Installing packages from the copr on other versions and/or distributions is not recommended.**
+**Note that the instructions in this page assume you are running on Fedora Core 26, 27 or 28. Installing packages from the copr on other versions and/or distributions is not recommended.**
 
 The [GIFT copr](https://copr.fedorainfracloud.org/groups/g/gift/coprs/) contains the necessary packages for running plaso. GIFT copr provides the following tracks:
 
