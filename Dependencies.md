@@ -41,7 +41,7 @@ sh config/linux/gift_copr_install.sh include-debug
 
 **Note that the instructions in this page assume you are running on Ubuntu 14.04 or 16.04. Installing packages from the PPA on other versions and/or distributions is not recommended.**
 
-The [GIFT PPA](https://launchpad.net/~gift), pun intended, contains the necessary packages for running plaso. The GIFT PPA provides the following tracks:
+The [GIFT PPA](https://launchpad.net/~gift) contains the necessary packages for running plaso. The GIFT PPA provides the following tracks:
 
 * Release; track intended for the "packaged release" of plaso and dependencies;
 * Bleeding Edge (or Development); track intended for the "development release" of plaso;
