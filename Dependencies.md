@@ -174,16 +174,16 @@ On Windows run:
 ```
 set PYTHONPATH=.
 
-C:\Python27\python.exe tools\build.py ${BUILD_TARGET}
+C:\Python27\python.exe tools\build.py BUILD_TARGET
 ```
 
 On other platforms run:
 
 ```
-PYTHONPATH=. python tools/build.py ${BUILD_TARGET}
+PYTHONPATH=. python tools/build.py BUILD_TARGET
 ```
 
-Where `${BUILD_TARGET}` is the build target for your configuration. If you are unable to find the proper build target we do not recommend using this installation method.
+Where `BUILD_TARGET` is the build target for your configuration. If you are unable to find the proper build target we do not recommend using this installation method.
 
 Successfully built packages will be stored in the build directory, which is `build` by default. You can use your preferred installation method to install them.
 
