@@ -8,7 +8,7 @@ There are multiple ways to install the dependencies:
 
 ## Prepackaged dependencies
 
-## Fedora Core
+### Fedora Core
 
 **Note that the instructions in this page assume you are running on Fedora Core 25. Installing packages from the copr on other versions and/or distributions is not recommended.**
 
