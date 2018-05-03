@@ -1,19 +1,3 @@
-This page contains detailed instructions on how to build and install dependencies on Fedora Core. Some of these instructions should also work on Fedora Core like systems like RHEL or OpenSuze.
-
-There are multiple ways to install the dependencies on Fedora Core:
-
-* Using the GIFT copr to install prepackaged versions of the dependencies;
-* Using the [log2timeline devtools](https://github.com/log2timeline/devtools) to batch build most of the dependencies;
-* Manual build of the dependencies.
-
-## Prepackaged dependencies
-
-Moved to https://github.com/log2timeline/plaso/wiki/Dependencies#fedora-core
-
-## Batch build
-
-Moved to https://github.com/log2timeline/plaso/wiki/Dependencies#batch-build
-
 ## Manual build
 
 It is impossible for us to support all flavors of Fedora Core out there, so if you want smooth sailing, we recommend sticking with the supported version or live with the fact that a manual build of the dependencies can be a tedious task.
@@ -23,11 +7,13 @@ For ease of maintenance the following instructions use as much rpm package files
 Alternative installation methods like installing directly from source, using easy_install or pip are [not recommended](https://stackoverflow.com/questions/3220404/why-use-pip-over-easy-install) because when not maintained correctly they can mess up your setup more easily than using rpm packages.
 
 First create a build root directory:
+
 ```
 mkdir plaso-build/
 ```
 
 Next make sure your installation is up to date:
+
 ```
 sudo dnf update
 ```
@@ -43,6 +29,7 @@ sudo dnf install gcc-c++ python-devel python-setuptools rpm-build git mercurial
 **TODO: move to libyal section.**
 
 For some of the dependent packages you also require:
+
 ```
 sudo dnf install flex byacc zlib-devel bzip2-devel openssl-devel fuse-devel
 ```
@@ -90,6 +77,7 @@ sudo dnf install python-test
 ```
 
 #### Building a RPM
+
 Setup.py allows you to easily build a RPM in most cases. This paragraph contains a generic description of building a RPM so we do not have to repeat this for every dependency.
 
 To build a RPM file from package-1.0.0.tar.gz run the following commands from the build root directory.
@@ -137,11 +125,13 @@ sudo rpm -ivh dfvfs-20140219/dist/dfvfs-20140219-1.noarch.rpm
 ```
 
 ### IPython
+
 By default Fedora 20 comes with IPython 0.13.2. Plaso requires version 1.2.1 or later.
 
 **TODO: describe**
 
 ### Hachoir
+
 Download the latest source package from: https://bitbucket.org/haypo/hachoir/wiki/Install/source
 
 You'll need:
@@ -189,6 +179,7 @@ sudo rpm -ivh hachoir-metadata-1.3.3/dist/hachoir-metadata-1.3.3-1.noarch.rpm
 ```
 
 ### libyal
+
 The following instructions apply to the following dependencies:
 
 Name | Download URL | Comments | Dependencies
@@ -215,6 +206,7 @@ libvmdk | https://github.com/libyal/libvmdk | | libfuse, zlib
 libvshadow | https://github.com/libyal/libvshadow | | libfuse
 
 Install the following dependencies for building libyal:
+
 ```
 sudo dnf install bzip2-devel libfuse-devel openssl-devel zlib-devel
 ```
@@ -224,6 +216,7 @@ Since the build process for the libyal libraries is very similar, the following 
 Note that there is also a script to batch build the libyal dependencies more information here: https://github.com/log2timeline/l2tdevtools/wiki/Build-script
 
 #### Example: libevt and Python-bindings
+
 Download the latest source package from: https://github.com/libyal/libevt/releases
 
 mv libevt-alpha-20130923.tar.gz libevt-20130923.tar.gz
@@ -242,9 +235,11 @@ sudo rpm -ivh ~/rpmbuild/RPMS/x86_64/libevt-20130923-1.x86_64.rpm ~/rpmbuild/RPM
 ```
 
 ### Pefile
+
 **TODO describe**
 
 ### Psutil
+
 Download the latest source package from: https://pypi.python.org/pypi/psutil
 
 To build rpm files run the following command from the build root directory:
@@ -261,6 +256,7 @@ sudo dnf install psutil-1.2.1/dist/psutil-1.2.1.x86_64.rpm
 ```
 
 #### python-gflags
+
 Download the latest source package from: https://github.com/google/python-gflags/releases
 
 To build rpm files run the following command from the build root directory:
@@ -289,6 +285,7 @@ Download the latest source package from: https://github.com/elastic/elasticsearc
 **TODO: describe**
 
 #### XlsxWriter
+
 Download the latest source package from: https://github.com/jmcnamara/XlsxWriter/releases
 
 To build rpm files run the following command from the build root directory:
