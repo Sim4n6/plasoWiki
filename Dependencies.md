@@ -2,9 +2,9 @@ This page contains detailed instructions on how to build and install dependencie
 
 There are multiple ways to install the dependencies:
 
-* Using prepackaged versions of the dependencies;
+* Using [prepackaged dependencies](https://github.com/log2timeline/plaso/wiki/Dependencies#prepackaged-dependencies);
 * [Batch build](https://github.com/log2timeline/plaso/wiki/Dependencies#batch-build) most of the dependencies;
-* Manual build of the dependencies.
+* [Manual build](https://github.com/log2timeline/plaso/wiki/Dependencies#manual-build) of the dependencies.
 
 ## Prepackaged dependencies
 
@@ -85,3 +85,5 @@ PYTHONPATH=. python tools/build.py ${BUILD_TARGET}
 Where `${BUILD_TARGET}` is the build target for your configuration. If you are unable to find the proper build target we do not recommend using this installation method.
 
 Successfully built packages will be stored in the build directory, which is `build` by default. You can use your preferred installation method to install them.
+
+## Manual build
