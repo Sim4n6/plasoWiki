@@ -46,4 +46,4 @@ Set up the [l2tdevtools build script](https://github.com/log2timeline/l2tdevtool
 PYTHONPATH=. python tools/build.py ${BUILD_TARGET}
 ```
 
-Where `${BUILD_TARGET}` is the build target for your configuration. If you are unable to find the proper build target we do not recommend using this method.
+Where `${BUILD_TARGET}` is the build target for your configuration. If you are unable to find the proper build target we do not recommend using this installation method.
