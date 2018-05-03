@@ -10,7 +10,7 @@ There are multiple ways to install the dependencies on Ubuntu:
 
 ## Prepackaged dependencies
 
-Moved to https://github.com/log2timeline/plaso/wiki/Dependencies#macos-and-windows
+Moved to https://github.com/log2timeline/plaso/wiki/Dependencies#macos
 
 ## Batch build
 
