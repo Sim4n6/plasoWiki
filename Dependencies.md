@@ -18,7 +18,24 @@ The [GIFT copr](https://copr.fedorainfracloud.org/groups/g/gift/coprs/) contains
 * dev; track intended for the "development release" of plaso;
 * testing; track intended for testing newly created packages.
 
-For development we recommend using the dev track. To add it to your dnf configuration run:
+#### Packaged release
+
+To add the stable track to your dnf configuration run:
+
+```
+sudo dnf install dnf-plugins-core
+sudo dnf copr enable @gift/stable
+```
+
+To install the dependencies run:
+
+```
+sh config/linux/gift_copr_install.sh
+```
+
+#### Development release
+
+To add the dev track to your dnf configuration run:
 
 ```
 sudo dnf install dnf-plugins-core
@@ -37,7 +54,7 @@ For troubleshooting crashes it is recommended to install the following debug sym
 sh config/linux/gift_copr_install.sh include-debug
 ```
 
-### MacOS and Windows
+### MacOS
 
 The [l2tbinaries](https://github.com/log2timeline/l2tbinaries) contains the necessary packages for running plaso. l2tbinaries provides the following branches:
 
@@ -45,10 +62,22 @@ The [l2tbinaries](https://github.com/log2timeline/l2tbinaries) contains the nece
 * dev; branch intended for the "development release" of plaso;
 * testing; branch intended for testing newly created packages.
 
-The l2tdevtools project provides [an update script](https://github.com/log2timeline/l2tdevtools/wiki/Update-script) to ease the process of keeping the dependencies up to date. To run:
+The l2tdevtools project provides [an update script](https://github.com/log2timeline/l2tdevtools/wiki/Update-script) to ease the process of keeping the dependencies up to date.
+
+#### Packaged release
+
+To install the release versions of the dependencies run:
 
 ```
-PYTHONPATH=. python tools/update.py
+PYTHONPATH=. python tools/update.py --preset plaso
+```
+
+#### Development release
+
+To install the development versions of the dependencies run:
+
+```
+PYTHONPATH=. python tools/update.py --preset plaso --track dev
 ```
 
 ### Ubuntu
@@ -68,7 +97,23 @@ sudo add-apt-repository universe
 sudo apt-get update
 ```
 
-For development we recommend using the "Bleeding Edge" (dev) track. To add it to your apt configuration run:
+#### Packaged release
+
+To add the stable track to your apt configuration run:
+
+```
+sudo add-apt-repository ppa:gift/stable
+```
+
+To install the dependencies run:
+
+```
+sh config/linux/gift_ppa_install.sh
+```
+
+#### Development release
+
+To add the dev track to your apt configuration run:
 
 ```
 sudo add-apt-repository ppa:gift/dev
@@ -84,6 +129,38 @@ For troubleshooting crashes it is recommended to install the following debug sym
 
 ```
 sh config/linux/gift_ppa_install.sh include-debug
+```
+
+### Windows
+
+The [l2tbinaries](https://github.com/log2timeline/l2tbinaries) contains the necessary packages for running plaso. l2tbinaries provides the following branches:
+
+* master; branch intended for the "packaged release" of plaso and dependencies;
+* dev; branch intended for the "development release" of plaso;
+* testing; branch intended for testing newly created packages.
+
+The l2tdevtools project provides [an update script](https://github.com/log2timeline/l2tdevtools/wiki/Update-script) to ease the process of keeping the dependencies up to date. To run:
+
+The script requires [pywin32](https://github.com/mhammond/pywin32/releases) and [Python WMI](https://pypi.python.org/pypi/WMI/).
+
+#### Packaged release
+
+To install the release versions of the dependencies run:
+
+```
+set PYTHONPATH=.
+
+C:\Python27\python.exe tools\update.py --preset plaso
+```
+
+#### Development release
+
+To install the development versions of the dependencies run:
+
+```
+set PYTHONPATH=.
+
+C:\Python27\python.exe tools\update.py --preset plaso --track=dev
 ```
 
 ## Batch build
