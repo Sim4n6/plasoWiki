@@ -6,6 +6,12 @@ There are multiple ways to install the dependencies:
 * [Batch build](https://github.com/log2timeline/plaso/wiki/Dependencies#batch-build) most of the dependencies;
 * [Manual build](https://github.com/log2timeline/plaso/wiki/Dependencies#manual-build) of the dependencies.
 
+## Optional dependencies
+
+Some dependencies for plaso are optional:
+
+* Timesketch: https://github.com/google/timesketch/blob/master/docs/Installation.md
+
 ## Prepackaged dependencies
 
 ### Fedora Core
