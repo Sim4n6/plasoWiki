@@ -16,4 +16,4 @@ Next run psort to tag events:
 ```
 psort.py --analysis viper -o timeline_with_viper_tags.csv
 ```
-If a file processed by Plaso is present in the viper instance, it will be tagged with 'viper_present'. If it's part of a project in viper, it will also be tagged with 'viper_project_$PROJECTNAME'.
+If a file processed by Plaso is present in the viper instance, it will be tagged with `viper_present`. If it's part of a project in viper, it will also be tagged with `viper_project_$PROJECTNAME`.
