@@ -12,7 +12,7 @@ log2timeline.py timeline.plaso image.raw
 ```
 Note that hashing must be turned on for the viper plugin to work correctly. This is default setting for log2timeline.py.
 
-Next run psort to tag events:
+Next run psort to tag events, then output them:
 ```
 psort.py --analysis viper -o timeline_with_viper_tags.csv timeline.plaso
 ```
