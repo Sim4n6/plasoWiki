@@ -16,7 +16,7 @@ python run_tests.py
 
 The unit tests are also run automatically on [Travis-CI](https://travis-ci.org/) and [AppVeyor](https://ci.appveyor.com) after every commit (code submit) to detect cross platform issues. 
 
-## End-to-end tests - new
+## End-to-end tests
 
 The end-to-end tests are intended to test the plaso tools as a user would run them. To run the end-to-end tests you'll need:
 
