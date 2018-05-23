@@ -1,6 +1,5 @@
-**WARNING: this page is work in progress and some text might not reflect the current situation**
-
 # Automated tests
+
 Plaso comes with multiple forms of automated tests:
 
 * unit tests
@@ -25,3 +24,9 @@ The end-to-end tests are intended to test the plaso tools as a user would run th
 * end-to-end tests configuration, e.g. `config/end-to-end.ini`
 * test data
 * reference data, to compare test output against
+
+E.g. to run the predefined end-to-end tests:
+
+```
+PYTHONPATH=. python ./tests/end-to-end.py --debug -c config/end-to-end.ini
+```
