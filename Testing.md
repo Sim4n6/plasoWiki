@@ -30,3 +30,5 @@ E.g. to run the predefined end-to-end tests:
 ```
 PYTHONPATH=. python ./tests/end-to-end.py --debug -c config/end-to-end.ini
 ```
+
+The predefined end-to-end tests are also run automatically on [Travis-CI](https://travis-ci.org/) after every commit (code submit).
