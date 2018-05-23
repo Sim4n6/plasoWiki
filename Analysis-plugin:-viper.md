@@ -14,6 +14,6 @@ Note that hashing must be turned on for the viper plugin to work correctly. This
 
 Next run psort to tag events:
 ```
-psort.py --analysis viper -o timeline_with_viper_tags.csv
+psort.py --analysis viper -o timeline_with_viper_tags.csv timeline.plaso
 ```
 If a file processed by Plaso is present in the viper instance, it will be tagged with `viper_present`. If it's part of a project in viper, it will also be tagged with `viper_project_$PROJECTNAME`.
