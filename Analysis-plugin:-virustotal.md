@@ -17,4 +17,4 @@ Next run psort to tag events:
 ```
 psort.py --analysis virustotal --virustotal-api-key $API_KEY -o timeline_with_virustotal_tags.csv timeline.plaso
 ```
-If a file processed by Plaso is present in virustotal and has been detected as malicious by one more detection engines, it will be tagged with `virustotal_detections_$NUMBER_OF_DETECTIONS`. If the file is in Virustotal, but has not been detected as malicious, it will be tagged with `virustotal_no_detections`. If the file isn't in Virustotal, it will be tagged as `virustotal_not_present`.
+If a file processed by Plaso is present in virustotal and has been detected as malicious by one more detection engines, it will be tagged with `virustotal_detections_$NUMBER_OF_DETECTIONS`. If the file is in Virustotal, but it hasn't been fully analyzed yet, it will be tagged with `virustotal_analysis_pending`. If the file is in Virustotal, but has not been detected as malicious, it will be tagged with `virustotal_no_detections`. If the file isn't in Virustotal, it will be tagged as `virustotal_not_present`.
