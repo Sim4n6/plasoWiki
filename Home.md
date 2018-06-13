@@ -66,8 +66,8 @@ File System Format support is provided by [dfvfs](https://github.com/log2timelin
 * PL SQL cache file (PL-SQL developer recall files)
 * Popularity Contest log
 * [Property list (plist) format](http://forensicswiki.org/wiki/Property_list_(plist)) using [binplist](http://forensicswiki.org/wiki/Binplist)
-* Restore Point logs (rp.log)
-* Safari Binary Cookies
+* [Restore Point logs (rp.log)](https://github.com/libyal/dtformats/blob/master/documentation/Restore%20point%20formats.asciidoc)
+* [Safari Binary Cookies](https://github.com/libyal/dtformats/blob/master/documentation/Safari%20Cookies.asciidoc)
 * SCCM client logs
 * SELinux audit logs
 * SkyDrive log and error log files
