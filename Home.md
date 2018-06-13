@@ -74,8 +74,7 @@ File System Format support is provided by [dfvfs](https://github.com/log2timelin
 * [SQLite database format](http://forensicswiki.org/wiki/SQLite_database_format) using [SQLite](http://forensicswiki.org/wiki/SQLite)
 * Symantec AV Corporate Edition and Endpoint Protection log
 * Syslog
-* UTMP
-* UTMPX
+* [utmp, utmpx](https://github.com/libyal/dtformats/blob/master/documentation/Utmp%20login%20records%20format.asciidoc)
 * [Windows Event Log (EVT)](http://forensicswiki.org/wiki/Windows_Event_Log_(EVT)) using [libevt](https://github.com/libyal/libevt)
 * Windows Firewall
 * [Windows Job files](http://forensicswiki.org/wiki/Windows_Job_File_Format) (also known as "at jobs")
