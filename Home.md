@@ -50,7 +50,7 @@ File System Format support is provided by [dfvfs](https://github.com/log2timelin
 * [Java WebStart IDX](http://forensicswiki.org/wiki/Java)
 * [Jump Lists](http://forensicswiki.org/wiki/Jump_Lists) .customDestinations-ms files
 * Mac OS X Application firewall
-* Mac OS X Keychain
+* [Mac OS X Keychain](https://github.com/libyal/dtformats/blob/master/documentation/MacOS%20keychain%20database%20file%20format.asciidoc)
 * Mac OS X Securityd
 * Mac OS X Wifi
 * [mactime logs](http://forensicswiki.org/wiki/Mactime)
