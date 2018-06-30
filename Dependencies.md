@@ -36,7 +36,7 @@ sudo dnf copr enable @gift/stable
 To install the dependencies run:
 
 ```
-sh config/linux/gift_copr_install.sh
+./config/linux/gift_copr_install.sh
 ```
 
 #### Development release
@@ -51,13 +51,13 @@ sudo dnf copr enable @gift/dev
 To install the dependencies run:
 
 ```
-sh config/linux/gift_copr_install.sh include-development include-test
+./config/linux/gift_copr_install.sh include-development include-test
 ```
 
 For troubleshooting crashes it is recommended to install the following debug symbol packages as well:
 
 ```
-sh config/linux/gift_copr_install.sh include-debug
+./config/linux/gift_copr_install.sh include-debug
 ```
 
 ### MacOS
@@ -114,7 +114,7 @@ sudo add-apt-repository ppa:gift/stable
 To install the dependencies run:
 
 ```
-sh config/linux/gift_ppa_install.sh
+./config/linux/gift_ppa_install.sh
 ```
 
 #### Development release
@@ -128,13 +128,13 @@ sudo add-apt-repository ppa:gift/dev
 To install the dependencies run:
 
 ```
-sh config/linux/gift_ppa_install.sh include-development include-test
+./config/linux/gift_ppa_install.sh include-development include-test
 ```
 
 For troubleshooting crashes it is recommended to install the following debug symbol packages as well:
 
 ```
-sh config/linux/gift_ppa_install.sh include-debug
+./config/linux/gift_ppa_install.sh include-debug
 ```
 
 ### Windows
