@@ -47,7 +47,7 @@ Per [PEP8](https://pep8.org/#programming-recommendations): "Be consistent in ret
 * Use `return None` instead of `return` when your function or method is expected to return a value.
 * Do not use `return None` in generators.
 * Use `return` in function or method that does not return a value.
-* If your function returns multiple values, as well as None to indicate some value isn't available, prefer to return a tuple containing None, rather than just None by itself.
+* If your function returns multiple values, as well as None to indicate some value isn't available, prefer to return a tuple containing None, rather than just None by itself. For example, if one return statement in your function is `return response_code, method`, the return statement to use if these values are unavailable is `return None, None`.
 
 #### Docstrings
 
