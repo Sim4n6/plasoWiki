@@ -120,6 +120,16 @@ Args:
   path (str|Path): path to tag file.
 ```
 
+##### None type
+
+`None` is not a type but `NoneType` is. However `None` is omitted from the docstring in the type information and should be mentioned in the description.
+
+
+```
+Args:
+  attributes (Optional[list[str]]): names of attributes or None if not available.
+```
+
 ##### Multiple return types
 
 Python simulates multiple arguments being returned by implicitly returning a tuple. Document like so:
