@@ -22,7 +22,7 @@ Before starting work on a parser, check if Plaso already has a parser that handl
 * [Syslog](https://github.com/log2timeline/plaso/wiki/How-to-write-a-Syslog-plugin)
 * Windows Registry
 
-If the artifact you're trying to parse is in one of these formats, you need to write a plugin of the appropriate type, rather than a parser.
+If the artifact you're trying to parse is in one of these formats, you need to write a [plugin](https://github.com/log2timeline/plaso/wiki/How-to-write-a-parser-plugin) of the appropriate type, rather than a parser.
 
 For our example, however, the Safari Cookies.binarycookies file is in its own binary format, so a separate parser is appropriate.
 
@@ -74,8 +74,8 @@ from plaso.parsers import manager
 class BinaryCookieParser(interface.FileObjectParser):
   """Parser for Safari Binary Cookie files."""
 
-  NAME = u'binary_cookies'
-  DESCRIPTION = u'Parser for Safari Binary Cookie files.'
+  NAME = 'binary_cookies'
+  DESCRIPTION = 'Parser for Safari Binary Cookie files.'
 
   def ParseFileObject(self, parser_mediator, file_object, **kwargs):
     """Parses a Safari binary cookie file-like object.
