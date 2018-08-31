@@ -18,7 +18,7 @@ And is moving to support:
 
 [Travis-CI](https://travis-ci.org/) | [AppVeyor](https://ci.appveyor.com) | [Codecov](https://codecov.io/) | [PyPI](https://pypi.python.org/pypi)
 --- | --- | --- | --- 
-[![Build Status](https://travis-ci.org/log2timeline/plaso.svg?branch=master)](https://travis-ci.org/log2timeline/plaso) | [![Build status](https://ci.appveyor.com/api/projects/status/g3x5ylegjjo61p4m?svg=true)](https://ci.appveyor.com/project/joachimmetz/plaso) | [![codecov](https://codecov.io/gh/log2timeline/plaso/branch/master/graph/badge.svg)](https://codecov.io/gh/log2timeline/plaso) | [![PyPI version](https://badge.fury.io/py/plaso.svg)](https://badge.fury.io/py/plaso)
+[![Build Status](https://travis-ci.org/log2timeline/plaso.svg?branch=master)](https://travis-ci.org/log2timeline/plaso) | [![Build status](https://ci.appveyor.com/api/projects/status/7slp4uexetn8bomg/branch/master?svg=true)](https://ci.appveyor.com/project/Log2timeline/plaso/branch/master) | [![codecov](https://codecov.io/gh/log2timeline/plaso/branch/master/graph/badge.svg)](https://codecov.io/gh/log2timeline/plaso) | [![PyPI version](https://badge.fury.io/py/plaso.svg)](https://badge.fury.io/py/plaso)
 
 ### Supported Formats
 
