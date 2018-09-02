@@ -1,4 +1,4 @@
-### Fedora Core 26, 27 and 28
+### Fedora Core 27 and 28
 
 **Note that other versions of Fedora Core are not supported at this time.**
 
