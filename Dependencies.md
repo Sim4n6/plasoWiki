@@ -149,6 +149,10 @@ The l2tdevtools project provides [an update script](https://github.com/log2timel
 
 The script requires [pywin32](https://github.com/mhammond/pywin32/releases) and [Python WMI](https://pypi.python.org/pypi/WMI/).
 
+You'll need to have the corresponding Visual C++ Redistributable package installed, which you can obtain from [Microsoft Download Center](https://www.microsoft.com/en-us/search/Results.aspx?q=Microsoft%20Visual%20C%2B%2B%20Redistributable%20Package&form=DLC).
+
+For Python 2.7 you'll need VS2008 and for Python 3.6 VS2017.
+
 #### Packaged release
 
 To install the release versions of the dependencies run:
